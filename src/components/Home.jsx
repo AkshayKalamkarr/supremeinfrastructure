@@ -1,0 +1,72 @@
+import React from "react";
+import Lottie from "lottie-react";
+import Worker from "../assets/Worker.json";
+import Location from "./Location";
+import Services from "./Services";
+import Portfolio from "./Portfolio";
+import Team from "./Team";
+
+const Home = () => {
+  return (
+    <>
+      {/* <Navbar/> */}
+      <div className='w-full max-w-7xl mx-auto'>
+        {/* Main Content Grid */}
+        <div className='grid md:grid-cols-2 gap-8 items-center'>
+          {/* Left side (text content) */}
+          <div className='md:h-auto'>
+            <div className='py-20'>
+              {/* <h1 className="text-6xl text-slate-900 font-extrabold max-w-6xl mx-auto">
+                                <span className="text-transparent bg-gradient-to-r bg-clip-text from-slate-700 to-yellow-600">Welcome to Supreme Infrastructure</span>
+                            </h1>
+                            <br />
+                            <h3 className="text-4xl text-slate-900 font-bold max-w-4xl mx-auto">
+                                <span className="text-transparent bg-gradient-to-r bg-clip-text from-slate-800 to-slate-800">We Are Team of Talented, Innovative Designers, Engineers and Horticulturists</span>
+                            </h3> */}
+              <h1 className='text-4xl text-slate-900 font-extrabold mx-auto lg:text-6xl px-2'>
+                <span className='text-transparent bg-gradient-to-r bg-clip-text from-slate-700 to-yellow-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500'>
+                  Welcome to Supreme Infrastructure
+                </span>
+              </h1>
+              <br />
+              <h3 className='text-xl lg:text-4xl text-slate-900 font-bold  mx-auto px-6'>
+                <span className='text-transparent bg-gradient-to-r bg-clip-text from-slate-800 to-slate-800 hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-500'>
+                  We Are Team of Talented, Innovative Designers, Engineers and
+                  Horticulturists
+                </span>
+              </h3>
+            </div>
+          </div>
+
+          {/* Right side (animated image) */}
+          <div className='md:h-auto'>
+            <div className='py-8 md:py-0'>
+              <div className='mx-auto max-w-lg md:max-w-none'>
+                <Lottie animationData={Worker} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Additional sections (About and Services) */}
+      <div id='about'>
+        <About />
+      </div>
+      <div id='services'>
+        <Services />
+      </div>
+      <div id='location'>
+        <Location />
+      </div>
+      <div id='team'>
+        <Team />
+      </div>
+      <div id='portfolio'>
+        <Portfolio />
+      </div>
+    </>
+  );
+};
+
+export default Home;
