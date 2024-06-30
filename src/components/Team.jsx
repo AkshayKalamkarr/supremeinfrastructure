@@ -155,7 +155,7 @@
 
 const Team=()=>{
     return(
-        <h1>this is team page</h1>
+        <h1>this is team page 1</h1>
     )
 }
 
