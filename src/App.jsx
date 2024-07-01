@@ -11,6 +11,7 @@ import Team from "./components/Team";
 import Interiorpage from "./pages/interior-page";
 import Civilpage from "./pages/civil-page";
 import ClientPage from "./pages/clients-page";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path='/Projects' element={<Projects />} />
           <Route path='/Team' element={<Team />} />
           <Route path='/Contact' element={<Contact />} />
+          <Route path='/Footer' element={<Footer />} />
+
 
           <Route path='/Interiorpage' element={<Interiorpage />} />
           <Route path='/Civilpage' element={<Civilpage />} />

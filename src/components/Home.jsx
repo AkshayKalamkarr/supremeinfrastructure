@@ -6,13 +6,14 @@ import Location from "./Contact";
 import Services from "./Services";
 import Projects from './Projects'
 import Team from "./Team";
-// import Client from "./Client";
+import Client from "./Client";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
     <>
       {/* <Navbar/> */}
-      <div className='w-full max-w-7xl mx-auto'>
+      <div className='w-full max-w-7xl mx-auto '>
         {/* Main Content Grid */}
         <div className='grid md:grid-cols-2 gap-8 items-center'>
           {/* Left side (text content) */}
@@ -58,9 +59,6 @@ const Home = () => {
       <div id='services'>
         <Services />
       </div>
-      {/* <div id='team'>
-        <Client />
-      </div> */}
       <div id='location'>
         <Location />
       </div>
@@ -68,8 +66,15 @@ const Home = () => {
         <Projects />
       </div>
       <div id='team'>
+        <Client />
+      </div>
+      <div id='team'>
         <Team />
       </div>
+      <div id='team'>
+        <Footer />
+      </div>
+      
 
       {/* <div id='portfolio'>
         <Portfolio />
