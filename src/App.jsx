@@ -10,6 +10,7 @@ import Projects from "./components/Projects";
 import Team from "./components/Team";
 import Interiorpage from "./pages/interior-page";
 import Civilpage from "./pages/civil-page";
+import ClientPage from "./pages/clients-page";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
           <Route path='/Interiorpage' element={<Interiorpage />} />
           <Route path='/Civilpage' element={<Civilpage />} />
+          <Route path='/clients' element={<ClientPage />} />
         </Routes>
       </BrowserRouter>
       {/* <Navbar/>
