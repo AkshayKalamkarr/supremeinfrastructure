@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import interiorpage from "../pages/Interiorpage";
-import civilpage from "../pages/Civilpage";
+import interiorpage from "../pages/interior-page";
+import civilpage from "../pages/civil-page";
 import Lottie from "lottie-react";
 import interior from "../assets/interior.json"; // Replace with your image imports
 import About from "../assets/About.json";

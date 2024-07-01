@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactForm = () => {
+const Contact = () => {
     return (
         <div className="bg-gradient-to-br from-purple-500 to-blue-500 shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <h2 className="text-2xl font-bold mb-4 text-center text-white">Contact Us</h2>
@@ -51,4 +51,4 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm;
+export default Contact;

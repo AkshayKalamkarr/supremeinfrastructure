@@ -3,15 +3,16 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/logo.png";
+import Contact from "./Contact";
 
 const Navbarlist = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "/#" },
   { name: "About", href: "/#about" },
   { name: "Services", href: "/#services" },
-  { name: "Portfolio", href: "/Portfolio" },
-  { name: "Team", href: "/team" },
-  { name: "Projects", href: "/projects" },
-  { name: "Location", href: "/location" },
+  // { name: "Portfolio", href: "/#Portfolio" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Team", href: "/#team" },
+  // { name: "Location", href: "/#location" },
 ];
 
 export default function Navbar() {
@@ -40,7 +41,7 @@ export default function Navbar() {
             <div className='mx-auto max-w-7xl px-4 sm:px-6 z-50'>
               <div className='flex items-center justify-between py-4 md:justify-start md:space-x-10'>
                 <div className='flex-shrink-0'>
-                  <Link to='/'>
+                  <Link to='/#'>
                     <span className='sr-only'>SUPREME INFRASTRUCTURE</span>
                     <img
                       className='h-8 w-auto sm:h-16'
@@ -52,7 +53,7 @@ export default function Navbar() {
                 <div className='-my-2 -mr-2 md:hidden flex items-center space-x-2'>
                   <div className='flex items-center justify-end md:flex-1 lg:w-0'>
                     <Link
-                      to='/contact'
+                      to='/Contact'
                       className='ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700'
                     >
                       Contact us
@@ -83,9 +84,9 @@ export default function Navbar() {
                 </Popover.Group>
                 <div className='hidden md:flex items-center justify-end md:flex-1 lg:w-0'>
                   <Link
-                    to='/contact'
-                    className='ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700'
-                  >
+                    to='/Contact'
+                    className='ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent
+                     bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700'>
                     Contact us
                   </Link>
                 </div>
