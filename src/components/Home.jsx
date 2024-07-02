@@ -2,12 +2,12 @@ import React from "react";
 import Lottie from "lottie-react";
 import Worker from "../assets/Worker.json";
 import About from './About'
-import Location from "./Contact";
 import Services from "./Services";
 import Projects from './Projects'
 import Team from "./Team";
 import Client from "./Client";
 import Footer from "./Footer";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -59,19 +59,22 @@ const Home = () => {
       <div id='services'>
         <Services />
       </div>
-      <div id='location'>
-        <Location />
-      </div>
-      <div id='Projects'>
+      {/* <div id='Contact'>
+        <Contact />
+      </div> */}
+      <div id='projects'>
         <Projects />
       </div>
-      <div id='team'>
+      <div id='Client'>
         <Client />
+      </div>
+      <div id='Contact'>
+        <Contact />
       </div>
       <div id='team'>
         <Team />
       </div>
-      <div id='team'>
+      <div id='Footer'>
         <Footer />
       </div>
       

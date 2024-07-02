@@ -3,16 +3,14 @@ import { Link, useNavigate } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/logo.png";
-import Contact from "./Contact";
 
 const Navbarlist = [
   { name: "Home", href: "/#" },
   { name: "About", href: "/#about" },
   { name: "Services", href: "/#services" },
-  // { name: "Portfolio", href: "/#Portfolio" },
   { name: "Projects", href: "/#projects" },
   { name: "Team", href: "/#team" },
-  // { name: "Location", href: "/#location" },
+
 ];
 
 export default function Navbar() {
@@ -37,7 +35,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed top-0 h-16 flex items-center w-full z-50 bg-white left-0 right-0">
+    <div className="fixed top-0 h-16 flex items-center w-full z-50 bg-slate-950 left-0 right-0">
       <Popover className="relative w-full">
         {({ open, close }) => (
           <>
@@ -56,8 +54,12 @@ export default function Navbar() {
                 <div className="-my-2 -mr-2 md:hidden flex items-center space-x-2">
                   <div className="flex items-center justify-end md:flex-1 lg:w-0">
                     <Link
-                      to="/Contact"
+                      to="/contact" // Updated to scroll to the contact section
                       className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleNavigation("/#contact");
+                      }}
                     >
                       Contact us
                     </Link>
@@ -75,7 +77,7 @@ export default function Navbar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-base font-bold text-gray-500 hover:text-gray-900"
+                      className="text-base font-bold text-white hover:text-white-900"
                       onClick={(e) => {
                         e.preventDefault();
                         handleNavigation(item.href);
@@ -87,8 +89,12 @@ export default function Navbar() {
                 </Popover.Group>
                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                   <Link
-                    to="/Contact"
+                    to="/#contact" // Updated to scroll to the contact section
                     className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation("/contact");
+                    }}
                   >
                     Contact us
                   </Link>
