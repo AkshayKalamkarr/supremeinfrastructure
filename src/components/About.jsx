@@ -1,5 +1,5 @@
 import React from "react";
-import aboutus from "../assets/about us.jpg";
+import aboutus from "../assets/team/about us.jpg";
 const About = () => {
   return (
     // <div className="max-w-[1800] h-screen flex items-center justify-center bg-gray-100">
@@ -13,7 +13,7 @@ const About = () => {
 
     <div
       id='about'
-      className='max-w-screen mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-red-400'
+      className='max-w-screen mx-auto px-4 sm:px-6 lg:px-8 py-28'
     >
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center h-full'>
         {/* Left side (image) */}
@@ -27,7 +27,7 @@ const About = () => {
         {/* Right side (information) */}
         <div className='order-1 md:order-2 h-full flex flex-col justify-center'>
           <h1 className='text-4xl text-slate-900 font-bold mb-4'>
-            ABOUT COMPANY
+            ABOUT US
           </h1>
           <p className='text-base text-gray-800 leading-relaxed text-left'>
             Established in Mumbai (Maharashtra), India in the Year 2017. Supreme

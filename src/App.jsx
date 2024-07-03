@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
-import Client from "./components/Client";
+import clients from "./components/Client";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Team from "./components/Team";
@@ -12,6 +12,8 @@ import Interiorpage from "./pages/interior-page";
 import Civilpage from "./pages/civil-page";
 import ClientPage from "./pages/clients-page";
 import Footer from "./components/Footer";
+
+import Tata from './pages/tata-page'
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
           <Route path='/Interiorpage' element={<Interiorpage />} />
           <Route path='/Civilpage' element={<Civilpage />} />
           <Route path='/clients' element={<ClientPage />} />
+          <Route path='/Tata' element={<Tata />}></Route>
         </Routes>
       </BrowserRouter>
       {/* <Navbar/>

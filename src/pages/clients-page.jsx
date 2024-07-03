@@ -1,16 +1,3 @@
-// import React from "react";
-// import Client from "../components/Client";
-
-// const ClientPage = () => {
-//   return (
-//     <div>
-//       <Client />
-//     </div>
-//   );
-// };
-
-// export default ClientPage;
-
 
 import { cn } from "../lib/utils";
 import Marquee from "../components/magicui/marquee";

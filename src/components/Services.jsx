@@ -16,7 +16,7 @@ const Services = () => {
   return (
     <div id='services'>
       {/* Hero section */}
-      <div className='min-h-screen bg-slate-500'>
+      <div className='min-h-screen bg-gradient-to-b from-slate-500 to-slate-800'>
         <div className='max-w-7xl mx-auto px-8 py-28 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center'>
           <h1 className='text-4xl text-slate font-bold mb-4'>OUR SERVICES</h1>
           <h3 className='text-xl text-slate'>

@@ -35,7 +35,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed top-0 h-16 flex items-center w-full z-50 bg-slate-950 left-0 right-0">
+    <div className="fixed top-0 h-16 flex items-center w-full z-50 left-0 right-0 bg-gradient-to-b from-slate-500 to-slate-800">
       <Popover className="relative w-full">
         {({ open, close }) => (
           <>
