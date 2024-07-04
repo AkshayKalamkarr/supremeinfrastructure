@@ -5,7 +5,7 @@ import TeamPage from '../pages/team-page';
 
 const Team = () => {
     return (
-        <div className="min-h-screen w-full bg-white-600 flex flex-col justify-center items-center p-4 md:p-8 mt-48">
+        <div className="min-h-screen w-full bg-white-600 flex flex-col justify-center items-center p-4 md:p-8 mt-24 lg:mt-48">
             {/* Responsive Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-700 mb-8 text-center">
                 Our Team

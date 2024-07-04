@@ -1,9 +1,9 @@
 import React from "react";
 import Lottie from "lottie-react";
 import Worker from "../assets/animations/Worker.json";
-import About from './About'
+import About from "./About";
 import Services from "./Services";
-import Projects from './Projects'
+import Projects from "./Projects";
 import Team from "./Team";
 import Client from "./Client";
 import Footer from "./Footer";
@@ -67,15 +67,14 @@ const Home = () => {
       <div id='team'>
         <Team />
       </div>
+
       <div id='Footer'>
         <Footer />
       </div>
-      
 
       {/* <div id='portfolio'>
         <Portfolio />
       </div> */}
-      
     </>
   );
 };

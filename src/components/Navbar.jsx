@@ -51,7 +51,7 @@ export default function Navbar() {
                     />
                   </Link>
                 </div>
-                <div className="-my-2 -mr-2 md:hidden flex items-center space-x-2">
+                <div className="-my-2 -mr-2 md:hidden flex justify-between items-center space-x-2">
                   <div className="flex items-center justify-end md:flex-1 lg:w-0">
                     <Link
                       to="/contact" // Updated to scroll to the contact section
