@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import Worker from "../assets/Worker.json";
+import Worker from "../assets/animations/Worker.json";
 import About from './About'
 import Services from "./Services";
 import Projects from './Projects'

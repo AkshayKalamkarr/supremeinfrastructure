@@ -1,22 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import interiorpage from "../pages/interior-page";
-import civilpage from "../pages/civil-page";
 import Lottie from "lottie-react";
-import interior from "../assets/interior.json"; // Replace with your image imports
-import About from "../assets/About.json";
-import civil from "../assets/civil.json";
-import architecture from "../assets/architecture.json";
-import cable from "../assets/cable.json";
-import industrial from "../assets/industrial.json";
-import horticulture from "../assets/horticulture.json";
-import garden from "../assets/garden.json";
+
+//////////// asseets
+import interior from "../assets/animations/interior.json"; // Replace with your image imports
+import building from "../assets/animations/building.json";
+import architecture from "../assets/animations/architecture.json";
+import cable from "../assets/animations/cable.json";
+import industrial from "../assets/animations/industrial.json";
+import horticulture from "../assets/animations/horticulture.json";
+import garden from "../assets/animations/garden.json";
+import civil from "../assets/animations/civil.json";
+
+
+//////////////  services
+import interiorPage from '../pages/service-pages/interior-page'
+import civilPage from '../pages/service-pages/civil-page'
+
+
+
+
+
+
+
+
 
 const Services = () => {
   return (
     <div id='services'>
       {/* Hero section */}
-      <div className='min-h-screen bg-gradient-to-b from-slate-500 to-slate-800'>
+      <div className='min-h-screen bg-gradient-to-b from-slate-200 to-slate-100'>
         <div className='max-w-7xl mx-auto px-8 py-28 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center'>
           <h1 className='text-4xl text-slate font-bold mb-4'>OUR SERVICES</h1>
           <h3 className='text-xl text-slate'>
@@ -43,7 +56,7 @@ const Services = () => {
             {/* Service Box 2 */}
             <Link to='/civilpage'>
               <div className='bg-white p-4 shadow-md rounded-lg'>
-                <Lottie animationData={About} className='mb-4 rounded-lg' />
+                <Lottie animationData={civil} className='mb-4 rounded-lg' />
                 <h2 className='text-xl font-bold text-SLATE-800 mb-2'>
                   CIVIL CONSTRUCTION
                 </h2>
@@ -55,7 +68,7 @@ const Services = () => {
             </Link>
 
             {/* Service Box 3 */}
-            <Link>
+            <Link to='/architecturepage'>
               <div className='bg-white p-4 shadow-md rounded-lg'>
                 <Lottie
                   animationData={architecture}
@@ -71,7 +84,7 @@ const Services = () => {
               </div>
             </Link>
             {/* Service Box 4 */}
-            <div className='bg-white p-4 shadow-md rounded-lg'>
+            <Link to='/cablepage'><div className='bg-white p-4 shadow-md rounded-lg'>
               <Lottie animationData={cable} className='mb-4 rounded-lg' />
               <h2 className='text-xl font-bold text-gray-800 mb-2'>
                 CABLE TRENCH
@@ -80,7 +93,7 @@ const Services = () => {
                 A method of laying cables into the ground by digging trenches.
                 It is also known as underground cabling.
               </p>
-            </div>
+            </div></Link>
             {/* Service Box 5 */}
             <div className='bg-white p-4 shadow-md rounded-lg'>
               <Lottie animationData={industrial} className='mb-4 rounded-lg' />
@@ -120,7 +133,7 @@ const Services = () => {
             </div>
             {/* Service Box 8 */}
             <div className='bg-white p-4 shadow-md rounded-lg'>
-              <Lottie animationData={civil} className='mb-4 rounded-lg' />
+              <Lottie animationData={building} className='mb-4 rounded-lg' />
               <h2 className='text-xl font-bold text-gray-800 mb-2'>
                 BUILDING DESIGN
               </h2>
