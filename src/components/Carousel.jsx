@@ -148,7 +148,7 @@ const CarouselPrevious = React.forwardRef(
   ({ className, variant = "outline", size = "icon", ...props }, ref) => {
     const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
-    return (
+    return canScrollPrev ? (
       <button
         ref={ref}
         variant={variant}
@@ -164,10 +164,10 @@ const CarouselPrevious = React.forwardRef(
         onClick={scrollPrev}
         {...props}
       >
-        <ArrowLeft className='h-4 w-4' />
+        <ArrowLeft className='h-6 w-6 text-white' />
         <span className='sr-only'>Previous slide</span>
       </button>
-    );
+    ) : null;
   }
 );
 
@@ -175,7 +175,7 @@ const CarouselNext = React.forwardRef(
   ({ className, variant = "outline", size = "icon", ...props }, ref) => {
     const { orientation, scrollNext, canScrollNext } = useCarousel();
 
-    return (
+    return canScrollNext ? (
       <button
         ref={ref}
         variant={variant}
@@ -191,10 +191,10 @@ const CarouselNext = React.forwardRef(
         onClick={scrollNext}
         {...props}
       >
-        <ArrowRight className='h-4 w-4' />
+        <ArrowRight className='h-6 w-6 text-white' />
         <span className='sr-only'>Next slide</span>
       </button>
-    );
+    ) : null;
   }
 );
 
