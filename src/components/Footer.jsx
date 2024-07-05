@@ -15,7 +15,7 @@ const Footer = () => {
               <h2 className="text-xl font-bold text-transparent bg-gradient-to-r bg-clip-text text-yellow-400  hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500">Supreme Infrastructure</h2>
             </div>
             <p className="mb-4 text-sm text-transparent bg-gradient-to-r bg-clip-text text-yellow-400 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We Are Team of Talented, Innovative Designers, Engineers and Horticulturists
             </p>
             <div className="flex space-x-4">
               <FaFacebookF className="text-gray-400 hover:text-blue-500" />
@@ -32,8 +32,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-transparent bg-gradient-to-r bg-clip-text text-yellow-400 ">
               <li>About Us</li>
               <li>Services</li>
-              <li>Community</li>
-              <li>Testimonial</li>
+              <li>Projects</li>
+              <li>Clients</li>
             </ul>
           </div>
 
@@ -50,12 +50,16 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h3 className="font-semibold mb-4">Links</h3>
+            <h3 className="font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2 text-sm">
-              <li>Courses</li>
-              <li>Become Teacher</li>
-              <li>Service</li>
-              <li>All in One</li>
+              <li>Civil Construction</li>
+              <li>Building Design</li>
+              <li>Cable Trench</li>
+              <li>Interior Design</li>
+              <li>Architectural Design</li>
+              <li>Garden Development</li>
+              <li>Horticulture Design</li>
+              <li>Industrial Building</li>
             </ul>
           </div>
 
@@ -68,8 +72,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>© Copyright Supreme Infrastructure. All rights reserved.</p>
+        <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-center items-center text-sm">
+          <p>© Copyright Supreme Infrastructure. All rights reserved.<br/><span className='text-slate-500'>Designed by Akshay Kalamkar</span></p>
+          
           <div className="mt-4 md:mt-0 space-x-4">
             {/* <a href="#" className="hover:text-blue-500">Privacy Policy</a>
             <a href="#" className="hover:text-blue-500">Terms of Use</a>

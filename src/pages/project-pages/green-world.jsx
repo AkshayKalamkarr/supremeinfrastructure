@@ -1,88 +1,92 @@
-import int1 from '../../assets/images/interiorimages/interior1.jpg'
-import int2 from '../../assets/images/interiorimages/interior2.jpg'
+import React, { useState, useEffect } from "react";
+import greenworld1 from '../../assets/projects/greenworld/greenworld1.jpg';
+import greenworld2 from '../../assets/projects/greenworld/greenworld2.jpg';
+import greenworld3 from '../../assets/projects/greenworld/greenworld3.jpg';
+import greenworld4 from '../../assets/projects/greenworld/greenworld4.jpg';
+import greenworld5 from '../../assets/projects/greenworld/greenworld5.jpg';
+import greenworld6 from '../../assets/projects/greenworld/greenworld6.jpg';
+import greenworld7 from '../../assets/projects/greenworld/greenworld7.jpg';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "../../components/Carousel";
 
-import React, { useState, useEffect, useCallback } from 'react';
+const images = [greenworld1, greenworld2, greenworld3, greenworld4, greenworld5, greenworld6, greenworld7]; // Array of image sources
+
 const Greenworld = () => {
-  // Image array
-  const images = [
-    'int1',
-    'int2',
-    // 'https://source.unsplash.com/random/800x600?technology',
-    // 'https://source.unsplash.com/random/800x600?food',
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  }, [images.length]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000); // Change slide every 2 seconds
 
-  const prevSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  }, [images.length]);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
-    const intervalId = setInterval(nextSlide, 5000); // Auto-advance every 5 seconds
-    return () => clearInterval(intervalId);
-  }, [nextSlide]);
+    // Scroll to the top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
-      <h1 className="text-3xl font-bold mb-6 text-center">Image Carousel</h1>
-      
-      <div className="relative w-full max-w-3xl mx-auto">
-        <div className="overflow-hidden relative aspect-w-16 aspect-h-9 rounded-lg shadow-xl">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out ${
-                index === currentIndex ? 'opacity-100' : 'opacity-0'
-              }`}
-            />
-          ))}
-        </div>
+    <div className='min-h-screen flex flex-col justify-center items-center bg-cover bg-center'>
+      <div className='max-w-6xl w-full px-4 md:px-8'>
+        <div className='flex flex-col lg:flex-row items-center lg:items-start mt-16 p-4'>
+          <div className='w-full lg:w-1/2 mb-8 lg:mb-0'>
+            <Carousel autoPlay={true} interval={2000}>
+              <CarouselContent>
+                {images.map((src, index) => (
+                  <CarouselItem key={index} style={{ display: index === currentIndex ? 'block' : 'none' }}>
+                    <img
+                      src={src}
+                      alt={`Interior ${index + 1}`}
+                      className='w-full h-auto object-contain'
+                    />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+          </div>
+          <div className='w-full lg:w-1/2 lg:pl-12'>
+            <div className="mb-8">
+              <h1 className='text-4xl md:text-5xl lg:text-6xl font-extrabold text-red-700 mb-4 text-center lg:text-center'>
+                AKSHAR GREENWORLD
+              </h1>
+              <div className="bg-gray-200 p-4 rounded-lg mb-4">
+                <h2 className="text-xl font-semibold mb-2">Project Details</h2>
+                <p className='text-black-600 text-sm mb-2'>
+                  <strong>Client:</strong> Akshar Greenworld<br />
+                  <strong>Approximate Area:</strong> 1850 sqft<br />
+                  <strong>Project Duration:</strong> 135 Days<br />
+                </p>
+              </div>
+              <p className='text-black text-md'>
+                This 4 BHK flat design strikes the balance between comfort and elegance. From vibrant colors to bold prints, the Emaar Palm Hills home has it all! Filled with desi elements, it is a reflection of the owners’ personality, and we can’t help loving it.<br />
 
-        {/* Navigation Arrows */}
-        <button
-          onClick={prevSlide}
-          className="absolute top-1/2 left-4 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute top-1/2 right-4 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-
-        {/* Indicators */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentIndex 
-                  ? 'bg-white scale-110' 
-                  : 'bg-white bg-opacity-50 hover:bg-opacity-75'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
+                <span className="font-bold">Project Features:</span>
+                <ul className="list-disc pl-4">
+                  <li>Wooden flooring for bedrooms.</li>
+                  <li>Wooden hanging ceiling.</li>
+                  <li>Wall décor in living area with lights.</li>
+                  <li>Small gym set up with study zone.</li>
+                  <li>4 bathrooms with different tile finishes.</li>
+                  <li>Cozy balconies with outdoor furniture.</li>
+                  <li>Modular kitchen.</li>
+                  <li>4 bedrooms with unique designs and material finishes.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <p className="mt-6 text-center text-gray-600">
-        This carousel showcases a collection of random images. 
-        Use the arrow buttons or indicators to navigate.
-      </p>
+      <div className='mt-8 text-center text-sm text-gray-600'>
+        {/* Image by Freepik */}
+      </div>
     </div>
   );
 };

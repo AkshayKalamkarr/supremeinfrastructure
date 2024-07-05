@@ -49,12 +49,6 @@ function App() {
           <Route path='/greenworld' element={<Greenworld/>}></Route>
         </Routes>
       </BrowserRouter>
-      {/* <Navbar/>
-      <Home/>
-      <About/>
-      <Services/>
-      <Contact/>
-      <Projects/> */}
     </div>
   );
 }

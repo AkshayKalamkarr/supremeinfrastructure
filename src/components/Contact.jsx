@@ -53,7 +53,7 @@ import React from "react";
 
 const ContactPage = () => {
   return (
-    <div className='flex flex-col md:flex-row min-h-screen'>
+    <div className='flex flex-col md:flex-row min-h-screen mt-12'>
       {/* Contact Form */}
       <div className='w-full md:w-1/3 p-4 md:p-8 bg-gradient-to-b from-slate-500 to-slate-800 flex flex-col justify-center'>
         <h2 className='text-2xl font-bold mb-6 text-center md:text-left'>
