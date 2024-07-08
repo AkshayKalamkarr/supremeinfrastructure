@@ -1,4 +1,3 @@
-
 import { cn } from "../lib/utils";
 import Marquee from "../components/magicui/marquee";
 import allana from '../assets/clients-img/1_Allana.png'
@@ -58,7 +57,8 @@ const ReviewCard = ({ img }) => {
 
 const ClientPage = () => {
   return (
-    <div className='relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-20 md:shadow-xl'>
+    <div className='relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-20 md:shadow-xl hover:shadow-md transition duration-300'>
+      <h1 className="text-4xl md:text-6xl text-center mb-8 cursor-pointer transition-all duration-300 ease-in-out hover:text-green font-bold">Our Clients</h1>
       <Marquee pauseOnHover className='[--duration:20s]'>
         {firstRow.map((review, index) => (
           <ReviewCard key={index} {...review} />

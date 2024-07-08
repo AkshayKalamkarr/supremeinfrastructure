@@ -18,7 +18,7 @@ const Team = () => {
                     imageSrc={laxmisir}
                     imageAlt="Laxmi Sir"
                     textSide="right"
-                    heading="Laxminarayana Pillai (Director)"
+                    heading="Lakshminarayanan Pillai (Director)"
                     paragraph="More than 15 years of Industrial experience of handling all kinds of projects in the field of Construction, Architectural, Landscape Designing and Trunkey projects."
                 />
 
@@ -28,7 +28,7 @@ const Team = () => {
                     imageAlt="Ruchi Ma'am"
                     textSide="left"
                     heading="Ruchita H. Patil  (Managing Partner of Abstract Design)"
-                    paragraph="7 years of experience, in the field of Construction and Interior design. Have worked in various sites for TATA groups."
+                    paragraph="9 years of experience, in the field of Construction and Interior design. Have worked in various sites for TATA groups."
                 />
             </div>
         </div>

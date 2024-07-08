@@ -21,7 +21,7 @@ const Home = () => {
             <div className='py-20'>
               <h1 className='text-4xl text-slate-900 font-extrabold mx-auto lg:text-6xl px-2'>
                 <span className='text-transparent bg-gradient-to-r bg-clip-text from-slate-700 to-yellow-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500'>
-                  Welcome to Supreme Infrastructure
+                  Welcome To SUPREME INFRASTRUCTURE
                 </span>
               </h1>
               <br />
