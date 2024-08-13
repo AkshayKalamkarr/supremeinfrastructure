@@ -1,7 +1,28 @@
 'use client'
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+
+const TypewriterEffect = ({ text, delay = 0 }) => {
+  return (
+    <motion.span
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.1, delay }}
+    >
+      {text}
+    </motion.span>
+  );
+};
 
 const HeroSection = () => {
+  const [isClient, setIsClient] = useState(false);
+  const title = "Supreme Infrastructure";
+  const description = "We are team of talented, innovative designers, Engineers and horticulturist";
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <div className="relative w-full h-screen overflow-hidden">
       <video
@@ -9,16 +30,39 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-6/6 object-cover"
+        className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source src="/videos/video-2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
-        <h2 className="text-red text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center px-4">
-          Welcome to Supreme Infrastructure
-        </h2>
+      <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-start justify-center p-4 sm:p-8 md:p-12 lg:p-16">
+        <motion.h2 
+          className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-extrabold mb-4"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {isClient && title.split('').map((char, index) => (
+            <TypewriterEffect key={index} text={char} delay={index * 0.1} />
+          ))}
+        </motion.h2>
+        <motion.div 
+          className="text-white text-sm sm:text-base md:text-lg lg:text-xl max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl flex flex-col"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          {description}
+        </motion.div>
+        <motion.button 
+          className="mt-6 px-6 py-2 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition-colors duration-300 text-sm sm:text-base"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1 }}
+        >
+          Learn More
+        </motion.button>
       </div>
     </div>
   );
