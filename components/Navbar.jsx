@@ -41,9 +41,8 @@ function Navbar({ className }) {
 
             {/* Mobile Slider Menu */}
             <div
-                className={`fixed top-0 left-0 h-full w-3/4 bg-white dark:bg-gray-800 shadow-md transform ${
-                    isMenuOpen ? "translate-x-0" : "-translate-x-full"
-                } transition-transform duration-300 lg:hidden z-40`}
+                className={`fixed top-0 left-0 h-full w-3/4 bg-white dark:bg-gray-800 shadow-md transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
+                    } transition-transform duration-300 lg:hidden z-40`}
             >
                 <div className="p-4">
                     <button onClick={closeMenu} className="p-2 bg-gray-200 text-black rounded-full shadow-lg focus:outline-none">
@@ -52,11 +51,11 @@ function Navbar({ className }) {
                         </svg>
                     </button>
                     <div className="mt-8 flex flex-col space-y-4">
-                        <HoveredLink href="/services">Services</HoveredLink>
-                        <HoveredLink href="/products">Products</HoveredLink>
-                        <HoveredLink href="/pricing">Pricing</HoveredLink>
-                        <HoveredLink href="/pricing">Pricing</HoveredLink>
-                        <HoveredLink href="/pricing">Pricing</HoveredLink>
+                        <HoveredLink href="/services">Home</HoveredLink>
+                        <HoveredLink href="/products">About</HoveredLink>
+                        <HoveredLink href="/pricing"> Services</HoveredLink>
+                        <HoveredLink href="/pricing">Project</HoveredLink>
+                        <HoveredLink href="/pricing">Contact</HoveredLink>
                     </div>
                 </div>
             </div>
@@ -65,7 +64,7 @@ function Navbar({ className }) {
             <div className="hidden lg:block">
                 <Menu setActive={setActive}>
                     <MenuItem setActive={setActive} active={active} item="Home">
-                    
+
                     </MenuItem>
                     <MenuItem setActive={setActive} active={active} item="About">
                         <div className="flex flex-col space-y-4 text-sm">
@@ -107,14 +106,6 @@ function Navbar({ className }) {
                                 src="/images/demoimg.jpg"
                                 description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                             />
-                        </div>
-                    </MenuItem>
-                    <MenuItem setActive={setActive} active={active} item="Pricing">
-                        <div className="flex flex-col space-y-4 text-sm">
-                            <HoveredLink href="/hobby">Hobby</HoveredLink>
-                            <HoveredLink href="/individual">Individual</HoveredLink>
-                            <HoveredLink href="/team">Team</HoveredLink>
-                            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
                         </div>
                     </MenuItem>
                     <MenuItem setActive={setActive} active={active} item="Contact">
