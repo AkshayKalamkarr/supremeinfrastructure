@@ -64,6 +64,15 @@ function Navbar({ className }) {
             {/* Desktop Menu */}
             <div className="hidden lg:block">
                 <Menu setActive={setActive}>
+                    <MenuItem setActive={setActive} active={active} item="Home">
+                    
+                    </MenuItem>
+                    <MenuItem setActive={setActive} active={active} item="About">
+                        <div className="flex flex-col space-y-4 text-sm">
+                            <HoveredLink href="/ourteam">Our Team</HoveredLink>
+                            <HoveredLink href="/ourcompany">Our Company</HoveredLink>
+                        </div>
+                    </MenuItem>
                     <MenuItem setActive={setActive} active={active} item="Services">
                         <div className="flex flex-col space-y-4 text-sm">
                             <HoveredLink href="/web-dev">Web Development</HoveredLink>
@@ -72,7 +81,7 @@ function Navbar({ className }) {
                             <HoveredLink href="/branding">Branding</HoveredLink>
                         </div>
                     </MenuItem>
-                    <MenuItem setActive={setActive} active={active} item="Products">
+                    <MenuItem setActive={setActive} active={active} item="Project">
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
                             <ProductItem
                                 title="Algochurn"
@@ -108,7 +117,7 @@ function Navbar({ className }) {
                             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
                         </div>
                     </MenuItem>
-                    <MenuItem setActive={setActive} active={active} item="Pricing">
+                    <MenuItem setActive={setActive} active={active} item="Contact">
                         <div className="flex flex-col space-y-4 text-sm">
                             <HoveredLink href="/hobby">Hobby</HoveredLink>
                             <HoveredLink href="/individual">Individual</HoveredLink>
