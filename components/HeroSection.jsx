@@ -36,7 +36,7 @@ const HeroSection = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-start justify-center p-4 sm:p-8 md:p-12 lg:p-16">
+      <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-start justify-center p-4 sm:p-8 md:p-12 lg:p-16">
         <motion.h2 
           className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl md:ml-14 font-extrabold mb-4"
           initial={{ opacity: 0, x: -50 }}
@@ -48,7 +48,7 @@ const HeroSection = () => {
           ))}
         </motion.h2>
         <motion.div 
-          className="text-white text-sm sm:text-base md:text-lg lg:text-xl max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl flex flex-col md:ml-14 "
+          className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl flex flex-col md:ml-14 "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
