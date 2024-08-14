@@ -51,7 +51,7 @@ const HeroSection = () => {
 
       <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-start justify-center p-4 sm:p-8 md:p-12 lg:p-16">
         <motion.h2
-          className="text-gray-300 text-2xl sm:text-3xl md:text-4xl lg:text-6xl md:ml-14 font-extrabold mb-4"
+          className="text-gray-300 text-2xl sm:text-3xl md:text-4xl lg:text-7xl md:ml-14 font-extrabold mb-4"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
