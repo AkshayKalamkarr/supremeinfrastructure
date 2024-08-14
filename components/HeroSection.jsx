@@ -41,17 +41,17 @@ const HeroSection = () => {
 
       {/* Bright Logo Positioning */}
       <motion.div
-        className="absolute top-4 left-4 md:top-4 md:left-28 filter brightness-900"
+        className="absolute top-4 left-4 sm:top-6 sm:left-6 md:top-8 md:left-8 lg:top-10 lg:left-10 filter brightness-900"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <img src="/images/logo.png" alt="Logo" className="h-16 md:h-24" />
+        <img src="/images/logo.png" alt="Logo" className="h-12 sm:h-16 md:h-20 lg:h-24" />
       </motion.div>
 
       <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-start justify-center p-4 sm:p-8 md:p-12 lg:p-16">
         <motion.h2
-          className="text-gray-300 text-2xl sm:text-3xl md:text-4xl lg:text-7xl md:ml-14 font-extrabold mb-4"
+          className="text-gray-300 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold mb-4 ml-0 sm:ml-4 md:ml-8 lg:ml-14"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -61,7 +61,7 @@ const HeroSection = () => {
           ))}
         </motion.h2>
         <motion.div
-          className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl flex flex-col md:ml-14"
+          className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl flex flex-col ml-0 sm:ml-4 md:ml-8 lg:ml-14"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
@@ -69,7 +69,7 @@ const HeroSection = () => {
           {description}
         </motion.div>
         <motion.button
-          className="mt-6 px-6 py-2 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition-colors duration-300 text-sm sm:text-xl md:ml-64"
+          className="mt-6 px-4 sm:px-6 py-2 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition-colors duration-300 text-sm sm:text-base md:text-lg lg:text-xl ml-0 sm:ml-4 md:ml-8 lg:ml-14"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
