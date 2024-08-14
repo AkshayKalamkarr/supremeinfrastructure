@@ -7,7 +7,7 @@ const SupremeQuote = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gray-200 opacity-50 rounded-full scale-[2] transform -translate-x-1/4 -translate-y-1/4"></div>
 
       {/* Logo Image */}
-      <div className="absolute top-1/3 left-1/4 md:left-1/3 lg:left-1/4 opacity-20">
+      <div className="absolute top-20 left-1/4 md:left-1/3 lg:left-1/4 opacity-20">
         <img
           src="/images/stamp.jpg"
           alt="Logo"
