@@ -5,17 +5,17 @@ const services = [
     {
         title: 'INTERIOR DESIGN',
         description: 'Using latest technology to make efficient use of spaces. Better designing concepts.',
-        image: '/images/services/interior-design.png',
+        image: '/images/services/interior.jpeg',
     },
     {
         title: 'CIVIL CONSTRUCTION',
         description: 'Using the latest technology and machines we create buildings which are economical yet safe.',
-        image: '/images/services/civil-construction.png',
+        image: '/images/services/civil.jpg',
     },
     {
         title: 'ARCHITECTURAL DESIGN',
         description: 'We work on the latest trends as per the markets for developing an economical and budget friendly options to our clients.',
-        image: '/images/services/architectural-design.png',
+        image: '/images/services/architecture.jpg',
     },
     {
         title: 'CABLE TRENCH',
