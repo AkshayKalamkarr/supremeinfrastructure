@@ -18,7 +18,7 @@ const services = [
     },
     {
         title: 'ARCHITECTURAL DESIGN',
-        description: 'We work on the latest trends as per the markets for developing an economical and budget friendly options to our clients.',
+        description: 'We work on the latest trends as per the markets for developing an economical and budget-friendly option to our clients.',
         image: '/images/services/architecture.jpg',
         icon: '📐',
     },
@@ -48,7 +48,7 @@ const services = [
     },
     {
         title: 'BUILDING DESIGN',
-        description: 'We use technology with ideas to create design which are sustainable in any environment.',
+        description: 'We use technology with ideas to create designs that are sustainable in any environment.',
         image: '/images/services/building-design.jpg',
         icon: '🏢',
     },
@@ -115,7 +115,7 @@ const ServicesGrid = () => {
                     initial="hidden"
                     animate={isInView ? "visible" : "hidden"}
                 >
-                    {services.map((service, index) => (
+                    {services.slice(0, 6).map((service, index) => (
                         <motion.div
                             key={index}
                             className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:shadow-2xl"
@@ -148,6 +148,42 @@ const ServicesGrid = () => {
                             </div>
                         </motion.div>
                     ))}
+
+                    <div className="md:col-span-2 lg:col-span-3 flex flex-wrap justify-center gap-8 md:gap-10 lg:gap-12">
+                        {services.slice(6).map((service, index) => (
+                            <motion.div
+                                key={index}
+                                className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:shadow-2xl max-w-md"
+                                variants={cardVariants}
+                                whileHover={{
+                                    scale: 1.05,
+                                    transition: { duration: 0.3 }
+                                }}
+                            >
+                                <div className="relative h-56 md:h-64 overflow-hidden">
+                                    <Image
+                                        src={service.image}
+                                        alt={service.title}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="transition-transform duration-300 hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                        <span className="text-6xl">{service.icon}</span>
+                                    </div>
+                                </div>
+                                <div className="p-6 md:p-8">
+                                    <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3">{service.title}</h3>
+                                    <p className="text-sm md:text-base text-gray-600">{service.description}</p>
+                                </div>
+                                <div className="px-6 pb-6 md:px-8 md:pb-8">
+                                    <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                                        Learn More
+                                    </button>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
                 </motion.div>
             </div>
         </div>
