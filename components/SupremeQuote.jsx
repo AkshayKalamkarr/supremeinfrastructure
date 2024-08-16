@@ -2,7 +2,7 @@ import React from 'react';
 
 const SupremeQuote = () => {
   return (
-    <div className="w-full h-[500px] flex items-center justify-center bg-gray-100 relative overflow-hidden">
+    <div className="w-full h-[500px] flex items-center justify-center bg-white relative overflow-hidden">
       {/* Background Circle */}
       <div className="absolute top-0 left-0 w-full h-full bg-gray-200 opacity-50 rounded-full scale-[2] transform -translate-x-1/4 -translate-y-1/4"></div>
 
@@ -29,3 +29,7 @@ const SupremeQuote = () => {
 };
 
 export default SupremeQuote;
+
+
+
+
