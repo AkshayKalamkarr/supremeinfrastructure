@@ -35,6 +35,18 @@ const ContactForm = () => {
         <div className="w-full lg:w-1/2">
           <form onSubmit={handleSubmit} className="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+                <label htmlFor="name" className="block text-white text-sm mb-2">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your Name"
+                  className="w-full px-3 py-2 bg-white bg-opacity-20 text-white placeholder-gray-300 rounded"
+                  onChange={handleChange}
+                  required
+                />
+              </div>
               <div>
                 <label htmlFor="email" className="block text-white text-sm mb-2">Email</label>
                 <input
@@ -47,26 +59,15 @@ const ContactForm = () => {
                   required
                 />
               </div>
-              <div>
-                <label htmlFor="name" className="block text-white text-sm mb-2">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your Name"
-                  className="w-full px-3 py-2 bg-white bg-opacity-20 text-white placeholder-gray-300 rounded"
-                  onChange={handleChange}
-                  required
-                />
-              </div>
+             
             </div>
             <div className="mb-4">
-              <label htmlFor="address" className="block text-white text-sm mb-2">Address</label>
+              <label htmlFor="phone" className="block text-white text-sm mb-2">Contact number</label>
               <input
                 type="text"
                 id="address"
                 name="address"
-                placeholder="Enter your address"
+                placeholder="Enter your contact"
                 className="w-full px-3 py-2 bg-white bg-opacity-20 text-white placeholder-gray-300 rounded"
                 onChange={handleChange}
                 required
