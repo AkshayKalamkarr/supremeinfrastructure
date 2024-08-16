@@ -37,7 +37,7 @@ const Portfolio = () => {
         >
             {/* Left Image */}
             <motion.div
-                className="w-full lg:w-1/3 h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] relative"
+                className="w-full lg:w-1/3 h-64 sm:h-80 md:h-96 lg:h-[450px] xl:h-[450px] relative md:mt-10"
                 variants={itemVariants}
                 whileHover={{ scale: 1.05, rotateY: 5 }}
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
@@ -51,7 +51,7 @@ const Portfolio = () => {
                     style={{ filter: 'grayscale(100%)' }}
                 />
                 <motion.div
-                    className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
+                    className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full md:mt-10"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
@@ -63,7 +63,7 @@ const Portfolio = () => {
 
             {/* Middle Image */}
             <motion.div
-                className="w-full lg:w-1/3 h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] relative"
+                className="w-full lg:w-1/3 h-64 sm:h-80 md:h-96 lg:h-[450px] xl:h-[450px] relative md:mt-10"
                 variants={itemVariants}
                 whileHover={{ scale: 1.05, rotateY: -5 }}
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
@@ -94,7 +94,7 @@ const Portfolio = () => {
             >
                 {/* Top Image */}
                 <motion.div
-                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[330px] xl:h-[400px] relative"
+                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[450px] xl:h-[450px] relative md:mt-10"
                     whileHover={{ scale: 1.05, rotateX: 5 }}
                     transition={{ type: "spring", stiffness: 200, damping: 10 }}
                 >
