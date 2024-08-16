@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 
@@ -64,7 +65,7 @@ function Navbar({ className }) {
             <div className="hidden lg:block">
                 <Menu setActive={setActive}>
                     <MenuItem setActive={setActive} active={active} item="Home">
-
+                        <HoveredLink href="/">Home</HoveredLink>
                     </MenuItem>
                     <MenuItem setActive={setActive} active={active} item="About">
                         <div className="flex flex-col space-y-4 text-sm">
