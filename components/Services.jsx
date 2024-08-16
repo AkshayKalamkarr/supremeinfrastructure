@@ -129,8 +129,8 @@ const ServicesGrid = () => {
                                 <Image
                                     src={service.image}
                                     alt={service.title}
-                                    layout="fill"
-                                    objectFit="cover"
+                                    fill
+                                    style={{ objectFit: "cover" }}
                                     className="transition-transform duration-300 hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
@@ -164,8 +164,8 @@ const ServicesGrid = () => {
                                     <Image
                                         src={service.image}
                                         alt={service.title}
-                                        layout="fill"
-                                        objectFit="cover"
+                                        fill
+                                        style={{ objectFit: "cover" }}
                                         className="transition-transform duration-300 hover:scale-110"
                                     />
                                     <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
