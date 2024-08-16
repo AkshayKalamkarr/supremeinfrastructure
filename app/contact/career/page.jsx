@@ -141,9 +141,7 @@ const CareerPage = () => {
                 </section>
             </main>
 
-            <footer className="bg-purple-800 text-center py-6 mt-16">
-                <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-            </footer>
+           
         </div>
     );
 };
