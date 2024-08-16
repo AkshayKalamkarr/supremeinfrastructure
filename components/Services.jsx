@@ -1,10 +1,9 @@
 'use client'
-import React from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 const services = [
-    // ... (services array remains unchanged)
     {
         title: 'INTERIOR DESIGN',
         description: 'Using latest technology to make efficient use of spaces. Better designing concepts.',
@@ -48,26 +47,60 @@ const services = [
 ];
 
 const ServicesGrid = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.1 });
+
+    const containerVariants = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.1
+            }
+        }
+    };
+
+    const cardVariants = (index) => ({
+        hidden: {
+            opacity: 0,
+            x: index % 2 === 0 ? -100 : 100
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                type: "spring",
+                damping: 12,
+                stiffness: 100
+            }
+        }
+    });
+
     return (
         <div className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="max-w-7xl mx-auto" ref={ref}>
+                <motion.div
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate={isInView ? "visible" : "hidden"}
+                >
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
                             className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
-                            whileHover={{ y: -5 }}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            variants={cardVariants(index)}
+                            whileHover={{
+                                y: -5,
+                                transition: { duration: 0.2 }
+                            }}
                         >
-                            <div className="relative h-64">
+                            <div className="relative h-64 overflow-hidden">
                                 <Image
                                     src={service.image}
                                     alt={service.title}
                                     layout="fill"
                                     objectFit="cover"
-                                    className="transition-transform duration-300 transform hover:scale-110"
+                                    className="transition-transform duration-300 hover:scale-110"
                                 />
                             </div>
                             <div className="p-6">
@@ -76,7 +109,7 @@ const ServicesGrid = () => {
                             </div>
                         </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </div>
     );
