@@ -30,7 +30,7 @@ const ContactForm = () => {
           <button className="border border-white px-4 py-2 hover:bg-white hover:text-gray-900 transition duration-300">
             LEARN MORE
           </button>
-          <p className="mt-4 text-xs">Images from Freepik</p>
+
         </div>
         <div className="w-full lg:w-1/2">
           <form onSubmit={handleSubmit} className="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-lg">
