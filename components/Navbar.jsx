@@ -64,9 +64,7 @@ function Navbar({ className }) {
             {/* Desktop Menu */}
             <div className="hidden lg:block">
                 <Menu setActive={setActive}>
-                    <MenuItem setActive={setActive} active={active} item="Home">
-                        <HoveredLink href="/">Home</HoveredLink>
-                    </MenuItem>
+                    <Link href="/"><MenuItem setActive={setActive} active={active} item="Home"></MenuItem></Link>
                     <MenuItem setActive={setActive} active={active} item="About">
                         <div className="flex flex-col space-y-4 text-sm">
                             <HoveredLink href="/about/ourteam">Our Team</HoveredLink>

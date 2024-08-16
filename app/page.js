@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import CareerswithSupreme from "@/components/CareerswithSupreme";
-// import Design from "@/components/Design";
 import GetInTouch from "@/components/GetInTouch";
 import HeroSection from "@/components/HeroSection";
 import Portfolio from "@/components/Portfolio";
@@ -13,11 +12,10 @@ export default function Home() {
     <>
       <HeroSection />
       <SupremeQuote />
-      {/* <Design/> */}
       <Portfolio />
       <GetInTouch />
       <ServicesGrid />
-      <CareerswithSupreme/>
+      <CareerswithSupreme />
     </>
   );
 }
