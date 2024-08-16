@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const CareerswithSupreme = () => {
     return (
@@ -26,15 +27,15 @@ const CareerswithSupreme = () => {
                         That's where you come in.
                     </p>
                     <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#" className="bg-red-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-red-600 transition duration-300 text-center">
+                        <Link href="/contact" className="bg-red-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-red-600 transition duration-300 text-center">
                             JOIN SUPREME
-                        </a>
-                        <a href="#" className="bg-gray-800 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-900 transition duration-300 flex items-center justify-center">
+                        </Link>
+                        <Link href="#" className="bg-gray-800 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-900 transition duration-300 flex items-center justify-center">
                             <span>COME TO BELONG</span>
                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </main>
