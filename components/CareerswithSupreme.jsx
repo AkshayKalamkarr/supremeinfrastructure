@@ -3,13 +3,13 @@ import Head from 'next/head'
 
 const CareerswithSupreme = () => {
     return (
-        <div className="flex justify-center items-center min-h-screen p-4 bg-gray-100">
+        <div className="flex justify-center items-center min-h-screen  p-4 bg-gray-100">
             <Head>
                 <title>Careers with Supreme</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className="flex flex-col md:flex-row max-w-6xl w-full  rounded-lg overflow-hidden">
+            <main className="flex flex-col md:flex-row max-w-6xl w-full rounded-lg overflow-hidden">
                 <div className="w-full md:w-1/2 h-64 md:h-auto">
                     <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
                         <source src="/videos/career.mp4" type="video/mp4" />
