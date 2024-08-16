@@ -13,9 +13,9 @@ export default function Home() {
       <HeroSection />
       <SupremeQuote />
       {/* <Design/> */}
-      <Portfolio/>
-      <GetInTouch/>
-      <ServicesGrid/>
+      <Portfolio />
+      <GetInTouch />
+      <ServicesGrid />
     </>
   );
 }
