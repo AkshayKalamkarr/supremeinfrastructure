@@ -118,7 +118,7 @@ const ServicesGrid = () => {
                     {services.slice(0, 6).map((service, index) => (
                         <motion.div
                             key={index}
-                            className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:shadow-2xl"
+                            className="bg-white rounded-xl overflow-hidden transform transition duration-300 hover:shadow-2xl"
                             variants={cardVariants}
                             whileHover={{
                                 scale: 1.05,
