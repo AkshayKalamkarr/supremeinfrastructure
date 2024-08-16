@@ -1,4 +1,3 @@
-import About from "@/components/About";
 import CareerswithSupreme from "@/components/CareerswithSupreme";
 import GetInTouch from "@/components/GetInTouch";
 import HeroSection from "@/components/HeroSection";
@@ -16,6 +15,7 @@ export default function Home() {
       <GetInTouch />
       <ServicesGrid />
       <CareerswithSupreme />
+
     </>
   );
 }
