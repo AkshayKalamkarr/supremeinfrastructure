@@ -52,7 +52,7 @@ function Navbar({ className }) {
                         </svg>
                     </button>
                     <div className="mt-8 flex flex-col space-y-4">
-                        <HoveredLink href="/services">Home</HoveredLink>
+                        <HoveredLink href="/">Home</HoveredLink>
                         <HoveredLink href="/products">About</HoveredLink>
                         <HoveredLink href="/pricing"> Services</HoveredLink>
                         <HoveredLink href="/pricing">Project</HoveredLink>
