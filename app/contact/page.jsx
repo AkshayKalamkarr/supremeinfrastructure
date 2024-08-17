@@ -23,11 +23,11 @@ const ContactForm = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-900 bg-cover bg-center" style={{backgroundImage: "url('/images/contactBackground.jpg')"}}>
       <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-1/2 text-white mb-10 lg:mb-0">
-          <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+          <h1 className="text-4xl font-bold mb-4 text-center">Contact Us</h1>
           <p className="mb-6 text-sm">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <button className="border border-white px-4 py-2 hover:bg-white hover:text-gray-900 transition duration-300">
+          <button className="border border-white px-4 py-2 hover:bg-white hover:text-gray-900 transition duration-300 justify-center items-center md:ml-72">
             LEARN MORE
           </button>
 
