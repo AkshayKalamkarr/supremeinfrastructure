@@ -102,12 +102,14 @@ const ServicesGrid = () => {
         <div className="bg-gradient-to-br from-gray-100 to-gray-200 py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto" ref={ref}>
                 <motion.h2 
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-gray-800"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-gray-800 relative inline-block "
                     variants={titleVariants}
                     initial="hidden"
                     animate={isInView ? "visible" : "hidden"}
                 >
-                    Our Services
+                    Services
+                    <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
+                    <span className="absolute bottom-[-6px] left-0 w-3/4 h-[2px] bg-blue-400"></span>
                 </motion.h2>
                 <motion.div
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12"
