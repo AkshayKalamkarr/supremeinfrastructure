@@ -61,7 +61,7 @@ const CareerPage = () => {
 
                 <section>
                     <h2 className="text-3xl font-semibold mb-8 text-center text-gray-800">Apply Now</h2>
-                    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white shadow-xl rounded-lg p-8">
+                    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white  rounded-lg p-8">
                         <div className="mb-6">
                             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">Full Name</label>
                             <input

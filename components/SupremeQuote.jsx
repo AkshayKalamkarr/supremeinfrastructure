@@ -9,7 +9,7 @@ const SupremeQuote = () => {
       {/* Logo Image */}
       <div className="absolute top-20 left-1/4 md:left-1/3 lg:left-1/4 opacity-20">
         <img
-          src="/images/stamp.jpg"
+          src="/images/stamp.png"
           alt="Logo"
           className="w-[200px] h-[200px]"
         />
