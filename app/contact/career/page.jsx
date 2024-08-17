@@ -32,7 +32,7 @@ const CareerPage = () => {
 
     return (
         <div className="min-h-screen bg-gray-100">
-            <div className="h-96 bg-conatin bg-center relative" style={{ backgroundImage: "url('/images/careerBackground.jpg')" }}>
+            <div className="h-96 bg-fill bg-center relative" style={{ backgroundImage: "url('/images/careerBackground.jpg')" }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     {/* <h1 className="text-5xl font-bold text-white">Join Our Team</h1> */}
                 </div>
