@@ -32,14 +32,15 @@ const CareerPage = () => {
 
     return (
         <div className="min-h-screen bg-gray-100">
-            <div className="h-96 bg-cover bg-center relative" style={{ backgroundImage: "url('/images/contactBackground.jpg')" }}>
+            <div className="h-96 bg-conatin bg-center relative" style={{ backgroundImage: "url('/images/careerBackground.jpg')" }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-5xl font-bold text-white">Join Our Team</h1>
+                    {/* <h1 className="text-5xl font-bold text-white">Join Our Team</h1> */}
                 </div>
             </div>
 
             <main className="container mx-auto px-4 py-20">
-                <p className="text-xl text-center mb-12 text-gray-700">Discover exciting career opportunities and grow with us</p>
+            <h1 className="text-5xl font-bold text-center text-black">Join Our Team</h1>
+                <p className="text-xl text-center mb-12 mt-8 text-gray-700">Discover exciting career opportunities and grow with us</p>
 
                 <section className="mb-20">
                     <h2 className="text-3xl font-semibold mb-8 text-center text-gray-800">Open Positions</h2>
