@@ -26,7 +26,7 @@ const CareerPage = () => {
 
     const jobs = [
         { title: 'Site Engineer', department: 'Engineering' },
-        { title: 'Purchase Manager', department: 'Product' },
+        { title: 'Purchase Engineer', department: 'Product' },
         { title: 'Interior Designer', department: 'Design' },
     ];
 
