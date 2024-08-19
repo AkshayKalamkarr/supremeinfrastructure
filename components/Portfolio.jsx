@@ -43,12 +43,11 @@ const Portfolio = () => {
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
             >
                 <Image
-                    src="/images/demoimg.jpg"
+                    src="/images/portfolio/img-1.jpg"
                     alt="Ae'o Ward Village"
                     layout="fill"
                     objectFit="cover"
-                    className="transition-all duration-500 hover:filter-none"
-                    style={{ filter: 'grayscale(100%)' }}
+                    className="transition-all duration-500"
                 />
                 <motion.div
                     className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full md:mt-10"
@@ -69,12 +68,11 @@ const Portfolio = () => {
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
             >
                 <Image
-                    src="/images/demoimg.jpg"
+                    src="/images/portfolio/img-2.jpeg"
                     alt="Stadium"
                     layout="fill"
                     objectFit="cover"
-                    className="transition-all duration-500 hover:filter-none"
-                    style={{ filter: 'grayscale(100%)' }}
+                    className="transition-all duration-500"
                 />
                 <motion.div
                     className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
@@ -99,12 +97,11 @@ const Portfolio = () => {
                     transition={{ type: "spring", stiffness: 200, damping: 10 }}
                 >
                     <Image
-                        src="/images/demoimg.jpg"
+                        src="/images/portfolio/img-1.jpg"
                         alt="Modern Building"
                         layout="fill"
                         objectFit="cover"
-                        className="transition-all duration-500 hover:filter-none"
-                        style={{ filter: 'grayscale(100%)' }}
+                        className="transition-all duration-500"
                     />
                     <motion.div
                         className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
@@ -136,8 +133,6 @@ const Portfolio = () => {
                     <motion.a
                         href="#"
                         className="text-blue-600 flex items-center justify-end text-sm sm:text-base"
-                    // whileHover={{ x: 10, color: "#2563eb" }}
-                    // transition={{ type: "spring", stiffness: 300, damping: 10 }}
                     >
                         SEE MORE
                         <motion.svg
