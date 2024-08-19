@@ -3,7 +3,7 @@ import React from 'react';
 const GetInTouch = () => {
   return (
     <div className="relative h-3/6 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/images/getinTouch.jpg')"}}>
-      {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="relative h-full flex items-center justify-center">
         <div className="text-center text-white p-6 max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Let's Get In Touch</h1>
