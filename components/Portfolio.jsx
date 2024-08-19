@@ -29,7 +29,7 @@ const Portfolio = () => {
     };
 
     return (
-        <motion.div 
+        <motion.div
             className="flex flex-col lg:flex-row w-full h-auto bg-gray-200 gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16"
             variants={containerVariants}
             initial="hidden"
@@ -88,7 +88,7 @@ const Portfolio = () => {
             </motion.div>
 
             {/* Right Column */}
-            <motion.div 
+            <motion.div
                 className="w-full lg:w-1/3 h-auto flex flex-col"
                 variants={itemVariants}
             >
@@ -136,15 +136,15 @@ const Portfolio = () => {
                     <motion.a
                         href="#"
                         className="text-blue-600 flex items-center justify-end text-sm sm:text-base"
-                        whileHover={{ x: 10, color: "#2563eb" }}
-                        transition={{ type: "spring", stiffness: 300, damping: 10 }}
+                    // whileHover={{ x: 10, color: "#2563eb" }}
+                    // transition={{ type: "spring", stiffness: 300, damping: 10 }}
                     >
                         SEE MORE
-                        <motion.svg 
-                            className="w-4 h-4 ml-2" 
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24" 
+                        <motion.svg
+                            className="w-4 h-4 ml-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
                             whileHover={{ x: 5 }}
                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
