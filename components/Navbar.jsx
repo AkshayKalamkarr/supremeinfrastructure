@@ -62,7 +62,7 @@ function Navbar({ className }) {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:block">
+            <div className="hidden lg:block bg-white">
                 <Menu setActive={setActive}>
                     <Link href="/"><MenuItem setActive={setActive} active={active} item="Home"></MenuItem></Link>
                     <MenuItem setActive={setActive} active={active} item="About">
