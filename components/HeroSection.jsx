@@ -18,7 +18,7 @@ const TypewriterEffect = ({ text, delay = 0 }) => {
 
 const HeroSection = () => {
   const [isClient, setIsClient] = useState(false);
-  const title = "Supreme Infrastructure";
+  const title = "Supreme Infrastructure Company";
   const description = "We are a team of talented, innovative designers, engineers, and horticulturists.";
 
   useEffect(() => {

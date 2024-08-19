@@ -60,7 +60,7 @@ export default function Home() {
         <div className="flex min-h-screen">
             {/* Sidebar */}
             <aside className="w-82 bg-gray-200 p-4">
-                <h1 className="text-2xl font-bold mb-6 text-center">Supreme Infrastructure</h1>
+                <h1 className="text-2xl font-bold mb-6 text-center">Supreme Infrastructure Comapany</h1>
                 <h2 className="text-xl font-semibold mb-4 text-center">PORTFOLIO</h2>
                 <ul>
                     {portfolioItems.map((item, index) => (
