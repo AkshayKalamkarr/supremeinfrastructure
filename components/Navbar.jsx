@@ -71,8 +71,8 @@ function Navbar({ className }) {
                             <HoveredLink href="/about/interiorConstructionSpecialists">Interior Construction Specialists</HoveredLink>
                         </div>
                     </MenuItem>
-                    <MenuItem setActive={setActive} active={active} item="Services">
-                        <div className="flex flex-col space-y-4 text-sm">
+                    <Link href="/services/ServiceUi"><MenuItem setActive={setActive} active={active} item="Services">
+                        {/* <div className="flex flex-col space-y-4 text-sm">
                             <HoveredLink href="/interior-Design">Interior Design</HoveredLink>
                             <HoveredLink href="/civil-Construction">Civil Construction</HoveredLink>
                             <HoveredLink href="/architectural-Design">Architectural Design</HoveredLink>
@@ -81,8 +81,8 @@ function Navbar({ className }) {
                             <HoveredLink href="/horticulture-Design">Horticulture Design</HoveredLink>
                             <HoveredLink href="/graden-Maintenance">Garden Maintenance</HoveredLink>
                             <HoveredLink href="/building-Design">Building Design</HoveredLink>
-                        </div>
-                    </MenuItem>
+                        </div> */}
+                    </MenuItem></Link>
                     <MenuItem setActive={setActive} active={active} item="Project">
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
                             <ProductItem
@@ -119,7 +119,7 @@ function Navbar({ className }) {
                     </MenuItem>
                 </Menu>
             </div>
-        </div>
+        </div >
     );
 }
 
