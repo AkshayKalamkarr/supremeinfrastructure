@@ -56,18 +56,6 @@ export default function Home() {
     setCurrentImageIndex(0);
   };
 
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      (prevIndex + 1) % selectedCategory.images.length
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      (prevIndex - 1 + selectedCategory.images.length) % selectedCategory.images.length
-    );
-  };
-
   return (
     <div className="flex min-h-screen">
       {/* Sidebar */}
