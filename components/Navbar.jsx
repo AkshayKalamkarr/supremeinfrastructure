@@ -72,16 +72,6 @@ function Navbar({ className }) {
                         </div>
                     </MenuItem>
                     <Link href="/services/servicesdashboard"><MenuItem setActive={setActive} active={active} item="Services">
-                        {/* <div className="flex flex-col space-y-4 text-sm">
-                            <HoveredLink href="/interior-Design">Interior Design</HoveredLink>
-                            <HoveredLink href="/civil-Construction">Civil Construction</HoveredLink>
-                            <HoveredLink href="/architectural-Design">Architectural Design</HoveredLink>
-                            <HoveredLink href="/cable-Trench">Cable Trench</HoveredLink>
-                            <HoveredLink href="/industrial-Building">Industrial Building</HoveredLink>
-                            <HoveredLink href="/horticulture-Design">Horticulture Design</HoveredLink>
-                            <HoveredLink href="/graden-Maintenance">Garden Maintenance</HoveredLink>
-                            <HoveredLink href="/building-Design">Building Design</HoveredLink>
-                        </div> */}
                     </MenuItem></Link>
                     <MenuItem setActive={setActive} active={active} item="Project">
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
