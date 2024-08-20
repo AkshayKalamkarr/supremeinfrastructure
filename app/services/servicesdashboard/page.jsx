@@ -82,7 +82,7 @@ export default function Home() {
                 <h2 className="text-2xl md:text-3xl font-extrabold mb-4 md:mt-20 md:mb-6">{selectedCategory.name}</h2>
 
                 {/* Image Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4">
                     {selectedCategory.images.map((image, index) => (
                         <div key={index} className="relative w-full h-36 sm:h-48 rounded-lg overflow-hidden">
                             <Image
