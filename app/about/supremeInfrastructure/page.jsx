@@ -1,7 +1,9 @@
 'use client'
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaBuilding, FaDrawPolygon, FaTree, FaHardHat, FaPaintBrush } from 'react-icons/fa';
+import { FaBuilding, FaDrawPolygon, FaTree, FaHardHat, FaPaintBrush, FaLinkedin } from 'react-icons/fa';
+import Link from 'next/link';
 
 const AboutUsPage = () => {
     const services = [
@@ -19,6 +21,21 @@ const AboutUsPage = () => {
         { value: '100+', label: 'Awards Won' },
     ];
 
+    const directors = [
+        {
+            name: "Laxminarayanan Pillai",
+            position: "Director",
+            image: "/images/directors/laksh.jpg",
+            bio: "More than 20 years of Industrial experience of handling all kinds of projects in the field of Construction, Architectural, Landscape Designing and Trunkey projects.",
+        },
+        {
+            name: "Ruchita H. Patil",
+            position: "Design and Civil Head, (Managing Partner of Abstract Design)",
+            image: "/images/directors/ruchi.jpg",
+            bio: "10 years of experience, in the field of Construction and Interior design. Have worked in various site for TATA groups.",
+        },
+    ];
+
     return (
         <div className="min-h-screen bg-gray-100">
             {/* Hero Section */}
@@ -34,10 +51,48 @@ const AboutUsPage = () => {
                 <section className="mb-20">
                     <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">About Supreme Infrastructure</h2>
                     <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center">
-                        Supreme Infrastructure is a leading civil engineering and construction company with over 50 years of experience. 
-                        We specialize in delivering high-quality infrastructure projects, innovative architectural designs, and 
+                        Supreme Infrastructure is a leading civil engineering and construction company with over 50 years of experience.
+                        We specialize in delivering high-quality infrastructure projects, innovative architectural designs, and
                         sustainable urban green spaces. Our commitment to excellence and cutting-edge technology sets us apart in the industry.
                     </p>
+                </section>
+
+                {/* Directors Section */}
+                <section className="mb-20">
+                    <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">Our Leadership</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {directors.map((director, index) => (
+                            <motion.div
+                                key={index}
+                                className="bg-white rounded-lg shadow-lg overflow-hidden"
+                                whileHover={{ scale: 1.03 }}
+                                transition={{ type: "spring", stiffness: 300 }}
+                            >
+                                <div className="md:flex">
+                                    <div className="md:flex-shrink-0">
+                                        <Image
+                                            className="h-64 w-full object-cover md:w-48"
+                                            src={director.image}
+                                            alt={director.name}
+                                            width={192}
+                                            height={192}
+                                        />
+                                    </div>
+                                    <div className="p-8">
+                                        <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{director.position}</div>
+                                        <div href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{director.name}</div>
+                                        <p className="mt-2 text-gray-500">{director.bio}</p>
+                                        <div className="mt-4">
+                                            <a href="#" className="text-blue-600 hover:text-blue-800">
+                                                <FaLinkedin className="inline mr-2" />
+                                                LinkedIn Profile
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
                 </section>
 
                 {/* Services Section */}
@@ -45,7 +100,7 @@ const AboutUsPage = () => {
                     <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">Our Services</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
-                            <motion.div 
+                            <motion.div
                                 key={index}
                                 className="bg-white rounded-lg shadow-lg p-6 text-center"
                                 whileHover={{ scale: 1.05 }}
@@ -65,8 +120,8 @@ const AboutUsPage = () => {
                         <h2 className="text-3xl font-bold mb-12 text-center">Our Achievements</h2>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                             {stats.map((stat, index) => (
-                                <motion.div 
-                                    key={index} 
+                                <motion.div
+                                    key={index}
                                     className="text-center"
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -83,25 +138,25 @@ const AboutUsPage = () => {
                 {/* Mission and Vision */}
                 <section className="mb-20">
                     <div className="grid md:grid-cols-2 gap-12">
-                        <motion.div 
+                        <motion.div
                             className="bg-white rounded-lg shadow-lg p-8"
                             whileHover={{ scale: 1.03 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
                             <h3 className="text-2xl font-bold mb-4 text-gray-800">Our Mission</h3>
                             <p className="text-gray-600">
-                                To deliver innovative and sustainable infrastructure solutions that enhance the quality of life 
+                                To deliver innovative and sustainable infrastructure solutions that enhance the quality of life
                                 for communities while maintaining the highest standards of safety, quality, and environmental responsibility.
                             </p>
                         </motion.div>
-                        <motion.div 
+                        <motion.div
                             className="bg-white rounded-lg shadow-lg p-8"
                             whileHover={{ scale: 1.03 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
                             <h3 className="text-2xl font-bold mb-4 text-gray-800">Our Vision</h3>
                             <p className="text-gray-600">
-                                To be the global leader in infrastructure development, recognized for our innovative designs, 
+                                To be the global leader in infrastructure development, recognized for our innovative designs,
                                 sustainable practices, and commitment to shaping a better future for generations to come.
                             </p>
                         </motion.div>
@@ -111,13 +166,13 @@ const AboutUsPage = () => {
                 {/* CTA Section */}
                 <section className="text-center">
                     <h2 className="text-3xl font-bold mb-6 text-gray-800">Ready to Build Your Dream Project?</h2>
-                    <motion.button 
+                    <Link href='/contact'><motion.button
                         className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
                         Contact Us Today
-                    </motion.button>
+                    </motion.button></Link>
                 </section>
             </main>
         </div>
