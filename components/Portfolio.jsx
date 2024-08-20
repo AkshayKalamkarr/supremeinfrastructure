@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Portfolio = () => {
     const containerVariants = {
@@ -42,22 +43,24 @@ const Portfolio = () => {
                 whileHover={{ scale: 1.05, rotateY: 5 }}
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
             >
-                <Image
-                    src="/images/portfolio/img-1.jpg"
-                    alt="Ae'o Ward Village"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-all duration-500"
-                />
-                <motion.div
-                    className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full md:mt-10"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3, duration: 0.6 }}
-                >
-                    <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">Ae'o Ward Village</h2>
-                    <p className="text-xs sm:text-sm lg:text-base">Honolulu, HI</p>
-                </motion.div>
+                <Link href="/services/servicesdashboard" className="block h-full">
+                    <Image
+                        src="/images/portfolio/img-1.jpg"
+                        alt="Ae'o Ward Village"
+                        layout="fill"
+                        objectFit="cover"
+                        className="transition-all duration-500"
+                    />
+                    <motion.div
+                        className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3, duration: 0.6 }}
+                    >
+                        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">Ae'o Ward Village</h2>
+                        <p className="text-xs sm:text-sm lg:text-base">Honolulu, HI</p>
+                    </motion.div>
+                </Link>
             </motion.div>
 
             {/* Middle Image */}
@@ -67,22 +70,24 @@ const Portfolio = () => {
                 whileHover={{ scale: 1.05, rotateY: -5 }}
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
             >
-                <Image
-                    src="/images/portfolio/img-2.jpeg"
-                    alt="Stadium"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-all duration-500"
-                />
-                <motion.div
-                    className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3, duration: 0.6 }}
-                >
-                    <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">Stadium</h2>
-                    <p className="text-xs sm:text-sm lg:text-base">Location</p>
-                </motion.div>
+                <Link href="/portfolio/stadium" className="block h-full">
+                    <Image
+                        src="/images/portfolio/img-2.jpeg"
+                        alt="Stadium"
+                        layout="fill"
+                        objectFit="cover"
+                        className="transition-all duration-500"
+                    />
+                    <motion.div
+                        className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3, duration: 0.6 }}
+                    >
+                        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">Stadium</h2>
+                        <p className="text-xs sm:text-sm lg:text-base">Location</p>
+                    </motion.div>
+                </Link>
             </motion.div>
 
             {/* Right Column */}
@@ -96,23 +101,26 @@ const Portfolio = () => {
                     whileHover={{ scale: 1.05, rotateX: 5 }}
                     transition={{ type: "spring", stiffness: 200, damping: 10 }}
                 >
-                    <Image
-                        src="/images/portfolio/img-1.jpg"
-                        alt="Modern Building"
-                        layout="fill"
-                        objectFit="cover"
-                        className="transition-all duration-500"
-                    />
-                    <motion.div
-                        className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3, duration: 0.6 }}
-                    >
-                        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">Modern Building</h2>
-                        <p className="text-xs sm:text-sm lg:text-base">Location</p>
-                    </motion.div>
+                    <Link href="/portfolio/modern-building" className="block h-full">
+                        <Image
+                            src="/images/portfolio/img-1.jpg"
+                            alt="Modern Building"
+                            layout="fill"
+                            objectFit="cover"
+                            className="transition-all duration-500"
+                        />
+                        <motion.div
+                            className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3, duration: 0.6 }}
+                        >
+                            <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">Modern Building</h2>
+                            <p className="text-xs sm:text-sm lg:text-base">Location</p>
+                        </motion.div>
+                    </Link>
                 </motion.div>
+
                 {/* Text Content */}
                 <motion.div
                     className="w-full h-auto p-4 sm:p-6 flex flex-col justify-center text-right mt-4 lg:mt-8"
@@ -130,7 +138,7 @@ const Portfolio = () => {
                     >
                         A portfolio with purpose.
                     </motion.h2>
-                    <motion.a
+                    <Link href="/services/servicesdashboard" className="block h-full"> <motion.div
                         href="#"
                         className="text-blue-600 flex items-center justify-end text-sm sm:text-base"
                     >
@@ -146,7 +154,7 @@ const Portfolio = () => {
                         >
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </motion.svg>
-                    </motion.a>
+                    </motion.div></Link>
                 </motion.div>
             </motion.div>
         </motion.div>
