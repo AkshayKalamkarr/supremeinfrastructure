@@ -54,9 +54,10 @@ function Navbar({ className }) {
                     <div className="mt-8 flex flex-col space-y-4">
                         <HoveredLink href="/">Home</HoveredLink>
                         <HoveredLink href="/products">About</HoveredLink>
-                        <HoveredLink href="/pricing"> Services</HoveredLink>
+                        <HoveredLink href="/services/servicesdashboard"> Services</HoveredLink>
                         <HoveredLink href="/pricing">Project</HoveredLink>
                         <HoveredLink href="/pricing">Contact</HoveredLink>
+                        <HoveredLink href="/contact/career">Career</HoveredLink>
                     </div>
                 </div>
             </div>
