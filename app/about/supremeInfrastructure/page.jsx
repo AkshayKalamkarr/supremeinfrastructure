@@ -39,7 +39,7 @@ const AboutUsPage = () => {
     return (
         <div className="min-h-screen bg-gray-100">
             {/* Hero Section */}
-            <div className="bg-cover bg-center h-96 relative" style={{ backgroundImage: "url('/images/civil-construction.jpg')" }}>
+            <div className="bg-cover bg-center h-96 relative" style={{ backgroundImage: "url('/images/about.jpg')" }}>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
                     <h1 className="text-5xl font-bold text-white text-center">Building Tomorrow's World Today</h1>
                 </div>
