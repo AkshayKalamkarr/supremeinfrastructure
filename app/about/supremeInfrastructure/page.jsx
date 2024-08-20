@@ -97,23 +97,23 @@ const AboutUsPage = () => {
 
                 {/* Services Section */}
                 <div className='md:bg-white'>
-                <section className="mb-20">
-                    <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">Our Services</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <motion.div
-                                key={index}
-                                className="bg-gray-200 rounded-lg shadow-lg p-6 text-center"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ type: "spring", stiffness: 300 }}
-                            >
-                                <div className="text-4xl mb-4 text-blue-600">{service.icon}</div>
-                                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                                <p className="text-gray-600">{service.description}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </section>
+                    <section className="mb-20">
+                        <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">Our Services</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {services.map((service, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="bg-gray-200 rounded-lg shadow-lg p-6 text-center"
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ type: "spring", stiffness: 300 }}
+                                >
+                                    <div className="text-4xl mb-4 text-blue-600">{service.icon}</div>
+                                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                                    <p className="text-gray-600">{service.description}</p>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </section>
                 </div>
 
                 {/* Stats Section */}
