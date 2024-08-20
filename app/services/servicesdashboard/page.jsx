@@ -61,7 +61,7 @@ export default function Home() {
             {/* Sidebar */}
             <aside className="w-82 bg-gray-200 p-4">
                 <h1 className="text-2xl font-bold mb-6 text-center">Supreme Infrastructure Comapany</h1>
-                <h2 className="text-xl font-semibold mb-4 text-center">PORTFOLIO</h2>
+                <h2 className="text-xl font-semibold mb-4 text-center">PORTFOLIO / SERVICES</h2>
                 <ul>
                     {portfolioItems.map((item, index) => (
                         <li key={index} className="mb-2 p-6 text-center">
