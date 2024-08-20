@@ -40,14 +40,14 @@ const HeroSection = () => {
       </video>
       <NavbarDemo />
 
-      {/* Bright Logo Positioning */}
+      {/* Repositioned and Enlarged Logo */}
       <motion.div
-        className="absolute top-4 left-12 sm:top-6 sm:left-6 md:top-8 md:left-8 lg:top-10 lg:left-10 filter brightness-900"
+        className="absolute top-2 md:mx-36 left-12 sm:top-6 sm:right-6 md:top-8 md:right-8 lg:top-10 lg:right-10 filter brightness-900"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <img src="/images/logo.png" alt="Logo" className="h-16 sm:h-16 md:h-20 lg:h-24" />
+        <img src="/images/logo.png" alt="Logo" className="h-24 sm:h-28 md:h-32 lg:h-40" />
       </motion.div>
 
       <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-start justify-center p-4 sm:p-8 md:p-12 lg:p-16">
@@ -69,19 +69,19 @@ const HeroSection = () => {
         >
           {description}
         </motion.div>
-        <Link href='/about/supremeInfrastructure'><motion.button
-          className="mt-6 px-4 sm:px-6 py-2 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition-colors duration-300 text-sm sm:text-base md:text-lg lg:text-xl ml-0 sm:ml-4 md:ml-8 lg:ml-14"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1 }}
-        >
-          Learn More
-        </motion.button></Link>
+        <Link href='/about/supremeInfrastructure'>
+          <motion.button
+            className="mt-6 px-4 sm:px-6 py-2 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition-colors duration-300 text-sm sm:text-base md:text-lg lg:text-xl ml-0 sm:ml-4 md:ml-8 lg:ml-14"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+          >
+            Learn More
+          </motion.button>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default HeroSection;
-
-
