@@ -46,7 +46,7 @@ const AboutUsPage = () => {
             </div>
 
             {/* Main Content */}
-            <main className="container mx-auto px-4 py-16">
+            <main className="container mx-auto w-full px-4 py-16">
                 {/* About Us Section */}
                 <section className="mb-20">
                     <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">About Supreme Infrastructure</h2>
@@ -96,13 +96,14 @@ const AboutUsPage = () => {
                 </section>
 
                 {/* Services Section */}
+                <div className='bg-white'>
                 <section className="mb-20">
                     <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">Our Services</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-white rounded-lg shadow-lg p-6 text-center"
+                                className="bg-gray-200 rounded-lg shadow-lg p-6 text-center"
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
@@ -113,6 +114,7 @@ const AboutUsPage = () => {
                         ))}
                     </div>
                 </section>
+                </div>
 
                 {/* Stats Section */}
                 <section className="mb-20 bg-blue-600 text-white py-16 rounded-lg">
