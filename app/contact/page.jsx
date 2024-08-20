@@ -84,7 +84,7 @@ export default function ContactPage() {
         {/* Contact form */}
         <div className="w-full md:w-1/2">
           <motion.h2 
-            className="text-3xl font-bold mb-6 text-blue-600"
+            className="text-3xl font-bold mb-6 text-blue-600 text-center"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -92,7 +92,7 @@ export default function ContactPage() {
             Contact Us!
           </motion.h2>
           <motion.p 
-            className="mb-6 text-gray-600"
+            className="mb-6 text-gray-600 text-center"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
