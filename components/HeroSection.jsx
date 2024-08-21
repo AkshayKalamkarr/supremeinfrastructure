@@ -42,7 +42,7 @@ const HeroSection = () => {
 
       {/* Repositioned and Enlarged Logo */}
       <motion.div
-        className="absolute top-2 md:mx-14 left-12 sm:top-6 sm:right-6 md:top-8 md:right-8 lg:top-10 lg:right-10 filter brightness-900"
+        className="absolute top-2 md:mx-10 left-12 sm:top-6 sm:right-6 md:top-8 md:right-8 lg:top-10 lg:right-10 filter brightness-900"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
