@@ -56,7 +56,7 @@ const Footer = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 ">Connect With Us</h2>
+                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4">Connect With Us</h2>
                         <div className="flex space-x-4">
                             {[FaInstagram, FaTwitter, FaLinkedin, FaFacebook].map((Icon, index) => (
                                 <Link key={index} href="/" className="text-gray-300 hover:text-yellow-500 transition duration-300">
