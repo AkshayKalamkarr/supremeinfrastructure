@@ -1,90 +1,89 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
+import { FaMapMarkerAlt, FaPhone, FaWhatsapp, FaEnvelope, FaGlobe, FaInstagram, FaTwitter, FaLinkedin, FaFacebook } from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <div className="bg-gray-700 text-white">
-            <div className="container mx-auto px-4 py-14">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div
-
-                    >
-                        <h2 className="text-xl font-semibold uppercase">Corporate Office</h2>
-                        <div className="flex items-start space-x-2">
-                            <div className="mt-1 flex-shrink-0" />
-                            <p>ROAYL CROWN<br />Shop No 1 Sector 25 Plot No 19,<br />
-                                Ravi Rachna, near Khandesh Station,<br />
-                                Sector-25, Khandeshhwar,<br />
-                                Navi Mumbai, Maharashtra 410209</p>
+        <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+            <div className="container mx-auto px-4 py-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4">Corporate Office</h2>
+                        <div className="flex items-start space-x-3">
+                            <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-yellow-500" size={20} />
+                            <p className="text-gray-300">
+                                SUPREME INFRASTRUCTURE<br />
+                                Office No 603 Sector 15<br />
+                                Ravi Rachna, near Belapur Court Station,<br />
+                                Sector-15, Belapur,<br />
+                                Navi Mumbai, Maharashtra 410209
+                            </p>
                         </div>
                     </div>
 
-                    <div
-                    >
-                        <h2 className="text-xl font-semibold uppercase">Contact Us</h2>
-                        <div className="space-y-2 ml-2">
-                            <div className="flex items-center space-x-2">
-                                <div size={18} />
-                                <p>CALL US : (+1) 212-946-2707</p>
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4">Contact Us</h2>
+                        <div className="space-y-3">
+                            <div className="flex items-center space-x-3">
+                                <FaPhone className="text-yellow-500" size={18} />
+                                <p className="text-gray-300">CALL US : (+1) 212-946-2707</p>
                             </div>
-                            <div className="flex items-center space-x-2">
-                                <div size={18} />
-                                <p>WHATSAPP : +91 - 86570 04324</p>
+                            <div className="flex items-center space-x-3">
+                                <FaWhatsapp className="text-yellow-500" size={18} />
+                                <p className="text-gray-300">WHATSAPP : +91 - 86570 04324</p>
                             </div>
-                            <div className="flex items-center space-x-2">
-                                <div size={18} />
-                                <p>EMAIL : info@royalcrown.com</p>
+                            <div className="flex items-center space-x-3">
+                                <FaEnvelope className="text-yellow-500" size={18} />
+                                <p className="text-gray-300">EMAIL : info@royalcrown.com</p>
                             </div>
-                            <div className="flex items-center space-x-2">
-                                <div size={18} />
-                                <p>WEBSITE : www.royalcrown.in</p>
+                            <div className="flex items-center space-x-3">
+                                <FaGlobe className="text-yellow-500" size={18} />
+                                <p className="text-gray-300">WEBSITE : www.supremeinfrastructure.in</p>
                             </div>
                         </div>
                     </div>
 
-                    <div
-                       
-                    >
-                        <h2 className="text-xl font-semibold uppercase">Quick Links</h2>
-                        <div className="flex flex-col space-y-2 ml-2">
-                            <Link href='/about/ourteam' className="hover:underline">About Us</Link>
-                            <Link href='/projects' className="hover:underline">Projects</Link>
-                            <Link href='/gallery' className="hover:underline">Gallery</Link>
-                            <Link href='/contact' className="hover:underline">Contact</Link>
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4">Quick Links</h2>
+                        <div className="flex flex-col space-y-2">
+                            {['About Us', 'Projects', 'Gallery', 'Contact'].map((item, index) => (
+                                <Link key={index} href={`/${item.toLowerCase().replace(' ', '')}`} className="text-gray-300 hover:text-yellow-500 transition duration-300">
+                                    {item}
+                                </Link>
+                            ))}
                         </div>
                     </div>
 
-                    <div
-
-                    >
-                        <h2 className="text-xl font-semibold uppercase">Connect With Us</h2>
-                        <div className="flex flex-col space-y-2 ml-2">
-                            <Link href='/' className="hover:underline">Instagram</Link>
-                            <Link href='/' className="hover:underline">Twitter</Link>
-                            <Link href='/' className="hover:underline">LinkedIn</Link>
-                            <Link href='/' className="hover:underline">Facebook</Link>
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4">Connect With Us</h2>
+                        <div className="flex space-x-4">
+                            {[FaInstagram, FaTwitter, FaLinkedin, FaFacebook].map((Icon, index) => (
+                                <Link key={index} href="/" className="text-gray-300 hover:text-yellow-500 transition duration-300">
+                                    <Icon size={24} />
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Copyright */}
-            <div
-               
-            >
+            <div className="bg-gray-900 py-4">
                 <div className="container mx-auto px-4 text-center md:flex md:justify-between md:items-center">
                     <div className="mb-4 md:mb-0">
-                        <p>&copy; 2024 Royal Crown Infra. All Rights Reserved</p>
-                        {/* <p className="text-sm text-gray-400">Designed By Akshay Kalamkar</p> */}
+                        <p className="text-gray-400">&copy; 2024 Royal Crown Infra. All Rights Reserved</p>
                     </div>
                     <div className="space-x-4">
-                        <Link className="hover:underline" href='/'>Privacy Policy</Link>
-                        <Link className="hover:underline" href='/'>Terms of Service</Link>
+                        {['Privacy Policy', 'Terms of Service'].map((item, index) => (
+                            <Link key={index} className="text-gray-400 hover:text-yellow-500 transition duration-300" href="/">
+                                {item}
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 
