@@ -33,7 +33,7 @@ export default function Contact() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className="relative bg-cover bg-center h-[300px] sm:h-[400px] md:h-[500px]"
-        style={{ backgroundImage: "url('/images/contact/contactBackground.jpg')" }}
+        style={{ backgroundImage: "url('/images/contactBackground.jpg')" }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <motion.div
@@ -182,14 +182,7 @@ export default function Contact() {
         >
           <h2 className="text-3xl font-bold mb-6 text-indigo-700 text-center">Our Location</h2>
           <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-2xl">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.0436367577286!2d73.10175123873755!3d19.008817314587663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e911b8186ff7%3A0x8637ac85995699fd!2sCrown%20Housing!5e1!3m2!1sen!2sin!4v1722842804286!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.4861920722088!2d73.0323341258145!3d19.007324804812182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c30763eef235%3A0xc2ce8f2ef45e3191!2sMayuresh%20Planet!5e1!3m2!1sen!2sin!4v1724216080490!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </motion.div>
       </div>
