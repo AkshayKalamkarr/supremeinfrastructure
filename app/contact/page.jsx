@@ -1,12 +1,13 @@
 'use client'
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
-export default function ContactPage() {
+export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
+    fullName: '',
     email: '',
+    contactNumber: '',
     message: ''
   });
 
@@ -17,94 +18,180 @@ export default function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // Handle form submission logic here
+    // Handle form submission here
   };
 
-  const locations = [
-    { city: 'Belapur , Navi Mumbai', address: '603,Supreme Infrastructure ,Mayuresh Planet, Sector 15, CBD Belapur, Navi Mumbai, Maharashtra 400614' },
-  ];
+  const inputVariants = {
+    focus: { scale: 1.02, transition: { duration: 0.3 } },
+    blur: { scale: 1, transition: { duration: 0.3 } }
+  };
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <div className="container mx-auto px-4 py-8">
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden mt-28">
-          <Image
-            src="/images/contactBackground.jpg"
-            alt="Modern Building"
-            width={1200}
-            height={400}
-            className="w-full h-64 object-cover"
-          />
-          
-          <div className="p-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
-                <p className="mb-4">Have an inquiry or some feedback for us? Fill out the form below to contact our team.</p>
-                
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Enter your Name"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Enter a valid email address"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      name="message"
-                      placeholder="How can we help?"
-                      rows="4"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      onChange={handleChange}
-                      required
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition duration-300"
-                  >
-                    SUBMIT
-                  </button>
-                </form>
-              </div>
-              
-              <div className="h-[450px]">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.4861920722088!2d73.0323341258145!3d19.007324804812182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c30763eef235%3A0xc2ce8f2ef45e3191!2sMayuresh%20Planet!5e1!3m2!1sen!2sin!4v1724216080490!5m2!1sen!2sin" 
-                  width="600" 
-                  height="450" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade">
-                </iframe>
-              </div>
-            </div>
-            
-            <div className="mt-8 justify-center  ">
-              {locations.map((location, index) => (
-                <div key={index} className="text-sm justify-center">
-                  <h3 className="font-bold justify-center">{location.city}</h3>
-                  <p>{location.address}</p>
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 text-gray-800">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="relative bg-cover bg-center h-[300px] sm:h-[400px] md:h-[500px]"
+        style={{ backgroundImage: "url('/images/contact/contactBackground.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="relative container mx-auto h-full flex items-center justify-center px-4"
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-wider sm:tracking-widest text-center">
+            Let's Connect
+          </h1>
+        </motion.div>
+      </motion.div>
+
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Contact Info Section */}
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="bg-white shadow-2xl rounded-2xl p-8 transform hover:scale-105 transition duration-300"
+          >
+            <h2 className="text-3xl font-bold mb-6 text-indigo-700">Contact Info</h2>
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <FaMapMarkerAlt className="text-2xl text-indigo-600" />
+                <div>
+                  <p className="font-semibold">Address:</p>
+                  <p>Villa No. 5, Mayuresh Chambers,</p>
+                  <p>Plot No. 60, Sector 11, CBD Belapur,</p>
+                  <p>Navi Mumbai 400614</p>
                 </div>
-              ))}
+              </div>
+              <div className="flex items-center space-x-4">
+                <FaPhone className="text-2xl text-indigo-600" />
+                <div>
+                  <p className="font-semibold">Phone:</p>
+                  <p>+91 98198 00022 / +91 98198 00044</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <FaEnvelope className="text-2xl text-indigo-600" />
+                <div>
+                  <p className="font-semibold">Email:</p>
+                  <p>info@royalcrown.com</p>
+                </div>
+              </div>
             </div>
-          </div>
+
+            <div className="mt-12">
+              <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+              <div className="flex space-x-4">
+                {[
+                  { icon: FaFacebookF, color: 'bg-blue-600' },
+                  { icon: FaTwitter, color: 'bg-blue-400' },
+                  { icon: FaInstagram, color: 'bg-pink-500' },
+                  { icon: FaLinkedinIn, color: 'bg-blue-700' }
+                ].map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href="#"
+                    className={`${social.color} text-white p-3 rounded-full`}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <social.icon size={20} />
+                  </motion.a>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Contact Form Section */}
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="lg:col-span-2 bg-white shadow-2xl rounded-2xl p-8 transform hover:scale-105 transition duration-300"
+          >
+            <h2 className="text-3xl font-bold mb-6 text-indigo-700">Send Us a Message</h2>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <motion.div variants={inputVariants} whileFocus="focus" whileBlur="blur">
+                  <input
+                    type="text"
+                    name="fullName"
+                    placeholder="Full Name *"
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition duration-300"
+                  />
+                </motion.div>
+                <motion.div variants={inputVariants} whileFocus="focus" whileBlur="blur">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email *"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition duration-300"
+                  />
+                </motion.div>
+              </div>
+              <motion.div variants={inputVariants} whileFocus="focus" whileBlur="blur">
+                <input
+                  type="tel"
+                  name="contactNumber"
+                  placeholder="Contact Number *"
+                  value={formData.contactNumber}
+                  onChange={handleChange}
+                  required
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition duration-300"
+                />
+              </motion.div>
+              <motion.div variants={inputVariants} whileFocus="focus" whileBlur="blur">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition duration-300"
+                  rows={4}
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <button type="submit" className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition duration-300 text-lg font-semibold">
+                  Send Message
+                </button>
+              </motion.div>
+            </form>
+          </motion.div>
         </div>
+
+        {/* Map Section */}
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="mt-16"
+        >
+          <h2 className="text-3xl font-bold mb-6 text-indigo-700 text-center">Our Location</h2>
+          <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-2xl">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.0436367577286!2d73.10175123873755!3d19.008817314587663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e911b8186ff7%3A0x8637ac85995699fd!2sCrown%20Housing!5e1!3m2!1sen!2sin!4v1722842804286!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
