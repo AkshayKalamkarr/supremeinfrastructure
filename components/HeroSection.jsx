@@ -35,7 +35,7 @@ const HeroSection = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover opacity-100"
       >
-        <source src="/videos/video-1.mp4" type="video/mp4" />
+        <source src="/videos/video-2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <NavbarDemo />
