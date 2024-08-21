@@ -88,8 +88,8 @@ export default function Home() {
                             <Image
                                 src={image}
                                 alt={`Image ${index + 1}`}
-                                layout="fill"
-                                objectFit="cover"
+                                fill={true}
+                                style={{ objectFit: "cover" }}
                                 className="transition-transform duration-300 hover:scale-105"
                             />
                         </div>
