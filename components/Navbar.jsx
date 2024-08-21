@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React, { useState } from "react";
 import Link from "next/link";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
@@ -29,7 +29,7 @@ function Navbar({ className }) {
 
     return (
         <div
-            className={cn("fixed top-4 inset-x-0 max-w-2xl mx-auto z-50", className)}
+            className={cn("fixed top-4 inset-x-0 max-w-4xl mx-auto z-50", className)}
         >
             {/* Mobile Menu Button */}
             <div className="lg:hidden absolute top-4 right-4">
@@ -42,7 +42,7 @@ function Navbar({ className }) {
 
             {/* Mobile Slider Menu */}
             <div
-                className={`fixed top-0 left-0 h-full w-3/4 bg-white dark:bg-gray-800 shadow-md transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
+                className={`fixed top-0 left-0 h-full w-4/5 bg-white dark:bg-gray-800 shadow-md transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
                     } transition-transform duration-300 lg:hidden z-40`}
             >
                 <div className="p-4">
@@ -113,9 +113,3 @@ function Navbar({ className }) {
         </div >
     );
 }
-
-
-
-
-
-
