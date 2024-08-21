@@ -1,21 +1,14 @@
 'use client'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
-    phone: '',
     email: '',
     message: ''
   });
-
-  const [isMapLoaded, setIsMapLoaded] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsMapLoaded(true), 1000);
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -27,155 +20,90 @@ export default function ContactPage() {
     // Handle form submission logic here
   };
 
+  const locations = [
+    { city: 'Belapur , Navi Mumbai', address: '603,Supreme Infrastructure ,Mayuresh Planet, Sector 15, CBD Belapur, Navi Mumbai, Maharashtra 400614' },
+  ];
+
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-purple-100 p-4 overflow-hidden">
-      {/* Animated background elements */}
-      <motion.div 
-        className="absolute top-0 left-0 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"
-        animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 270, 270, 0],
-          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-        }}
-        transition={{
-          duration: 12,
-          ease: "easeInOut",
-          times: [0, 0.2, 0.5, 0.8, 1],
-          repeat: Infinity,
-          repeatDelay: 1
-        }}
-      />
-      <motion.div 
-        className="absolute bottom-0 right-0 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"
-        animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 270, 270, 0],
-          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-        }}
-        transition={{
-          duration: 12,
-          ease: "easeInOut",
-          times: [0, 0.2, 0.5, 0.8, 1],
-          repeat: Infinity,
-          repeatDelay: 1
-        }}
-      />
-
-      {/* Map and Contact form container */}
-      <div className="relative z-10 bg-white bg-opacity-90 p-8 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col md:flex-row">
-        {/* Map */}
-        <motion.div 
-          className="w-full md:w-1/2 h-64 md:h-auto mb-6 md:mb-0 md:mr-6 rounded-lg overflow-hidden"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: isMapLoaded ? 1 : 0, y: isMapLoaded ? 0 : 50 }}
-          transition={{ duration: 0.5 }}
-        >
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2340.483532568353!2d73.03173024366185!3d19.007385811127044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c30763eef235%3A0xc2ce8f2ef45e3191!2sMayuresh%20Planet!5e1!3m2!1sen!2sin!4v1724152862185!5m2!1sen!2sin" 
-            width="100%" 
-            height="100%" 
-            style={{ border: 0 }} 
-            allowFullScreen="" 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </motion.div>
-
-        {/* Contact form */}
-        <div className="w-full md:w-1/2">
-          <motion.h2 
-            className="text-3xl font-bold mb-6 text-blue-600 text-center"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            Contact Us!
-          </motion.h2>
-          <motion.p 
-            className="mb-6 text-gray-600 text-center"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            Get in touch and let us know how we can help.
-          </motion.p>
+    <div className="min-h-screen bg-gray-100">
+      <div className="container mx-auto px-4 py-8">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden mt-28">
+          <Image
+            src="/images/contactBackground.jpg"
+            alt="Modern Building"
+            width={1200}
+            height={400}
+            className="w-full h-64 object-cover"
+          />
           
-          <form onSubmit={handleSubmit}>
-            {['name', 'phone', 'email'].map((field, index) => (
-              <motion.div 
-                key={field} 
-                className="mb-4"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-              >
-                <input
-                  type={field === 'email' ? 'email' : 'text'}
-                  name={field}
-                  placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-                  onChange={handleChange}
-                  required
-                />
-              </motion.div>
-            ))}
-            <motion.div 
-              className="mb-6"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.7 }}
-            >
-              <textarea
-                name="message"
-                placeholder="Message"
-                rows="4"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-                onChange={handleChange}
-                required
-              ></textarea>
-            </motion.div>
-            <motion.button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Submit
-            </motion.button>
-          </form>
-
-          {/* Social media icons */}
-          <motion.div 
-            className="mt-6 flex justify-center space-x-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
-            {['Facebook', 'Twitter', 'Instagram'].map((social, index) => (
-              <motion.a 
-                key={social}
-                href="#" 
-                className={`text-${index === 0 ? 'blue' : index === 1 ? 'blue' : 'red'}-600 hover:text-${index === 0 ? 'blue' : index === 1 ? 'blue' : 'red'}-800 transition duration-300`}
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <span className="sr-only">{social}</span>
-                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                  {/* SVG paths here */}
-                </svg>
-              </motion.a>
-            ))}
-          </motion.div>
-
-          {/* Phone number */}
-          <motion.div 
-            className="mt-6 text-center text-gray-600"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.9 }}
-          >
-            <p>+1 462-187-3896</p>
-          </motion.div>
+          <div className="p-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
+                <p className="mb-4">Have an inquiry or some feedback for us? Fill out the form below to contact our team.</p>
+                
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Enter your Name"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter a valid email address"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      name="message"
+                      placeholder="How can we help?"
+                      rows="4"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      onChange={handleChange}
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition duration-300"
+                  >
+                    SUBMIT
+                  </button>
+                </form>
+              </div>
+              
+              <div className="h-[450px]">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.4861920722088!2d73.0323341258145!3d19.007324804812182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c30763eef235%3A0xc2ce8f2ef45e3191!2sMayuresh%20Planet!5e1!3m2!1sen!2sin!4v1724216080490!5m2!1sen!2sin" 
+                  width="600" 
+                  height="450" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+            
+            <div className="mt-8 justify-center  ">
+              {locations.map((location, index) => (
+                <div key={index} className="text-sm justify-center">
+                  <h3 className="font-bold justify-center">{location.city}</h3>
+                  <p>{location.address}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
