@@ -57,15 +57,15 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="bg-white shadow-2xl rounded-2xl p-8 transform hover:scale-105 transition duration-300"
           >
-            <h2 className="text-3xl font-bold mb-6 text-indigo-700">Contact Info</h2>
+            <h2 className="text-3xl font-bold mb-6 text-indigo-700 text-center">Contact Info</h2>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="text-2xl text-indigo-600" />
                 <div>
-                  <p className="font-semibold">Address:</p>
-                  <p>Villa No. 5, Mayuresh Chambers,</p>
-                  <p>Plot No. 60, Sector 11, CBD Belapur,</p>
-                  <p>Navi Mumbai 400614</p>
+                  <p className="font-semibold text-center">Address:</p>
+                  <p className='text-center'>Villa No. 5, Mayuresh Chambers,</p>
+                  <p className='text-center'>Plot No. 60, Sector 11, CBD Belapur,</p>
+                  <p className='text-center'>Navi Mumbai 400614</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -85,7 +85,7 @@ export default function Contact() {
             </div>
 
             <div className="mt-12">
-              <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+              <h3 className="text-xl font-semibold mb-4 text-center">Follow Us</h3>
               <div className="flex space-x-4">
                 {[
                   { icon: FaFacebookF, color: 'bg-blue-600' },
@@ -114,7 +114,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-2 bg-white shadow-2xl rounded-2xl p-8 transform hover:scale-105 transition duration-300"
           >
-            <h2 className="text-3xl font-bold mb-6 text-indigo-700">Send Us a Message</h2>
+            <h2 className="text-3xl font-bold mb-6 text-indigo-700 text-center">Send Us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <motion.div variants={inputVariants} whileFocus="focus" whileBlur="blur">
