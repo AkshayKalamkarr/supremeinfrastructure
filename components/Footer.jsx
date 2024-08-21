@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4">Corporate Office</h2>
+                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-center">Corporate Office</h2>
                         <div className="flex items-start space-x-3">
                             <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-yellow-500" size={20} />
                             <p className="text-gray-300">
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4">Contact Us</h2>
+                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-center">Contact Us</h2>
                         <div className="space-y-3">
                             <div className="flex items-center space-x-3">
                                 <FaPhone className="text-yellow-500" size={18} />
@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4">Quick Links</h2>
+                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-center">Quick Links</h2>
                         <div className="flex flex-col space-y-2">
                             {['About Us', 'Projects', 'Gallery', 'Contact'].map((item, index) => (
                                 <Link key={index} href={`/${item.toLowerCase().replace(' ', '')}`} className="text-gray-300 hover:text-yellow-500 transition duration-300">
@@ -56,7 +56,7 @@ const Footer = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4">Connect With Us</h2>
+                        <h2 className="text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-center">Connect With Us</h2>
                         <div className="flex space-x-4">
                             {[FaInstagram, FaTwitter, FaLinkedin, FaFacebook].map((Icon, index) => (
                                 <Link key={index} href="/" className="text-gray-300 hover:text-yellow-500 transition duration-300">
