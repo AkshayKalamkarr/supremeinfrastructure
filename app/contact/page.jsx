@@ -62,10 +62,10 @@ export default function Contact() {
               <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="text-2xl text-indigo-600" />
                 <div>
-                  <p className="font-semibold text-center">Address:</p>
-                  <p className='text-center'>Villa No. 5, Mayuresh Chambers,</p>
-                  <p className='text-center'>Plot No. 60, Sector 11, CBD Belapur,</p>
-                  <p className='text-center'>Navi Mumbai 400614</p>
+                  <p className="font-semibold ">Address:</p>
+                  <p >Villa No. 5, Mayuresh Chambers,</p>
+                  <p >Plot No. 60, Sector 11, CBD Belapur,</p>
+                  <p >Navi Mumbai 400614</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -78,7 +78,7 @@ export default function Contact() {
               <div className="flex items-center space-x-4">
                 <FaEnvelope className="text-2xl text-indigo-600" />
                 <div>
-                  <p className="font-semibold">Email:</p>
+                  <p className="font-semibold mx-">Email:</p>
                   <p>info@royalcrown.com</p>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function Contact() {
 
             <div className="mt-12">
               <h3 className="text-xl font-semibold mb-4 text-center">Follow Us</h3>
-              <div className="flex space-x-4">
+              <div className="flex space-x-6 md:mx-20">
                 {[
                   { icon: FaFacebookF, color: 'bg-blue-600' },
                   { icon: FaTwitter, color: 'bg-blue-400' },
