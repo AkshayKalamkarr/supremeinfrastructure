@@ -35,7 +35,7 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center space-x-7">
                                 <FaEnvelope className="text-yellow-500" size={18} />
-                                <p className="text-gray-300">EMAIL : info@royalcrown.com</p>
+                                <p className="text-gray-300">EMAIL : info@supremeinfrastructure</p>
                             </div>
                             <div className="flex items-center space-x-7">
                                 <FaGlobe className="text-yellow-500" size={18} />

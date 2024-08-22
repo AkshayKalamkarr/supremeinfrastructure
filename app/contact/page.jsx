@@ -55,9 +55,9 @@ export default function Contact() {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-white shadow-2xl rounded-2xl p-8 transform hover:scale-105 transition duration-300"
+            className="bg-white shadow-xl rounded-2xl p-8 transform hover:scale-105 transition duration-300"
           >
-            <h2 className="text-3xl font-bold mb-6 text-indigo-700 text-center">Contact Info</h2>
+            <h2 className="text-3xl font-sm mb-6 text-indigo-700 text-center">Contact Info</h2>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="text-2xl text-indigo-600" />
@@ -114,7 +114,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-2 bg-white shadow-2xl rounded-2xl p-8 transform hover:scale-105 transition duration-300"
           >
-            <h2 className="text-3xl font-bold mb-6 text-indigo-700 text-center">Send Us a Message</h2>
+            <h2 className="text-3xl font-sm mb-6 text-indigo-700 text-center">Send Us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <motion.div variants={inputVariants} whileFocus="focus" whileBlur="blur">
@@ -180,7 +180,7 @@ export default function Contact() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="mt-16"
         >
-          <h2 className="text-3xl font-bold mb-6 text-indigo-700 text-center">Our Location</h2>
+          <h2 className="text-3xl font-sm mb-6 text-indigo-700 text-center">Our Location</h2>
           <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-2xl">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.4861920722088!2d73.0323341258145!3d19.007324804812182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c30763eef235%3A0xc2ce8f2ef45e3191!2sMayuresh%20Planet!5e1!3m2!1sen!2sin!4v1724216080490!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
