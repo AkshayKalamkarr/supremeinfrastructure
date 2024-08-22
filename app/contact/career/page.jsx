@@ -61,11 +61,16 @@ const CareerPage = () => {
                         {jobs.map((job, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-white shadow-xl rounded-xl p-8 hover:shadow-2xl transition duration-300 text-center border border-gray-100"
-                                whileHover={{ scale: 1.05, rotate: 1 }}
+                                className="bg-white rounded-none p-8 hover:bg-blue-50 transition duration-300 text-center border-2 border-blue-200"
+                                whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <div className="text-4xl mb-4">{job.icon}</div>
+                                <motion.div 
+                                    className="text-4xl mb-4"
+            
+                                >
+                                    {job.icon}
+                                </motion.div>
                                 <h3 className="text-2xl font-bold mb-3 text-gray-800">{job.title}</h3>
                                 <p className="text-lg text-blue-600 font-semibold">{job.department}</p>
                             </motion.div>
@@ -73,67 +78,88 @@ const CareerPage = () => {
                     </div>
                 </section>
 
-                <section>
-                    <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Apply Now</h2>
-                    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white shadow-2xl rounded-2xl p-10 border border-gray-100">
-                        <div className="mb-8">
-                            <label htmlFor="name" className="block mb-2 text-lg font-semibold text-gray-700">Full Name</label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                required
-                                onChange={handleChange}
-                            />
-                        </div>
-                        <div className="mb-8">
-                            <label htmlFor="email" className="block mb-2 text-lg font-semibold text-gray-700">Email Address</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                required
-                                onChange={handleChange}
-                            />
-                        </div>
-                        <div className="mb-8">
-                            <label htmlFor="position" className="block mb-2 text-lg font-semibold text-gray-700">Position</label>
-                            <select
-                                id="position"
-                                name="position"
-                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                required
-                                onChange={handleChange}
-                            >
-                                <option value="">Select a position</option>
-                                {jobs.map((job, index) => (
-                                    <option key={index} value={job.title}>{job.title}</option>
-                                ))}
-                            </select>
-                        </div>
-                        <div className="mb-10">
-                            <label htmlFor="resume" className="block mb-2 text-lg font-semibold text-gray-700">Upload Resume</label>
-                            <input
-                                type="file"
-                                id="resume"
-                                name="resume"
-                                accept=".pdf,.doc,.docx"
-                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                required
-                                onChange={handleChange}
-                            />
-                        </div>
-                        <motion.button
-                            type="submit"
-                            className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:-translate-y-1"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                <section className="flex flex-col md:flex-row gap-12">
+                    <div className="w-full md:w-1/2">
+                        <motion.div 
+                            className="h-full bg-cover bg-center rounded-none overflow-hidden"
+                            style={{ backgroundImage: "url('/images/careerBackground-2.jpg')" }}
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1 }}
                         >
-                            Submit Application
-                        </motion.button>
-                    </form>
+                            <div className="h-full bg-black bg-opacity-50 flex items-center justify-center p-8">
+                                <motion.h2 
+                                    className="text-4xl font-bold text-white text-center"
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ duration: 2, repeat: Infinity }}
+                                >
+                                    Be Part of Our Story
+                                </motion.h2>
+                            </div>
+                        </motion.div>
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">Apply Now</h2>
+                        <form onSubmit={handleSubmit} className="bg-white rounded-none p-8 border-2 border-blue-200">
+                            <div className="mb-6">
+                                <label htmlFor="name" className="block mb-2 text-lg font-semibold text-gray-700">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-none focus:outline-none focus:border-blue-500 transition duration-300"
+                                    required
+                                    onChange={handleChange}
+                                />
+                            </div>
+                            <div className="mb-6">
+                                <label htmlFor="email" className="block mb-2 text-lg font-semibold text-gray-700">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-none focus:outline-none focus:border-blue-500 transition duration-300"
+                                    required
+                                    onChange={handleChange}
+                                />
+                            </div>
+                            <div className="mb-6">
+                                <label htmlFor="position" className="block mb-2 text-lg font-semibold text-gray-700">Position</label>
+                                <select
+                                    id="position"
+                                    name="position"
+                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-none focus:outline-none focus:border-blue-500 transition duration-300"
+                                    required
+                                    onChange={handleChange}
+                                >
+                                    <option value="">Select a position</option>
+                                    {jobs.map((job, index) => (
+                                        <option key={index} value={job.title}>{job.title}</option>
+                                    ))}
+                                </select>
+                            </div>
+                            <div className="mb-8">
+                                <label htmlFor="resume" className="block mb-2 text-lg font-semibold text-gray-700">Upload Resume</label>
+                                <input
+                                    type="file"
+                                    id="resume"
+                                    name="resume"
+                                    accept=".pdf,.doc,.docx"
+                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-none focus:outline-none focus:border-blue-500 transition duration-300"
+                                    required
+                                    onChange={handleChange}
+                                />
+                            </div>
+                            <motion.button
+                                type="submit"
+                                className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold py-3 px-6 rounded-none transition duration-300"
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                            >
+                                Submit Application
+                            </motion.button>
+                        </form>
+                    </div>
                 </section>
             </main>
         </div>
