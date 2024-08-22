@@ -27,7 +27,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 text-gray-800">
+    <div className="min-h-screen  text-gray-800">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
