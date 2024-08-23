@@ -207,7 +207,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-black text-white px-4 py-2 mx-24">View Projects</Link>
+                <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-black text-white px-4 py-2">View Projects</Link>
               </motion.div>
             </div>
           </motion.div>
