@@ -6,7 +6,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 const portfolioItems = [
   {
     name: "TATA Power Mulshi IB",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/projects/TATA/tata-1.jpg',
+      '/images/projects/TATA/tata-2.jpg',
+      '/images/projects/TATA/tata-3.jpg',
+      '/images/projects/TATA/tata-4.jpg',
+      '/images/projects/TATA/tata-5.jpg',
+      '/images/projects/TATA/tata-6.jpg',
+      '/images/projects/TATA/tata-7.jpg',
+      '/images/projects/TATA/tata-8.jpg',
+      '/images/projects/TATA/tata-9.jpg',
+      '/images/projects/TATA/tata-10.jpg',
+     /* up to 10 images */]
   },
   {
     name: "TATA Power Excellence Centre",
@@ -47,22 +57,22 @@ export default function Home() {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-300 text-white"
     >
-      <header className="bg-black bg-opacity-50 p-6 text-center">
-        <motion.h1 
+      <header className="bg-black bg-opacity-50 p-6 text-center ">
+        <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold mb-2 mt-8"
+          className="text-4xl md:text-5xl font-bold mb-2 mt-24"
         >
-          Supreme Infrastructure Company
+          {/* Supreme Infrastructure Company */}
         </motion.h1>
-        <motion.h2 
+        <motion.h2
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
@@ -74,27 +84,26 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
         {/* Sidebar */}
-        <motion.aside 
+        <motion.aside
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
-          className="lg:w-1/4 mb-8 lg:mb-0"
+          className="lg:w-1/4 mb-8 lg:mb-0 md:my-16"
         >
           <nav className="bg-gray-800 bg-opacity-50 rounded-lg p-4 sticky top-8">
             <ul className="space-y-2">
               {portfolioItems.map((item, index) => (
-                <motion.li 
+                <motion.li
                   key={index}
                   whileHover={{ scale: 1.05, x: 10 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <button
                     onClick={() => handleCategoryClick(item)}
-                    className={`w-full text-left px-4 py-2 rounded transition-colors ${
-                      selectedCategory.name === item.name 
-                        ? 'bg-yellow-500 text-gray-900 font-bold' 
+                    className={`w-full text-left px-4 py-2 rounded transition-colors ${selectedCategory.name === item.name
+                        ? 'bg-yellow-500 text-gray-900 font-bold'
                         : 'hover:bg-gray-700'
-                    }`}
+                      }`}
                   >
                     {item.name}
                   </button>
@@ -115,17 +124,17 @@ export default function Home() {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
               >
-                <motion.h2 
+                <motion.h2
                   initial={{ x: -50, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.5 }}
-                  className="text-3xl md:text-4xl font-extrabold mb-6 text-yellow-400"
+                  className="text-3xl md:text-4xl font-extrabold mb-6 text-black md:mx-44"
                 >
                   {selectedCategory.name}
                 </motion.h2>
 
                 {/* Image Grid */}
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.4, duration: 0.5 }}
