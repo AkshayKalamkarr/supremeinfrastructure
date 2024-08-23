@@ -55,7 +55,7 @@ function Navbar({ className }) {
                         <HoveredLink href="/">Home</HoveredLink>
                         <HoveredLink href="/products">About</HoveredLink>
                         <HoveredLink href="/services/servicesdashboard"> Services</HoveredLink>
-                        <HoveredLink href="/pricing">Project</HoveredLink>
+                        <HoveredLink href="/pricing">Projects</HoveredLink>
                         <HoveredLink href="/pricing">Contact</HoveredLink>
                         <HoveredLink href="/contact/career">Career</HoveredLink>
                     </div>
