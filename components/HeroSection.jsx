@@ -76,7 +76,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0, rotate: 0 }}
         transition={{ duration: 0.8, type: 'spring', bounce: 0.4 }}
       >
-        <img src="/images/logo.png" alt="Logo" className="h-24 sm:h-28 md:h-32 lg:h-40" />
+        <img src="/images/home/logo.png" alt="Logo" className="h-24 sm:h-28 md:h-32 lg:h-40" />
       </motion.div>
 
       <motion.div 
