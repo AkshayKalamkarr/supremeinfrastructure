@@ -60,7 +60,7 @@ export default function Home() {
     <div className="flex flex-col md:flex-row min-h-screen">
       {/* Sidebar */}
       <aside className="w-full md:w-1/4 bg-gray-200 p-4">
-        <h1 className="text-2xl font-bold mb-6 text-center">Supreme Infrastructure Company</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center my-20">Supreme Infrastructure Company</h1>
         <h2 className="text-xl font-semibold mb-4 text-center">PORTFOLIO / SERVICES</h2>
         <ul className="flex flex-wrap md:flex-col justify-center">
           {portfolioItems.map((item, index) => (
