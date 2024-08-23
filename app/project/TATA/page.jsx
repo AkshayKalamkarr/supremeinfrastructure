@@ -47,21 +47,45 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-300 text-white">
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-300 text-white"
+    >
       <header className="bg-black bg-opacity-50 p-6 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-2 mt-8">Supreme Infrastructure Company</h1>
-        <h2 className="text-xl md:text-6xl font-semibold md:mt-8">Tata Projects</h2>
+        <motion.h1 
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="text-4xl md:text-5xl font-bold mb-2 mt-8"
+        >
+          Supreme Infrastructure Company
+        </motion.h1>
+        <motion.h2 
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="text-2xl md:text-6xl font-semibold md:my-8 text-yellow-400"
+        >
+          Tata Projects
+        </motion.h2>
       </header>
 
-      <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+      <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
         {/* Sidebar */}
-        <aside className="md:w-1/4 mb-8 md:mb-0">
-          <nav className="bg-gray-800 bg-opacity-50 rounded-lg p-4">
+        <motion.aside 
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+          className="lg:w-1/4 mb-8 lg:mb-0"
+        >
+          <nav className="bg-gray-800 bg-opacity-50 rounded-lg p-4 sticky top-8">
             <ul className="space-y-2">
               {portfolioItems.map((item, index) => (
                 <motion.li 
                   key={index}
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 1.05, x: 10 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <button
@@ -78,10 +102,10 @@ export default function Home() {
               ))}
             </ul>
           </nav>
-        </aside>
+        </motion.aside>
 
         {/* Main Content */}
-        <main className="md:w-3/4 md:pl-8">
+        <main className="lg:w-3/4 lg:pl-8">
           <AnimatePresence mode="wait">
             {isOpen && (
               <motion.div
@@ -89,19 +113,32 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.5 }}
               >
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-yellow-500">
+                <motion.h2 
+                  initial={{ x: -50, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                  className="text-3xl md:text-4xl font-extrabold mb-6 text-yellow-400"
+                >
                   {selectedCategory.name}
-                </h2>
+                </motion.h2>
 
                 {/* Image Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <motion.div 
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.4, duration: 0.5 }}
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
                   {selectedCategory.images.map((image, index) => (
                     <motion.div
                       key={index}
-                      whileHover={{ scale: 1.05 }}
+                      whileHover={{ scale: 1.05, rotate: 2 }}
                       whileTap={{ scale: 0.95 }}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.1 * index, duration: 0.3 }}
                       className="relative aspect-square rounded-lg overflow-hidden shadow-lg"
                     >
                       <Image
@@ -113,12 +150,12 @@ export default function Home() {
                       />
                     </motion.div>
                   ))}
-                </div>
+                </motion.div>
               </motion.div>
             )}
           </AnimatePresence>
         </main>
       </div>
-    </div>
+    </motion.div>
   );
 }
