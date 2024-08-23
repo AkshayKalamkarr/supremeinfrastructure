@@ -74,23 +74,23 @@ function Navbar({ className }) {
                     </MenuItem>
                     <Link href="/services/servicesdashboard"><MenuItem setActive={setActive} active={active} item="Services">
                     </MenuItem></Link>
-                    <MenuItem setActive={setActive} active={active} item="Project">
+                    <MenuItem setActive={setActive} active={active} item="project">
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
                             <ProductItem
                                 title="TATA"
-                                href="https://algochurn.com"
+                                href="/project/TATA"
                                 src="/images/projects/TATA/tata-1.jpg"
                                 description="Prepare for tech interviews like never before."
                             />
                             <ProductItem
                                 title="ATLANTAS"
-                                href="https://tailwindmasterkit.com"
+                                href="/project/ATLANTAS"
                                 src="/images/projects/ATLANTAS/atlantas-1.jpeg"
                                 description="Production ready Tailwind css components for your next project"
                             />
                             <ProductItem
                                 title="COACT"
-                                href="https://gomoonbeam.com"
+                                href="/project/COACT"
                                 src="/images/projects/COACT/coact-1.jpg"
                                 description="Never write from scratch again. Go from idea to blog in minutes."
                             />
