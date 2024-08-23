@@ -63,7 +63,7 @@ export default function Home() {
       transition={{ duration: 0.5 }}
       className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-300 text-white"
     >
-      <header className="bg-black bg-opacity-50 p-6 text-center ">
+      <header className="bg-gray-400 p-6 text-center ">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -76,7 +76,7 @@ export default function Home() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="text-2xl md:text-6xl font-semibold md:my-8 text-yellow-400"
+          className="text-2xl md:text-6xl font-semibold md:my-8 text-black"
         >
           Tata Projects
         </motion.h2>
