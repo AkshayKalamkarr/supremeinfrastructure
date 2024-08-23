@@ -1,93 +1,260 @@
-// pages/index.js
-
+'use client'
+import React from 'react';
 import Link from "next/link";
-
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('/images/portfolio/img-3.jpg')" }}>
+      <motion.section 
+        className="relative h-screen bg-cover bg-center" 
+        style={{ backgroundImage: "url('/images/portfolio/img-3.jpg')" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="container mx-auto h-full flex flex-col justify-center text-white">
-          <h2 className="text-4xl md:text-6xl font-bold text-center">Interior Construction Specialists</h2>
-          <p className="mt-4 text-lg text-center">We guide the team</p>
+          <motion.h2 
+            className="text-4xl md:text-6xl font-bold text-center"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
+            Interior Construction Specialists
+          </motion.h2>
+          <motion.p 
+            className="mt-4 text-lg text-center"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+          >
+            We guide the team
+          </motion.p>
         </div>
-      </section>
+      </motion.section>
 
       {/* Reimagine Section */}
-      <section className="bg-white py-12">
+      <motion.section 
+        className="bg-white py-12"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto grid md:grid-cols-3 gap-8">
-          <div>
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-3xl font-bold text-center">Reimagine. Redefine. Revitalize.</h3>
             <p className="mt-4 text-center">Invite us in, examine, and let us transform your space.</p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <p className="text-gray-700 text-center">We're Layton's Interior Construction Specialists, and you can call us ICS. We're focused on specializations like transformation of commercial spaces, tenant improvements, and more.</p>
-          </div>
-          <div className="bg-orange-500 text-white p-6">
+          </motion.div>
+          <motion.div
+            className="bg-orange-500 text-white p-6"
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             <h4 className="text-xl font-bold text-center">Ready to talk about your project?</h4>
             <p className="mt-2 text-center">Contact: John Smith</p>
             <p className="mt-1 text-center">Phone: (123) 456-7890</p>
             <p className="mt-1 text-center">Email: john@company.com</p>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Image Section */}
-      <section className="py-12">
+      <motion.section 
+        className="py-12"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto grid md:grid-cols-2 gap-8">
-          <img src="/images/portfolio/img-3.jpg" alt="Description 1" className="w-full h-auto object-cover"/>
-          <img src="/images/portfolio/img-3.jpg" alt="Description 2" className="w-full h-auto object-cover"/>
+          <motion.img 
+            src="/images/portfolio/img-3.jpg" 
+            alt="Description 1" 
+            className="w-full h-auto object-cover"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          />
+          <motion.img 
+            src="/images/portfolio/img-3.jpg" 
+            alt="Description 2" 
+            className="w-full h-auto object-cover"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          />
         </div>
-      </section>
+      </motion.section>
 
       {/* Crew Section */}
-      <section className="bg-gray-100 py-12">
+      <motion.section 
+        className="bg-gray-100 py-12"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto grid md:grid-cols-3 gap-8">
-          <div>
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-2xl font-bold">The crew you want in your corner.</h3>
             <p className="mt-4">From preconstruction to construction, we're by your side...</p>
             <div className="mt-4 flex space-x-4">
-              <a href="#" className="bg-black text-white px-4 py-2">Contact Us</a>
-              <a href="#" className="bg-transparent border border-black text-black px-4 py-2">Watch Video</a>
+              <motion.a 
+                href="#" 
+                className="bg-black text-white px-4 py-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Contact Us
+              </motion.a>
+              <motion.a 
+                href="#" 
+                className="bg-transparent border border-black text-black px-4 py-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Watch Video
+              </motion.a>
             </div>
-          </div>
-          <div className="col-span-2 flex items-center">
+          </motion.div>
+          <motion.div 
+            className="col-span-2 flex items-center"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <div className="w-full grid grid-cols-3 gap-4">
-              <button className="text-center bg-white p-0 border">Tenant Improvements</button>
-              <button className="text-center bg-white p-4 border">Adaptive Reuse</button>
-              <button className="text-center bg-white p-4 border">Build Outs</button>
+              <motion.button 
+                className="text-center bg-white p-4 border"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Tenant Improvements
+              </motion.button>
+              <motion.button 
+                className="text-center bg-white p-4 border"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Adaptive Reuse
+              </motion.button>
+              <motion.button 
+                className="text-center bg-white p-4 border"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Build Outs
+              </motion.button>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Good Better Section */}
-      <section className="bg-white py-12">
+      <motion.section 
+        className="bg-white py-12"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto grid md:grid-cols-2 gap-8">
-          <div>
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-2xl font-bold text-center">Good. Better. ICS.</h3>
             <p className="mt-4 text-center">ICS was founded to supply the demand...</p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <div className="p-6 border">
               <h4 className="text-xl font-bold text-center">We're the difference between "meh" and "wow"</h4>
               <p className="mt-2 text-center">ICS was founded to supply the demand for...</p>
-              <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-black text-white px-4 py-2 mx-24">View Projects</Link>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-black text-white px-4 py-2 mx-24">View Projects</Link>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Join Us Section */}
-      <section className="bg-gray-800 text-white py-12">
+      <motion.section 
+        className="bg-gray-800 text-white py-12"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto text-center">
-          <h3 className="text-3xl font-bold">Ready to make a move?</h3>
-          <p className="mt-4">ICS needs leaders and problem solvers...</p>
-          <a href="#" className="mt-4 inline-block bg-orange-500 text-white px-6 py-3">Open Positions</a>
+          <motion.h3 
+            className="text-3xl font-bold"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            Ready to make a move?
+          </motion.h3>
+          <motion.p 
+            className="mt-4"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            ICS needs leaders and problem solvers...
+          </motion.p>
+          <motion.a 
+            href="#" 
+            className="mt-4 inline-block bg-orange-500 text-white px-6 py-3"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            Open Positions
+          </motion.a>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }
