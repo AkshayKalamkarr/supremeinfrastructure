@@ -77,28 +77,22 @@ function Navbar({ className }) {
                     <MenuItem setActive={setActive} active={active} item="Project">
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
                             <ProductItem
-                                title="Algochurn"
+                                title="TATA"
                                 href="https://algochurn.com"
-                                src="/images/demoimg.jpg"
+                                src="/images/projects/TATA/tata-1.jpg"
                                 description="Prepare for tech interviews like never before."
                             />
                             <ProductItem
-                                title="Tailwind Master Kit"
+                                title="ATLANTAS"
                                 href="https://tailwindmasterkit.com"
-                                src="/images/demoimg.jpg"
+                                src="/images/projects/ATLANTAS/atlantas-1.jpeg"
                                 description="Production ready Tailwind css components for your next project"
                             />
                             <ProductItem
-                                title="Moonbeam"
+                                title="COACT"
                                 href="https://gomoonbeam.com"
-                                src="/images/demoimg.jpg"
+                                src="/images/projects/COACT/coact-1.jpg"
                                 description="Never write from scratch again. Go from idea to blog in minutes."
-                            />
-                            <ProductItem
-                                title="Rogue"
-                                href="https://userogue.com"
-                                src="/images/demoimg.jpg"
-                                description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                             />
                         </div>
                     </MenuItem>
