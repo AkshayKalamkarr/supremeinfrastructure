@@ -32,7 +32,7 @@ export default function Contact() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="relative bg-cover bg-center h-[300px] sm:h-[400px] md:h-[500px]"
+        className="relative bg-cover bg-center h-[300px] sm:h-[60vh] md:h-[60vh]"
         style={{ backgroundImage: "url('/images/contact/contactBackground.jpg')" }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
