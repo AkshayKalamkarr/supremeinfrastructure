@@ -85,7 +85,7 @@ function Navbar({ className }) {
                             <ProductItem
                                 title="ATLANTAS"
                                 href="/project/ATLANTAS"
-                                src="/images/projects/ATLANTAS/atlantas-1.jpeg"
+                                src="/images/projects/ATLANTAS/atlantas-19.jpg"
                                 description="Production ready Tailwind css components for your next project"
                             />
                             <ProductItem
