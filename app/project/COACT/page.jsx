@@ -21,7 +21,7 @@ const Coact = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <div className="h-[50vh] md:h-[50vh] bg-cover bg-center relative" style={{ backgroundImage: "url('/images/contact/careerBackground.jpg')" }}>
+      <div className="h-[50vh] md:h-[50vh] bg-cover bg-center relative" style={{ backgroundImage: "url('/images/projects/COACT/bg-coact.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
