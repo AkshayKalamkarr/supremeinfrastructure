@@ -66,7 +66,7 @@ export default function Home() {
       transition={{ duration: 0.5 }}
       className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-300 text-white font-sans"
     >
-      <div className="h-[50vh] bg-cover bg-center relative" style={{ backgroundImage: "url('/images/contact/careerBackground.jpg')" }}>
+      <div className="h-[50vh] bg-cover bg-center relative" style={{ backgroundImage: "url('/images/projects/TATA/Tata-background.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
