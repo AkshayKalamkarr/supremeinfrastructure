@@ -9,10 +9,17 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className='w-full h-full py-2 mt-22 md:mt-36 bg-white'>
-      <h2 className='max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-black font-sans text-center'>
-        Get to know Our Services.
-      </h2>
+    <div className='w-full h-full py-8 md:py-0 mt-22 md:mt-36 bg-white'>
+      <div className='max-w-7xl mx-auto px-4'>
+        <h2 className='relative inline-block text-3xl md:text-5xl font-extrabold text-black font-sans text-center mb-4 md:mb-8 md:mx-96'>
+          Get to know Our Services
+          <span className='absolute bottom-0 left-0 w-full h-1 bg-blue-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
+        </h2>
+        <div className='w-32 h-1 bg-blue-600 mx-auto mb-8'></div>
+        <p className='text-lg md:text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto'>
+          Discover our comprehensive range of innovative solutions tailored to meet your needs.
+        </p>
+      </div>
       <Carousel items={cards} />
     </div>
   );
