@@ -48,7 +48,7 @@ const Coact = () => {
               </ul>
             </div>
 
-            <div className="space-y-4 text-sm md:text-base">
+            <div className="space-y-4 text-sm md:text-base md:text-center">
               <p className="text-gray-700">
                 20+ Seating at single floor.
                 Mezz flor dinning.
