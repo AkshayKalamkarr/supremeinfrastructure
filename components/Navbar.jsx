@@ -42,7 +42,7 @@ function Navbar({ className }) {
 
             {/* Mobile Slider Menu */}
             <div
-                className={`fixed top-0 left-0 h-full w-4/5 bg-white dark:bg-gray-800 shadow-md transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
+                className={`fixed top-0 left-0 h-full w-4/5 bg-white dark:bg-white shadow-md transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
                     } transition-transform duration-300 lg:hidden z-40`}
             >
                 <div className="p-4">
