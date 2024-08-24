@@ -99,7 +99,7 @@ function Navbar({ className }) {
                     </MenuItem>
                     <Link href="/services/servicesdashboard"><MenuItem setActive={setActive} active={active} item="Services">
                     </MenuItem></Link>
-                    <MenuItem setActive={setActive} active={active} item="project">
+                    <MenuItem setActive={setActive} active={active} item="Project">
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
                             <ProductItem
                                 title="TATA"
