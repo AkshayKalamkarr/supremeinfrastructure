@@ -74,7 +74,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="text-6xl font-extrabold text-white text-center leading-tight"
           >
-           <span className="text-blue-400">TATA PROJECTS</span> 
+            <span className="text-blue-400">TATA PROJECTS</span>
           </motion.h1>
         </div>
       </div>
