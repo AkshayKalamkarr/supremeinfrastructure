@@ -45,7 +45,7 @@ const Portfolio = () => {
             >
                 <Link href="/services/servicesdashboard" className="block h-full">
                     <Image
-                        src="/images/portfolio/img-1.jpg"
+                        src="/images/portfolio/interior.jpeg"
                         alt="Ae'o Ward Village"
                         fill
                         style={{ objectFit: "cover" }}
@@ -72,7 +72,7 @@ const Portfolio = () => {
             >
                 <Link href="/portfolio/stadium" className="block h-full">
                     <Image
-                        src="/images/portfolio/img-2.jpeg"
+                        src="/images/portfolio/civil.jpg"
                         alt="Stadium"
                         fill
                         style={{ objectFit: "cover" }}
@@ -103,7 +103,7 @@ const Portfolio = () => {
                 >
                     <Link href="/portfolio/modern-building" className="block h-full">
                         <Image
-                            src="/images/portfolio/img-1.jpg"
+                            src="/images/portfolio/architecture.jpg"
                             alt="Modern Building"
                             fill
                             style={{ objectFit: "cover" }}
