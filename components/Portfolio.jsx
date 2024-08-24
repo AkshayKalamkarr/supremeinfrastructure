@@ -47,8 +47,8 @@ const Portfolio = () => {
                     <Image
                         src="/images/portfolio/img-1.jpg"
                         alt="Ae'o Ward Village"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: "cover" }}
                         className="transition-all duration-500"
                     />
                     <motion.div
@@ -74,8 +74,8 @@ const Portfolio = () => {
                     <Image
                         src="/images/portfolio/img-2.jpeg"
                         alt="Stadium"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: "cover" }}
                         className="transition-all duration-500"
                     />
                     <motion.div
@@ -105,8 +105,8 @@ const Portfolio = () => {
                         <Image
                             src="/images/portfolio/img-1.jpg"
                             alt="Modern Building"
-                            layout="fill"
-                            objectFit="cover"
+                            fill
+                            style={{ objectFit: "cover" }}
                             className="transition-all duration-500"
                         />
                         <motion.div
@@ -138,23 +138,22 @@ const Portfolio = () => {
                     >
                         A portfolio with purpose.
                     </motion.h2>
-                    <Link href="/services/servicesdashboard" className="block h-full"> <motion.div
-                        href="#"
-                        className="text-blue-600 flex items-center justify-end text-sm sm:text-base"
-                    >
-                        SEE MORE
-                        <motion.svg
-                            className="w-4 h-4 ml-2"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            whileHover={{ x: 5 }}
-                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </motion.svg>
-                    </motion.div></Link>
+                    <Link href="/services/servicesdashboard" className="block h-full">
+                        <motion.div className="text-blue-600 flex items-center justify-end text-sm sm:text-base">
+                            SEE MORE
+                            <motion.svg
+                                className="w-4 h-4 ml-2"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                whileHover={{ x: 5 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </motion.svg>
+                        </motion.div>
+                    </Link>
                 </motion.div>
             </motion.div>
         </motion.div>
