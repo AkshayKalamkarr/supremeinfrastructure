@@ -57,7 +57,7 @@ const Portfolio = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
                     >
-                        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold md:text-center">Ae'o Ward Village</h2>
+                        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold md:text-center">Interior Design</h2>
                         <p className="text-xs sm:text-sm lg:text-base md:text-center">Honolulu, HI</p>
                     </motion.div>
                 </Link>
@@ -84,7 +84,7 @@ const Portfolio = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
                     >
-                        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold md:text-center">Stadium</h2>
+                        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold md:text-center">Civil Construction</h2>
                         <p className="text-xs sm:text-sm lg:text-base md:text-center">Location</p>
                     </motion.div>
                 </Link>
@@ -115,7 +115,7 @@ const Portfolio = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3, duration: 0.6 }}
                         >
-                            <h2 className="text-lg sm:text-xl lg:text-2xl font-bold md:text-center">Modern Building</h2>
+                            <h2 className="text-lg sm:text-xl lg:text-2xl font-bold md:text-center">Architectural Design</h2>
                             <p className="text-xs sm:text-sm lg:text-base md:text-center">Location</p>
                         </motion.div>
                     </Link>
