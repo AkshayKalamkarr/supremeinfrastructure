@@ -4,9 +4,11 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const portfolioItems = [
+  // ... (your portfolio items remain unchanged)
   {
     name: "TATA Power Mulshi IB",
-    images: ['/images/projects/TATA/tata-1.jpg',
+    images: [
+      '/images/projects/TATA/tata-1.jpg',
       '/images/projects/TATA/tata-2.jpg',
       '/images/projects/TATA/tata-3.jpg',
       '/images/projects/TATA/tata-4.jpg',
@@ -16,28 +18,29 @@ const portfolioItems = [
       '/images/projects/TATA/tata-8.jpg',
       '/images/projects/TATA/tata-9.jpg',
       '/images/projects/TATA/tata-10.jpg',
-     /* up to 10 images */]
+    ]
   },
   {
     name: "TATA Power Excellence Centre",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "TATA Power Lonavala IB",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "TATA Power Versova 145 KV",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "TATA Power tata_solar CSPT GF & FF",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "TATA Power Senior Club House, Trombay",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
+
 ];
 
 export default function Home() {
@@ -61,26 +64,20 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-300 text-white"
+      className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-300 text-white font-sans"
     >
-      <header className="bg-gray-400 p-6 text-center ">
-        <motion.h1
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold mb-2 mt-24"
-        >
-          {/* Supreme Infrastructure Company */}
-        </motion.h1>
-        <motion.h2
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          className="text-2xl md:text-6xl font-semibold md:my-8 text-black"
-        >
-          Tata Projects
-        </motion.h2>
-      </header>
+      <div className="h-[50vh] bg-cover bg-center relative" style={{ backgroundImage: "url('/images/contact/careerBackground.jpg')" }}>
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-6xl font-extrabold text-white text-center leading-tight"
+          >
+           <span className="text-blue-400">TATA PROJECTS</span> 
+          </motion.h1>
+        </div>
+      </div>
 
       <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
         {/* Sidebar */}
@@ -90,7 +87,7 @@ export default function Home() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="lg:w-1/4 mb-8 lg:mb-0 md:my-16"
         >
-          <nav className="bg-gray-800 bg-opacity-50 rounded-lg p-4 sticky top-8">
+          <nav className="bg-gray-800 bg-opacity-90 rounded-lg p-4 sticky top-8">
             <ul className="space-y-2">
               {portfolioItems.map((item, index) => (
                 <motion.li
@@ -101,8 +98,8 @@ export default function Home() {
                   <button
                     onClick={() => handleCategoryClick(item)}
                     className={`w-full text-left px-4 py-2 rounded transition-colors ${selectedCategory.name === item.name
-                        ? 'bg-yellow-500 text-gray-900 font-bold'
-                        : 'hover:bg-gray-700'
+                      ? 'bg-yellow-500 text-gray-900 font-bold'
+                      : 'hover:bg-gray-700 text-white'
                       }`}
                   >
                     {item.name}
@@ -128,9 +125,10 @@ export default function Home() {
                   initial={{ x: -50, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.5 }}
-                  className="text-3xl md:text-4xl font-extrabold mb-6 text-black md:mx-44"
+                  className="text-3xl md:text-4xl font-extrabold mb-6 text-gray-800 md:mx-44 relative inline-block"
                 >
                   {selectedCategory.name}
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-500 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                 </motion.h2>
 
                 {/* Image Grid */}
