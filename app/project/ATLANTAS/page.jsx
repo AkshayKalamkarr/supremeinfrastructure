@@ -3,9 +3,27 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  '/images/projects/COACT/coact-1.jpg',
-  '/images/projects/COACT/coact-2.jpg',
-  '/images/projects/COACT/coact-2.jpg',
+  '/images/projects/ATLANTAS/atlantas-1.jpeg',
+  '/images/projects/ATLANTAS/atlantas-2.jpg',
+  '/images/projects/ATLANTAS/atlantas-3.jpeg',
+  '/images/projects/ATLANTAS/atlantas-4.jpg',
+  '/images/projects/ATLANTAS/atlantas-5.jpg',
+  '/images/projects/ATLANTAS/atlantas-6.jpg',
+  '/images/projects/ATLANTAS/atlantas-7.jpg',
+  '/images/projects/ATLANTAS/atlantas-8.jpg',
+  '/images/projects/ATLANTAS/atlantas-9.jpg',
+  '/images/projects/ATLANTAS/atlantas-10.jpg',
+  '/images/projects/ATLANTAS/atlantas-11.jpg',
+  '/images/projects/ATLANTAS/atlantas-12.jpg',
+  '/images/projects/ATLANTAS/atlantas-13.jpg',
+  '/images/projects/ATLANTAS/atlantas-14.jpg',
+  '/images/projects/ATLANTAS/atlantas-15.jpg',
+  '/images/projects/ATLANTAS/atlantas-16.jpg',
+  '/images/projects/ATLANTAS/atlantas-17.jpg',
+  '/images/projects/ATLANTAS/atlantas-18.jpg',
+  '/images/projects/ATLANTAS/atlantas-19.jpg',
+  '/images/projects/ATLANTAS/atlantas-20jpg',
+  '/images/projects/ATLANTAS/atlantas-21.jpg',
 ];
 
 const Atlantas = () => {
