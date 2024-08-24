@@ -11,7 +11,7 @@ const SupremeQuote = () => {
         <img
           src="/images/home/stamp.png"
           alt="Logo"
-          className="w-[200px] h-[200px]"
+          className="w-[250px] h-[250px]"
         />
       </div>
 
