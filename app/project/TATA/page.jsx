@@ -125,7 +125,7 @@ export default function Home() {
                   initial={{ x: -50, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.5 }}
-                  className="text-3xl md:text-4xl font-extrabold mb-6 text-gray-800 md:mx-44 relative inline-block"
+                  className="text-3xl md:text-4xl font-extrabold mb-6 text-gray-800 md:mx-36 relative inline-block"
                 >
                   {selectedCategory.name}
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-500 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
