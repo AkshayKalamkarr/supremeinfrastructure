@@ -53,12 +53,37 @@ function Navbar({ className }) {
                     </button>
                     <div className="mt-8 justify-center items-center flex flex-col space-y-8">
                         <HoveredLink href="/">Home</HoveredLink>
-                        <HoveredLink href="/products">About</HoveredLink>
-                        <HoveredLink href="/services/servicesdashboard"> Services</HoveredLink>
-                        <HoveredLink href="/project">Projects</HoveredLink>
-                        <HoveredLink href="/contact">Contact</HoveredLink>
+
+                        <div className="group relative">
+                            <HoveredLink href="/">About</HoveredLink>
+                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block">
+                                <Link href="/about/supremeInfrastructure" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Team</Link>
+                                <Link href="/about/interiorConstructionSpecialists" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">History</Link>
+                            </div>
+                        </div>
+
+                        <HoveredLink href="/services/servicesdashboard">Services</HoveredLink>
+
+                        <div className="group relative">
+                            <HoveredLink href="/">Projects</HoveredLink>
+                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block">
+                                <Link href="/project/TATA" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">TATA</Link>
+                                <Link href="/project/atlantas" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">ATLANTAS</Link>
+                                <Link href="/project/coact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">COACT</Link>
+                            </div>
+                        </div>
+
+                        <div className="group relative">
+                            <HoveredLink href="/">Contact</HoveredLink>
+                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block">
+                                <Link href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">contact</Link>
+                                <Link href="/contact/career" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">career</Link>
+                            </div>
+                        </div>
+
                         <HoveredLink href="/contact/career">Career</HoveredLink>
                     </div>
+
                 </div>
             </div>
 
