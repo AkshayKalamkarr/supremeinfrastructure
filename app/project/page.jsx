@@ -38,7 +38,7 @@ export default function Project() {
                 setCurrentImageIndex((prevIndex) =>
                     (prevIndex + 1) % selectedProject.galleryImages.length
                 );
-            }, 3000);
+            }, 2000);
 
             return () => clearInterval(interval);
         }
@@ -85,7 +85,7 @@ export default function Project() {
                             transition={{ duration: 0.5 }}
                             className="bg-white rounded-lg shadow-xl overflow-hidden"
                         >
-                            <div className="h-[40vh] lg:h-[30vh] bg-cover bg-center relative" style={{ backgroundImage: `url('${selectedProject.galleryImages[currentImageIndex].image}')` }}>
+                            <div className="h-[40vh] lg:h-[30vh] bg-cover bg-center relative" style={{ backgroundImage: `url('${selectedProject.backgroundImage.image}')` }}>
                                 <motion.div
                                     className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center"
                                     initial={{ opacity: 0 }}

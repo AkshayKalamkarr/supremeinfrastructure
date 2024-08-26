@@ -2,7 +2,7 @@ export const projects = [
     {
         "title": "TATA MULSHI IB",
         "backgroundImage": [
-            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+            { "image": "/images/projects/TATA/Tata-background.jpg", "alt":"IB" }
         ],
         "projectInformation": [
             { "client": "TATA POWER" },
