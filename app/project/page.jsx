@@ -3,6 +3,19 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects } from '../../data/projects/projectData'; // Adjust the import path as needed
 
+// New Feature Component
+const FeatureCard = ({ feature }) => (
+    <motion.li
+        className="flex items-start space-x-2"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+    >
+        <span className="text-blue-500 font-bold text-xl">•</span>
+        <span className="text-gray-800">{feature}</span>
+    </motion.li>
+);
+
 export default function Project() {
     const [selectedProject, setSelectedProject] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -15,7 +28,7 @@ export default function Project() {
     useEffect(() => {
         if (selectedProject) {
             const interval = setInterval(() => {
-                setCurrentImageIndex((prevIndex) => 
+                setCurrentImageIndex((prevIndex) =>
                     (prevIndex + 1) % selectedProject.galleryImages.length
                 );
             }, 2000);
@@ -56,12 +69,12 @@ export default function Project() {
                         </div>
 
                         <div className="container mx-auto px-4 py-8">
-                            <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">{selectedProject.title}</h1>
+                            {/* <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">{selectedProject.title}</h1> */}
 
                             <div className="flex flex-col md:flex-row gap-8">
                                 <div className="md:w-1/2 space-y-6">
                                     <div className="bg-white shadow-md rounded-lg p-4 md:p-6">
-                                        <h2 className="text-xl font-semibold mb-4 md:text-center">Project information</h2>
+                                        <h2 className="text-xl font-semibold mb-4 text-center md:text-center">Project Information :</h2>
                                         <ul className="space-y-2 text-center">
                                             {selectedProject.projectInformation.map((info, index) => (
                                                 <li key={index}><span className="font-medium">{Object.keys(info)[0]}:</span> {Object.values(info)[0]}</li>
@@ -100,6 +113,16 @@ export default function Project() {
                                         ))}
                                     </div>
                                 </div>
+                            </div>
+
+                            {/* New Project Features Section */}
+                            <div className="mt-0 md:mt-0 bg-white  rounded-lg p-6">
+                                <h2 className="text-2xl font-bold text-gray-800 mb-6 md:mx-44 ">Projects Features:</h2>
+                                <ul className="space-y-6 md:mx-44">
+                                    {selectedProject.projectFeatures.map((feature, index) => (
+                                        <FeatureCard key={index} feature={feature} />
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     </div>
