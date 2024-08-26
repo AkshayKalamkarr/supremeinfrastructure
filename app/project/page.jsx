@@ -53,7 +53,7 @@ export default function Project() {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
             >
-                <h2 className="text-2xl font-bold mb-6 text-center lg:my-12">Projects</h2>
+                <h2 className="text-2xl font-bold mb-6 text-center lg:my-12">PROJECTS</h2>
                 <ul className="flex flex-wrap lg:flex-col justify-center">
                     {projects.map((project, index) => (
                         <motion.li
