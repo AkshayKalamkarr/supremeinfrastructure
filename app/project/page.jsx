@@ -3,16 +3,23 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects } from '../../data/projects/projectData'; // Adjust the import path as needed
 
-// New Feature Component
-const FeatureCard = ({ feature }) => (
+// Enhanced Feature Component
+const FeatureCard = ({ feature, index }) => (
     <motion.li
-        className="flex items-start space-x-2"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        className="flex items-start space-x-3"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: index * 0.1 }}
+        whileHover={{ scale: 1.05, color: "#3B82F6" }}
     >
-        <span className="text-blue-500 font-bold text-xl">•</span>
-        <span className="text-gray-800">{feature}</span>
+        <motion.span
+            className="text-blue-500 font-bold text-xl"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+        >
+            •
+        </motion.span>
+        <span className="text-gray-800 text-lg">{feature}</span>
     </motion.li>
 );
 
@@ -31,104 +38,168 @@ export default function Project() {
                 setCurrentImageIndex((prevIndex) =>
                     (prevIndex + 1) % selectedProject.galleryImages.length
                 );
-            }, 2000);
+            }, 3000);
 
             return () => clearInterval(interval);
         }
     }, [selectedProject]);
 
     return (
-        <div className="flex flex-col md:flex-row min-h-screen">
+        <div className="flex flex-col lg:flex-row min-h-screen bg-gray-100">
             {/* Sidebar */}
-            <aside className="w-full md:w-1/6 bg-gray-200 p-4">
-                <h2 className="text-xl font-semibold mb-4 text-center md:my-12">Projects</h2>
-                <ul className="flex flex-wrap md:flex-col justify-center">
+            <motion.aside
+                className="w-full lg:w-1/5 bg-sky-500 text-white p-4"
+                initial={{ x: -300, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+            >
+                <h2 className="text-2xl font-bold mb-6 text-center lg:my-12">Projects</h2>
+                <ul className="flex flex-wrap lg:flex-col justify-center">
                     {projects.map((project, index) => (
-                        <li key={index} className="w-1/2 md:w-full mb-2 p-2 md:p-6 text-center">
+                        <motion.li
+                            key={index}
+                            className="w-1/2 lg:w-full mb-2 p-2 lg:p-4"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
                             <button
                                 onClick={() => handleProjectClick(project)}
-                                className={`text-gray-700 hover:text-gray-900 ${selectedProject?.title === project.title ? 'font-bold' : ''}`}
+                                className={`w-full text-left px-4 py-2 rounded-md transition-colors duration-200 ${selectedProject?.title === project.title ? 'bg-blue-600 text-white' : 'hover:bg-gray-700'}`}
                             >
                                 {project.title}
                             </button>
-                        </li>
+                        </motion.li>
                     ))}
                 </ul>
-            </aside>
+            </motion.aside>
 
             {/* Main Content */}
-            <main className="flex-1 bg-gray-100 p-4 md:p-8 text-black">
-                {selectedProject ? (
-                    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-                        <div className="h-[50vh] md:h-[50vh] bg-cover bg-center relative" style={{ backgroundImage: `url('${selectedProject.galleryImages[currentImageIndex].image}')` }}>
-                            <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                                <h1 className="text-3xl md:text-6xl font-extrabold text-white text-center leading-tight px-4">
-                                    <span className="text-blue-400">{selectedProject.title} PROJECT</span>
-                                </h1>
+            <main className="flex-1 p-4 lg:p-8">
+                <AnimatePresence mode="wait">
+                    {selectedProject ? (
+                        <motion.div
+                            key={selectedProject.title}
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -50 }}
+                            transition={{ duration: 0.5 }}
+                            className="bg-white rounded-lg shadow-xl overflow-hidden"
+                        >
+                            <div className="h-[40vh] lg:h-[30vh] bg-cover bg-center relative" style={{ backgroundImage: `url('${selectedProject.galleryImages[currentImageIndex].image}')` }}>
+                                <motion.div
+                                    className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 0.5, delay: 0.2 }}
+                                >
+                                    <h1 className="text-3xl lg:text-6xl font-extrabold text-white text-center leading-tight px-4">
+                                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                                            {selectedProject.title} PROJECT
+                                        </span>
+                                    </h1>
+                                </motion.div>
                             </div>
-                        </div>
 
-                        <div className="container mx-auto px-4 py-8">
-                            {/* <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">{selectedProject.title}</h1> */}
+                            <div className="container mx-auto px-4 py-8">
+                                <div className="flex flex-col lg:flex-row gap-8">
+                                    <motion.div
+                                        className="lg:w-1/2 space-y-6"
+                                        initial={{ opacity: 0, x: -50 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.5, delay: 0.3 }}
+                                    >
+                                        <div className="bg-gray-50 shadow-md rounded-lg p-6">
+                                            <h2 className="text-2xl font-semibold mb-4 text-center">Project Information</h2>
+                                            <ul className="space-y-3">
+                                                {selectedProject.projectInformation.map((info, index) => (
+                                                    <motion.li
+                                                        key={index}
+                                                        initial={{ opacity: 0, y: 20 }}
+                                                        animate={{ opacity: 1, y: 0 }}
+                                                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                                                        className="flex justify-between items-center"
+                                                    >
+                                                        <span className="font-medium">{Object.keys(info)[0]}:</span>
+                                                        <span className="text-gray-600">{Object.values(info)[0]}</span>
+                                                    </motion.li>
+                                                ))}
+                                            </ul>
+                                        </div>
 
-                            <div className="flex flex-col md:flex-row gap-8">
-                                <div className="md:w-1/2 space-y-6">
-                                    <div className="bg-white shadow-md rounded-lg p-4 md:p-6">
-                                        <h2 className="text-xl font-semibold mb-4 text-center md:text-center">Project Information :</h2>
-                                        <ul className="space-y-2 text-center">
-                                            {selectedProject.projectInformation.map((info, index) => (
-                                                <li key={index}><span className="font-medium">{Object.keys(info)[0]}:</span> {Object.values(info)[0]}</li>
+                                        <motion.div
+                                            className="bg-gray-50 shadow-md rounded-lg p-6"
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.5, delay: 0.5 }}
+                                        >
+                                            <h2 className="text-2xl font-semibold mb-4 text-center">Project Description</h2>
+                                            <p className="text-gray-700 leading-relaxed">{selectedProject.projectdescription}</p>
+                                        </motion.div>
+                                    </motion.div>
+
+                                    <motion.div
+                                        className="lg:w-1/2"
+                                        initial={{ opacity: 0, x: 50 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.5, delay: 0.3 }}
+                                    >
+                                        <div className="relative h-64 lg:h-[500px] rounded-lg overflow-hidden shadow-lg">
+                                            <AnimatePresence initial={false}>
+                                                <motion.img
+                                                    key={currentImageIndex}
+                                                    src={selectedProject.galleryImages[currentImageIndex].image}
+                                                    alt={selectedProject.galleryImages[currentImageIndex].alt}
+                                                    className="absolute inset-0 w-full h-full object-cover"
+                                                    initial={{ opacity: 0, scale: 1.1 }}
+                                                    animate={{ opacity: 1, scale: 1 }}
+                                                    exit={{ opacity: 0, scale: 0.9 }}
+                                                    transition={{ duration: 1 }}
+                                                />
+                                            </AnimatePresence>
+                                        </div>
+
+                                        <div className="flex justify-center mt-4">
+                                            {selectedProject.galleryImages.map((_, index) => (
+                                                <motion.button
+                                                    key={index}
+                                                    className={`w-3 h-3 rounded-full mx-1 ${index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-300'}`}
+                                                    onClick={() => setCurrentImageIndex(index)}
+                                                    whileHover={{ scale: 1.2 }}
+                                                    whileTap={{ scale: 0.8 }}
+                                                />
                                             ))}
-                                        </ul>
-                                    </div>
-
-                                    <div className="space-y-4 text-sm md:text-base md:text-center">
-                                        <p className="text-gray-700">{selectedProject.projectdescription}</p>
-                                    </div>
+                                        </div>
+                                    </motion.div>
                                 </div>
 
-                                <div className="md:w-1/2">
-                                    <div className="relative h-64 md:h-96 lg:h-[500px]">
-                                        <AnimatePresence initial={false}>
-                                            <motion.img
-                                                key={currentImageIndex}
-                                                src={selectedProject.galleryImages[currentImageIndex].image}
-                                                alt={selectedProject.galleryImages[currentImageIndex].alt}
-                                                className="absolute inset-0 w-full h-full object-cover rounded-lg"
-                                                initial={{ opacity: 0 }}
-                                                animate={{ opacity: 1 }}
-                                                exit={{ opacity: 0 }}
-                                                transition={{ duration: 0.5 }}
-                                            />
-                                        </AnimatePresence>
-                                    </div>
-
-                                    <div className="flex justify-center mt-4">
-                                        {selectedProject.galleryImages.map((_, index) => (
-                                            <button
-                                                key={index}
-                                                className={`w-2 h-2 md:w-3 md:h-3 rounded-full mx-1 ${index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-300'}`}
-                                                onClick={() => setCurrentImageIndex(index)}
-                                            />
+                                {/* Project Features Section */}
+                                <motion.div
+                                    className="mt-12 bg-gray-50 rounded-lg p-6 shadow-lg"
+                                    initial={{ opacity: 0, y: 50 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.6 }}
+                                >
+                                    <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center lg:text-left">Project Features</h2>
+                                    <ul className="space-y-4 lg:pl-8">
+                                        {selectedProject.projectFeatures.map((feature, index) => (
+                                            <FeatureCard key={index} feature={feature} index={index} />
                                         ))}
-                                    </div>
-                                </div>
+                                    </ul>
+                                </motion.div>
                             </div>
-
-                            {/* New Project Features Section */}
-                            <div className="mt-0 md:mt-0 bg-white  rounded-lg p-6">
-                                <h2 className="text-2xl font-bold text-gray-800 mb-6 md:mx-44 ">Projects Features:</h2>
-                                <ul className="space-y-6 md:mx-44">
-                                    {selectedProject.projectFeatures.map((feature, index) => (
-                                        <FeatureCard key={index} feature={feature} />
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                ) : (
-                    <p className="text-center text-xl mt-20">Select a project to view details</p>
-                )}
+                        </motion.div>
+                    ) : (
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="text-center text-2xl mt-20 text-gray-600"
+                        >
+                            Select a project to view details
+                        </motion.p>
+                    )}
+                </AnimatePresence>
             </main>
         </div>
     );
