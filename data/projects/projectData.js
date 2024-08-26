@@ -1,6 +1,9 @@
 export const projects = [
     {
         "title": "TATA MULSHI IB",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -27,6 +30,9 @@ export const projects = [
     },
     {
         "title": "TATA POWER EXCELLENCE CENTRE",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -53,6 +59,9 @@ export const projects = [
     },
     {
         "title": "TATA POWER LONAVALA IB",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -79,6 +88,9 @@ export const projects = [
     },
     {
         "title": "TATA POWER VERSOVA 145 KV",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -105,6 +117,9 @@ export const projects = [
     },
     {
         "title": "TATA POWER TATA_SOLAR CSPT GF & FF",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -131,6 +146,9 @@ export const projects = [
     },
     {
         "title": "TATA POWER SENIOR CLUB HOUSE, TROMBAY",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -157,6 +175,9 @@ export const projects = [
     },
     {
         "title": "ATLANTAS",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "ATLANTAS" },
             { "Approxarea": "7500" },
@@ -199,6 +220,9 @@ export const projects = [
     },
     {
         "title": "IHCL",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -225,6 +249,9 @@ export const projects = [
     },
     {
         "title": "KARANJADE BOUNDARY WALL,TOSHIBA",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -251,6 +278,9 @@ export const projects = [
     },
     {
         "title": "JOKER BISTO",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -277,6 +307,9 @@ export const projects = [
     },
     {
         "title": "TATA POWER GUEST HOUSE ,TAMILNADU",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },
@@ -303,6 +336,9 @@ export const projects = [
     },
     {
         "title": "TATA SPORT CLUB",
+        "backgroundImage": [
+            { 'image': "/images/projects/TATA/tata-1.jpg", "alt": "Exterior View" }
+        ],
         "projectInformation": [
             { "client": "TATA POWER" },
             { "Approxarea": "7500" },

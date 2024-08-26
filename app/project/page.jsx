@@ -48,7 +48,7 @@ export default function Project() {
         <div className="flex flex-col lg:flex-row min-h-screen bg-gray-100">
             {/* Sidebar */}
             <motion.aside
-                className="w-full lg:w-1/5 bg-sky-500 text-white p-4"
+                className="w-full lg:w-1/5 bg-blue-950 text-white p-4"
                 initial={{ x: -300, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -64,7 +64,7 @@ export default function Project() {
                         >
                             <button
                                 onClick={() => handleProjectClick(project)}
-                                className={`w-full text-left px-4 py-2 rounded-md transition-colors duration-200 ${selectedProject?.title === project.title ? 'bg-blue-600 text-white' : 'hover:bg-gray-700'}`}
+                                className={`w-full text-left px-4 py-2 rounded-md transition-colors duration-200 md:text-center ${selectedProject?.title === project.title ? 'bg-gray-600 text-white' : 'hover:bg-gray-700'}`}
                             >
                                 {project.title}
                             </button>
@@ -93,7 +93,7 @@ export default function Project() {
                                     transition={{ duration: 0.5, delay: 0.2 }}
                                 >
                                     <h1 className="text-3xl lg:text-6xl font-extrabold text-white text-center leading-tight px-4">
-                                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
                                             {selectedProject.title} PROJECT
                                         </span>
                                     </h1>
