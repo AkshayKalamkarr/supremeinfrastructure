@@ -99,7 +99,7 @@ function Navbar({ className }) {
                     </MenuItem>
                     <Link href="/services/servicesdashboard"><MenuItem setActive={setActive} active={active} item="Services">
                     </MenuItem></Link>
-                    <MenuItem setActive={setActive} active={active} item="Project">
+                    <Link href='/project'><MenuItem setActive={setActive} active={active} item="Project">
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
                             <ProductItem
                                 title="TATA"
@@ -120,7 +120,7 @@ function Navbar({ className }) {
                                 description="Never write from scratch again. Go from idea to blog in minutes."
                             />
                         </div>
-                    </MenuItem>
+                    </MenuItem></Link>
                     <MenuItem setActive={setActive} active={active} item="Contact">
                         <div className="flex flex-col space-y-4 text-sm">
                             <HoveredLink href="/contact">Contact Us</HoveredLink>
