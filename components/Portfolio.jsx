@@ -70,7 +70,7 @@ const Portfolio = () => {
                 whileHover={{ scale: 1.05, rotateY: -5 }}
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
             >
-                <Link href="/portfolio/stadium" className="block h-full">
+                <Link href="/services/servicesdashboard" className="block h-full">
                     <Image
                         src="/images/portfolio/civil.jpg"
                         alt="Stadium"
@@ -101,7 +101,7 @@ const Portfolio = () => {
                     whileHover={{ scale: 1.05, rotateX: 5 }}
                     transition={{ type: "spring", stiffness: 200, damping: 10 }}
                 >
-                    <Link href="/portfolio/modern-building" className="block h-full">
+                    <Link href="/services/servicesdashboard" className="block h-full">
                         <Image
                             src="/images/portfolio/architecture.jpg"
                             alt="Modern Building"
