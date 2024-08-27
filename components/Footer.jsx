@@ -14,8 +14,8 @@ const Footer = () => {
                             <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-yellow-500" size={20} />
                             <p className="text-gray-300 text-sm sm:text-base">
                                 SUPREME INFRASTRUCTURE<br />
-                                Office No 603 Sector 15<br />
-                                Ravi Rachna, near Belapur Court Station,<br />
+                                Office No 603 ,Sector 15,<br />
+                                near Belapur Court Station,<br />
                                 Sector-15, Belapur,<br />
                                 Navi Mumbai, Maharashtra 410209
                             </p>
