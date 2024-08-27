@@ -145,7 +145,7 @@ export default function Home() {
               style={{ objectFit: "contain" }}
             />
             <button
-              className="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors"
+              className="absolute top-4 right-4 text-white text-4xl hover:text-red-600 transition-colors md:text-6xl"
               onClick={closeFullView}
             >
               &times;
