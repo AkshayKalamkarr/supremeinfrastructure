@@ -125,7 +125,7 @@ export default function Home() {
             <p className="mt-4">From preconstruction to construction, we're by your side...</p>
             <div className="mt-4 flex space-x-4">
               <motion.a 
-                href="#" 
+                href="/contact" 
                 className="bg-black text-white px-4 py-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
