@@ -67,7 +67,7 @@ export default function Home() {
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
       {/* Sidebar */}
       <aside className="w-full md:w-1/4 bg-white p-8 shadow-lg">
-        <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Supreme Infrastructure Company</h1>
+        <h1 className="text-3xl font-bold mb-8 text-center text-gray-800 md:my-6">Supreme Infrastructure Company</h1>
         <h2 className="text-xl font-semibold mb-6 text-center text-gray-600">PORTFOLIO / SERVICES</h2>
         <ul className="space-y-2">
           {portfolioItems.map((item, index) => (
