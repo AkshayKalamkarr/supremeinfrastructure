@@ -103,7 +103,7 @@ export default function Project() {
                                 >
                                     <h1 className="text-3xl lg:text-6xl font-extrabold text-white text-center leading-tight px-4">
                                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
-                                            {selectedProject.title} PROJECT
+                                            {selectedProject.title} 
                                         </span>
                                     </h1>
                                 </motion.div>
