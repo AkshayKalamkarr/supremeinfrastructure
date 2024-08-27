@@ -88,7 +88,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1 p-8 md:p-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800">{selectedCategory.name}</h2>
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800 md:my-28">{selectedCategory.name}</h2>
 
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
