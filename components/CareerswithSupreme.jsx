@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const CareerswithSupreme = () => {
     return (
-        <div className="flex justify-center items-center min-h-[90vh] p-4 bg-gray-200">
+        <div className="flex justify-center items-center min-h-[80vh] p-4 bg-gray-200">
             <Head>
                 <title>Careers with Supreme</title>
                 <link rel="icon" href="/favicon.ico" />
