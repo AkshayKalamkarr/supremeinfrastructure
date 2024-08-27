@@ -83,7 +83,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <source src="/videos/video-2.mp4" type="video/mp4" />
+        <source src="/videos/video-1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </motion.video>
       <NavbarDemo />
