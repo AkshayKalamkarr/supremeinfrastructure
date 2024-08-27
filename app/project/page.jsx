@@ -188,7 +188,7 @@ export default function Project() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: 0.6 }}
                                 >
-                                    <h2 className="text-3xl font-bold text-gray-800 mb-6 md:mx-56">Project Features</h2>
+                                    <h2 className="text-2xl font-semibold mb-4 text-gray-800 md:mx-56">Project Features</h2>
                                     <ul className="space-y-4 lg:pl-8 md:mx-48">
                                         {selectedProject.projectFeatures.map((feature, index) => (
                                             <FeatureCard key={index} feature={feature} index={index} />
