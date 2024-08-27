@@ -1,8 +1,9 @@
 'use client'
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
 const portfolioItems = [
+  // ... (your existing portfolio items)
   {
     name: "Interior Design",
     images: ['/images/projects/TATA/tata-1.jpg',
@@ -75,9 +76,13 @@ const portfolioItems = [
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState(portfolioItems[0]);
   const [fullViewImage, setFullViewImage] = useState(null);
+  const scrollContainerRef = useRef(null);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTop = 0;
+    }
   };
 
   const openFullView = (image) => {
@@ -87,6 +92,25 @@ export default function Home() {
   const closeFullView = () => {
     setFullViewImage(null);
   };
+
+  useEffect(() => {
+    const handleWheel = (e) => {
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.scrollTop += e.deltaY;
+      }
+    };
+
+    const currentRef = scrollContainerRef.current;
+    if (currentRef) {
+      currentRef.addEventListener('wheel', handleWheel);
+    }
+
+    return () => {
+      if (currentRef) {
+        currentRef.removeEventListener('wheel', handleWheel);
+      }
+    };
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
@@ -99,10 +123,11 @@ export default function Home() {
             <li key={index} className="w-full">
               <button
                 onClick={() => handleCategoryClick(item)}
-                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-center md:my-4 ${selectedCategory.name === item.name
-                  ? 'bg-gray-200 text-gray-800 font-bold'
-                  : 'text-gray-600 hover:bg-gray-100'
-                  }`}
+                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-center md:my-4 ${
+                  selectedCategory.name === item.name
+                    ? 'bg-gray-200 text-gray-800 font-bold'
+                    : 'text-gray-600 hover:bg-gray-100'
+                }`}
               >
                 {item.name}
               </button>
@@ -112,25 +137,34 @@ export default function Home() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-8 md:p-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800 md:my-24">{selectedCategory.name}</h2>
+      <main className="flex-1 p-8 md:p-12 flex flex-col">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800">{selectedCategory.name}</h2>
 
-        {/* Image Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {selectedCategory.images.map((image, index) => (
-            <div
-              key={index}
-              className="relative aspect-square rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
-              onClick={() => openFullView(image)}
-            >
-              <Image
-                src={image}
-                alt={`Image ${index + 1}`}
-                fill={true}
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-          ))}
+        {/* Scrollable Image Grid */}
+        <div 
+          ref={scrollContainerRef}
+          className="flex-1 overflow-y-auto pr-4"
+          style={{
+            scrollbarWidth: 'thin',
+            scrollbarColor: '#CBD5E0 #EDF2F7',
+          }}
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {selectedCategory.images.map((image, index) => (
+              <div
+                key={index}
+                className="relative aspect-square rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
+                onClick={() => openFullView(image)}
+              >
+                <Image
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  fill={true}
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </main>
 
