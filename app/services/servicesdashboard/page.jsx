@@ -15,45 +15,54 @@ const portfolioItems = [
       '/images/portfolio/img-1.jpg',
       '/images/portfolio/img-1.jpg',
       '/images/portfolio/img-1.jpg',
-    /* up to 10 images */]
+    ]
   },
   {
     name: "Civil Construction",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "Architectural Design",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "Cable Trench",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "Industrial Building",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "Horticulture Design",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "Garden Maintenance",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
   {
     name: "Building Design",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg', /* up to 10 images */]
+    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
   },
 ];
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState(portfolioItems[0]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fullViewImage, setFullViewImage] = useState(null);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
     setCurrentImageIndex(0);
+  };
+
+  const openFullView = (image) => {
+    setFullViewImage(image);
+  };
+
+  const closeFullView = () => {
+    setFullViewImage(null);
   };
 
   return (
@@ -84,7 +93,11 @@ export default function Home() {
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
           {selectedCategory.images.map((image, index) => (
-            <div key={index} className="relative w-full h-36 sm:h-48 md:h-64 lg:h-80 rounded-sm overflow-hidden">
+            <div 
+              key={index} 
+              className="relative w-full h-36 sm:h-48 md:h-64 lg:h-80 rounded-sm overflow-hidden cursor-pointer"
+              onClick={() => openFullView(image)}
+            >
               <Image
                 src={image}
                 alt={`Image ${index + 1}`}
@@ -96,6 +109,26 @@ export default function Home() {
           ))}
         </div>
       </main>
+
+      {/* Full View Modal */}
+      {fullViewImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={closeFullView}>
+          <div className="relative w-full h-full max-w-4xl max-h-4xl">
+            <Image
+              src={fullViewImage}
+              alt="Full view"
+              fill={true}
+              style={{ objectFit: "contain" }}
+            />
+            <button 
+              className="absolute top-4 right-4 text-red-600 text-8xl"
+              onClick={closeFullView}
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
