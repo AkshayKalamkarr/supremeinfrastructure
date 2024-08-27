@@ -52,7 +52,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="md:w-1/3 bg-white p-8"
           >
-            <h2 className="text-3xl font-bold mb-6 text-indigo-700 border-b-2 border-indigo-700 pb-2">Contact Info</h2>
+            <h2 className="text-3xl font-bold mb-6 text-indigo-700 border-b-2 border-indigo-700 pb-2 md:text-center">Contact Info</h2>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <FaMapMarkerAlt className="text-2xl text-indigo-600 mt-1" />
@@ -104,7 +104,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="md:w-2/3 bg-white p-8"
           >
-            <h2 className="text-3xl font-bold mb-6 text-indigo-700 border-b-2 border-indigo-700 pb-2">Send Us a Message</h2>
+            <h2 className="text-3xl font-bold mb-6 text-indigo-700 border-b-2 border-indigo-700 pb-2 md:text-center">Send Us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input
