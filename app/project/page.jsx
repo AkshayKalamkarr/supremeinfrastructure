@@ -126,7 +126,7 @@ export default function Project() {
                                                         initial={{ opacity: 0, y: 20 }}
                                                         animate={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.3, delay: index * 0.1 }}
-                                                        className="flex justify-between items-center"
+                                                        className="flex justify-around items-center"
                                                     >
                                                         <span className="font-medium">{Object.keys(info)[0]}:</span>
                                                         <span className="text-gray-600">{Object.values(info)[0]}</span>
