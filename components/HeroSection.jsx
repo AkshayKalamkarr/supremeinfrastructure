@@ -71,12 +71,12 @@ const HeroSection = () => {
 
       {/* Repositioned and Enlarged Logo */}
       <motion.div
-        className="absolute top-2 md:mx-24 left-12 sm:top-6 sm:right-6 md:top-8 md:right-8 lg:top-4 lg:right-10 filter brightness-900"
+        className="absolute top-4 left-4 sm:top-6 sm:left-6 md:top-8 md:left-8 lg:top-4 lg:left-10 z-10"
         initial={{ opacity: 0, y: -50, rotate: -10 }}
         animate={{ opacity: 1, y: 0, rotate: 0 }}
         transition={{ duration: 0.8, type: 'spring', bounce: 0.4 }}
       >
-        <img src="/images/home/logo.png" alt="Logo" className="h-24 sm:h-28 md:h-32 lg:h-40" />
+        <img src="/images/home/logo.png" alt="Logo" width={120} height={120} className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32" />
       </motion.div>
 
       <motion.div 
