@@ -49,12 +49,10 @@ const portfolioItems = [
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState(portfolioItems[0]);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fullViewImage, setFullViewImage] = useState(null);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
-    setCurrentImageIndex(0);
   };
 
   const openFullView = (image) => {
@@ -66,17 +64,19 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen">
+    <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-full md:w-1/4 bg-gray-200 p-4">
-        <h1 className="text-2xl font-bold mb-6 text-center my-20">Supreme Infrastructure Company</h1>
-        <h2 className="text-xl font-semibold mb-4 text-center">PORTFOLIO / SERVICES</h2>
-        <ul className="flex flex-wrap md:flex-col justify-center">
+      <aside className="w-full md:w-1/4 bg-white p-8 shadow-lg">
+        <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Supreme Infrastructure Company</h1>
+        <h2 className="text-xl font-semibold mb-6 text-center text-gray-600">PORTFOLIO / SERVICES</h2>
+        <ul className="space-y-2">
           {portfolioItems.map((item, index) => (
-            <li key={index} className="w-1/2 md:w-full mb-2 p-2 md:p-6 text-center">
+            <li key={index} className="w-full">
               <button
                 onClick={() => handleCategoryClick(item)}
-                className={`text-gray-700 hover:text-gray-900 ${selectedCategory.name === item.name ? 'font-bold' : ''
+                className={`w-full py-3 px-4 text-left transition-all duration-300 ease-in-out md:text-center md:my-4 ${selectedCategory.name === item.name
+                    ? 'bg-gray-200 text-gray-800 font-bold'
+                    : 'text-gray-600 hover:bg-gray-100'
                   }`}
               >
                 {item.name}
@@ -87,15 +87,15 @@ export default function Home() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 bg-gray-100 p-4 md:p-8 text-black">
-        <h2 className="text-2xl md:text-3xl font-extrabold mb-4 md:mt-24 md:mb-6">{selectedCategory.name}</h2>
+      <main className="flex-1 p-8 md:p-12">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800">{selectedCategory.name}</h2>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {selectedCategory.images.map((image, index) => (
-            <div 
-              key={index} 
-              className="relative w-full h-36 sm:h-48 md:h-64 lg:h-80 rounded-sm overflow-hidden cursor-pointer"
+            <div
+              key={index}
+              className="relative aspect-square rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
               onClick={() => openFullView(image)}
             >
               <Image
@@ -103,7 +103,6 @@ export default function Home() {
                 alt={`Image ${index + 1}`}
                 fill={true}
                 style={{ objectFit: "cover" }}
-                className="transition-transform duration-300 hover:scale-105"
               />
             </div>
           ))}
@@ -112,16 +111,16 @@ export default function Home() {
 
       {/* Full View Modal */}
       {fullViewImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={closeFullView}>
-          <div className="relative w-full h-full max-w-4xl max-h-4xl">
+        <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50" onClick={closeFullView}>
+          <div className="relative w-full h-full max-w-5xl max-h-5xl p-4">
             <Image
               src={fullViewImage}
               alt="Full view"
               fill={true}
               style={{ objectFit: "contain" }}
             />
-            <button 
-              className="absolute top-4 right-4 text-red-600 text-8xl"
+            <button
+              className="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors"
               onClick={closeFullView}
             >
               &times;
