@@ -26,10 +26,19 @@ const FeatureCard = ({ feature, index }) => (
 export default function Project() {
     const [selectedProject, setSelectedProject] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isImageOpen, setIsImageOpen] = useState(false);
 
     const handleProjectClick = (project) => {
         setSelectedProject(project);
         setCurrentImageIndex(0);
+    };
+
+    const handleImageClick = () => {
+        setIsImageOpen(true);
+    };
+
+    const closeImage = () => {
+        setIsImageOpen(false);
     };
 
     useEffect(() => {
@@ -143,7 +152,7 @@ export default function Project() {
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ duration: 0.5, delay: 0.3 }}
                                     >
-                                        <div className="relative h-64 lg:h-[500px] rounded-lg overflow-hidden shadow-lg">
+                                        <div className="relative h-64 lg:h-[570px] rounded-lg overflow-hidden shadow-lg cursor-pointer" onClick={handleImageClick}>
                                             <AnimatePresence initial={false}>
                                                 <motion.img
                                                     key={currentImageIndex}
@@ -201,6 +210,26 @@ export default function Project() {
                     )}
                 </AnimatePresence>
             </main>
+
+            {/* Fullscreen Image Modal */}
+            {isImageOpen && selectedProject && (
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
+                    onClick={closeImage}
+                >
+                    <motion.img
+                        src={selectedProject.galleryImages[currentImageIndex].image}
+                        alt={selectedProject.galleryImages[currentImageIndex].alt}
+                        className="max-w-full max-h-full object-contain"
+                        initial={{ scale: 0.8 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 0.3 }}
+                    />
+                </motion.div>
+            )}
         </div>
     );
 }
