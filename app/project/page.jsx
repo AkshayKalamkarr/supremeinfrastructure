@@ -83,7 +83,7 @@ export default function Project() {
             </motion.aside>
 
             {/* Main Content */}
-            <main className="flex-1 p-4 lg:p-8">
+            <main className="flex-1 p-4 lg:p-0">
                 <AnimatePresence mode="wait">
                     {selectedProject ? (
                         <motion.div
@@ -92,7 +92,7 @@ export default function Project() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -50 }}
                             transition={{ duration: 0.5 }}
-                            className="bg-white rounded-lg shadow-xl overflow-hidden"
+                            className="bg-white shadow-xl overflow-hidden"
                         >
                             <div className="h-[40vh] lg:h-[30vh] bg-cover bg-center relative" style={{ backgroundImage: `url('${selectedProject.backgroundImage.image}')` }}>
                                 <motion.div
