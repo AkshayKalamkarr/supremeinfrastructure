@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NavbarDemo } from './Navbar';
 import Link from 'next/link';
@@ -19,11 +19,29 @@ const TypewriterEffect = ({ text, delay = 0 }) => {
 
 const HeroSection = () => {
   const [isClient, setIsClient] = useState(false);
+  const videoRef = useRef(null);
   const title = "Supreme Infrastructure Company";
   const description = "We are a team of talented, innovative designers, engineers, and horticulturists.";
 
   useEffect(() => {
     setIsClient(true);
+
+    // Attempt to play the video manually on mobile devices
+    const playVideo = () => {
+      if (videoRef.current) {
+        const playPromise = videoRef.current.play();
+        if (playPromise !== undefined) {
+          playPromise.catch((error) => {
+            console.error("Video play failed:", error);
+          });
+        }
+      }
+    };
+
+    playVideo();
+
+    window.addEventListener('touchstart', playVideo);
+    return () => window.removeEventListener('touchstart', playVideo);
   }, []);
 
   const containerVariants = {
@@ -55,6 +73,7 @@ const HeroSection = () => {
       variants={containerVariants}
     >
       <motion.video
+        ref={videoRef}
         autoPlay
         loop
         muted
