@@ -117,7 +117,7 @@ export default function Project() {
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ duration: 0.5, delay: 0.3 }}
                                     >
-                                        <div className="bg-gray-50 shadow-md rounded-lg p-6">
+                                        <div className="rounded-lg p-6">
                                             <h2 className="text-2xl font-semibold mb-4 text-center">Project Information</h2>
                                             <ul className="space-y-3">
                                                 {selectedProject.projectInformation.map((info, index) => (
@@ -136,13 +136,13 @@ export default function Project() {
                                         </div>
 
                                         <motion.div
-                                            className="bg-gray-50 shadow-md rounded-lg p-6"
+                                            className=" rounded-lg p-6"
                                             initial={{ opacity: 0, y: 20 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.5, delay: 0.5 }}
                                         >
                                             <h2 className="text-2xl font-semibold mb-4 text-center">Project Description</h2>
-                                            <p className="text-gray-700 leading-relaxed">{selectedProject.projectdescription}</p>
+                                            <p className="leading-relaxed">{selectedProject.projectdescription}</p>
                                         </motion.div>
                                     </motion.div>
 
@@ -183,13 +183,13 @@ export default function Project() {
 
                                 {/* Project Features Section */}
                                 <motion.div
-                                    className="mt-12 bg-gray-50 rounded-lg p-6 shadow-lg"
+                                    className="mt-12  rounded-lg p-6 "
                                     initial={{ opacity: 0, y: 50 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: 0.6 }}
                                 >
-                                    <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center lg:text-left">Project Features</h2>
-                                    <ul className="space-y-4 lg:pl-8">
+                                    <h2 className="text-3xl font-bold text-gray-800 mb-6 md:mx-56">Project Features</h2>
+                                    <ul className="space-y-4 lg:pl-8 md:mx-48">
                                         {selectedProject.projectFeatures.map((feature, index) => (
                                             <FeatureCard key={index} feature={feature} index={index} />
                                         ))}
