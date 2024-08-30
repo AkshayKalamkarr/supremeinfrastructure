@@ -82,6 +82,12 @@ const HeroSection = () => {
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
+        style={{
+          filter: 'none',
+          imageRendering: 'high-quality',
+          objectFit: 'cover',
+          objectPosition: 'center center',
+        }}
       >
         <source src="/videos/video-1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
