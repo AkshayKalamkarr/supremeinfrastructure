@@ -123,11 +123,10 @@ export default function Home() {
             <li key={index} className="w-full">
               <button
                 onClick={() => handleCategoryClick(item)}
-                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-center md:my-4 ${
-                  selectedCategory.name === item.name
+                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-center md:my-4 ${selectedCategory.name === item.name
                     ? 'bg-gray-200 text-gray-800 font-bold'
                     : 'text-gray-600 hover:bg-gray-100'
-                }`}
+                  }`}
               >
                 {item.name}
               </button>
@@ -141,7 +140,7 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800 md:my-20">{selectedCategory.name}</h2>
 
         {/* Scrollable Image Grid */}
-        <div 
+        <div
           ref={scrollContainerRef}
           className="flex-1 overflow-y-auto pr-4"
           style={{
