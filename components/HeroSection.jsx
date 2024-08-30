@@ -46,9 +46,9 @@ const HeroSection = () => {
 
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { 
+    visible: {
       opacity: 1,
-      transition: { 
+      transition: {
         when: "beforeChildren",
         staggerChildren: 0.1,
         delayChildren: 0.3
@@ -58,15 +58,15 @@ const HeroSection = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { type: 'spring', stiffness: 100 }
     }
   };
 
   return (
-    <motion.div 
+    <motion.div
       className="relative w-full h-screen overflow-hidden"
       initial="hidden"
       animate="visible"
@@ -104,7 +104,7 @@ const HeroSection = () => {
         <img src="/images/home/logo.png" alt="Logo" width={120} height={120} className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32" />
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-start justify-center p-4 sm:p-8 md:p-12 lg:p-16"
         variants={containerVariants}
       >
