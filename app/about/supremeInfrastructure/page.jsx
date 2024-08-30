@@ -107,7 +107,7 @@ const AboutUsPage = () => {
                                     whileHover={{ scale: 1.05 }}
                                     transition={{ type: "spring", stiffness: 300 }}
                                 >
-                                    <div className="text-4xl mb-4 text-blue-600">{service.icon}</div>
+                                    <div className="text-4xl mb-4 text-red-600 md:mx-52">{service.icon}</div>
                                     <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                                     <p className="text-gray-600">{service.description}</p>
                                 </motion.div>
