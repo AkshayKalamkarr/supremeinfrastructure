@@ -1,6 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { projects } from '../../data/projects/projectData'; // Adjust the import path as needed
 
 // Enhanced Feature Component
@@ -183,7 +185,7 @@ export default function Project() {
 
                                 {/* Project Features Section */}
                                 <motion.div
-                                    className="mt-12  rounded-lg p-6 "
+                                    className="mt-12 rounded-lg p-6"
                                     initial={{ opacity: 0, y: 50 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: 0.6 }}
@@ -203,8 +205,9 @@ export default function Project() {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
-                            className="text-center text-2xl mt-96 text-gray-600"
+                            className="text-center text-2xl mt-96 text-gray-600 flex items-center justify-center"
                         >
+                            <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
                             Select a project to view details
                         </motion.p>
                     )}
