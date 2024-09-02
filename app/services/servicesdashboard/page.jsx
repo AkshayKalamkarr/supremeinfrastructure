@@ -144,9 +144,9 @@ export default function Home() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-full md:w-1/4 bg-blue-950 p-8 shadow-lg">
+      <aside className="w-full lg:w-1/5 bg-blue-950 p-4 shadow-lg">
         {/* <h1 className="text-3xl font-bold mb-2 text-center text-gray-800  md:my-24">Supreme Infrastructure Company</h1> */}
-        <h2 className="text-3xl font-semibold mb-6 md:mb-16 text-center text-white md:my-24">PORTFOLIO / SERVICES</h2>
+        <h2 className="text-3xl font-semibold mb-6 md:mb-16 text-center text-white p-4 lg:my-12">PORTFOLIO / SERVICES</h2>
         <ul className="space-y-2">
           {portfolioItems.map((item, index) => (
             <li key={index} className="w-full">
