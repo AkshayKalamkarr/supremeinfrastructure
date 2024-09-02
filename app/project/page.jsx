@@ -96,18 +96,33 @@ export default function Project() {
                             transition={{ duration: 0.5 }}
                             className="bg-white shadow-xl overflow-hidden"
                         >
-                            <div className="h-[40vh] lg:h-[30vh] bg-cover bg-center relative" style={{ backgroundImage: `url('${selectedProject.backgroundImage.image}')` }}>
+                            {/* Updated Project Title Section */}
+                            <div className="h-[40vh] lg:h-[30vh] relative overflow-hidden">
                                 <motion.div
-                                    className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.5, delay: 0.2 }}
+                                    className="absolute inset-0 bg-cover bg-center"
+                                    style={{ backgroundImage: `url('${selectedProject.backgroundImage.image}')` }}
+                                    initial={{ scale: 1.1 }}
+                                    animate={{ scale: 1 }}
+                                    transition={{ duration: 1, ease: 'easeOut' }}
                                 >
-                                    <h1 className="text-3xl lg:text-6xl font-extrabold text-white text-center leading-tight px-4">
-                                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
-                                            {selectedProject.title}
-                                        </span>
-                                    </h1>
+                                    <motion.div
+                                        className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-400 bg-opacity-60 flex items-center justify-center"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.7, delay: 0.2 }}
+                                    >
+                                        <motion.h1
+                                            className="text-3xl lg:text-6xl font-extrabold text-white text-center leading-tight px-4 shadow-lg"
+                                            initial={{ opacity: 0, y: -30 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.5, delay: 0.3 }}
+                                            whileHover={{ scale: 1.05 }}
+                                        >
+                                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+                                                {selectedProject.title}
+                                            </span>
+                                        </motion.h1>
+                                    </motion.div>
                                 </motion.div>
                             </div>
 
@@ -138,7 +153,7 @@ export default function Project() {
                                         </div>
 
                                         <motion.div
-                                            className=" rounded-lg p-6"
+                                            className="rounded-lg p-6"
                                             initial={{ opacity: 0, y: 20 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.5, delay: 0.5 }}
