@@ -93,7 +93,12 @@ const portfolioItems = [
   },
   {
     name: "Building Design",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
+    images: ['/services/building-design/building-1.JPG', 
+      '/services/building-design/building-2.JPG',
+      '/services/building-design/building-3.JPG',
+      '/services/building-design/building-4.JPG',
+      '/services/building-design/building-5.JPG',
+    ]
   },
 ];
 
