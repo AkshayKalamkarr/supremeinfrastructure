@@ -36,7 +36,7 @@ const CareerPage = () => {
         <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
             <div className="h-[60vh] bg-cover bg-center relative" style={{ backgroundImage: "url('/images/contact/careerBackground.jpg')" }}>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                    <motion.h1 
+                    <motion.h1
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
@@ -48,7 +48,7 @@ const CareerPage = () => {
             </div>
 
             <main className="container mx-auto px-4 py-20 -mt-20 relative z-10">
-                <motion.p 
+                <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5, duration: 1 }}
@@ -67,9 +67,9 @@ const CareerPage = () => {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <motion.div 
+                                <motion.div
                                     className="text-4xl mb-4"
-            
+
                                 >
                                     {job.icon}
                                 </motion.div>
@@ -82,7 +82,7 @@ const CareerPage = () => {
 
                 <section className="flex flex-col md:flex-row gap-12">
                     <div className="w-full md:w-1/2">
-                        <motion.div 
+                        <motion.div
                             className="h-full bg-cover bg-center rounded-none overflow-hidden"
                             style={{ backgroundImage: "url('/images/contact/careerBackground-2.jpg')" }}
                             initial={{ opacity: 0, x: -100 }}
@@ -90,7 +90,7 @@ const CareerPage = () => {
                             transition={{ duration: 1 }}
                         >
                             <div className="h-full bg-black bg-opacity-50 flex items-center justify-center p-8">
-                                <motion.h2 
+                                <motion.h2
                                     className="text-4xl font-bold text-white text-center"
                                     animate={{ y: [0, -10, 0] }}
                                     transition={{ duration: 2, repeat: Infinity }}
