@@ -46,7 +46,7 @@ const Footer = () => {
                         <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Quick Links</h2>
                         <div className="flex flex-col space-y-2">
                             {['About Us', 'Projects', 'Gallery', 'Contact'].map((item, index) => (
-                                <Link key={index} href={`/${item.toLowerCase().replace(' ', '')}`} className="text-gray-300 hover:text-yellow-500 transition duration-300 text-center text-sm sm:text-base hover:underline hover:underline-offset-4">
+                                <Link key={index} href={`/${item.toLowerCase().replace(' ', '')}`} className="text-gray-300 hover:text-yellow-500 transition duration-300 md:mx-10 text-sm sm:text-base hover:underline hover:underline-offset-4">
                                     {item}
                                 </Link>
                             ))}
