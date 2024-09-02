@@ -50,7 +50,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold text-center">Reimagine. Redefine. Revitalize.</h3>
+            <h3 className="text-3xl font-bold text-center md:my-6">Reimagine. Redefine. Revitalize.</h3>
             <p className="mt-4 text-center">Invite us in, examine, and let us transform your space.</p>
           </motion.div>
           <motion.div
@@ -59,7 +59,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <p className="text-gray-700 text-center">We're Supreme's Interior Construction Specialists, and you can call us ICS. We're focused on specializations like transformation of commercial spaces, tenant improvements, and more.</p>
+            <p className="text-gray-700 text-center md:my-6">We're Supreme's Interior Construction Specialists, and you can call us ICS. We're focused on specializations like transformation of commercial spaces, tenant improvements, and more.</p>
           </motion.div>
           <motion.div
             className="bg-orange-500 text-white p-6"
