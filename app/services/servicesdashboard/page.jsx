@@ -57,7 +57,11 @@ const portfolioItems = [
   },
   {
     name: "Architectural Design",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
+    images: ['/services/architectural-design/architectural-1.JPG',
+      '/services/architectural-design/architectural-2.JPG',
+      '/services/architectural-design/architectural-3.JPG',
+      
+    ]
   },
   {
     name: "Cable Trench",
@@ -69,7 +73,11 @@ const portfolioItems = [
   },
   {
     name: "Horticulture Design",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
+    images: ['/services/horticulture-design/horticulture-1.JPG', 
+      '/services/horticulture-design/horticulture-2.JPG',
+      '/services/horticulture-design/horticulture-3.JPG',
+      '/services/horticulture-design/horticulture-4.JPG',
+    ]
   },
   {
     name: "Garden Maintenance",
