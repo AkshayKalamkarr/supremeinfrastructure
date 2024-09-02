@@ -12,7 +12,7 @@ const FeatureCard = ({ feature, index }) => (
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
-        whileHover={{ scale: 1.05, color: "#3B82F6" }}
+        whileHover={{ scale: 1.05, color: "#3B82F6" }}  
     >
         <motion.span
             className="text-blue-500 font-bold text-xl"
