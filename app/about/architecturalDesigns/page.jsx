@@ -132,14 +132,7 @@ export default function Home() {
               >
                 Contact Us
               </motion.a>
-              <motion.a 
-                href="#" 
-                className="bg-transparent border border-black text-black px-4 py-2"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Watch Video
-              </motion.a>
+              
             </div>
           </motion.div>
           <motion.div 
