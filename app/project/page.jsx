@@ -106,7 +106,7 @@ export default function Project() {
                                     transition={{ duration: 1, ease: 'easeOut' }}
                                 >
                                     <motion.div
-                                        className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-400 bg-opacity-60 flex items-center justify-center"
+                                        className="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700 bg-opacity-60 flex items-center justify-center"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         transition={{ duration: 0.7, delay: 0.2 }}
@@ -118,7 +118,7 @@ export default function Project() {
                                             transition={{ duration: 0.5, delay: 0.3 }}
                                             whileHover={{ scale: 1.05 }}
                                         >
-                                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 via-blue-400 to-blue-900">
+                                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900">
                                                 {selectedProject.title}
                                             </span>
                                         </motion.h1>
