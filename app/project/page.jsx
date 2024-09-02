@@ -106,7 +106,7 @@ export default function Project() {
                                     transition={{ duration: 1, ease: 'easeOut' }}
                                 >
                                     <motion.div
-                                        className="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700 bg-opacity-60 flex items-center justify-center"
+                                        className="absolute inset-0 bg-gradient-to-r from-gray-500 via-gray-300 to-gray-500 bg-opacity-60 flex items-center justify-center"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         transition={{ duration: 0.7, delay: 0.2 }}
