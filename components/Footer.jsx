@@ -25,7 +25,7 @@ const Footer = () => {
 
                     {/* Contact Us */}
                     <div className="space-y-4">
-                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-center">Contact Us</h2>
+                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Contact Us</h2>
                         <div className="space-y-3">
                             {[
                                 { icon: FaPhone, text: 'CALL US : (+1) 212-946-2707' },
