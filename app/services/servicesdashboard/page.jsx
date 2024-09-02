@@ -153,7 +153,7 @@ export default function Home() {
               <button
                 onClick={() => handleCategoryClick(item)}
                 className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-center md:my-4 ${selectedCategory.name === item.name
-                  ? 'bg-gray-200 text-gray-800 font-bold'
+                  ? 'bg-gray-200 text-blue-800 font-bold'
                   : 'text-gray-600 hover:bg-gray-100'
                   }`}
               >
