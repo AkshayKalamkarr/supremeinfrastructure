@@ -81,14 +81,14 @@ const portfolioItems = [
   },
   {
     name: "Garden Maintenance",
-    images: ['/services/garden-maintenence/garden.JPG',
-      '/services/garden-maintenence/garden.JPG',
-      '/services/garden-maintenence/garden.JPG',
-      '/services/garden-maintenence/garden.JPG',
-      '/services/garden-maintenence/garden.JPG',
-      '/services/garden-maintenence/garden.JPG',
-      '/services/garden-maintenence/garden.JPG',
-      '/services/garden-maintenence/garden.JPG',
+    images: ['/services/garden-maintenence/garden-1.JPG',
+      '/services/garden-maintenence/garden-2.JPG',
+      '/services/garden-maintenence/garden-3.JPG',
+      '/services/garden-maintenence/garden-4.JPG',
+      '/services/garden-maintenence/garden-5.JPG',
+      '/services/garden-maintenence/garden-6.JPG',
+      '/services/garden-maintenence/garden-7.JPG',
+      '/services/garden-maintenence/garden-8.JPG',
     ]
   },
   {
