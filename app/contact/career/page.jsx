@@ -28,8 +28,8 @@ const CareerPage = () => {
         { title: 'Site Engineer', department: 'Engineering', icon: '🏗️' },
         { title: 'Purchase Engineer', department: 'Product', icon: '🛒' },
         { title: 'Interior Designer', department: 'Design', icon: '🎨' },
-        { title: 'Admin', department: 'Design', icon: '🎨' },
-        { title: 'Accountant', department: 'Design', icon: '🎨' },
+        { title: 'Admin', department: 'Computer', icon: '🎨' },
+        { title: 'Accountant', department: 'Calculator', icon: '🎨' },
     ];
 
     return (
