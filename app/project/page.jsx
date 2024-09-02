@@ -203,7 +203,7 @@ export default function Project() {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
-                            className="text-center text-2xl mt-20 text-gray-600"
+                            className="text-center text-2xl mt-96 text-gray-600"
                         >
                             Select a project to view details
                         </motion.p>
