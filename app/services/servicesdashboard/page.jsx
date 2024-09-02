@@ -81,7 +81,7 @@ const portfolioItems = [
   },
   {
     name: "Garden Maintenance",
-    images: [ '/services/garden-maintenence/garden.JPG',
+    images: ['/services/garden-maintenence/garden.JPG',
       '/services/garden-maintenence/garden.JPG',
       '/services/garden-maintenence/garden.JPG',
       '/services/garden-maintenence/garden.JPG',
@@ -93,7 +93,7 @@ const portfolioItems = [
   },
   {
     name: "Building Design",
-    images: ['/services/building-design/building-1.JPG', 
+    images: ['/services/building-design/building-1.JPG',
       '/services/building-design/building-2.JPG',
       '/services/building-design/building-3.JPG',
       '/services/building-design/building-4.JPG',
