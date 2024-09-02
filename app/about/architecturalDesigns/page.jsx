@@ -22,7 +22,7 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Interior Construction Specialists
+            Architectural Designs Specialists
           </motion.h2>
           <motion.p 
             className="mt-4 text-lg text-center"
