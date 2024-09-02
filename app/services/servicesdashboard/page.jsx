@@ -45,7 +45,15 @@ const portfolioItems = [
   },
   {
     name: "Civil Construction",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
+    images: ['/services/civil-construction/civil-1.JPG',
+      '/services/civil-construction/civil-2.JPG',
+      '/services/civil-construction/civil-3.JPG',
+      '/services/civil-construction/civil-4.JPG',
+      '/services/civil-construction/civil-5.JPG',
+      '/services/civil-construction/civil-6.JPG',
+      '/services/civil-construction/civil-7.JPG',
+      '/services/civil-construction/civil-8.JPG',
+    ]
   },
   {
     name: "Architectural Design",
