@@ -60,7 +60,7 @@ const portfolioItems = [
     images: ['/services/architectural-design/architectural-1.JPG',
       '/services/architectural-design/architectural-2.JPG',
       '/services/architectural-design/architectural-3.JPG',
-      
+
     ]
   },
   {
@@ -73,7 +73,7 @@ const portfolioItems = [
   },
   {
     name: "Horticulture Design",
-    images: ['/services/horticulture-design/horticulture-1.JPG', 
+    images: ['/services/horticulture-design/horticulture-1.JPG',
       '/services/horticulture-design/horticulture-2.JPG',
       '/services/horticulture-design/horticulture-3.JPG',
       '/services/horticulture-design/horticulture-4.JPG',
