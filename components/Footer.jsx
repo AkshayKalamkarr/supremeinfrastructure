@@ -47,7 +47,7 @@ const Footer = () => {
                         <div className="space-y-3">
                             {[
                                 { icon: FaInfoCircle, text: 'About Us', href: '/about/supremeInfrastructure' },
-                                { icon: FaProjectDiagram, text: 'Projects', href: '/projects' },
+                                { icon: FaProjectDiagram, text: 'Projects', href: '/project' },
                                 { icon: FaImages, text: 'Gallery', href: '/gallery' },
                                 { icon: FaAddressBook, text: 'Contact', href: '/contact' }
                             ].map((item, index) => (
