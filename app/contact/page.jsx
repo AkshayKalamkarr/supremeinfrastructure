@@ -76,7 +76,7 @@ export default function Contact() {
                 <FaEnvelope className="text-2xl text-blue-500" />
                 <div>
                   <p className="font-semibold">Email:</p>
-                  <p>info@royalcrown.com</p>
+                  <p>info@supremeinfrastructure</p>
                 </div>
               </div>
             </div>
