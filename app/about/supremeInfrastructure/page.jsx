@@ -18,7 +18,6 @@ const AboutUsPage = () => {
         { value: '50+', label: 'Projects Completed' },
         { value: '10+', label: 'Years of Experience' },
         { value: '100+', label: 'Happy Clients' },
-        { value: '100+', label: 'Awards Won' },
     ];
 
     const directors = [
@@ -120,7 +119,7 @@ const AboutUsPage = () => {
                 <section className="mb-20 bg-blue-600 text-white py-16 rounded-lg">
                     <div className="container mx-auto">
                         <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Our Achievements</h2>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                             {stats.map((stat, index) => (
                                 <motion.div
                                     key={index}
