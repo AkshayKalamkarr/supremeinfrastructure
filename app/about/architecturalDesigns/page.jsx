@@ -235,7 +235,7 @@ export default function Home() {
             ICS needs leaders and problem solvers...
           </motion.p>
           <motion.a
-            href="#"
+            href="/contact/career"
             className="mt-4 inline-block bg-orange-500 text-white px-6 py-3"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
