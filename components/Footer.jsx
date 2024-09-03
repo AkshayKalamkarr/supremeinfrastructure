@@ -46,12 +46,12 @@ const Footer = () => {
                         <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Quick Links</h2>
                         <div className="space-y-3">
                             {[
-                                { icon: FaInfoCircle, text: 'About Us' },
-                                { icon: FaProjectDiagram, text: 'Projects' },
-                                { icon: FaImages, text: 'Gallery' },
-                                { icon: FaAddressBook, text: 'Contact' }
+                                { icon: FaInfoCircle, text: 'About Us', href: '/about/supremeInfrastructure' },
+                                { icon: FaProjectDiagram, text: 'Projects', href: '/projects' },
+                                { icon: FaImages, text: 'Gallery', href: '/gallery' },
+                                { icon: FaAddressBook, text: 'Contact', href: '/contact' }
                             ].map((item, index) => (
-                                <Link key={index} href={`/${item.text.toLowerCase().replace(' ', '')}`} className="flex items-center space-x-3 group">
+                                <Link key={index} href={item.href} className="flex items-center space-x-3 group">
                                     <item.icon className="text-yellow-500 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
                                     <span className="text-gray-300 hover:text-yellow-500 transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4">
                                         {item.text}
