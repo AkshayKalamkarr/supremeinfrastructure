@@ -69,7 +69,7 @@ const CareerPage = () => {
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <motion.div
-                                    className="text-4xl mb-4"
+                                    className="text-4xl mb-4 md:mx-48"
                                 >
                                     <job.icon className="text-blue-600" />
                                 </motion.div>
