@@ -51,7 +51,7 @@ const Footer = () => {
                                 { icon: FaImages, text: 'services', href: '/services/servicesdashboard' },
                                 { icon: FaAddressBook, text: 'Contact', href: '/contact' }
                             ].map((item, index) => (
-                                <Link key={index} href={item.href} className="flex items-center space-x-3 group">
+                                <Link key={index} href={item.href} className="flex items-center space-x-5 group">
                                     <item.icon className="text-yellow-500 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
                                     <span className="text-gray-300 hover:text-yellow-500 transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4">
                                         {item.text}
