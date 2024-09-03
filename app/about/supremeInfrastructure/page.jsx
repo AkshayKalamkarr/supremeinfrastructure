@@ -51,9 +51,9 @@ const AboutUsPage = () => {
                 <section className="mb-20">
                     <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">About Supreme Infrastructure</h2>
                     <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto text-center">
-                        Supreme Infrastructure is a leading civil engineering and construction company with over 50 years of experience.
-                        We specialize in delivering high-quality infrastructure projects, innovative architectural designs, and
-                        sustainable urban green spaces. Our commitment to excellence and cutting-edge technology sets us apart in the industry.
+                        Supreme Infrastructure is a leading Civil Engineering and construction company with over 10 years of experience.
+                        We specialize in delivering High-quality Infrastructure projects, Innovative Architectural Designs, and
+                        Sustainable urban green spaces. Our commitment to excellence and Cutting-Edge technology sets us apart in the Industry.
                     </p>
                 </section>
 
