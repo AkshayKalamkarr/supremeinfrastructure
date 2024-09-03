@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaHardHat, FaShoppingCart, FaPencilRuler, FaUserShield, FaCalculator } from 'react-icons/fa';
 
 const CareerPage = () => {
     const [formData, setFormData] = useState({
@@ -25,11 +26,11 @@ const CareerPage = () => {
     };
 
     const jobs = [
-        { title: 'Site Engineer', department: 'Engineering', icon: '🏗️' },
-        { title: 'Purchase Engineer', department: 'Product', icon: '🛒' },
-        { title: 'Interior Designer', department: 'Design', icon: '🎨' },
-        { title: 'Admin', department: 'Computer', icon: '🎨' },
-        { title: 'Accountant', department: 'Calculator', icon: '🎨' },
+        { title: 'Site Engineer', department: 'Engineering', icon: FaHardHat },
+        { title: 'Purchase Engineer', department: 'Product', icon: FaShoppingCart },
+        { title: 'Interior Designer', department: 'Design', icon: FaPencilRuler },
+        { title: 'Admin', department: 'Administration', icon: FaUserShield },
+        { title: 'Accountant', department: 'Finance', icon: FaCalculator },
     ];
 
     return (
@@ -69,9 +70,8 @@ const CareerPage = () => {
                             >
                                 <motion.div
                                     className="text-4xl mb-4"
-
                                 >
-                                    {job.icon}
+                                    <job.icon className="text-blue-600" />
                                 </motion.div>
                                 <h3 className="text-2xl font-bold mb-3 text-gray-800">{job.title}</h3>
                                 <p className="text-lg text-blue-600 font-semibold">{job.department}</p>
