@@ -18,9 +18,9 @@ const SupremeQuote = () => {
       {/* Quote Text */}
       <div className="max-w-4xl mx-4 z-10 animate-fade-in-up">
         <p className="text-2xl md:text-3xl lg:text-4xl text-center font-serif">
-          Supreme Infrastructure is engaged in providing various kinds of civil construction
-          services that include Building construction, substation, cable trenching,
-          horticulture Garden design & Maintenance, interior designing, Turnkey projects,
+          Supreme Infrastructure is engaged in providing various kinds of Civil Construction
+          services that include Building Construction, Substation, Cable Trenching,
+          Horticulture Garden design & Maintenance, Interior Designing, Turnkey Projects,
           Rainwater Harvesting, Sewage waste management system, Government Liaising works.
         </p>
       </div>
