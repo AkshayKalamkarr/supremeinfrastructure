@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="space-y-4">
                         <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Corporate Office</h2>
                         <div className="flex items-start space-x-3">
-                            <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-yellow-500 animate-pulse" size={20} />
+                            <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-yellow-500" size={20} />
                             <p className="text-gray-300 text-sm sm:text-base">
                                 SUPREME INFRASTRUCTURE<br />
                                 Office No 603, Sector 15,<br />
