@@ -44,7 +44,7 @@ const Footer = () => {
                     {/* Quick Links */}
                     <div className="space-y-4">
                         <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Quick Links</h2>
-                        <div className="flex flex-col space-y-2">
+                        <div className="space-y-3">
                             {[
                                 { icon: FaInfoCircle, text: 'About Us' },
                                 { icon: FaProjectDiagram, text: 'Projects' },
