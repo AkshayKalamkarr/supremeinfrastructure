@@ -121,9 +121,9 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold  gap-8 mx-32">The crew you want in your corner.</h3>
-            <p className="mt-4 mx-32">From preconstruction to construction, we're by your side...</p>
-            <div className="mt-4 flex space-x-4 mx-32">
+            <h3 className="text-2xl font-bold gap-8 mx-32 text-center">The crew you want in your corner.</h3>
+            <p className="mt-4 mx-32 text-center">From preconstruction to construction, we're by your side...</p>
+            <div className="mt-4 flex space-x-4 justify-center">
               <motion.a
                 href="/contact"
                 className="bg-black text-white px-4 py-2"
