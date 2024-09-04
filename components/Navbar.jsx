@@ -56,7 +56,7 @@ function Navbar({ className }) {
 
                         <div className="group relative">
                             <HoveredLink href="/">About</HoveredLink>
-                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block">
+                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block z-10">
                                 <Link href="/about/supremeInfrastructure" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Supreme Infrastructure</Link>
                                 <Link href="/about/architecturalDesigns" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Architectural Designs</Link>
                             </div>
