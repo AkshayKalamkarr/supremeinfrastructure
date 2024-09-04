@@ -63,10 +63,10 @@ export default function Home() {
           </motion.div>
           <motion.div
             className="bg-orange-500 text-white p-6"
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
+            // initial={{ x: 50, opacity: 0 }}
+            // whileInView={{ x: 0, opacity: 1 }}
+            // transition={{ duration: 0.8, delay: 0.4 }}
+            // viewport={{ once: true }}
           >
             <h4 className="text-xl font-bold text-center">Ready to talk about your project?</h4>
             <p className="mt-2 text-center">Contact Our Team</p>
@@ -188,17 +188,17 @@ export default function Home() {
             <p className="mt-4 text-center">ICS was founded to supply the demand...</p>
           </motion.div>
           <motion.div
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
+            // initial={{ x: 50, opacity: 0 }}
+            // whileInView={{ x: 0, opacity: 1 }}
+            // transition={{ duration: 0.8, delay: 0.2 }}
+            // viewport={{ once: true }}
           >
             <div className="p-6 border">
               <h4 className="text-xl font-bold text-center">We're the difference between "meh" and "wow"</h4>
               <p className="mt-2 text-center">ICS was founded to supply the demand for...</p>
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                // whileHover={{ scale: 1.05 }}
+                // whileTap={{ scale: 0.95 }}
               >
                 <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-black text-white px-4 py-2 md:mx-64">View Projects</Link>
               </motion.div>
