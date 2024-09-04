@@ -1,15 +1,29 @@
 'use client'
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef } from 'react';
+import { motion, useAnimation, useInView } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Portfolio = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("visible");
+        }
+    }, [isInView, mainControls]);
+
     const containerVariants = {
-        hidden: { opacity: 0 },
+        hidden: { opacity: 0, x: 100 },
         visible: {
             opacity: 1,
+            x: 0,
             transition: {
+                type: "spring",
+                stiffness: 100,
+                damping: 20,
                 staggerChildren: 0.3,
                 delayChildren: 0.2
             }
@@ -17,9 +31,9 @@ const Portfolio = () => {
     };
 
     const itemVariants = {
-        hidden: { y: 20, opacity: 0 },
+        hidden: { x: 100, opacity: 0 },
         visible: {
-            y: 0,
+            x: 0,
             opacity: 1,
             transition: {
                 type: "spring",
@@ -31,10 +45,11 @@ const Portfolio = () => {
 
     return (
         <motion.div
+            ref={ref}
             className="flex flex-col lg:flex-row w-full h-auto bg-gray-200 gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16"
             variants={containerVariants}
             initial="hidden"
-            animate="visible"
+            animate={mainControls}
         >
             {/* Left Image */}
             <motion.div
@@ -124,16 +139,11 @@ const Portfolio = () => {
                 {/* Text Content */}
                 <motion.div
                     className="w-full h-auto p-4 sm:p-6 flex flex-col justify-center text-right mt-4 lg:mt-8"
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.5, duration: 0.8 }}
+                    variants={itemVariants}
                     whileHover={{ scale: 1.02, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)" }}
                 >
                     <motion.h2
                         className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 text-black"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.6, duration: 0.8 }}
                         whileHover={{ scale: 1.05, color: "#1d4ed8" }}
                     >
                         A portfolio with purpose.
@@ -161,6 +171,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-
-
