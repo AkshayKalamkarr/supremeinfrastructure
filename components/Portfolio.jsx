@@ -97,7 +97,7 @@ const Portfolio = () => {
             >
                 {/* Top Image */}
                 <motion.div
-                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[450px] xl:h-[450px] relative md:mt-10"
+                    className="w-full h-64 sm:h-80 md:h-96 lg:h-[450px] xl:h-[450px] relative md:mt-10 text-center"
                     whileHover={{ scale: 1.05, rotateX: 5 }}
                     transition={{ type: "spring", stiffness: 200, damping: 10 }}
                 >
