@@ -81,7 +81,7 @@ function Navbar({ className }) {
                             </div>
                         </div>
 
-                        <HoveredLink href="/contact/career">Career</HoveredLink>
+                        {/* <HoveredLink href="/contact/career">Career</HoveredLink> */}
                     </div>
 
                 </div>
