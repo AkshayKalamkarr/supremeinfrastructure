@@ -114,7 +114,7 @@ function Navbar({ className }) {
                                 description="Production ready Tailwind css components for your next project"
                             />
                             <ProductItem
-                                title="Guest Houses"
+                                title="Guest House"
                                 href="/project/COACT"
                                 src="/images/projects/COACT/coact-1.jpg"
                                 description="Never write from scratch again. Go from idea to blog in minutes."
