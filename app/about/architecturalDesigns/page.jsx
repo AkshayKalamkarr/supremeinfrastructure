@@ -63,10 +63,10 @@ export default function Home() {
           </motion.div>
           <motion.div
             className="bg-orange-500 text-white p-6"
-            // initial={{ x: 50, opacity: 0 }}
-            // whileInView={{ x: 0, opacity: 1 }}
-            // transition={{ duration: 0.8, delay: 0.4 }}
-            // viewport={{ once: true }}
+          // initial={{ x: 50, opacity: 0 }}
+          // whileInView={{ x: 0, opacity: 1 }}
+          // transition={{ duration: 0.8, delay: 0.4 }}
+          // viewport={{ once: true }}
           >
             <h4 className="text-xl font-bold text-center">Ready to talk about your project?</h4>
             <p className="mt-2 text-center">Contact Our Team</p>
@@ -114,16 +114,16 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="container mx-auto grid md:grid-cols-3 gap-8">
+        <div className="container mx-auto grid md:grid-cols-3">
           <motion.div
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold">The crew you want in your corner.</h3>
-            <p className="mt-4">From preconstruction to construction, we're by your side...</p>
-            <div className="mt-4 flex space-x-4">
+            <h3 className="text-2xl font-bold  gap-8 mx-32">The crew you want in your corner.</h3>
+            <p className="mt-4 mx-32">From preconstruction to construction, we're by your side...</p>
+            <div className="mt-4 flex space-x-4 mx-32">
               <motion.a
                 href="/contact"
                 className="bg-black text-white px-4 py-2"
@@ -142,9 +142,9 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="w-full grid grid-cols-3 gap-4">
+            <div className="w-full grid grid-cols-3 gap-4 pt-8">
               <motion.button
-                className="text-center bg-white p-4 border"
+                className="text-start bg-white p-0 border"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -188,19 +188,19 @@ export default function Home() {
             <p className="mt-4 text-center">ICS was founded to supply the demand...</p>
           </motion.div>
           <motion.div
-            // initial={{ x: 50, opacity: 0 }}
-            // whileInView={{ x: 0, opacity: 1 }}
-            // transition={{ duration: 0.8, delay: 0.2 }}
-            // viewport={{ once: true }}
+          // initial={{ x: 50, opacity: 0 }}
+          // whileInView={{ x: 0, opacity: 1 }}
+          // transition={{ duration: 0.8, delay: 0.2 }}
+          // viewport={{ once: true }}
           >
             <div className="p-6 border">
               <h4 className="text-xl font-bold text-center">We're the difference between "meh" and "wow"</h4>
               <p className="mt-2 text-center">ICS was founded to supply the demand for...</p>
               <motion.div
-                // whileHover={{ scale: 1.05 }}
-                // whileTap={{ scale: 0.95 }}
+              // whileHover={{ scale: 1.05 }}
+              // whileTap={{ scale: 0.95 }}
               >
-                <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-black text-white px-4 py-2 md:mx-64">View Projects</Link>
+                <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-black text-white px-4 mx-24 py-2 md:mx-64">View Projects</Link>
               </motion.div>
             </div>
           </motion.div>
