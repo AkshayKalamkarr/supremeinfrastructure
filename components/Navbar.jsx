@@ -66,7 +66,7 @@ function Navbar({ className }) {
 
                         <div className="group relative">
                             <HoveredLink href="/">Projects</HoveredLink>
-                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block">
+                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block z-10">
                                 <Link href="/project/TATA" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">TATA</Link>
                                 <Link href="/project/atlantas" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">ATLANTAS</Link>
                                 <Link href="/project/coact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">COACT</Link>
@@ -75,7 +75,7 @@ function Navbar({ className }) {
 
                         <div className="group relative">
                             <HoveredLink href="/">Contact</HoveredLink>
-                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block">
+                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block z-10">
                                 <Link href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">contact</Link>
                                 <Link href="/contact/career" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">career</Link>
                             </div>
