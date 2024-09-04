@@ -181,7 +181,7 @@ export default function Home() {
             {selectedCategory.images.map((image, index) => (
               <div
                 key={index}
-                className="relative aspect-square rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
+                className="relative aspect-square overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
                 onClick={() => openFullView(image)}
               >
                 <Image
