@@ -42,50 +42,124 @@ function Navbar({ className }) {
 
             {/* Mobile Slider Menu */}
             <div
-                className={`fixed top-0 left-0 h-full w-4/5 bg-white dark:bg-white shadow-md transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
-                    } transition-transform duration-300 lg:hidden z-40`}
+                className={`fixed top-0 left-0 h-full w-4/5 max-w-sm bg-gradient-to-r from-white to-gray-100 dark:bg-gray-800 shadow-xl transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
+                    } transition-transform duration-300 ease-in-out lg:hidden z-40`}
             >
-                <div className="p-4">
-                    <button onClick={closeMenu} className="p-2 bg-gray-200 text-black rounded-full shadow-lg focus:outline-none">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                <div className="p-4 flex justify-between items-center">
+                    <h2 className="text-xl font-bold text-gray-900 dark:text-white">Menu</h2>
+                    <button
+                        onClick={closeMenu}
+                        className="p-2 bg-gray-200 dark:bg-gray-700 text-black dark:text-white rounded-full shadow-lg focus:outline-none hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200"
+                    >
+                        <svg
+                            className="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M6 18L18 6M6 6l12 12"
+                            ></path>
                         </svg>
                     </button>
-                    <div className="mt-8 justify-center items-center flex flex-col space-y-8">
-                        <HoveredLink href="/">Home</HoveredLink>
+                </div>
+                <div className="mt-8 flex flex-col space-y-8 px-4 text-center">
+                    <HoveredLink
+                        href="/"
+                        className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
+                    >
+                        Home
+                    </HoveredLink>
 
-                        <div className="group relative">
-                            <HoveredLink href="/">About</HoveredLink>
-                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block z-10">
-                                <Link href="/about/supremeInfrastructure" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Supreme Infrastructure</Link>
-                                <Link href="/about/architecturalDesigns" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Architectural Designs</Link>
-                            </div>
+                    <div className="group relative">
+                        <HoveredLink
+                            href="/"
+                            className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
+                        >
+                            About
+                        </HoveredLink>
+                        <div className="absolute left-0 mt-2 hidden w-44 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg group-hover:block z-10">
+                            <Link
+                                href="/about/supremeInfrastructure"
+                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                            >
+                                Supreme Infrastructure
+                            </Link>
+                            <Link
+                                href="/about/architecturalDesigns"
+                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                            >
+                                Architectural Designs
+                            </Link>
                         </div>
-
-                        <HoveredLink href="/services/servicesdashboard">Services</HoveredLink>
-
-                        <div className="group relative">
-                            <HoveredLink href="/">Projects</HoveredLink>
-                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block z-10">
-                                <Link href="/project/TATA" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">TATA</Link>
-                                <Link href="/project/atlantas" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">ATLANTAS</Link>
-                                <Link href="/project/coact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">COACT</Link>
-                            </div>
-                        </div>
-
-                        <div className="group relative">
-                            <HoveredLink href="/">Contact</HoveredLink>
-                            <div className="absolute left-0 mt-2 hidden w-40 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block z-10">
-                                <Link href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">contact</Link>
-                                <Link href="/contact/career" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">career</Link>
-                            </div>
-                        </div>
-
-                        {/* <HoveredLink href="/contact/career">Career</HoveredLink> */}
                     </div>
 
+                    <HoveredLink
+                        href="/services/servicesdashboard"
+                        className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
+                    >
+                        Services
+                    </HoveredLink>
+
+                    <div className="group relative">
+                        <HoveredLink
+                            href="/"
+                            className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
+                        >
+                            Projects
+                        </HoveredLink>
+                        <div className="absolute left-0 mt-2 hidden w-44 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg group-hover:block z-10">
+                            <Link
+                                href="/project/TATA"
+                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                            >
+                                TATA
+                            </Link>
+                            <Link
+                                href="/project/atlantas"
+                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                            >
+                                ATLANTAS
+                            </Link>
+                            <Link
+                                href="/project/coact"
+                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                            >
+                                COACT
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="group relative">
+                        <HoveredLink
+                            href="/"
+                            className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
+                        >
+                            Contact
+                        </HoveredLink>
+                        <div className="absolute left-0 mt-2 hidden w-44 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg group-hover:block z-10">
+                            <Link
+                                href="/contact"
+                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                            >
+                                Contact
+                            </Link>
+                            <Link
+                                href="/contact/career"
+                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                            >
+                                Career
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
 
             {/* Desktop Menu */}
             <div className="hidden lg:block">
