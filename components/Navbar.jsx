@@ -102,19 +102,19 @@ function Navbar({ className }) {
                     <Link href='/project'><MenuItem setActive={setActive} active={active} item="Projects">
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
                             <ProductItem
-                                title="TATA"
+                                title="Commercial Projects"
                                 href="/project/TATA"
                                 src="/images/projects/TATA/tata-1.jpg"
                                 description="Prepare for tech interviews like never before."
                             />
                             <ProductItem
-                                title="ATLANTAS"
+                                title="Residencial Projects"
                                 href="/project/ATLANTAS"
                                 src="/images/projects/ATLANTAS/atlantas-19.jpg"
                                 description="Production ready Tailwind css components for your next project"
                             />
                             <ProductItem
-                                title="COACT"
+                                title="Guest Houses"
                                 href="/project/COACT"
                                 src="/images/projects/COACT/coact-1.jpg"
                                 description="Never write from scratch again. Go from idea to blog in minutes."
