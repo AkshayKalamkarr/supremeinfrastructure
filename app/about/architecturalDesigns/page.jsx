@@ -144,21 +144,21 @@ export default function Home() {
           >
             <div className="w-full grid grid-cols-3 gap-4 pt-8">
               <motion.button
-                className="text-start bg-white p-0 border"
+                className="text-start bg-white p-0 border md:text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Tenant Improvements
               </motion.button>
               <motion.button
-                className="text-center bg-white p-4 border"
+                className="text-center bg-white p-4 border md:text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Adaptive Reuse
               </motion.button>
               <motion.button
-                className="text-center bg-white p-4 border"
+                className="text-center bg-white p-4 border md:text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
