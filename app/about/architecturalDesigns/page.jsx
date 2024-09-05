@@ -9,13 +9,13 @@ export default function Home() {
       {/* Hero Section */}
       <motion.section
         className="relative h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/portfolio/img-3.jpg')" }}
+        style={{ backgroundImage: "url('/images/about/architectural.jpg')" }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="container mx-auto h-full flex flex-col justify-center text-white">
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div className="container mx-auto h-full flex flex-col justify-center text-gray-900">
           <motion.h2
             className="text-4xl md:text-6xl font-bold text-center"
             initial={{ y: -50, opacity: 0 }}
