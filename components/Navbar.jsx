@@ -142,19 +142,19 @@ function Navbar({ className }) {
                             <ProductItem
                                 title="Commercial Projects"
                                 href="/project/TATA"
-                                src="/images/projects/TATA/tata-1.jpg"
+                                src="/images/home/commercial.jpg"
                                 description="Explore our commercial project portfolio."
                             />
                             <ProductItem
                                 title="Residential Projects"
                                 href="/project/ATLANTAS"
-                                src="/images/projects/ATLANTAS/atlantas-19.jpg"
+                                src="/images/home/residencial.png"
                                 description="Discover our residential project designs."
                             />
                             <ProductItem
                                 title="Guest House"
                                 href="/project/COACT"
-                                src="/images/projects/COACT/coact-1.jpg"
+                                src="/images/home/architecture.png"
                                 description="View our guest house projects."
                             />
                         </div>
