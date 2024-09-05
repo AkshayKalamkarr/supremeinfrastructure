@@ -1,8 +1,9 @@
-'use client';
+'use client'
 import React, { useState } from "react";
 import Link from "next/link";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
+import { ChevronDown } from "lucide-react";
 
 export function NavbarDemo() {
     return (
@@ -18,6 +19,7 @@ export function NavbarDemo() {
 function Navbar({ className }) {
     const [active, setActive] = useState(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [openDropdowns, setOpenDropdowns] = useState({});
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -25,6 +27,14 @@ function Navbar({ className }) {
 
     const closeMenu = () => {
         setIsMenuOpen(false);
+        setOpenDropdowns({});
+    };
+
+    const toggleDropdown = (key) => {
+        setOpenDropdowns(prev => ({
+            ...prev,
+            [key]: !prev[key]
+        }));
     };
 
     return (
@@ -33,7 +43,7 @@ function Navbar({ className }) {
         >
             {/* Mobile Menu Button */}
             <div className="lg:hidden absolute top-4 right-4">
-                <button onClick={toggleMenu} className="p-2 bg-white text-black rounded-full shadow-lg focus:outline-none">
+                <button onClick={toggleMenu} className="p-2 bg-white text-black rounded-full shadow-lg focus:outline-none transition-transform duration-300 ease-in-out transform hover:scale-110">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
@@ -42,8 +52,9 @@ function Navbar({ className }) {
 
             {/* Mobile Slider Menu */}
             <div
-                className={`fixed top-0 left-0 h-full w-4/5 max-w-sm bg-gradient-to-r from-white to-gray-100 dark:bg-gray-800 shadow-xl transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
-                    } transition-transform duration-300 ease-in-out lg:hidden z-40`}
+                className={`fixed top-0 left-0 h-full w-4/5 max-w-sm bg-gradient-to-br from-white to-gray-100 dark:from-white-900 dark:to-white-800 shadow-2xl transform ${
+                    isMenuOpen ? "translate-x-0" : "-translate-x-full"
+                } transition-all duration-300 ease-in-out lg:hidden z-40`}
             >
                 <div className="p-4 flex justify-between items-center">
                     <h2 className="text-xl font-bold text-gray-900 dark:text-white">Menu</h2>
@@ -67,99 +78,58 @@ function Navbar({ className }) {
                         </svg>
                     </button>
                 </div>
-                <div className="mt-8 flex flex-col space-y-8 px-4 text-center">
-                    <HoveredLink
-                        href="/"
-                        className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
-                    >
+                <div className="mt-8 flex flex-col space-y-4 px-4">
+                    <MobileMenuItem href="/" onClick={closeMenu}>
                         Home
-                    </HoveredLink>
+                    </MobileMenuItem>
 
-                    <div className="group relative">
-                        <HoveredLink
-                            href="/"
-                            className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
-                        >
-                            About
-                        </HoveredLink>
-                        <div className="absolute left-0 mt-2 hidden w-44 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg group-hover:block z-10">
-                            <Link
-                                href="/about/supremeInfrastructure"
-                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
-                            >
-                                Supreme Infrastructure
-                            </Link>
-                            <Link
-                                href="/about/architecturalDesigns"
-                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
-                            >
-                                Architectural Designs
-                            </Link>
-                        </div>
-                    </div>
-
-                    <HoveredLink
-                        href="/services/servicesdashboard"
-                        className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
+                    <MobileMenuDropdown
+                        title="About"
+                        isOpen={openDropdowns.about}
+                        onClick={() => toggleDropdown('about')}
                     >
+                        <MobileMenuItem href="/about/supremeInfrastructure" onClick={closeMenu}>
+                            Supreme Infrastructure
+                        </MobileMenuItem>
+                        <MobileMenuItem href="/about/architecturalDesigns" onClick={closeMenu}>
+                            Architectural Designs
+                        </MobileMenuItem>
+                    </MobileMenuDropdown>
+
+                    <MobileMenuItem href="/services/servicesdashboard" onClick={closeMenu}>
                         Services
-                    </HoveredLink>
+                    </MobileMenuItem>
 
-                    <div className="group relative">
-                        <HoveredLink
-                            href="/"
-                            className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
-                        >
-                            Projects
-                        </HoveredLink>
-                        <div className="absolute left-0 mt-2 hidden w-44 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg group-hover:block z-10">
-                            <Link
-                                href="/project/TATA"
-                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
-                            >
-                                TATA
-                            </Link>
-                            <Link
-                                href="/project/atlantas"
-                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
-                            >
-                                ATLANTAS
-                            </Link>
-                            <Link
-                                href="/project/coact"
-                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
-                            >
-                                COACT
-                            </Link>
-                        </div>
-                    </div>
+                    <MobileMenuDropdown
+                        title="Projects"
+                        isOpen={openDropdowns.projects}
+                        onClick={() => toggleDropdown('projects')}
+                    >
+                        <MobileMenuItem href="/project/TATA" onClick={closeMenu}>
+                            TATA
+                        </MobileMenuItem>
+                        <MobileMenuItem href="/project/atlantas" onClick={closeMenu}>
+                            ATLANTAS
+                        </MobileMenuItem>
+                        <MobileMenuItem href="/project/coact" onClick={closeMenu}>
+                            COACT
+                        </MobileMenuItem>
+                    </MobileMenuDropdown>
 
-                    <div className="group relative">
-                        <HoveredLink
-                            href="/"
-                            className="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
-                        >
-                            Contact
-                        </HoveredLink>
-                        <div className="absolute left-0 mt-2 hidden w-44 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg group-hover:block z-10">
-                            <Link
-                                href="/contact"
-                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
-                            >
-                                Contact
-                            </Link>
-                            <Link
-                                href="/contact/career"
-                                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
-                            >
-                                Career
-                            </Link>
-                        </div>
-                    </div>
+                    <MobileMenuDropdown
+                        title="Contact"
+                        isOpen={openDropdowns.contact}
+                        onClick={() => toggleDropdown('contact')}
+                    >
+                        <MobileMenuItem href="/contact" onClick={closeMenu}>
+                            Contact Us
+                        </MobileMenuItem>
+                        <MobileMenuItem href="/contact/career" onClick={closeMenu}>
+                            Career
+                        </MobileMenuItem>
+                    </MobileMenuDropdown>
                 </div>
             </div>
-
-
 
             {/* Desktop Menu */}
             <div className="hidden lg:block">
@@ -179,19 +149,19 @@ function Navbar({ className }) {
                                 title="Commercial Projects"
                                 href="/project/TATA"
                                 src="/images/projects/TATA/tata-1.jpg"
-                                description="Prepare for tech interviews like never before."
+                                description="Explore our commercial project portfolio."
                             />
                             <ProductItem
-                                title="Residencial Projects"
+                                title="Residential Projects"
                                 href="/project/ATLANTAS"
                                 src="/images/projects/ATLANTAS/atlantas-19.jpg"
-                                description="Production ready Tailwind css components for your next project"
+                                description="Discover our residential project designs."
                             />
                             <ProductItem
                                 title="Guest House"
                                 href="/project/COACT"
                                 src="/images/projects/COACT/coact-1.jpg"
-                                description="Never write from scratch again. Go from idea to blog in minutes."
+                                description="View our guest house projects."
                             />
                         </div>
                     </MenuItem></Link>
@@ -203,6 +173,35 @@ function Navbar({ className }) {
                     </MenuItem>
                 </Menu>
             </div>
-        </div >
+        </div>
+    );
+}
+
+function MobileMenuItem({ href, onClick, children }) {
+    return (
+        <Link
+            href={href}
+            className="block py-2 text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
+            onClick={onClick}
+        >
+            {children}
+        </Link>
+    );
+}
+
+function MobileMenuDropdown({ title, isOpen, onClick, children }) {
+    return (
+        <div>
+            <button
+                onClick={onClick}
+                className="flex items-center justify-between w-full py-2 text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
+            >
+                {title}
+                <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`} />
+            </button>
+            <div className={`pl-4 mt-2 space-y-2 ${isOpen ? 'block' : 'hidden'}`}>
+                {children}
+            </div>
+        </div>
     );
 }
