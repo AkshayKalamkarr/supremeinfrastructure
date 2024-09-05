@@ -78,7 +78,7 @@ function Navbar({ className }) {
                         </svg>
                     </button>
                 </div>
-                <div className="mt-8 flex flex-col space-y-4 px-4">
+                <div className="mt-8 flex flex-col space-y-4 px-8">
                     <MobileMenuItem href="/" onClick={closeMenu}>
                         Home
                     </MobileMenuItem>
