@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Link from "next/link";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
@@ -9,9 +9,6 @@ export function NavbarDemo() {
     return (
         <div className="relative w-full flex items-center justify-center">
             <Navbar className="top-2" />
-            <p className="text-black dark:text-white">
-                {/* The Navbar will show on top of the page */}
-            </p>
         </div>
     );
 }
@@ -21,26 +18,24 @@ function Navbar({ className }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [openDropdowns, setOpenDropdowns] = useState({});
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
+    const toggleMenu = useCallback(() => {
+        setIsMenuOpen(prev => !prev);
+    }, []);
 
-    const closeMenu = () => {
+    const closeMenu = useCallback(() => {
         setIsMenuOpen(false);
         setOpenDropdowns({});
-    };
+    }, []);
 
-    const toggleDropdown = (key) => {
+    const toggleDropdown = useCallback((key) => {
         setOpenDropdowns(prev => ({
             ...prev,
             [key]: !prev[key]
         }));
-    };
+    }, []);
 
     return (
-        <div
-            className={cn("fixed top-4 inset-x-0 max-w-4xl mx-auto z-50", className)}
-        >
+        <nav className={cn("fixed top-4 inset-x-0 max-w-4xl mx-auto z-50", className)}>
             {/* Mobile Menu Button */}
             <div className="lg:hidden absolute top-4 right-4">
                 <button onClick={toggleMenu} className="p-2 bg-white text-black rounded-full shadow-lg focus:outline-none transition-transform duration-300 ease-in-out transform hover:scale-110">
@@ -172,11 +167,11 @@ function Navbar({ className }) {
                     </MenuItem>
                 </Menu>
             </div>
-        </div>
+        </nav>
     );
 }
 
-function MobileMenuItem({ href, onClick, children }) {
+const MobileMenuItem = React.memo(({ href, onClick, children }) => {
     return (
         <Link
             href={href}
@@ -186,9 +181,9 @@ function MobileMenuItem({ href, onClick, children }) {
             {children}
         </Link>
     );
-}
+});
 
-function MobileMenuDropdown({ title, isOpen, onClick, children }) {
+const MobileMenuDropdown = React.memo(({ title, isOpen, onClick, children }) => {
     return (
         <div>
             <button
@@ -203,4 +198,9 @@ function MobileMenuDropdown({ title, isOpen, onClick, children }) {
             </div>
         </div>
     );
-}
+});
+
+MobileMenuItem.displayName = 'MobileMenuItem';
+MobileMenuDropdown.displayName = 'MobileMenuDropdown';
+
+export default NavbarDemo;

@@ -1,16 +1,15 @@
 'use client'
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 import { NavbarDemo } from './Navbar';
 import Link from 'next/link';
 
-// Typewriter effect for text
-const TypewriterEffect = ({ text, delay = 0 }) => {
+const TypewriterEffect = ({ text }) => {
   return (
     <motion.span
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay }}
+      transition={{ duration: 0.3 }}
     >
       {text}
     </motion.span>
@@ -18,28 +17,20 @@ const TypewriterEffect = ({ text, delay = 0 }) => {
 };
 
 const HeroSection = () => {
-  const [isClient, setIsClient] = useState(false);
   const videoRef = useRef(null);
   const title = "Supreme Infrastructure Company";
   const description = "We are a team of talented, innovative designers, engineers, and horticulturists.";
 
   useEffect(() => {
-    setIsClient(true);
-
-    // Attempt to play the video manually on mobile devices
     const playVideo = () => {
       if (videoRef.current) {
-        const playPromise = videoRef.current.play();
-        if (playPromise !== undefined) {
-          playPromise.catch((error) => {
-            console.error("Video play failed:", error);
-          });
-        }
+        videoRef.current.play().catch(error => {
+          console.error("Video play failed:", error);
+        });
       }
     };
 
     playVideo();
-
     window.addEventListener('touchstart', playVideo);
     return () => window.removeEventListener('touchstart', playVideo);
   }, []);
@@ -50,8 +41,7 @@ const HeroSection = () => {
       opacity: 1,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.1,
-        delayChildren: 0.3
+        staggerChildren: 0.1
       }
     }
   };
@@ -81,27 +71,20 @@ const HeroSection = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5 }}
-        style={{
-          filter: 'none',
-          imageRendering: 'high-quality',
-          objectFit: 'cover',
-          objectPosition: 'center center',
-        }}
+        transition={{ duration: 1 }}
       >
         <source src="/videos/video-3.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </motion.video>
       <NavbarDemo />
 
-      {/* Repositioned and Enlarged Logo */}
       <motion.div
         className="absolute top-4 left-4 sm:top-6 sm:left-6 md:top-8 md:left-8 lg:top-4 lg:left-10 z-10 md:mx-24"
         initial={{ opacity: 0, y: -50, rotate: -10 }}
         animate={{ opacity: 1, y: 0, rotate: 0 }}
-        transition={{ duration: 0.8, type: 'spring', bounce: 0.4 }}
+        transition={{ duration: 0.5, type: 'spring', bounce: 0.4 }}
       >
-        <img src="/images/home/logo.png" alt="Logo" width={120} height={120} className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32" />
+        <img src="/images/home/logo.png" alt="Logo" className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32" />
       </motion.div>
 
       <motion.div
@@ -112,11 +95,9 @@ const HeroSection = () => {
           className="text-gray-100 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold mb-4 ml-0 sm:ml-4 md:ml-8 lg:ml-14"
           variants={itemVariants}
         >
-          <AnimatePresence>
-            {isClient && title.split('').map((char, index) => (
-              <TypewriterEffect key={index} text={char} delay={index * 0.05} />
-            ))}
-          </AnimatePresence>
+          {title.split('').map((char, index) => (
+            <TypewriterEffect key={index} text={char} />
+          ))}
         </motion.h2>
         <motion.div
           className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl flex flex-col ml-0 sm:ml-4 md:ml-8 lg:ml-14"
