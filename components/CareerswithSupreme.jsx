@@ -18,7 +18,7 @@ const CareerswithSupreme = () => {
                     </video>
                 </div>
                 <div className="w-full md:w-1/2 p-6 md:p-12">
-                    <h2 className="text-blue-600 text-xs md:text-sm mb-4 md:mb-6 md:text-center">CAREERS WITH SUPREME</h2>
+                    <h2 className="text-orange-600 text-xs md:text-sm mb-4 md:mb-6 md:text-center">CAREERS WITH SUPREME</h2>
                     <h1 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 md:text-center">It's time to make a move.</h1>
                     <p className="text-gray-700 text-sm md:text-base mb-4 md:mb-6 md:text-center">
                         Supreme needs people-readers and problem-solvers, creators and collaborators, thinkers, doers, and innovators. Above all, we need leaders.
