@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { motion } from "framer-motion";
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
@@ -9,71 +10,76 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className='w-full h-full py-8 md:py-0 mt-22 md:mt-12 bg-white'>
+    <div className='w-full h-full py-12 md:py-24 mt-22 md:mt-12 bg-gradient-to-b from-white to-gray-100'>
       <div className='max-w-7xl mx-auto px-4'>
-        <h2 className='relative inline-block text-3xl md:text-5xl font-extrabold text-black font-sans text-center sm:mx-12  mb-4 md:mb-8 md:mx-96'>
-          Get to know Our Services
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className='relative inline-block text-4xl md:text-6xl font-extrabold text-gray-900 font-sans text-center sm:mx-12 mb-6 md:mb-10 md:mx-auto'
+        >
+          Discover Our Services
           <span className='absolute bottom-0 left-0 w-full h-1 bg-blue-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
-        </h2>
-        <div className='w-32 h-1 bg-blue-600 mx-auto mb-8'></div>
-        <p className='text-lg md:text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto'>
-          Discover our comprehensive range of innovative solutions tailored to meet your needs.
-        </p>
+        </motion.h2>
+        <motion.div 
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className='w-48 h-1 bg-blue-600 mx-auto mb-10'
+        ></motion.div>
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className='text-xl md:text-2xl text-gray-700 text-center mb-16 max-w-3xl mx-auto leading-relaxed'
+        >
+          Experience our comprehensive range of innovative solutions tailored to elevate your projects.
+        </motion.p>
       </div>
       <Carousel items={cards} />
     </div>
   );
 }
 
-
 const data = [
   {
     category: "INTERIOR DESIGN",
-    title: "Using latest technology to make efficient use of spaces. Better designing concepts.",
+    title: "Efficient space utilization with cutting-edge design concepts.",
     src: "/images/services/interior.jpeg",
-    // content: <DummyContent />,
   },
   {
     category: "CIVIL CONSTRUCTION",
-    title: "Using the latest technology and machines we create buildings which are economical yet safe.",
+    title: "State-of-the-art technology for economical and safe building construction.",
     src: "/images/services/civil.jpg",
-    // content: <DummyContent />,
   },
   {
     category: "ARCHITECTURAL DESIGN",
-    title: "We work on the latest trends as per the markets for developing an economical and budget-friendly option to our clients.",
+    title: "Market-driven, budget-friendly designs aligned with the latest trends.",
     src: "/images/services/architecture.jpg",
-    // content: <DummyContent />,
   },
-
   {
     category: "CABLE TRENCH",
-    title: "A method of laying cables into the ground by digging trenches. It is also known as underground cabling.",
+    title: "Advanced underground cabling solutions for efficient infrastructure.",
     src: "/images/services/cabletrench.jpg",
-    // content: <DummyContent />,
   },
   {
     category: "INDUSTRIAL BUILDING",
-    title: "We have been associated with many corporates, who are related in the EV & Solar Businesses.",
+    title: "Specialized structures for EV & Solar businesses, partnering with leading corporates.",
     src: "/images/services/industrial-building.jpg",
-    // content: <DummyContent />,
   },
   {
     category: "HORTICULTURE DESIGN",
-    title: "Worked in many prestigious projects like the Urban Jungle By Panvel Municipal Corporation under the GOI Funded Urban Forest theme.",
+    title: "Urban Forest themes, including projects like Urban Jungle for Panvel Municipal Corporation.",
     src: "/images/services/horticulture-design.jpg",
-    // content: <DummyContent />,
   },
   {
     category: "GARDEN MAINTENANCE",
-    title: "Development and decorative planting of gardens, yards, grounds, parks, and other types of areas.",
+    title: "Expert development and maintenance of gardens, parks, and ornamental spaces.",
     src: "/images/services/garden-maintenance.jpg",
-    // content: <DummyContent />,
   },
   {
     category: "BUILDING DESIGN",
-    title: "We use technology with ideas to create designs that are sustainable in any environment.",
+    title: "Sustainable, technology-driven designs adaptable to any environment.",
     src: "/images/services/building-design.jpg",
-    // content: <DummyContent />,
   },
 ];
