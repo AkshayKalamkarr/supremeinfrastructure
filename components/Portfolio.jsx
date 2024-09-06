@@ -139,7 +139,7 @@ const Portfolio = () => {
                         A portfolio with purpose.
                     </motion.h2>
                     <Link href="/services/servicesdashboard" className="block h-full">
-                        <motion.div className="text-blue-600 flex items-center justify-end text-sm sm:text-base">
+                        <motion.div className="text-orange-600 flex items-center justify-end text-sm sm:text-base">
                             SEE MORE
                             <motion.svg
                                 className="w-4 h-4 ml-2"
