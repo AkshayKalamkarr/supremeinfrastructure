@@ -209,7 +209,7 @@ export default function Home() {
 
       {/* Join Us Section */}
       <motion.section
-        className="bg-gray-800 text-white py-12"
+        className="bg-gray-700 text-white py-12"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
