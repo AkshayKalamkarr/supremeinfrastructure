@@ -16,7 +16,7 @@ export function AppleCardsCarouselDemo() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 font-sans mb-4 sm:mb-6 md:mb-8 lg:mb-10"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-orange-500 font-sans mb-4 sm:mb-6 md:mb-8 lg:mb-10"
         >
           Our Services
           <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
@@ -25,13 +25,13 @@ export function AppleCardsCarouselDemo() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="w-32 sm:w-40 md:w-48 h-1 bg-blue-600 mb-6 sm:mb-8 md:mb-10"
+          className="w-32 sm:w-40 md:w-48 h-1 bg-orange-700 mb-6 sm:mb-8 md:mb-10"
         ></motion.div>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 sm:mb-12 md:mb-16 max-w-2xl lg:max-w-3xl leading-relaxed"
+          className="text-lg sm:text-xl md:text-2xl text-orange-500 mb-8 sm:mb-12 md:mb-16 max-w-2xl lg:max-w-3xl leading-relaxed"
         >
           Experience our comprehensive range of innovative solutions tailored to elevate your projects.
         </motion.p>
