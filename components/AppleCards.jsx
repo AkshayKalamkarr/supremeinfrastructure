@@ -12,7 +12,7 @@ export function AppleCardsCarouselDemo() {
   return (
     <div className='w-full h-full py-12 md:py-24 mt-22 md:mt-12 bg-gradient-to-b from-white to-gray-100'>
       <div className='max-w-7xl mx-auto px-4'>
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -21,13 +21,13 @@ export function AppleCardsCarouselDemo() {
           Discover Our Services
           <span className='absolute bottom-0 left-0 w-full h-1 bg-blue-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
         </motion.h2>
-        <motion.div 
+        <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className='w-48 h-1 bg-blue-600 mx-auto mb-10'
         ></motion.div>
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
