@@ -16,7 +16,7 @@ export function AppleCardsCarouselDemo() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className='relative inline-block text-4xl md:text-6xl font-extrabold text-gray-900 font-sans text-center sm:mx-12 mb-6 md:mb-10 md:mx-auto'
+          className='relative inline-block text-4xl md:text-6xl font-extrabold text-gray-900 font-sans text-center sm:mx-12 mb-6 md:mb-10 md:mx-80'
         >
           Discover Our Services
           <span className='absolute bottom-0 left-0 w-full h-1 bg-blue-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
