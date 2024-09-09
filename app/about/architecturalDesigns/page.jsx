@@ -126,7 +126,7 @@ export default function Home() {
             <div className="mt-4 flex space-x-4 justify-center">
               <motion.a
                 href="/contact"
-                className="bg-black text-white px-4 py-2"
+                className="bg-orange-500 text-white px-4 py-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -200,7 +200,7 @@ export default function Home() {
               // whileHover={{ scale: 1.05 }}
               // whileTap={{ scale: 0.95 }}
               >
-                <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-black text-white px-4 mx-24 py-2 md:mx-64">View Projects</Link>
+                <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-orange-500 text-white px-4 mx-24 py-2 md:mx-64">View Projects</Link>
               </motion.div>
             </div>
           </motion.div>
