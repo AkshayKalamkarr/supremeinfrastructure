@@ -30,7 +30,7 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            We guide the team
+            We guide  <span className='text-teal-700'> the team</span>
           </motion.p>
         </div>
       </motion.section>
