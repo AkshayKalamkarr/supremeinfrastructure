@@ -25,7 +25,7 @@ export default function Home() {
            <span className='text-teal-700'> Specialists</span>
           </motion.h2>
           <motion.p
-            className="mt-4 text-lg text-center"
+            className="mt-4 text-lg text-center font-bold"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
