@@ -153,7 +153,7 @@ function Navbar({ className }) {
                             />
                             <ProductItem
                                 title="Guest House"
-                                href="/project/COACT"
+                                href="/project/guesthouse"
                                 src="/images/home/architecture.png"
                                 description="View our guest house projects."
                             />
