@@ -141,7 +141,7 @@ function Navbar({ className }) {
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
                             <ProductItem
                                 title="Commercial Projects"
-                                href="/project/TATA"
+                                href="/project/commercialprojects"
                                 src="/images/home/commercial.jpg"
                                 description="Explore our commercial project portfolio."
                             />
