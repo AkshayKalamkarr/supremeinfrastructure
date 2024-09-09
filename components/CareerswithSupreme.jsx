@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
+
 const CareerswithSupreme = () => {
     return (
         <div className="flex justify-center items-center min-h-[80vh] p-4 bg-gray-200">
