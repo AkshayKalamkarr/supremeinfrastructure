@@ -22,7 +22,7 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >Architectural Designs
-           <span className='text-teal-700'> Specialists</span>
+            <span className='text-teal-700'> Specialists</span>
           </motion.h2>
           <motion.p
             className="mt-4 text-lg text-center font-bold"
@@ -184,8 +184,8 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-center">Good. Better. ICS.</h3>
-            <p className="mt-4 text-center">ICS was founded to supply the demand...</p>
+            <h3 className="text-2xl font-bold text-center md:my-16">Good. Better. ICS.</h3>
+            <p className="mt-2 text-center">ICS was founded to supply the demand...</p>
           </motion.div>
           <motion.div
           // initial={{ x: 50, opacity: 0 }}
