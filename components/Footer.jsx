@@ -48,7 +48,7 @@ const Footer = () => {
                             {[
                                 { icon: FaInfoCircle, text: 'About Us', href: '/about/supremeInfrastructure' },
                                 { icon: FaProjectDiagram, text: 'Projects', href: '/project' },
-                                { icon: FaImages, text: 'services', href: '/services/servicesdashboard' },
+                                { icon: FaImages, text: 'Services', href: '/services/servicesdashboard' },
                                 { icon: FaAddressBook, text: 'Contact', href: '/contact' }
                             ].map((item, index) => (
                                 <Link key={index} href={item.href} className="flex items-center space-x-5 group">
