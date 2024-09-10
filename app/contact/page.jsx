@@ -59,21 +59,21 @@ export default function Contact() {
             </h2>
             <div className="space-y-6 text-center md:text-left">
               <div className="flex items-start justify-center md:justify-start space-x-4">
-                <FaMapMarkerAlt className="text-2xl text-blue-500" />
+                <FaMapMarkerAlt className="text-2xl text-orange-500" />
                 <div>
                   <p className="font-semibold">Address:</p>
                   <p>Villa No. 5, Mayuresh Chambers, Plot No. 60, Sector 11, CBD Belapur, Navi Mumbai 400614</p>
                 </div>
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-4">
-                <FaPhone className="text-2xl text-blue-500" />
+                <FaPhone className="text-2xl text-orange-500" />
                 <div>
                   <p className="font-semibold">Phone:</p>
                   <p>+91 98198 00022 / +91 98198 00044</p>
                 </div>
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-4">
-                <FaEnvelope className="text-2xl text-blue-500" />
+                <FaEnvelope className="text-2xl text-orange-500" />
                 <div>
                   <p className="font-semibold">Email:</p>
                   <p>info@supremeinfrastructure</p>
@@ -81,13 +81,13 @@ export default function Contact() {
               </div>
             </div>
             <div className="mt-8 text-center">
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">Follow Us</h3>
+              <h3 className="text-xl font-semibold mb-4 text-orange-600">Follow Us</h3>
               <div className="flex justify-center space-x-4">
                 {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((Icon, index) => (
                   <motion.a
                     key={index}
                     href="#"
-                    className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
+                    className="text-orange-500 hover:text-blue-700 transition-colors duration-300"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -117,7 +117,7 @@ export default function Contact() {
                   value={formData.fullName}
                   onChange={handleChange}
                   required
-                  className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                  className="w-full p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 />
                 <input
                   type="email"
@@ -126,7 +126,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                  className="w-full p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 />
               </div>
               <input
@@ -136,14 +136,14 @@ export default function Contact() {
                 value={formData.contactNumber}
                 onChange={handleChange}
                 required
-                className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                className="w-full p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
               />
               <textarea
                 name="message"
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                className="w-full p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 rows={4}
               />
               <motion.button
