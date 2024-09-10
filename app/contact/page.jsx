@@ -165,7 +165,7 @@ export default function Contact() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="mt-16"
         >
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600 text-center border-b-4 border-blue-600 pb-2">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-orange-600 text-center border-b-4 border-orange-600 pb-2">
             Location
           </h2>
           <div className="w-full h-[400px] overflow-hidden rounded-lg shadow-lg">
