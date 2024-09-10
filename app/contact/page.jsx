@@ -39,7 +39,7 @@ export default function Contact() {
           className="relative container mx-auto h-full flex items-center justify-center px-4"
         >
           <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-wide text-center drop-shadow-lg">
-            Let's <span className='text-blue-500'>Connect</span>
+            Let's <span className='text-orange-500'>Connect</span>
           </h1>
         </motion.div>
       </motion.div>
