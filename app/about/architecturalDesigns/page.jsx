@@ -22,7 +22,7 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >Architectural Designs
-            <span className='text-teal-700'> Specialists</span>
+            <span className='text-orange-500'> Specialists</span>
           </motion.h2>
           <motion.p
             className="mt-4 text-lg text-center font-bold"
@@ -30,7 +30,7 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            We guide  <span className='text-teal-700'> the team</span>
+            We guide  <span className='text-orange-500'> the team</span>
           </motion.p>
         </div>
       </motion.section>
