@@ -184,7 +184,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-center md:my-16">Good. Better. ICS.</h3>
+            <h3 className="text-2xl font-bold text-center md:my-8">Good. Better. ICS.</h3>
             <p className="mt-2 text-center">ICS was founded to supply the demand...</p>
           </motion.div>
           <motion.div
