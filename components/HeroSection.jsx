@@ -20,7 +20,7 @@ const TypewriterEffect = ({ text }) => {
 const HeroSection = () => {
   const videoRef = useRef(null);
   const title = "Supreme Infrastructure Company";
-  const description = "We are a team of talented, innovative designers, engineers, and horticulturists.";
+  const description = "We are a team of Talented, Innovative Designers, Engineers, and Horticulturists.";
 
   useEffect(() => {
     const playVideo = () => {
