@@ -10,6 +10,7 @@ const TypewriterEffect = ({ text }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
+      className="font-poppins" // Added the custom font here
     >
       {text}
     </motion.span>
@@ -92,7 +93,7 @@ const HeroSection = () => {
         variants={containerVariants}
       >
         <motion.h2
-          className="text-gray-100 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold mb-4 ml-0 sm:ml-4 md:ml-8 lg:ml-14"
+          className="font-montserrat text-gray-100 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold mb-4 ml-0 sm:ml-4 md:ml-8 lg:ml-14"
           variants={itemVariants}
         >
           {title.split('').map((char, index) => (
