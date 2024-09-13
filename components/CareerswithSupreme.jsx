@@ -1,8 +1,19 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useRef } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
 const CareerswithSupreme = () => {
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.play().catch(error => {
+                console.error("Error attempting to play video:", error);
+            });
+        }
+    }, []);
+
     return (
         <div className="flex justify-center items-center min-h-[80vh] p-4 bg-gray-200">
             <Head>
@@ -12,7 +23,15 @@ const CareerswithSupreme = () => {
 
             <main className="flex flex-col md:flex-row max-w-6xl w-full rounded-lg overflow-hidden">
                 <div className="w-full md:w-1/2 h-64 md:h-auto">
-                    <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
+                    <video 
+                        ref={videoRef}
+                        className="w-full h-full object-cover" 
+                        autoPlay 
+                        loop 
+                        muted 
+                        playsInline
+                        poster="/images/career-poster.jpg"
+                    >
                         <source src="/videos/career.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
