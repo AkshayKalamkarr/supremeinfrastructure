@@ -127,7 +127,6 @@ const Portfolio = () => {
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
-                    whileHover={{ scale: 1.02, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)" }}
                 >
                     <motion.h2
                         className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 text-black"
