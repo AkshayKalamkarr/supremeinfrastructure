@@ -30,7 +30,7 @@ const CareerswithSupreme = () => {
                         loop 
                         muted 
                         playsInline
-                        poster="/images/career-poster.jpg"
+                        poster="/images/home/careerMobile.jpg"
                     >
                         <source src="/videos/career.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
