@@ -1,220 +1,84 @@
 'use client'
-import { useState, useRef, useEffect } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { titleVariants } from '../../../utils/animation';
+import { projects } from '../../../data/commercialprojects';
+import Link from 'next/link';
 import Image from 'next/image';
 
-const portfolioItems = [
-  // ... (your existing portfolio items)
-  {
-    name: "Project 1",
-    images: ['/images/projects/TATA/tata-1.jpg',
-      '/images/projects/TATA/tata-2.jpg',
-      '/images/projects/TATA/tata-3.jpg',
-      '/images/projects/TATA/tata-5.jpg',
-      '/images/projects/TATA/tata-7.jpg',
-      '/images/projects/TATA/tata-8.jpg',
-      '/images/projects/TATA/tata-9.jpg',
-      /*  coact interior*/
-      '/images/projects/COACT/coact-1.jpg',
-      '/images/projects/COACT/coact-2.jpg',
-      '/images/projects/COACT/coact-3.jpg',
-      /*  coact interior*/
-      '/images/projects/ATLANTAS/atlantas-1.jpeg',
-      '/images/projects/ATLANTAS/atlantas-2.jpg',
-      '/images/projects/ATLANTAS/atlantas-3.jpeg',
-      '/images/projects/ATLANTAS/atlantas-4.jpg',
-      '/images/projects/ATLANTAS/atlantas-5.jpg',
-      '/images/projects/ATLANTAS/atlantas-6.jpg',
-      '/images/projects/ATLANTAS/atlantas-7.jpg',
-      '/images/projects/ATLANTAS/atlantas-8.jpg',
-      '/images/projects/ATLANTAS/atlantas-9.jpg',
-      '/images/projects/ATLANTAS/atlantas-10.jpg',
-      '/images/projects/ATLANTAS/atlantas-11.jpg',
-      '/images/projects/ATLANTAS/atlantas-12.jpg',
-      '/images/projects/ATLANTAS/atlantas-13.jpg',
-      '/images/projects/ATLANTAS/atlantas-14.jpg',
-      '/images/projects/ATLANTAS/atlantas-15.jpg',
-      '/images/projects/ATLANTAS/atlantas-16.jpg',
-      '/images/projects/ATLANTAS/atlantas-17.jpg',
-      '/images/projects/ATLANTAS/atlantas-18.jpg',
-      '/images/projects/ATLANTAS/atlantas-19.jpg',
-      '/images/projects/ATLANTAS/atlantas-20.jpg',
-      '/images/projects/ATLANTAS/atlantas-21.jpg',
+{/* <div className="bg-blue-600 p-4">
+<h2 className="text-xl font-semibold text-white text-center">{block.title}</h2>
+</div> */}
 
+const ProjectCard = ({ project }) => (
+  <motion.div
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.1 }}
+    variants={{
+      visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+      hidden: { opacity: 0, y: 50 }
+    }}
+    whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
+    className="bg-gray-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full border-2 border-red-800"
+  >
+    <div className="relative h-48 sm:h-56 md:h-64">
+      <Image
+        src={project.image}
+        layout="fill"
+        objectFit="cover"
+        alt={project.title}
+      />
+    </div>
+    <div className="p-4 flex-grow flex flex-col justify-between">
+      <div>
+        <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2">{project.title}</h3>
+        <p className="text-gray-600 text-xs sm:text-sm mb-4">{project.description}</p>
+      </div>
+      <Link href={`/project/commercialprojects/${project.slug}`}>
+        <span className="mt-auto w-full py-2 px-4 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-md hover:from-red-700 hover:to-red-900 transition duration-300 text-xs sm:text-sm md:text-base inline-block text-center">
+          Read More
+        </span>
+      </Link>
+    </div>
+  </motion.div>
+);
 
-    ]
-  },
-  {
-    name: "Project 2",
-    images: ['/services/civil-construction/civil-1.JPG',
-      '/services/civil-construction/civil-2.JPG',
-      '/services/civil-construction/civil-3.JPG',
-      '/services/civil-construction/civil-4.JPG',
-      '/services/civil-construction/civil-5.JPG',
-      '/services/civil-construction/civil-6.JPG',
-      '/services/civil-construction/civil-7.JPG',
-      '/services/civil-construction/civil-8.JPG',
-    ]
-  },
-  {
-    name: "Project 3",
-    images: ['/services/architectural-design/architectural-1.JPG',
-      '/services/architectural-design/architectural-2.JPG',
-      '/services/architectural-design/architectural-3.JPG',
-
-    ]
-  },
-  {
-    name: "Project 4",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
-  },
-  {
-    name: "Project 5",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
-  },
-  {
-    name: "Project 6",
-    images: ['/services/horticulture-design/horticulture-1.JPG',
-      '/services/horticulture-design/horticulture-2.JPG',
-      '/services/horticulture-design/horticulture-3.JPG',
-      '/services/horticulture-design/horticulture-4.JPG',
-    ]
-  },
-  {
-    name: "Project 7",
-    images: ['/services/garden-maintenence/garden-1.JPG',
-      '/services/garden-maintenence/garden-2.JPG',
-      '/services/garden-maintenence/garden-3.JPG',
-      '/services/garden-maintenence/garden-4.JPG',
-      '/services/garden-maintenence/garden-5.JPG',
-      '/services/garden-maintenence/garden-6.JPG',
-      '/services/garden-maintenence/garden-7.JPG',
-      '/services/garden-maintenence/garden-8.JPG',
-    ]
-  },
-  {
-    name: "Project 8",
-    images: ['/services/building-design/building-1.JPG',
-      '/services/building-design/building-2.JPG',
-      '/services/building-design/building-3.JPG',
-      '/services/building-design/building-4.JPG',
-      '/services/building-design/building-5.JPG',
-    ]
-  },
-];
-
-export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState(portfolioItems[0]);
-  const [fullViewImage, setFullViewImage] = useState(null);
-  const scrollContainerRef = useRef(null);
-
-  const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollTop = 0;
-    }
-  };
-
-  const openFullView = (image) => {
-    setFullViewImage(image);
-  };
-
-  const closeFullView = () => {
-    setFullViewImage(null);
-  };
-
-  useEffect(() => {
-    const handleWheel = (e) => {
-      if (scrollContainerRef.current) {
-        scrollContainerRef.current.scrollTop += e.deltaY;
-      }
-    };
-
-    const currentRef = scrollContainerRef.current;
-    if (currentRef) {
-      currentRef.addEventListener('wheel', handleWheel);
-    }
-
-    return () => {
-      if (currentRef) {
-        currentRef.removeEventListener('wheel', handleWheel);
-      }
-    };
-  }, []);
-
+const OngoingProjects = () => {
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
-      {/* Sidebar */}
-      <aside className="w-full lg:w-1/5 bg-blue-950 p-4 shadow-lg ">
-        {/* <h1 className="text-3xl font-bold mb-2 text-center text-gray-800  md:my-24">Supreme Infrastructure Company</h1> */}
-        <h2 className="text-2xl font-bold mb-6 text-center text-white lg:my-12">Commercial Project</h2>
-        <ul className="space-y-2">
-          {portfolioItems.map((item, index) => (
-            <li key={index} className="w-full">
-              <button
-                onClick={() => handleCategoryClick(item)}
-                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-center md:my-4 ${selectedCategory.name === item.name
-                  ? 'bg-gray-200 text-gray-800 font-bold'
-                  : 'text-white hover:bg-gray-900'
-                  }`}
-              >
-                {item.name}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </aside>
-
-      {/* Main Content */}
-      <main className="flex-1 p-8 md:p-12 flex flex-col">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800 md:my-20">{selectedCategory.name}</h2>
-
-        {/* Scrollable Image Grid */}
-        <div
-          ref={scrollContainerRef}
-          className="flex-1 overflow-y-auto pr-4"
-          style={{
-            scrollbarWidth: 'thin',
-            scrollbarColor: '#CBD5E0 #EDF2F7',
-          }}
+    <div>
+      <div className="bg-[url('/images/ongoing.jpg')] bg-center bg-cover h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
+        <motion.h1
+          initial='offscreen'
+          whileInView={"onscreen"}
+          variants={titleVariants}
+          className='container text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-black-800 tracking-widest text-center'
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {selectedCategory.images.map((image, index) => (
-              <div
-                key={index}
-                className="relative aspect-square overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
-                onClick={() => openFullView(image)}
-              >
-                <Image
-                  src={image}
-                  alt={`Image ${index + 1}`}
-                  fill={true}
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
+          Commercial Projects
+        </motion.h1>
+      </div>
+
+      <div className='container mx-auto px-4'>
+        <div className='py-8 lg:py-16'>
+          <div className='pt-4 pb-2 sm:pt-6 sm:pb-4'>
+            <motion.h1
+              initial='offscreen'
+              whileInView={"onscreen"}
+              variants={titleVariants}
+              className='text-2xl sm:text-3xl md:text-4xl font-bold tracking-wider text-center uppercase'
+            >
+            </motion.h1>
+          </div>
+
+          <div className='grid py-4 sm:py-6 md:py-8 gap-4 sm:gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3'>
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
             ))}
           </div>
         </div>
-      </main>
-
-      {/* Full View Modal */}
-      {fullViewImage && (
-        <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50" onClick={closeFullView}>
-          <div className="relative w-full h-full max-w-5xl max-h-5xl p-4">
-            <Image
-              src={fullViewImage}
-              alt="Full view"
-              fill={true}
-              style={{ objectFit: "contain" }}
-            />
-            <button
-              className="absolute top-4 right-4 text-white text-4xl hover:text-red-600 transition-colors md:text-6xl"
-              onClick={closeFullView}
-            >
-              &times;
-            </button>
-          </div>
-        </div>
-      )}
+      </div>
     </div>
   );
-}
+};
+
+export default OngoingProjects;
