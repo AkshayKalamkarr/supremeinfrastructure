@@ -36,7 +36,7 @@ const ProjectCard = ({ project }) => (
         <p className="text-gray-600 text-xs sm:text-sm mb-4">{project.description}</p>
       </div>
       <Link href={`/project/commercialprojects/${project.slug}`}>
-        <span className="mt-auto w-full py-2 px-4 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-md hover:from-red-700 hover:to-red-900 transition duration-300 text-xs sm:text-sm md:text-base inline-block text-center">
+        <span className="mt-auto w-full py-2 px-4 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-md hover:from-orange-700 hover:to-orange-900 transition duration-300 text-xs sm:text-sm md:text-base inline-block text-center">
           Read More
         </span>
       </Link>
