@@ -47,12 +47,12 @@ const ProjectCard = ({ project }) => (
 const OngoingProjects = () => {
   return (
     <div>
-      <div className="bg-[url('/images/projects/commercialBackgroundWallpaper.jpg')] bg-center bg-cover h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
+      <div className="bg-[url('/images/projects/commercialBackgroundWallpaper.jpeg')] bg-center bg-cover h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
         <motion.h1
           initial='offscreen'
           whileInView={"onscreen"}
           variants={titleVariants}
-          className='container text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-black-800 tracking-widest text-center'
+          className='container text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-widest text-center'
         >
           Commercial Projects
         </motion.h1>
