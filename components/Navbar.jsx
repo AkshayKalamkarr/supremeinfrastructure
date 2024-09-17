@@ -99,14 +99,14 @@ function Navbar({ className }) {
                         isOpen={openDropdowns.projects}
                         onClick={() => toggleDropdown('projects')}
                     >
-                        <MobileMenuItem href="/project/TATA" onClick={closeMenu}>
-                            TATA
+                        <MobileMenuItem href="/project/commercialprojects" onClick={closeMenu}>
+                            Commercial Projects
                         </MobileMenuItem>
-                        <MobileMenuItem href="/project/atlantas" onClick={closeMenu}>
-                            ATLANTAS
+                        <MobileMenuItem href="/project/residencialprojects" onClick={closeMenu}>
+                            Residencial Projects
                         </MobileMenuItem>
-                        <MobileMenuItem href="/project/coact" onClick={closeMenu}>
-                            COACT
+                        <MobileMenuItem href="/project/guesthouse" onClick={closeMenu}>
+                            Guest House
                         </MobileMenuItem>
                     </MobileMenuDropdown>
 
