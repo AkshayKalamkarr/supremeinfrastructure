@@ -75,7 +75,7 @@ const HeroSection = () => {
         transition={{ duration: 1 }}
         style={{
           filter: 'brightness(1.1) contrast(1.1)',
-          WebkitFilter: 'brightness(1.1) contrast(1.1)'
+          WebkitFilter: 'brightness(1.0) contrast(1.0)'
         }}
       >
         <source src="/videos/video-3.mp4" type="video/mp4" />
