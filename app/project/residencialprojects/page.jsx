@@ -48,6 +48,7 @@ const ResidencialProject = () => {
   return (
     <div>
       <div className="bg-[url('/images/projects/residencialBackgroundWallpaper.jpg')] bg-center bg-cover h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
+      <div className="absolute inset-0 bg-black opacity-50"></div>
         <motion.h1
           initial='offscreen'
           whileInView={"onscreen"}
