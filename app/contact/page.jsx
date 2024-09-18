@@ -54,7 +54,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="bg-white p-8 shadow-md rounded-lg"
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-orange-600 border-b-4 border-orange-600 pb-2 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue-600 border-b-4 border-blue-600 pb-2 text-center">
               Contact Info
             </h2>
             <div className="space-y-6 text-center md:text-left">
