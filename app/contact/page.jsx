@@ -39,7 +39,7 @@ export default function Contact() {
           className="relative container mx-auto h-full flex items-center justify-center px-4"
         >
           <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-wide text-center drop-shadow-lg">
-            Let's <span className='text-orange-500'>Connect</span>
+            Let's <span className='text-blue-500'>Connect</span>
           </h1>
         </motion.div>
       </motion.div>
@@ -117,7 +117,7 @@ export default function Contact() {
                   value={formData.fullName}
                   onChange={handleChange}
                   required
-                  className="w-full p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                  className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 />
                 <input
                   type="email"
@@ -126,7 +126,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                  className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 />
               </div>
               <input
@@ -136,19 +136,19 @@ export default function Contact() {
                 value={formData.contactNumber}
                 onChange={handleChange}
                 required
-                className="w-full p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
               />
               <textarea
                 name="message"
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 rows={4}
               />
               <motion.button
                 type="submit"
-                className="w-full bg-orange-600 text-white py-3 rounded hover:bg-orange-700 transition duration-300 text-lg font-semibold"
+                className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-900 transition duration-300 text-lg font-semibold"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
