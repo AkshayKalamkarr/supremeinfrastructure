@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-// import { projects } from '../../data/projects/projectData'; // Adjust the import path as needed
+import { projects } from '../../data/projects/projectData'; // Adjust the import path as needed
 
 // Enhanced Feature Component
 const FeatureCard = ({ feature, index }) => (
