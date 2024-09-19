@@ -83,7 +83,7 @@ const CareerPage = () => {
                 <section className="flex flex-col md:flex-row gap-12">
                     <div className="w-full md:w-1/2">
                         <motion.div
-                            className="h-full bg-cover bg-center rounded-none overflow-hidden"
+                            className="md:h-96 md:w-96 lg:mx-44 lg:my-36 bg-cover bg-center rounded-none overflow-hidden"
                             style={{ backgroundImage: "url('/images/contact/careerBackground-2.jpg')" }}
                             initial={{ opacity: 0, x: -100 }}
                             animate={{ opacity: 1, x: 0 }}
