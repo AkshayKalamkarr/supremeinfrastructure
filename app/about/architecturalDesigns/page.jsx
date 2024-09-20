@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero Section */}
       <motion.section
         className="relative h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/about/architectural.jpg')" }}
+        style={{ backgroundImage: "url('/images/about/architectural2.jpg')" }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
