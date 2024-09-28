@@ -78,7 +78,7 @@ const HeroSection = () => {
           WebkitFilter: 'brightness(1.0) contrast(1.0)'
         }}
       >
-        <source src="/videos/video-3.mp4" type="video/mp4" />
+        <source src="/videos/video-4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </motion.video>
       <NavbarDemo />
