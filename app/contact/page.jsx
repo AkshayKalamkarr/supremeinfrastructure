@@ -29,54 +29,58 @@ export default function Contact() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className="relative bg-cover bg-center h-[60vh]"
-        style={{ backgroundImage: "url('/images/contact/contact-us-banner.jpeg')" }}
+        style={{
+          backgroundImage: "url('/images/contact/contact-us-banner.jpeg')",
+          backgroundBlendMode: 'overlay',
+          backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent opacity-70"></div>
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
           className="relative container mx-auto h-full flex items-center justify-center px-4"
         >
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-wide text-center drop-shadow-lg">
-            Let's <span className='text-blue-500'>Connect</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-800 tracking-wide text-center drop-shadow-lg">
+            Let's <span className='text-blue-800'>Connect</span>
           </h1>
         </motion.div>
       </motion.div>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Info Section */}
           <motion.div
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-white p-8 shadow-md rounded-lg"
+            className="bg-white p-6 md:p-8 shadow-md rounded-lg"
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue-600 border-b-4 border-blue-600 pb-2 text-center">
               Contact Info
             </h2>
             <div className="space-y-6 text-center md:text-left">
-              <div className="flex items-start justify-center md:justify-start space-x-4">
+              <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
                 <FaMapMarkerAlt className="text-2xl text-blue-500" />
                 <div>
                   <p className="font-semibold">Address:</p>
-                  <p>Villa No. 5, Mayuresh Chambers, Plot No. 60, Sector 11, CBD Belapur, Navi Mumbai 400614</p>
+                  <p className="text-sm md:text-base">Villa No. 5, Mayuresh Chambers, Plot No. 60, Sector 11, CBD Belapur, Navi Mumbai 400614</p>
                 </div>
               </div>
-              <div className="flex items-center justify-center md:justify-start space-x-4">
+              <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
                 <FaPhone className="text-2xl text-blue-500" />
                 <div>
                   <p className="font-semibold">Phone:</p>
-                  <p>+91 98198 00022 / +91 98198 00044</p>
+                  <p className="text-sm md:text-base">+91 98198 00022 / +91 98198 00044</p>
                 </div>
               </div>
-              <div className="flex items-center justify-center md:justify-start space-x-4">
+              <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
                 <FaEnvelope className="text-2xl text-blue-500" />
                 <div>
                   <p className="font-semibold">Email:</p>
-                  <p>info@supremeinfrastructure</p>
+                  <p className="text-sm md:text-base">info@supremeinfrastructure</p>
                 </div>
               </div>
             </div>
@@ -103,13 +107,13 @@ export default function Contact() {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-white p-8 shadow-md rounded-lg"
+            className="bg-white p-6 md:p-8 shadow-md rounded-lg"
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600 border-b-4 border-blue-600 pb-2 text-center">
               Send Us a Message
             </h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <input
                   type="text"
                   name="fullName"
@@ -117,7 +121,7 @@ export default function Contact() {
                   value={formData.fullName}
                   onChange={handleChange}
                   required
-                  className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                  className="w-full p-3 md:p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 />
                 <input
                   type="email"
@@ -126,7 +130,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                  className="w-full p-3 md:p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 />
               </div>
               <input
@@ -136,14 +140,14 @@ export default function Contact() {
                 value={formData.contactNumber}
                 onChange={handleChange}
                 required
-                className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                className="w-full p-3 md:p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
               />
               <textarea
                 name="message"
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                className="w-full p-3 md:p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 rows={4}
               />
               <motion.button
@@ -163,12 +167,12 @@ export default function Contact() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="mt-16"
+          className="mt-12 md:mt-16"
         >
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600 text-center border-b-4 border-blue-600 pb-2">
             Location
           </h2>
-          <div className="w-full h-[400px] overflow-hidden rounded-lg shadow-lg">
+          <div className="w-full h-[300px] md:h-[400px] overflow-hidden rounded-lg shadow-lg">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.4861920722088!2d73.0323341258145!3d19.007324804812182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c30763eef235%3A0xc2ce8f2ef45e3191!2sMayuresh%20Planet!5e1!3m2!1sen!2sin!4v1724216080490!5m2!1sen!2sin"
               width="100%"
