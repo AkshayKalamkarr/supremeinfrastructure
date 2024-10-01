@@ -35,7 +35,7 @@ const CareerPage = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-            <div className="h-[60vh] bg-cover bg-center relative" style={{ 
+            <div className="h-[60vh] bg-cover bg-center relative" style={{
                 backgroundImage: "url('/images/contact/career-banner.jpg')",
                 backgroundBlendMode: 'overlay',
                 backgroundColor: 'rgba(255, 255, 255, 0.3)'
