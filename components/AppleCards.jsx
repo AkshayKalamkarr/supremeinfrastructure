@@ -22,11 +22,11 @@ export function AppleCardsCarouselDemo() {
           <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
         </motion.h2>
         <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="w-32 sm:w-40 md:w-48 h-1 bg-orange-700 mx-auto mb-6 sm:mb-8"
-          ></motion.div>
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="w-32 sm:w-40 md:w-48 h-1 bg-orange-700 mx-auto mb-6 sm:mb-8"
+        ></motion.div>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
