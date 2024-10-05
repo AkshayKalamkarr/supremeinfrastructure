@@ -71,13 +71,13 @@ const HeroSection = () => {
   const buttonVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { delay: 1.5 } },
-    hover: { 
-      scale: 1.05, 
+    hover: {
+      scale: 1.05,
       boxShadow: "0px 0px 15px rgba(255,255,255,0.5)",
-      transition: { 
-        yoyo: Infinity, 
-        duration: 0.5 
-      } 
+      transition: {
+        yoyo: Infinity,
+        duration: 0.5
+      }
     },
     tap: { scale: 0.95 }
   };
