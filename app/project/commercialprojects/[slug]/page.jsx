@@ -31,18 +31,18 @@ export default function ProjectPage({ params }) {
       <section className='py-8 px-4 sm:px-6 lg:px-8'>
         <div className='flex flex-col lg:flex-row items-start mx-auto w-full'>
           <div className='lg:w-1/2 lg:pr-6 text-center'>
-            <h1 className='text-2xl md:text-3xl font-bold mb-4 text-black text-center lg:text-center md:my-8'>
+            <h1 className='text-2xl md:text-5xl font-bold mb-4 text-black text-center lg:text-center md:my-8 md:ml-24'>
               {project.title}
             </h1>
-            <p className='mb-4 text-sm md:text-base text-black lg:text-center'>
+            <p className='mb-4 text-sm md:text-base text-black lg:text-center lg:ml-24'>
               {project.fullDescription}
             </p>
-            <p className='mb-4 text-sm md:text-lg font-semibold text-cyan-700 text-center lg:text-center md:mt-8'>
+            {/* <p className='mb-4 text-sm md:text-lg font-semibold text-cyan-700 text-center lg:text-center md:mt-8'>
               {project.tagLine}
-            </p>
+            </p> */}
             
           </div>
-          <div className='lg:w-1/2 mt-4 lg:mt-0'>
+          <div className='lg:w-2/2 mt-4 lg:mt-0 lg:ml-36'>
             <Image
               src={project.image}
               alt={project.title}
@@ -56,10 +56,10 @@ export default function ProjectPage({ params }) {
   
       {project.galleryImages && (
         <section className='bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 w-full'>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-cyan-700 md:my-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-orange-800 md:my-6">
             Gallery
           </h2>
-          <div className="w-36 h-1 bg-gradient-to-r bg-orange-500 hover:bg-orange-600 mx-auto mb-8"></div>
+          <div className="w-36 h-1 bg-gradient-to-r bg-cyan-500 hover:bg-cyan-600 mx-auto mb-8"></div>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 md:mt-16 w-full'>
             {project.galleryImages.map((galleryImage, index) => (
               <div
@@ -81,10 +81,10 @@ export default function ProjectPage({ params }) {
   
       {project.highlights && (
         <div className="bg-gray-200 py-12 px-4 sm:px-6 lg:px-8 w-full">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-cyan-700 md:my-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-orange-800 md:my-6">
             Project Highlights
           </h2>
-          <div className="w-36 h-1 bg-gradient-to-r bg-orange-500 hover:bg-orange-600 mx-auto mb-8"></div>
+          <div className="w-36 h-1 bg-gradient-to-r bg-cyan-500 hover:bg-cyan-600 mx-auto mb-8"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 w-full">
             {project.highlights.map((item, index) => {
               const IconComponent = highlightsIcon[item.icon];
@@ -104,10 +104,10 @@ export default function ProjectPage({ params }) {
   
       {/* Configuration Section */}
       <section className='bg-white py-12 px-4 sm:px-6 lg:px-8 w-full'>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-cyan-700 md:my-6">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-orange-800 md:my-6">
           Configuration
         </h2>
-        <div className="w-36 h-1 bg-gradient-to-r bg-orange-500 hover:bg-orange-600 mx-auto mb-8"></div>
+        <div className="w-36 h-1 bg-gradient-to-r bg-cyan-500 hover:bg-cyan-600 mx-auto mb-8"></div>
   
         <div className="overflow-x-auto mb-12">
           <table className="w-full border-collapse bg-white shadow-md rounded-lg">
