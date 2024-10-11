@@ -23,12 +23,12 @@ const CareerswithSupreme = () => {
 
             <main className="flex flex-col md:flex-row max-w-6xl w-full rounded-lg overflow-hidden">
                 <div className="w-full md:w-1/2 h-64 md:h-auto">
-                    <video 
+                    <video
                         ref={videoRef}
-                        className="w-full h-full object-cover" 
-                        autoPlay 
-                        loop 
-                        muted 
+                        className="w-full h-full object-cover"
+                        autoPlay
+                        loop
+                        muted
                         playsInline
                         poster="/images/home/careerMobile.jpg"
                     >
@@ -46,7 +46,7 @@ const CareerswithSupreme = () => {
                         That's where you come in.
                     </p>
                     <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 md:justify-center">
-                        <Link href="/contact" className="bg-gradient-to-r from-orange-600 to-orange-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-red-600 transition duration-300 text-center">
+                        <Link href="/contact" className="bg-gradient-to-r from-orange-600 to-yellow-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-red-600 transition duration-300 text-center">
                             JOIN SUPREME
                         </Link>
                         <Link href="/contact/career" className="bg-gray-800 text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-900 transition duration-300 flex items-center justify-center">
