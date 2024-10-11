@@ -5,7 +5,7 @@ import { FaMapMarkerAlt, FaPhone, FaWhatsapp, FaEnvelope, FaGlobe, FaInstagram, 
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+        <footer className="bg-gradient-to-r from-orange-700 to-orange-900 text-white">
             <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                     {/* Corporate Office */}
@@ -76,14 +76,14 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="bg-gray-900 py-4">
+            <div className="bg-amber-900 py-4">
                 <div className="container mx-auto px-4 text-center sm:flex sm:justify-between sm:items-center">
                     <div className="mb-4 sm:mb-0">
-                        <p className="text-gray-400 text-sm sm:text-base">&copy; 2024 Supreme Infrastructure Company. All Rights Reserved</p>
+                        <p className="text-white-400 text-sm sm:text-base">&copy; 2024 Supreme Infrastructure Company. All Rights Reserved</p>
                     </div>
                     <div className="space-x-4">
                         {['Privacy Policy', 'Terms of Service'].map((item, index) => (
-                            <Link key={index} className="text-gray-400 hover:text-yellow-500 transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4" href="/">
+                            <Link key={index} className="text-white-400 hover:text-yellow-500 transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4" href="/">
                                 {item}
                             </Link>
                         ))}
