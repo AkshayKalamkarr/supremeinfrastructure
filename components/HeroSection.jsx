@@ -97,7 +97,7 @@ const HeroSection = () => {
         variants={containerVariants}
       >
         <motion.div
-          className="bg-gradient-to-r from-orange-500 to-yellow-500 bg-opacity-90 p-6 sm:p-8 md:p-10 lg:p-6 rounded-lg shadow-2xl max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl text-center"
+          className="bg-gradient-to-r from-orange-500 to-yellow-500 bg-opacity-90 p-6 sm:p-8 md:p-10 lg:p-6 rounded-lg shadow-2xl max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl text-center"
           variants={itemVariants}
         >
           <motion.h2
