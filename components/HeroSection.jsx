@@ -74,11 +74,11 @@ const HeroSection = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         style={{
-          filter: 'brightness(1.1) contrast(1.1)',
-          WebkitFilter: 'brightness(1.0) contrast(1.0)'
+          filter: 'brightness(0.7) contrast(1.1)',
+          WebkitFilter: 'brightness(0.7) contrast(1.1)'
         }}
       >
-        <source src="/videos/video-4.mp4" type="video/mp4" />
+        <source src="/videos/video4removewatermark.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </motion.video>
       <NavbarDemo />
@@ -93,33 +93,38 @@ const HeroSection = () => {
       </motion.div>
 
       <motion.div
-        className="absolute inset-0 bg-black bg-opacity-20 flex flex-col items-start justify-center p-4 sm:p-8 md:p-12 lg:p-16"
+        className="absolute inset-0 flex items-center justify-center"
         variants={containerVariants}
       >
-        <motion.h2
-          className="font-montserrat text-gray-100 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold mb-4 ml-0 sm:ml-4 md:ml-8 lg:ml-14 text-shadow-lg"
-          variants={itemVariants}
-        >
-          {title.split('').map((char, index) => (
-            <TypewriterEffect key={index} text={char} />
-          ))}
-        </motion.h2>
         <motion.div
-          className="text-gray-100 text-sm sm:text-base md:text-lg lg:text-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl flex flex-col ml-0 sm:ml-4 md:ml-8 lg:ml-14 text-shadow"
+          className="bg-gradient-to-r from-orange-500 to-yellow-500 bg-opacity-90 p-6 sm:p-8 md:p-10 lg:p-6 rounded-lg shadow-2xl max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl text-center"
           variants={itemVariants}
         >
-          {description}
-        </motion.div>
-        <motion.div variants={itemVariants}>
-          <Link href='/about/supremeInfrastructure'>
-            <motion.button
-              className="mt-6 px-4 sm:px-6 py-2 bg-gradient-to-r from-orange-600 to-yellow-600 text-white font-semibold rounded-full hover:bg-red-700 transition-colors duration-300 text-sm sm:text-base md:text-lg lg:text-xl ml-0 sm:ml-4 md:ml-14 shadow-lg"
-              whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(255,255,255,0.5)" }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Learn More
-            </motion.button>
-          </Link>
+          <motion.h2
+            className="font-montserrat text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 text-shadow-lg"
+            variants={itemVariants}
+          >
+            {title.split('').map((char, index) => (
+              <TypewriterEffect key={index} text={char} />
+            ))}
+          </motion.h2>
+          <motion.div
+            className="text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-8 text-shadow"
+            variants={itemVariants}
+          >
+            {description}
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <Link href='/about/supremeInfrastructure'>
+              <motion.button
+                className="px-6 sm:px-8 py-3 bg-white text-orange-600 font-semibold rounded-full hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base md:text-lg lg:text-xl shadow-lg"
+                whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(255,255,255,0.5)" }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Learn More
+              </motion.button>
+            </Link>
+          </motion.div>
         </motion.div>
       </motion.div>
     </motion.div>
