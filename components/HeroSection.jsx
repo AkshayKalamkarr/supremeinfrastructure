@@ -47,7 +47,25 @@ const HeroSection = () => {
     }
   };
 
-  const itemVariants = {
+  const titleVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { type: 'spring', stiffness: 100, damping: 15 }
+    }
+  };
+
+  const descriptionVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { type: 'spring', stiffness: 100, damping: 15 }
+    }
+  };
+
+  const buttonVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
@@ -96,26 +114,22 @@ const HeroSection = () => {
         className="absolute inset-0 flex items-center justify-center"
         variants={containerVariants}
       >
-        <motion.div
-          className="bg-opacity-90 p-6 sm:p-8 md:p-10 lg:p-0 rounded-lg  max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl text-center"
-          variants={itemVariants}
-        >
+        <div className="bg-opacity-90 p-6 sm:p-8 md:p-10 lg:p-0 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl text-center">
           <motion.h2
             className="font-montserrat text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 text-shadow-lg"
-            variants={itemVariants}
+            variants={titleVariants}
           >
             {title.split('').map((char, index) => (
               <TypewriterEffect key={index} text={char} />
             ))}
           </motion.h2>
           <motion.div
-           className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-8 text-shadow"
-
-            variants={itemVariants}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-8 text-shadow"
+            variants={descriptionVariants}
           >
             {description}
           </motion.div>
-          <motion.div variants={itemVariants}>
+          <motion.div variants={buttonVariants}>
             <Link href='/about/supremeInfrastructure'>
               <motion.button
                 className="px-6 sm:px-8 py-3 bg-white text-orange-600 font-semibold rounded-full hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base md:text-lg lg:text-xl shadow-lg"
@@ -126,7 +140,7 @@ const HeroSection = () => {
               </motion.button>
             </Link>
           </motion.div>
-        </motion.div>
+        </div>
       </motion.div>
     </motion.div>
   );
