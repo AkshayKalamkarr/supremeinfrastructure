@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="space-y-4">
                         <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Corporate Office</h2>
                         <div className="flex items-start space-x-3">
-                            <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-yellow-500" size={20} />
+                            <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-white-900" size={20} />
                             <p className="text-white-300 text-sm sm:text-base">
                                 SUPREME INFRASTRUCTURE<br />
                                 Office No 603, Sector 15,<br />
@@ -34,7 +34,7 @@ const Footer = () => {
                                 { icon: FaGlobe, text: 'WEBSITE : www.supremeinfrastructure.in' }
                             ].map((item, index) => (
                                 <div key={index} className="flex items-center space-x-3 sm:space-x-7 group">
-                                    <item.icon className="text-yellow-500 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
+                                    <item.icon className="text-white-900 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
                                     <p className="text-white-300 text-sm sm:text-base transition-colors duration-300 group-hover:text-orange-500">{item.text}</p>
                                 </div>
                             ))}
@@ -52,7 +52,7 @@ const Footer = () => {
                                 { icon: FaAddressBook, text: 'Contact', href: '/contact' }
                             ].map((item, index) => (
                                 <Link key={index} href={item.href} className="flex items-center space-x-5 group">
-                                    <item.icon className="text-yellow-500 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
+                                    <item.icon className="text-white-500 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
                                     <span className="text-white-300 hover:text-orange-500 transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4">
                                         {item.text}
                                     </span>
