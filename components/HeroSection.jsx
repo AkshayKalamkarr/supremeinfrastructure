@@ -116,7 +116,7 @@ const HeroSection = () => {
       >
         <div className="bg-opacity-90 p-6 sm:p-8 md:p-10 lg:p-0 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl text-center">
           <motion.h2
-            className="font-montserrat text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 text-shadow-lg"
+            className="font-montserrat text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-yellow-400 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 text-shadow-lg"
             variants={titleVariants}
           >
             {title.split('').map((char, index) => (
@@ -124,7 +124,7 @@ const HeroSection = () => {
             ))}
           </motion.h2>
           <motion.div
-            className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-8 text-shadow"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-yellow-400 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-8 text-shadow"
             variants={descriptionVariants}
           >
             {description}
