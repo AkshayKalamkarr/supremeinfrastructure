@@ -5,7 +5,7 @@ import { FaMapMarkerAlt, FaPhone, FaWhatsapp, FaEnvelope, FaGlobe, FaInstagram, 
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-r from-orange-700 to-orange-900 text-white">
+        <footer className="bg-gradient-to-r from-orange-700 to-yellow-700 text-white">
             <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                     {/* Corporate Office */}
@@ -13,7 +13,7 @@ const Footer = () => {
                         <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Corporate Office</h2>
                         <div className="flex items-start space-x-3">
                             <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-yellow-500" size={20} />
-                            <p className="text-gray-300 text-sm sm:text-base">
+                            <p className="text-white-300 text-sm sm:text-base">
                                 SUPREME INFRASTRUCTURE<br />
                                 Office No 603, Sector 15,<br />
                                 near Belapur Court Station,<br />
@@ -35,7 +35,7 @@ const Footer = () => {
                             ].map((item, index) => (
                                 <div key={index} className="flex items-center space-x-3 sm:space-x-7 group">
                                     <item.icon className="text-yellow-500 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
-                                    <p className="text-gray-300 text-sm sm:text-base transition-colors duration-300 group-hover:text-orange-500">{item.text}</p>
+                                    <p className="text-white-300 text-sm sm:text-base transition-colors duration-300 group-hover:text-orange-500">{item.text}</p>
                                 </div>
                             ))}
                         </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                             ].map((item, index) => (
                                 <Link key={index} href={item.href} className="flex items-center space-x-5 group">
                                     <item.icon className="text-yellow-500 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
-                                    <span className="text-gray-300 hover:text-orange-500 transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4">
+                                    <span className="text-white-300 hover:text-orange-500 transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4">
                                         {item.text}
                                     </span>
                                 </Link>
@@ -66,7 +66,7 @@ const Footer = () => {
                         <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Connect With Us</h2>
                         <div className="flex md:mx-4 space-x-4">
                             {[FaInstagram, FaTwitter, FaLinkedin, FaFacebook].map((Icon, index) => (
-                                <Link key={index} href="/" className="text-gray-300 hover:text-orange-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
+                                <Link key={index} href="/" className="text-white-300 hover:text-orange-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
                                     <Icon size={24} />
                                 </Link>
                             ))}
@@ -76,7 +76,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="bg-amber-900 py-4">
+            <div className="bg-orange-500 py-4">
                 <div className="container mx-auto px-4 text-center sm:flex sm:justify-between sm:items-center">
                     <div className="mb-4 sm:mb-0">
                         <p className="text-white-400 text-sm sm:text-base">&copy; 2024 Supreme Infrastructure Company. All Rights Reserved</p>
