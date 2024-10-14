@@ -22,7 +22,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100">
+    <div className="min-h-screen bg-gradient-to-r from-orange-200 to-yellow-100">
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -42,8 +42,8 @@ export default function Contact() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="relative container mx-auto h-full flex items-center justify-center px-4"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-800 tracking-wide text-center drop-shadow-lg">
-            Let's <span className='text-blue-800'>Connect</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-orange-600 tracking-wide text-center drop-shadow-lg">
+            Let's <span className='text-orange-600'>Connect</span>
           </h1>
         </motion.div>
       </motion.div>
@@ -58,26 +58,26 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="bg-white p-6 md:p-8 shadow-md rounded-lg"
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue-600 border-b-4 border-blue-600 pb-2 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-orange-600 border-b-4 border-orange-600 pb-2 text-center">
               Contact Info
             </h2>
             <div className="space-y-6 text-center md:text-left">
               <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
-                <FaMapMarkerAlt className="text-2xl text-blue-500" />
+                <FaMapMarkerAlt className="text-2xl text-orange-600" />
                 <div>
                   <p className="font-semibold">Address:</p>
                   <p className="text-sm md:text-base">Villa No. 5, Mayuresh Chambers, Plot No. 60, Sector 11, CBD Belapur, Navi Mumbai 400614</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
-                <FaPhone className="text-2xl text-blue-500" />
+                <FaPhone className="text-2xl text-orange-600" />
                 <div>
                   <p className="font-semibold">Phone:</p>
                   <p className="text-sm md:text-base">+91 98198 00022 / +91 98198 00044</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
-                <FaEnvelope className="text-2xl text-blue-500" />
+                <FaEnvelope className="text-2xl text-orange-600" />
                 <div>
                   <p className="font-semibold">Email:</p>
                   <p className="text-sm md:text-base">info@supremeinfrastructure</p>
@@ -85,13 +85,13 @@ export default function Contact() {
               </div>
             </div>
             <div className="mt-8 text-center">
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">Follow Us</h3>
+              <h3 className="text-xl font-semibold mb-4 text-orange-600">Follow Us</h3>
               <div className="flex justify-center space-x-4">
                 {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((Icon, index) => (
                   <motion.a
                     key={index}
                     href="#"
-                    className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
+                    className="text-orange-600 hover:text-blue-700 transition-colors duration-300"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -109,7 +109,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="bg-white p-6 md:p-8 shadow-md rounded-lg"
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600 border-b-4 border-blue-600 pb-2 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-orange-600 border-b-4 border-orange-600 pb-2 text-center">
               Send Us a Message
             </h2>
             <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
@@ -121,7 +121,7 @@ export default function Contact() {
                   value={formData.fullName}
                   onChange={handleChange}
                   required
-                  className="w-full p-3 md:p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                  className="w-full p-3 md:p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 />
                 <input
                   type="email"
@@ -130,7 +130,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full p-3 md:p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                  className="w-full p-3 md:p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 />
               </div>
               <input
@@ -140,19 +140,19 @@ export default function Contact() {
                 value={formData.contactNumber}
                 onChange={handleChange}
                 required
-                className="w-full p-3 md:p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                className="w-full p-3 md:p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
               />
               <textarea
                 name="message"
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-3 md:p-4 border-2 border-blue-300 focus:border-blue-500 outline-none rounded transition duration-300"
+                className="w-full p-3 md:p-4 border-2 border-orange-300 focus:border-blue-500 outline-none rounded transition duration-300"
                 rows={4}
               />
               <motion.button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-900 transition duration-300 text-lg font-semibold"
+                className="w-full bg-orange-600 text-white py-3 rounded hover:bg-blue-900 transition duration-300 text-lg font-semibold"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -169,7 +169,7 @@ export default function Contact() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="mt-12 md:mt-16"
         >
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600 text-center border-b-4 border-blue-600 pb-2">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-orange-600 text-center border-b-4 border-orange-600 pb-2">
             Location
           </h2>
           <div className="w-full h-[300px] md:h-[400px] overflow-hidden rounded-lg shadow-lg">
