@@ -78,7 +78,7 @@ const HeroSection = () => {
           WebkitFilter: 'brightness(0.7) contrast(1.1)'
         }}
       >
-        <source src="/videos/video4removewatermark.mp4" type="video/mp4" />
+        <source src="/videos/unwatermark_video-4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </motion.video>
       <NavbarDemo />
@@ -97,7 +97,7 @@ const HeroSection = () => {
         variants={containerVariants}
       >
         <motion.div
-          className="bg-opacity-90 p-6 sm:p-8 md:p-10 lg:p-0 rounded-lg shadow-2xl max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl text-center"
+          className="bg-opacity-90 p-6 sm:p-8 md:p-10 lg:p-0 rounded-lg  max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl text-center"
           variants={itemVariants}
         >
           <motion.h2
