@@ -5,12 +5,12 @@ import { FaMapMarkerAlt, FaPhone, FaWhatsapp, FaEnvelope, FaGlobe, FaInstagram, 
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-r from-orange-400 to-orange-400 text-white">
+        <footer className="bg-gradient-to-r from-orange-500 to-yellow-600 text-white">
             <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                     {/* Corporate Office */}
                     <div className="space-y-4">
-                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-400 pb-2 mb-4 text-start">Corporate Office</h2>
+                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-gray-500 pb-2 mb-4 text-start">Corporate Office</h2>
                         <div className="flex items-start space-x-3">
                             <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-white-900" size={20} />
                             <p className="text-white-300 text-sm sm:text-base">
@@ -25,7 +25,7 @@ const Footer = () => {
 
                     {/* Contact Us */}
                     <div className="space-y-4">
-                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Contact Us</h2>
+                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-gray-500 pb-2 mb-4 text-start">Contact Us</h2>
                         <div className="space-y-3">
                             {[
                                 { icon: FaPhone, text: 'CALL US : (+1) 212-946-2707' },
@@ -43,7 +43,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div className="space-y-4">
-                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Quick Links</h2>
+                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-gray-500 pb-2 mb-4 text-start">Quick Links</h2>
                         <div className="space-y-3">
                             {[
                                 { icon: FaInfoCircle, text: 'About Us', href: '/about/supremeInfrastructure' },
@@ -63,7 +63,7 @@ const Footer = () => {
 
                     {/* Connect With Us */}
                     <div className="space-y-4">
-                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-yellow-500 pb-2 mb-4 text-start">Connect With Us</h2>
+                        <h2 className="text-xl sm:text-2xl font-bold uppercase border-b-2 border-gray-500 pb-2 mb-4 text-start">Connect With Us</h2>
                         <div className="flex md:mx-4 space-x-4">
                             {[FaInstagram, FaTwitter, FaLinkedin, FaFacebook].map((Icon, index) => (
                                 <Link key={index} href="/" className="text-white-300 hover:text-orange-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
