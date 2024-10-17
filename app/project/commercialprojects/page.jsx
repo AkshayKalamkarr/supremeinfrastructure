@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => (
   </motion.div>
 );
 
-const OngoingProjects = () => {
+const CommercialProject = () => {
   return (
     <div>
       <div className="relative bg-[url('/images/projects/commercialBackgroundWallpaper.jpeg')] bg-center bg-cover h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
@@ -78,4 +78,4 @@ const OngoingProjects = () => {
   );
 };
 
-export default OngoingProjects;
+export default CommercialProject;
