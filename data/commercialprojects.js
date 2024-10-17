@@ -251,6 +251,37 @@ export const projects = [
 
     ],
   },
+  {
+    slug: "project-7",
+    title: "TATA SPORT COMPLEX GYMASIUM",
+    image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-7.jpg",
+    description: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL & PAVILION WITH WASHROOM FACILITIES",
+    fullDescription:
+      "The project Atlantas Involved merging 8 offices into 1 single large space. The challenging, part was to keep the singularity of all office like ‘FIRE, ELECTRICAL & Washroom pipeline, so that in near future the offices can be leased out without making much modifications to the present setup. The Design was based on the young and vibrant People who were going to woirk. It Had a Pantry with all modern facility. The reception lobby depicted the line of work Atlanta’s was doing. The design was done with the latest tools like providing 3D walkways, which provided the client what the office will look like before it could be done.The space looks more beautiful with the Mood lights, Colour combinations of tiles & Furniture, Max Height Glass partition and used elements on wall decor from their Core filed.",
+    tagLine: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL & PAVILION WITH WASHROOM FACILITIES",
+    reraNumber: "P52000011751",
+    highlights: [
+      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
+      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
+      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
+      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
+      { icon: "CheckSquare", description: "OC RECEIVED code" },
+    ],
+    configuration: [
+      { flat: "18500 sqft", carpet: "99 days" },
+    ],
+
+    galleryImages: [
+      { image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-1.jpg", alt: "tataGym-1" },
+      { image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-2.jpg", alt: "tataGym-2" },
+      { image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-3.jpg", alt: "tataGym-3" },
+      { image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-4.jpg", alt: "tataGym-4" },
+      { image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-5.jpg", alt: "tataGym-5" },
+      { image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-6.jpg", alt: "tataGym-6" },
+      { image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-7.jpg", alt: "tataGym-7" },
+
+    ],
+  },
 ];
 
 export const getProjectBySlug = (slug) => {
