@@ -35,7 +35,7 @@ export const projects = [
   {
     slug: "project-2",
     title: "ATLANTAS",
-    image: "/images/projects/ATLANTAS/atlantas-1.jpeg",
+    image: "/images/projects/ATLANTAS/atlantas-10.jpg",
     description: "Atlanats Crew Management",
     fullDescription:
       "The project Atlantas Involved merging 8 offices into 1 single large space. The challenging, part was to keep the singularity of all office like ‘FIRE, ELECTRICAL & Washroom pipeline, so that in near future the offices can be leased out without making much modifications to the present setup. The Design was based on the young and vibrant People who were going to woirk. It Had a Pantry with all modern facility. The reception lobby depicted the line of work Atlanta’s was doing. The design was done with the latest tools like providing 3D walkways, which provided the client what the office will look like before it could be done.The space looks more beautiful with the Mood lights, Colour combinations of tiles & Furniture, Max Height Glass partition and used elements on wall decor from their Core filed.",
