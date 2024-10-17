@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     slug: "project-1",
-    title: "TATA MULSHI",
+    title: "ATLANTAS",
     image: "/images/projects/TATA/tata-1.jpg",
     description: "TATA Project Discription",
     fullDescription:
@@ -55,7 +55,7 @@ export const projects = [
     galleryImages: [
       { image: "/images/projects/ATLANTAS/atlantas-1.jpeg", alt: "atlantas-1" },
       { image: "/images/projects/ATLANTAS/atlantas-2.jpg", alt: "atlantas-2" },
-      { image: "/images/projects/ATLANTAS/atlantas-3.jpg", alt: "atlantas-3" },
+      { image: "/images/projects/ATLANTAS/atlantas-3.jpeg", alt: "atlantas-3" },
       { image: "/images/projects/ATLANTAS/atlantas-4.jpg", alt: "atlantas-4" },
       { image: "/images/projects/ATLANTAS/atlantas-5.jpg", alt: "atlantas-5" },
       { image: "/images/projects/ATLANTAS/atlantas-6.jpg", alt: "atlantas-6" },
