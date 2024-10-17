@@ -98,7 +98,7 @@ export const projects = [
     ],
 
     galleryImages: [
-      { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-1.jpeg", alt: "tataBanglore-1" },
+      // { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-1.jpeg", alt: "tataBanglore-1" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-2.jpg", alt: "tataBanglore-2" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-3.jpg", alt: "tataBanglore-3" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-4.jpg", alt: "tataBanglore-4" },
