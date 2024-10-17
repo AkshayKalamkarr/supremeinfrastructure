@@ -94,7 +94,7 @@ export const projects = [
       { icon: "CheckSquare", description: "OC RECEIVED code" },
     ],
     configuration: [
-      { flat: "7500 sqft", carpet: "120 Days" },
+      { flat: "18500 sqft", carpet: "99 days" },
     ],
 
     galleryImages: [
