@@ -63,7 +63,7 @@ export default function ProjectPage({ params }) {
             <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 md:mt-16 w-full'>
               {project.galleryImages.map((galleryImage, index) => (
                 <div
-                  key={index}
+                  key={index}  // Adding key here
                   className='relative overflow-hidden aspect-square w-full'
                 >
                   <Image
