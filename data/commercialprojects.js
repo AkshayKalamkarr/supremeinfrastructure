@@ -170,6 +170,53 @@ export const projects = [
       { image: "/images/projects/TATAPOWERCIVILOFFICESTATIONTROMBAY/tataTrombay-10.jpg", alt: "tataTrombay-10" },
     ],
   },
+  {
+    slug: "project-5",
+    title: "TATA POWER SOLAR CIVIL OFFICE AND BRICK OUT AREA , BANGOLARE",
+    image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-1.jpg",
+    description: "TATA POWER SOLAR CIVIL OFFICE AND BRICK OUT AREA , BANGOLARE",
+    fullDescription:
+      "The project Atlantas Involved merging 8 offices into 1 single large space. The challenging, part was to keep the singularity of all office like ‘FIRE, ELECTRICAL & Washroom pipeline, so that in near future the offices can be leased out without making much modifications to the present setup. The Design was based on the young and vibrant People who were going to woirk. It Had a Pantry with all modern facility. The reception lobby depicted the line of work Atlanta’s was doing. The design was done with the latest tools like providing 3D walkways, which provided the client what the office will look like before it could be done.The space looks more beautiful with the Mood lights, Colour combinations of tiles & Furniture, Max Height Glass partition and used elements on wall decor from their Core filed.",
+    tagLine: "TATA POWER SOLAR CIVIL OFFICE AND BRICK OUT AREA , BANGOLARE",
+    reraNumber: "P52000011751",
+    highlights: [
+      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
+      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
+      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
+      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
+      { icon: "CheckSquare", description: "OC RECEIVED code" },
+    ],
+    configuration: [
+      { flat: "18500 sqft", carpet: "99 days" },
+    ],
+
+    galleryImages: [
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-1.jpg", alt: "tataBanglore-1" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-2.jpg", alt: "tataBanglore-2" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-3.jpg", alt: "tataBanglore-3" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-4.jpg", alt: "tataBanglore-4" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-5.jpg", alt: "tataBanglore-5" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-6.jpg", alt: "tataBanglore-6" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-7.jpg", alt: "tataBanglore-7" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-8.jpg", alt: "tataBanglore-8" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-9.jpg", alt: "tataBanglore-9" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-10.jpg", alt: "tataBanglore-10" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-11.jpg", alt: "tataBanglore-11" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-12.jpg", alt: "tataBanglore-12" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-13.jpg", alt: "tataBanglore-13" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-14.jpg", alt: "tataBanglore-14" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-15.jpg", alt: "tataBanglore-15" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-16.jpg", alt: "tataBanglore-16" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-17.jpg", alt: "tataBanglore-17" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-18.jpg", alt: "tataBanglore-18" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-19.jpg", alt: "tataBanglore-19" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-20.jpg", alt: "tataBanglore-20" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-21.jpg", alt: "tataBanglore-21" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-22.jpg", alt: "tataBanglore-22" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-22.jpg", alt: "tataBanglore-23" },
+      { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-24.jpg", alt: "tataBanglore-24" },
+    ],
+  },
 ];
 
 export const getProjectBySlug = (slug) => {
