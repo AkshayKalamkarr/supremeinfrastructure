@@ -217,6 +217,40 @@ export const projects = [
       { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-24.jpg", alt: "tataBanglore-24" },
     ],
   },
+  {
+    slug: "project-6",
+    title: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL",
+    image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-10.jpg",
+    description: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL & PAVILION WITH WASHROOM FACILITIES",
+    fullDescription:
+      "The project Atlantas Involved merging 8 offices into 1 single large space. The challenging, part was to keep the singularity of all office like ‘FIRE, ELECTRICAL & Washroom pipeline, so that in near future the offices can be leased out without making much modifications to the present setup. The Design was based on the young and vibrant People who were going to woirk. It Had a Pantry with all modern facility. The reception lobby depicted the line of work Atlanta’s was doing. The design was done with the latest tools like providing 3D walkways, which provided the client what the office will look like before it could be done.The space looks more beautiful with the Mood lights, Colour combinations of tiles & Furniture, Max Height Glass partition and used elements on wall decor from their Core filed.",
+    tagLine: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL & PAVILION WITH WASHROOM FACILITIES",
+    reraNumber: "P52000011751",
+    highlights: [
+      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
+      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
+      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
+      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
+      { icon: "CheckSquare", description: "OC RECEIVED code" },
+    ],
+    configuration: [
+      { flat: "18500 sqft", carpet: "99 days" },
+    ],
+
+    galleryImages: [
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-1.jpg", alt: "tataSport-1" },
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-2.jpg", alt: "tataSport-2" },
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-3.jpg", alt: "tataSport-3" },
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-4.jpg", alt: "tataSport-4" },
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-5.jpg", alt: "tataSport-5" },
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-6.jpg", alt: "tataSport-6" },
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-7.jpg", alt: "tataSport-7" },
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-8.jpg", alt: "tataSport-8" },
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-9.jpg", alt: "tataSport-9" },
+      { image: "/images/projects/TATASPORTCOMPLEXOLYMPICSIZESWIMMINGPOOL&PAVILIONWITHWASHROOMFACILITIES/tataSport-10.jpg", alt: "tataSport-10" },
+
+    ],
+  },
 ];
 
 export const getProjectBySlug = (slug) => {
