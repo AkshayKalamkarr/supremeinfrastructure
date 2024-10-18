@@ -282,6 +282,47 @@ export const projects = [
 
     ],
   },
+  {
+    slug: "project-8",
+    title: "TPSSL BANGOLARE",
+    image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-15.jpg",
+    description: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
+    fullDescription:
+      "The project Atlantas Involved merging 8 offices into 1 single large space. The challenging, part was to keep the singularity of all office like ‘FIRE, ELECTRICAL & Washroom pipeline, so that in near future the offices can be leased out without making much modifications to the present setup. The Design was based on the young and vibrant People who were going to woirk. It Had a Pantry with all modern facility. The reception lobby depicted the line of work Atlanta’s was doing. The design was done with the latest tools like providing 3D walkways, which provided the client what the office will look like before it could be done.The space looks more beautiful with the Mood lights, Colour combinations of tiles & Furniture, Max Height Glass partition and used elements on wall decor from their Core filed.",
+    tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
+    reraNumber: "P52000011751",
+    highlights: [
+      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
+      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
+      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
+      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
+      { icon: "CheckSquare", description: "OC RECEIVED code" },
+    ],
+    configuration: [
+      { flat: "18500 sqft", carpet: "99 days" },
+    ],
+
+    galleryImages: [
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-1.jpg", alt: "tpsslBanglore-1" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-2.jpg", alt: "tpsslBanglore-2" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-3.jpg", alt: "tpsslBanglore-3" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-4.jpg", alt: "tpsslBanglore-4" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-5.jpg", alt: "tpsslBanglore-5" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-6.jpg", alt: "tpsslBanglore-6" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-7.jpg", alt: "tpsslBanglore-7" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-8.jpg", alt: "tpsslBanglore-8" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-9.jpg", alt: "tpsslBanglore-9" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-10.jpg", alt: "tpsslBanglore-10" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-11.jpg", alt: "tpsslBanglore-11" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-12.jpg", alt: "tpsslBanglore-12" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-13.png", alt: "tpsslBanglore-13" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-14.png", alt: "tpsslBanglore-14" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-15.jpg", alt: "tpsslBanglore-15" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-16.jpg", alt: "tpsslBanglore-16" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-17.jpg", alt: "tpsslBanglore-17" },
+      { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-18.jpg", alt: "tpsslBanglore-18" },
+    ],
+  },
 ];
 
 export const getProjectBySlug = (slug) => {

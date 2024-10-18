@@ -71,7 +71,7 @@ export default function ProjectPage({ params }) {
                     alt={galleryImage.name}
                     fill
                     sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
-                    className='object-cover transition duration-300 ease-in-out hover:scale-105'
+                    className='object-contain transition duration-300 ease-in-out hover:scale-105'
                   />
                 </div>
               ))}
