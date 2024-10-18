@@ -22,7 +22,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-orange-200 to-yellow-100">
+    <div className="min-h-screen bg-gradient-to-r from-gray-200 to-gray-200">
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -42,8 +42,8 @@ export default function Contact() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="relative container mx-auto h-full flex items-center justify-center px-4"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-orange-600 tracking-wide text-center drop-shadow-lg">
-            Let's <span className='text-orange-600'>Connect</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-orange-700 tracking-wide text-center drop-shadow-lg">
+            Let's <span className='text-orange-700'>Connect</span>
           </h1>
         </motion.div>
       </motion.div>
