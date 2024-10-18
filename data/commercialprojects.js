@@ -390,6 +390,43 @@ export const projects = [
 
     ],
   },
+  {
+    slug: "project-9",
+    title: "MAYURESH PLANET",
+    image: "/images/projects/MAYURESHPLANET/mayuresh-2.jpg",
+    description: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
+    fullDescription:
+      "The project Atlantas Involved merging 8 offices into 1 single large space. The challenging, part was to keep the singularity of all office like ‘FIRE, ELECTRICAL & Washroom pipeline, so that in near future the offices can be leased out without making much modifications to the present setup. The Design was based on the young and vibrant People who were going to woirk. It Had a Pantry with all modern facility. The reception lobby depicted the line of work Atlanta’s was doing. The design was done with the latest tools like providing 3D walkways, which provided the client what the office will look like before it could be done.The space looks more beautiful with the Mood lights, Colour combinations of tiles & Furniture, Max Height Glass partition and used elements on wall decor from their Core filed.",
+    tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
+    reraNumber: "P52000011751",
+    highlights: [
+      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
+      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
+      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
+      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
+      { icon: "CheckSquare", description: "OC RECEIVED code" },
+    ],
+    configuration: [
+      { flat: "18500 sqft", carpet: "99 days" },
+    ],
+
+    galleryImages: [
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-1.jpg", alt: "mayuresh-1" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-2.jpg", alt: "mayuresh-2" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-3.jpg", alt: "mayuresh-3" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-4.jpg", alt: "mayuresh-4" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-5.jpg", alt: "mayuresh-5" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-6.jpg", alt: "mayuresh-6" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-7.jpg", alt: "mayuresh-7" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-8.jpg", alt: "mayuresh-8" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-9.jpg", alt: "mayuresh-9" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-10.jpg", alt: "mayuresh-10" },
+      { image: "/images/projects/MAYURESHPLANET/mayuresh-11.jpg", alt: "mayuresh-11" },
+
+
+
+    ],
+  },
 ];
 
 export const getProjectBySlug = (slug) => {
