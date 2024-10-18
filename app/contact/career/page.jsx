@@ -46,9 +46,9 @@ const CareerPage = () => {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-800 text-center leading-tight px-4"
+                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-orange-600 text-center leading-tight px-4"
                     >
-                        Join Our <span className="text-blue-800">Innovative</span> Team
+                        Join Our <span className="text-orange-600">Innovative</span> Team
                     </motion.h1>
                 </div>
             </div>
@@ -74,10 +74,10 @@ const CareerPage = () => {
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <motion.div className="text-4xl mb-4 flex justify-center">
-                                    <job.icon className="text-blue-600" />
+                                    <job.icon className="text-orange-600" />
                                 </motion.div>
                                 <h3 className="text-xl md:text-2xl font-bold mb-3 text-gray-800">{job.title}</h3>
-                                <p className="text-lg text-blue-600 font-semibold">{job.department}</p>
+                                <p className="text-lg text-gray-500 font-semibold">{job.department}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -157,7 +157,7 @@ const CareerPage = () => {
                             </div>
                             <motion.button
                                 type="submit"
-                                className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300"
+                                className="w-full bg-orange-600 hover:bg-blue-700 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
