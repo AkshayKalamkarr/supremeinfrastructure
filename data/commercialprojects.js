@@ -391,7 +391,7 @@ export const projects = [
     ],
   },
   {
-    slug: "project-9",
+    slug: "project-10",
     title: "MAYURESH PLANET",
     image: "/images/projects/MAYURESHPLANET/mayuresh-2.jpg",
     description: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
