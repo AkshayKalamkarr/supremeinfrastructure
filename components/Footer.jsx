@@ -5,7 +5,7 @@ import { FaMapMarkerAlt, FaPhone, FaWhatsapp, FaEnvelope, FaGlobe, FaInstagram, 
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-r from-orange-500 to-yellow-600 text-white">
+        <footer className="bg-gradient-to-r from-orange-600 to-yellow-600 text-white">
             <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                     {/* Corporate Office */}
@@ -76,7 +76,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="bg-orange-800 py-4">
+            <div className="bg-orange-700 py-4">
                 <div className="container mx-auto px-4 text-center sm:flex sm:justify-between sm:items-center">
                     <div className="mb-4 sm:mb-0">
                         <p className="text-white-400 text-sm sm:text-base">&copy; 2024 Supreme Infrastructure Company. All Rights Reserved</p>
