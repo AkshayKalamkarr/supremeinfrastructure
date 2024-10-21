@@ -76,7 +76,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="bg-orange-800 py-4">
+            <div className="py-4">
                 <div className="container mx-auto px-4 text-center sm:flex sm:justify-between sm:items-center">
                     <div className="mb-4 sm:mb-0">
                         <p className="text-white-400 text-sm sm:text-base">&copy; 2024 Supreme Infrastructure Company. All Rights Reserved</p>
