@@ -116,7 +116,7 @@ const AboutUsPage = () => {
                 </div>
 
                 {/* Stats Section */}
-                <section className="mb-20 bg-blue-600 text-white py-16 rounded-lg">
+                <section className="mb-20 bg-amber-600 text-white py-16 rounded-lg">
                     <div className="container mx-auto">
                         <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Our Achievements</h2>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -169,7 +169,7 @@ const AboutUsPage = () => {
                     <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-800">Ready to Build Your Dream Project?</h2>
                     <Link href='/contact'>
                         <motion.button
-                            className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
+                            className="bg-amber-700 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
