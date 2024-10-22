@@ -66,7 +66,7 @@ const Footer = () => {
                         <h2 className="text-xl sm:text-xl font-bold uppercase border-b-2 border-gray-500 pb-2 mb-4 text-start">Connect With Us</h2>
                         <div className="flex md:mx-4 space-x-4">
                             {[FaInstagram, FaTwitter, FaLinkedin, FaFacebook].map((Icon, index) => (
-                                <Link key={index} href="/" className="text-white-300 hover:text-orange-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
+                                <Link key={index} href="/" className="text-white-300 hover:text-black transition duration-300 transform hover:-translate-y-1 hover:scale-110">
                                     <Icon size={24} />
                                 </Link>
                             ))}
