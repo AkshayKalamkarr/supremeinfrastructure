@@ -83,7 +83,7 @@ const Footer = () => {
                     </div>
                     <div className="space-x-4">
                         {['Privacy Policy', 'Terms of Service'].map((item, index) => (
-                            <Link key={index} className="text-white-400 hover:text-yellow-500 transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4" href="/">
+                            <Link key={index} className="text-white-400 hover:text-black transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4" href="/">
                                 {item}
                             </Link>
                         ))}
