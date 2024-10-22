@@ -53,7 +53,7 @@ const Footer = () => {
                             ].map((item, index) => (
                                 <Link key={index} href={item.href} className="flex items-center space-x-5 group">
                                     <item.icon className="text-white-500 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
-                                    <span className="text-white-300 hover:text-orange-500 transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4">
+                                    <span className="text-white-300 hover:text-black transition duration-300 text-sm sm:text-base hover:underline hover:underline-offset-4">
                                         {item.text}
                                     </span>
                                 </Link>
