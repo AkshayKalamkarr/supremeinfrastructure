@@ -35,7 +35,7 @@ const Footer = () => {
                             ].map((item, index) => (
                                 <div key={index} className="flex items-center space-x-3 sm:space-x-7 group">
                                     <item.icon className="text-white-900 flex-shrink-0 transition-transform duration-300 group-hover:rotate-12" size={18} />
-                                    <p className="text-white-300 text-sm sm:text-base transition-colors duration-300 group-hover:text-orange-500">{item.text}</p>
+                                    <p className="text-white-300 text-sm sm:text-base transition-colors duration-300 group-hover:text-black">{item.text}</p>
                                 </div>
                             ))}
                         </div>
