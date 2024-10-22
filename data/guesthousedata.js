@@ -1,4 +1,4 @@
-export const projects = [
+export const guestprojects = [
     {
         slug: "project-1",
         title: "TATA TAMILNADU",
@@ -9,11 +9,11 @@ export const projects = [
         tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
         reraNumber: "P52000011751",
         highlights: [
-            { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
-            { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
-            { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
-            { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
-            { icon: "CheckSquare", description: "OC RECEIVED code" },
+            { icon: "Building2", description: "Area-50000 Sq.Ft" },
+            { icon: "Home", description: "24 Rooms With Commercial Gym" },
+            { icon: "Banknote", description: "Dinning With Break Out Area" },
+            { icon: "FileCheck", description: "Commercial Kitchen With Dormitory" },
+            { icon: "CheckSquare", description: "Commercial Training Hall With Conference Room" },
         ],
         configuration: [
             { flat: "18500 sqft", carpet: "99 days" },
@@ -69,5 +69,5 @@ export const projects = [
 ]
 
 export const getProjectBySlug = (slug) => {
-    return projects.find((project) => project.slug === slug);
-  };
+    return guestprojects.find((project) => project.slug === slug);
+};

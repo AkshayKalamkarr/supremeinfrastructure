@@ -1,12 +1,12 @@
 import IFrameComponent from "@/components/IFrameComponent";
-import { TramFront, PlaneIcon, ComputerIcon, Building2Icon, SchoolIcon, TrainIcon, TrainFrontIcon, Building2, Home, Banknote, FileCheck, CheckSquare } from 'lucide-react';
-import { projects, getProjectBySlug } from "../../../../data/guestHouse";
+import { Building2, Home, Banknote, FileCheck, CheckSquare } from 'lucide-react';
+import { guestprojects, getProjectBySlug } from "../../../../data/guesthousedata";
 import Image from "next/image";
 import Link from "next/link";
 
 
 export async function generateStaticParams() {
-  return projects.map((project) => ({
+  return guestprojects.map((project) => ({
     slug: project.slug,
   }));
 }

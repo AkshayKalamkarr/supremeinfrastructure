@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { titleVariants } from '../../../utils/animation';
-import { projects } from '../../../data/guestHouse';
+import { guestprojects } from '../../../data/guesthousedata';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => (
         <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2">{project.title}</h3>
         <p className="text-gray-600 text-xs sm:text-sm mb-4">{project.description}</p>
       </div>
-      <Link href={`/project/commercialprojects/${project.slug}`}>
+      <Link href={`/project/guesthouse/${project.slug}`}>
         <span className="mt-auto w-full py-2 px-4 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-md hover:from-orange-700 hover:to-orange-900 transition duration-300 text-xs sm:text-sm md:text-base inline-block text-center">
           Read More
         </span>
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => (
   </motion.div>
 );
 
-const GuestHouse = () => {
+const GuestProject = () => {
   return (
     <div>
       <div className="relative bg-[url('/images/projects/commercialBackgroundWallpaper.jpeg')] bg-center bg-cover h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
@@ -51,7 +51,7 @@ const GuestHouse = () => {
           variants={titleVariants}
           className='container relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-widest text-center'
         >
-          Guest Houses
+          Guest Projects
         </motion.h1>
       </div>
 
@@ -68,7 +68,7 @@ const GuestHouse = () => {
           </div>
 
           <div className='grid py-4 sm:py-6 md:py-8 gap-4 sm:gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3'>
-            {projects.map((project) => (
+            {guestprojects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
@@ -78,4 +78,4 @@ const GuestHouse = () => {
   );
 };
 
-export default GuestHouse;
+export default GuestProject;
