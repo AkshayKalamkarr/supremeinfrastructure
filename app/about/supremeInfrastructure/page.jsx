@@ -169,7 +169,7 @@ const AboutUsPage = () => {
                     <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-800">Ready to Build Your Dream Project?</h2>
                     <Link href='/contact'>
                         <motion.button
-                            className="bg-amber-700 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
+                            className="bg-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
