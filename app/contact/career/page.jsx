@@ -94,7 +94,7 @@ const CareerPage = () => {
                         >
                             <div className="h-full bg-black bg-opacity-50 flex items-center justify-center p-8">
                                 <motion.h2
-                                    className="text-3xl md:text-4xl font-bold text-orange-80 text-center"
+                                    className="text-3xl md:text-4xl font-bold text-white text-center"
                                     animate={{ y: [0, -10, 0] }}
                                     transition={{ duration: 2, repeat: Infinity }}
                                 >
