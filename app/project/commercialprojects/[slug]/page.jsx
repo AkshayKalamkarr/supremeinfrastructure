@@ -4,7 +4,6 @@ import { projects, getProjectBySlug } from "../../../../data/commercialprojects"
 import Image from "next/image";
 import Link from "next/link";
 
-
 export async function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.slug,
@@ -17,6 +16,7 @@ export default function ProjectPage({ params }) {
   if (!project) {
     return <div>Project not found</div>;
   }
+  
   const highlightsIcon = {
     Building2: Building2,
     Home: Home,
@@ -37,10 +37,6 @@ export default function ProjectPage({ params }) {
               <p className='mb-4 text-sm md:text-base text-black lg:text-center lg:ml-24'>
                 {project.fullDescription}
               </p>
-              {/* <p className='mb-4 text-sm md:text-lg font-semibold text-cyan-700 text-center lg:text-center md:mt-8'>
-              {project.tagLine}
-            </p> */}
-
             </div>
             <div className='lg:w-2/2 mt-4 lg:mt-0 lg:ml-36'>
               <Image
@@ -54,28 +50,54 @@ export default function ProjectPage({ params }) {
           </div>
         </section>
 
-        {project.galleryImages && (
+        {(project.galleryImages || project.videos) && (
           <section className='bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 w-full'>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-orange-800 md:my-6">
               Gallery
             </h2>
             <div className="w-36 h-1 bg-gradient-to-r bg-cyan-500 hover:bg-cyan-600 mx-auto mb-8"></div>
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 md:mt-16 w-full'>
-              {project.galleryImages.map((galleryImage, index) => (
-                <div
-                  key={index}  // Adding key here
-                  className='relative overflow-hidden aspect-square w-full'
-                >
-                  <Image
-                    src={galleryImage.image}
-                    alt={galleryImage.name}
-                    fill
-                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
-                    className='object-contain transition duration-300 ease-in-out hover:scale-105'
-                  />
+            
+            {/* Videos Section */}
+            {project.videos && project.videos.length > 0 && (
+              <div className="mb-12">
+                {/* <h3 className="text-2xl font-semibold mb-6 text-center text-orange-800">Videos</h3> */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {project.videos.map((video, index) => (
+                    <div key={index} className="relative aspect-video w-full">
+                      <video
+                        className="w-full h-full rounded-lg object-cover"
+                        controls
+                        poster={video.thumbnail}
+                      >
+                        <source src={video.url} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                      <p className="mt-2 text-center text-gray-700">{video.title}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+            )}
+
+            {/* Images Grid */}
+            {project.galleryImages && (
+              <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 md:mt-16 w-full'>
+                {project.galleryImages.map((galleryImage, index) => (
+                  <div
+                    key={index}
+                    className='relative overflow-hidden aspect-square w-full'
+                  >
+                    <Image
+                      src={galleryImage.image}
+                      alt={galleryImage.alt}
+                      fill
+                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                      className='object-contain transition duration-300 ease-in-out hover:scale-105'
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
           </section>
         )}
 
@@ -136,6 +158,5 @@ export default function ProjectPage({ params }) {
         </section>
       </div>
     </div>
-
   );
 }
