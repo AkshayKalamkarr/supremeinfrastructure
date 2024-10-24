@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => (
       hidden: { opacity: 0, y: 50 }
     }}
     whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-    className="bg-gray-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full border-2 border-red-800"
+    className="bg-gray-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full border-2 border-amber-800"
   >
     <div className="relative h-48 sm:h-56 md:h-64">
       <Image
