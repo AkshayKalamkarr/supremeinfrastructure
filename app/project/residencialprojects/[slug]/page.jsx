@@ -1,6 +1,6 @@
 import IFrameComponent from "@/components/IFrameComponent";
-import { TramFront, PlaneIcon, ComputerIcon, Building2Icon, SchoolIcon, TrainIcon, TrainFrontIcon, Building2, Home, Banknote, FileCheck, CheckSquare } from 'lucide-react';
-import { projects, getProjectBySlug } from "../../../../data/";
+import {Building2, Home, Banknote, FileCheck, CheckSquare } from 'lucide-react';
+import { projects, getProjectBySlug } from "../../../../data/residencialprojects";
 import Image from "next/image";
 import Link from "next/link";
 
