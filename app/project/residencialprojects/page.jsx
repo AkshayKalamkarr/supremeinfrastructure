@@ -2,13 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { titleVariants } from '../../../utils/animation';
-import { projects } from '../../../data/commercialprojects';
+import { projects } from '../../../data/residencialprojects';
 import Link from 'next/link';
 import Image from 'next/image';
-
-{/* <div className="bg-blue-600 p-4">
-<h2 className="text-xl font-semibold text-white text-center">{block.title}</h2>
-</div> */}
 
 const ProjectCard = ({ project }) => (
   <motion.div
@@ -20,7 +16,7 @@ const ProjectCard = ({ project }) => (
       hidden: { opacity: 0, y: 50 }
     }}
     whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-    className="bg-gray-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full border-2 border-orange-700"
+    className="bg-gray-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full border-2 border-red-800"
   >
     <div className="relative h-48 sm:h-56 md:h-64">
       <Image
@@ -47,7 +43,7 @@ const ProjectCard = ({ project }) => (
 const ResidencialProject = () => {
   return (
     <div>
-      <div className="relative bg-[url('/images/projects/residencialBackgroundWallpaper.jpg')] bg-center bg-cover h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
+      <div className="relative bg-[url('/images/projects/commercialBackgroundWallpaper.jpeg')] bg-center bg-cover h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <motion.h1
           initial='offscreen'
