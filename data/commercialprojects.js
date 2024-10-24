@@ -427,6 +427,43 @@ export const projects = [
 
     ],
   },
+  {
+    slug: "project-11",
+    title: "TATA POWER PENINSULA",
+    image: "/images/projects/PENINSULA/peninsula-5.jpeg",
+    description: "TATA POWER SOLAR MULSHI",
+    fullDescription:
+      "Mulshi IB, situated about 40 km from Pune, is a storage dam for Bhira hydro power station of Tata Power Company Limited. The Bungalow is located near dam and dam constructed across the rivers Mula & Nila near village Mulshi during the years 1921-26 is a gravity dam constructed in rubble masonry.We have renovated the Mulshi IB with new design and concepts IN Year 2018-19. By keeping Bungalow’s vintage look in mind we have design this beautiful stone structure from scarp.This is Tata power’s oldest property among all. Bungalow home plans share a common style with Craftsman, Rustic and Cottage home designs. A great porch for your rocker, typically one level and over-hanging eaves are some of the classic features.",
+    tagLine: "Project information",
+    reraNumber: "P52000011751",
+    highlights: [
+      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
+      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
+      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
+      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
+      { icon: "CheckSquare", description: "OC RECEIVED code" },
+    ],
+    configuration: [
+      { flat: "1500 sqft", carpet: "135 Days" },
+    ],
+
+    galleryImages: [
+      { image: "/images/projects/PENINSULA/peninsula-1.jpeg", alt: "tata-1" },
+      { image: "/images/projects/PENINSULA/peninsula-2.jpeg", alt: "tata-2" },
+      { image: "/images/projects/PENINSULA/peninsula-3.jpeg", alt: "tata-3" },
+      { image: "/images/projects/PENINSULA/peninsula-4.jpeg", alt: "tata-4" },
+      { image: "/images/projects/PENINSULA/peninsula-5.jpeg", alt: "tata-5" },
+      { image: "/images/projects/PENINSULA/peninsula-6.jpeg", alt: "tata-6" },
+      { image: "/images/projects/PENINSULA/peninsula-7.jpeg", alt: "tata-7" },
+      { image: "/images/projects/PENINSULA/peninsula-8.jpeg", alt: "tata-8" },
+      { image: "/images/projects/PENINSULA/peninsula-9.jpeg", alt: "tata-9" },
+      { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-10" },
+      { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-11" },
+      { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-12" },
+      { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-13" },
+      { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-14" },
+    ],
+  },
 ];
 
 export const getProjectBySlug = (slug) => {
