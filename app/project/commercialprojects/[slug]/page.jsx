@@ -63,7 +63,7 @@ export default function ProjectPage({ params }) {
                 {/* <h3 className="text-2xl font-semibold mb-6 text-center text-orange-800">Videos</h3> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {project.videos.map((video, index) => (
-                    <div key={index} className="relative aspect-video w-full">
+                    <div key={project.id} className="relative aspect-video w-full">
                       <video
                         className="w-full h-full rounded-lg object-cover"
                         controls
