@@ -16,7 +16,7 @@ export default function ProjectPage({ params }) {
   if (!project) {
     return <div>Project not found</div>;
   }
-  
+
   const highlightsIcon = {
     Building2: Building2,
     Home: Home,
@@ -56,7 +56,7 @@ export default function ProjectPage({ params }) {
               Gallery
             </h2>
             <div className="w-36 h-1 bg-gradient-to-r bg-cyan-500 hover:bg-cyan-600 mx-auto mb-8"></div>
-            
+
             {/* Videos Section */}
             {project.videos && project.videos.length > 0 && (
               <div className="mb-12">
