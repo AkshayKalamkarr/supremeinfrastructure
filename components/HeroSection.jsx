@@ -124,7 +124,7 @@ const HeroSection = () => {
             ))}
           </motion.h2>
           <motion.div
-            className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-400 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-8 text-shadow"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-yellow-600 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-8 text-shadow"
             variants={descriptionVariants}
           >
             {description}
