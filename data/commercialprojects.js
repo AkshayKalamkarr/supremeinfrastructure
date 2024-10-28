@@ -470,10 +470,6 @@ export const projects = [
       { image: "/images/projects/PENINSULA/peninsula-8.jpeg", alt: "tata-8" },
       { image: "/images/projects/PENINSULA/peninsula-9.jpeg", alt: "tata-9" },
       { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-10" },
-      // { image: "/images/projects/PENINSULA/peninsula-11.jpeg", alt: "tata-11" },
-      // { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-12" },
-      // { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-13" },
-      // { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-14" },
     ],
   }
 ];
