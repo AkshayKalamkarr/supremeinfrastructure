@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => (
       hidden: { opacity: 0, y: 50 }
     }}
     whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-    className="bg-gray-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full border-2 border-amber-800"
+    className="bg-gray-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full border-2 border-amber-600"
   >
     <div className="relative h-48 sm:h-56 md:h-64">
       <Image
@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => (
         <p className="text-gray-600 text-xs sm:text-sm mb-4">{project.description}</p>
       </div>
       <Link href={`/project/commercialprojects/${project.slug}`}>
-        <span className="mt-auto w-full py-2 px-4 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-md hover:from-orange-700 hover:to-orange-900 transition duration-300 text-xs sm:text-sm md:text-base inline-block text-center">
+        <span className="mt-auto w-full py-2 px-4 bg-gradient-to-r from-amber-700 to-yellow-600 text-white rounded-md hover:from-orange-700 hover:to-orange-900 transition duration-300 text-xs sm:text-sm md:text-base inline-block text-center">
           Read More
         </span>
       </Link>
