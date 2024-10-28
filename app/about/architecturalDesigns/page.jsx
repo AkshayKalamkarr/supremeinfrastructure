@@ -22,7 +22,7 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >Architectural Designs
-            <span className='text-orange-500'> Specialists</span>
+            <span className='text-amber-500'> Specialists</span>
           </motion.h2>
           <motion.p
             className="mt-4 text-lg text-center font-bold"
@@ -30,7 +30,7 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            We guide  <span className='text-orange-500'> the team</span>
+            We guide  <span className='text-amber-500'> the team</span>
           </motion.p>
         </div>
       </motion.section>
@@ -62,7 +62,7 @@ export default function Home() {
             <p className="text-gray-700 text-center md:my-6">We're Supreme's Interior Construction Specialists, and you can call us ICS. We're focused on specializations like transformation of commercial spaces, tenant improvements, and more.</p>
           </motion.div>
           <motion.div
-            className="bg-orange-500 text-white p-6"
+            className="bg-gradient-to-r from-amber-700 to-yellow-600 text-white p-6"
           // initial={{ x: 50, opacity: 0 }}
           // whileInView={{ x: 0, opacity: 1 }}
           // transition={{ duration: 0.8, delay: 0.4 }}
@@ -126,7 +126,7 @@ export default function Home() {
             <div className="mt-4 flex space-x-4 justify-center">
               <motion.a
                 href="/contact"
-                className="bg-orange-500 text-white px-4 py-2"
+                className="bg-gradient-to-r from-amber-700 to-yellow-600 text-white px-4 py-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -200,7 +200,7 @@ export default function Home() {
               // whileHover={{ scale: 1.05 }}
               // whileTap={{ scale: 0.95 }}
               >
-                <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-orange-500 text-white px-4 mx-24 py-2 md:mx-64">View Projects</Link>
+                <Link href="/services/servicesdashboard" className="mt-4 inline-block bg-gradient-to-r from-amber-700 to-yellow-600 text-white px-4 mx-24 py-2 md:mx-64">View Projects</Link>
               </motion.div>
             </div>
           </motion.div>
@@ -236,7 +236,7 @@ export default function Home() {
           </motion.p>
           <motion.a
             href="/contact/career"
-            className="mt-4 inline-block bg-orange-500 text-white px-6 py-3"
+            className="mt-4 inline-block bg-gradient-to-r from-amber-700 to-yellow-600 text-white px-6 py-3"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0 }}
