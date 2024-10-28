@@ -1,4 +1,4 @@
-import IFrameComponent from "@/components/IFrameComponent";
+import IFrameComponent from "@../../../components/IFrameComponent";
 import { Building2, Home, Banknote, FileCheck, CheckSquare } from 'lucide-react';
 import { projects, getProjectBySlug } from "../../../../data/residencialprojects";
 import Image from "next/image";
