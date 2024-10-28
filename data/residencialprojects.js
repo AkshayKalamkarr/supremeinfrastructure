@@ -37,8 +37,6 @@ export const projects = [
             { image: "/images/projects/RAHEJA/raheja-15.jpeg", alt: "raheja-15" },
             { image: "/images/projects/RAHEJA/raheja-16.jpeg", alt: "raheja-16" },
             { image: "/images/projects/RAHEJA/raheja-17.jpeg", alt: "raheja-17" },
-            { image: "/images/projects/RAHEJA/raheja-17.jpeg", alt: "raheja-18" },
-            { image: "/images/projects/RAHEJA/raheja-17.jpeg", alt: "raheja-19" },
         ],
     },
 ];
