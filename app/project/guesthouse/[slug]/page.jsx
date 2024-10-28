@@ -107,7 +107,7 @@ export default function ProjectPage({ params }) {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-700 md:my-6">
             Configuration
           </h2>
-          <div className="w-36 h-1 bg-gradient-to-r bg-cyan-500 hover:bg-cyan-600 mx-auto mb-8"></div>
+          <div className="w-36 h-1 bg-gradient-to-r bg-amber-700 hover:bg-cyan-600 mx-auto mb-8"></div>
 
           <div className="overflow-x-auto mb-12">
             <table className="w-full border-collapse bg-white shadow-md rounded-lg">
@@ -124,7 +124,7 @@ export default function ProjectPage({ params }) {
                     <td className="py-3 px-4 md:text-center">{config.flat}</td>
                     <td className="py-3 px-4 md:text-center">{config.carpet}</td>
                     <td className="py-3 px-4 md:text-center">
-                      <Link href="/contact" className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                      <Link href="/contact" className="bg-gradient-to-r from-amber-700 to-yellow-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
                         Get Quote
                       </Link>
                     </td>
