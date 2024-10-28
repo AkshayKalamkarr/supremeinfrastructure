@@ -43,13 +43,15 @@ const Portfolio = () => {
                 whileHover={{ scale: 1.05, rotateY: 5 }}
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
             >
-                <Link href="/services/servicesdashboard" className="block h-full">
+                <Link href="/services/servicesdashboard" className="block h-full relative">
                     <Image
                         src="/images/portfolio/interior.jpeg"
                         alt="Ae'o Ward Village"
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         style={{ objectFit: "cover" }}
                         className="transition-all duration-500"
+                        priority
                     />
                     <motion.div
                         className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
@@ -58,7 +60,6 @@ const Portfolio = () => {
                         transition={{ delay: 0.3, duration: 0.6 }}
                     >
                         <h2 className="text-lg sm:text-xl lg:text-2xl font-bold md:text-center">Interior Design</h2>
-                
                     </motion.div>
                 </Link>
             </motion.div>
@@ -70,13 +71,15 @@ const Portfolio = () => {
                 whileHover={{ scale: 1.05, rotateY: -5 }}
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
             >
-                <Link href="/services/servicesdashboard" className="block h-full">
+                <Link href="/services/servicesdashboard" className="block h-full relative">
                     <Image
                         src="/images/portfolio/civil.jpg"
                         alt="Stadium"
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         style={{ objectFit: "cover" }}
                         className="transition-all duration-500"
+                        priority
                     />
                     <motion.div
                         className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
@@ -85,7 +88,6 @@ const Portfolio = () => {
                         transition={{ delay: 0.3, duration: 0.6 }}
                     >
                         <h2 className="text-lg sm:text-xl lg:text-2xl font-bold md:text-center">Civil Construction</h2>
-            
                     </motion.div>
                 </Link>
             </motion.div>
@@ -101,13 +103,15 @@ const Portfolio = () => {
                     whileHover={{ scale: 1.05, rotateX: 5 }}
                     transition={{ type: "spring", stiffness: 200, damping: 10 }}
                 >
-                    <Link href="/services/servicesdashboard" className="block h-full">
+                    <Link href="/services/servicesdashboard" className="block h-full relative">
                         <Image
                             src="/images/portfolio/architecture.jpg"
                             alt="Modern Building"
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             style={{ objectFit: "cover" }}
                             className="transition-all duration-500"
+                            priority
                         />
                         <motion.div
                             className="absolute bottom-0 left-0 p-3 sm:p-4 text-white bg-black bg-opacity-50 w-full"
@@ -116,7 +120,6 @@ const Portfolio = () => {
                             transition={{ delay: 0.3, duration: 0.6 }}
                         >
                             <h2 className="text-lg sm:text-xl lg:text-2xl font-bold md:text-center">Architectural Design</h2>
-         
                         </motion.div>
                     </Link>
                 </motion.div>
@@ -137,7 +140,7 @@ const Portfolio = () => {
                     >
                         A portfolio with purpose.
                     </motion.h2>
-                    <Link href="/services/servicesdashboard" className="block h-full">
+                    <Link href="/services/servicesdashboard" className="block">
                         <motion.div className="text-orange-600 flex items-center justify-end text-sm sm:text-base">
                             SEE MORE
                             <motion.svg
@@ -160,6 +163,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-
-
