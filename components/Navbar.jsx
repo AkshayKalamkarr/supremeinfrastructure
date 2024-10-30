@@ -35,7 +35,7 @@ function Navbar({ className }) {
     }, []);
 
     return (
-        <nav className={cn("fixed top-4 inset-x-0 max-w-6xl mx-auto z-50", className)}>
+        <nav className={cn("fixed top-4 inset-x-0 max-w-4xl mx-auto z-50", className)}>
             {/* Mobile Menu Button */}
             <div className="lg:hidden absolute top-4 right-4">
                 <button onClick={toggleMenu} className="p-2 bg-white text-black rounded-full shadow-lg focus:outline-none transition-transform duration-300 ease-in-out transform hover:scale-110">
