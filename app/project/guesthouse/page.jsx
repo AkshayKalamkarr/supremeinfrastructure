@@ -51,7 +51,7 @@ const GuestProject = () => {
           variants={titleVariants}
           className='container relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-widest text-center'
         >
-          Guest Projects
+          Guest House Projects
         </motion.h1>
       </div>
 
