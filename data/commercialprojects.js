@@ -439,8 +439,8 @@ export const projects = [
     highlights: [
       { icon: "Wallpaper", description: "Highlisting the walls with wallpaper" },
       { icon: "FlipHorizontal", description: "windows with roller blinds" },
-      { icon: "Lightbulb", description: "designed luxurious cfo cabin" },
-      { icon: "Activity", description: "Decorative fluted panels customized with brought" },
+      { icon: "Component", description: "designed luxurious cfo cabin" },
+      { icon: "Fence", description: "Decorative fluted panels customized with brought" },
       { icon: "Armchair", description: "furniture" },
     ],
     configuration: [
