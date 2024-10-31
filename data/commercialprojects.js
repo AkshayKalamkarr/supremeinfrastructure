@@ -437,10 +437,10 @@ export const projects = [
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "Decorative MS partition." },
-      { icon: "Home", description: "Colorfull backpanted magnetic glass" },
-      { icon: "Banknote", description: "Hanging lights" },
-      { icon: "FileCheck", description: "Zigzag hanging lights" },
+      { icon: "BetweenVerticalStart", description: "Decorative MS partition." },
+      { icon: "FlipHorizontal", description: "Colorfull backpanted magnetic glass" },
+      { icon: "Lightbulb", description: "Hanging lights" },
+      { icon: "Activity", description: "Zigzag hanging lights" },
       { icon: "CheckSquare", description: "Utilization of space" },
     ],
     configuration: [

@@ -1,5 +1,5 @@
 import IFrameComponent from "@/components/IFrameComponent";
-import { Building2, Home, Banknote, FileCheck, CheckSquare } from 'lucide-react';
+import { FlipHorizontal, BetweenVerticalStart,Lightbulb,Activity, Banknote, FileCheck, CheckSquare } from 'lucide-react';
 import { projects, getProjectBySlug } from "../../../../data/commercialprojects";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,11 +18,14 @@ export default function ProjectPage({ params }) {
   }
 
   const highlightsIcon = {
-    Building2: Building2,
-    Home: Home,
     Banknote: Banknote,
     FileCheck: FileCheck,
-    CheckSquare: CheckSquare
+    CheckSquare: CheckSquare,
+    FlipHorizontal:FlipHorizontal,
+    BetweenVerticalStart:BetweenVerticalStart,
+    Lightbulb:Lightbulb,
+    Activity:Activity,
+
   };
 
   return (
