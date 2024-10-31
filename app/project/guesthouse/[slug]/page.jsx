@@ -37,10 +37,7 @@ export default function ProjectPage({ params }) {
               <p className='mb-4 text-sm md:text-base text-black lg:text-center lg:ml-24'>
                 {project.fullDescription}
               </p>
-              {/* <p className='mb-4 text-sm md:text-lg font-semibold text-cyan-700 text-center lg:text-center md:mt-8'>
-              {project.tagLine}
-            </p> */}
-
+             
             </div>
             <div className='lg:w-2/2 mt-4 lg:mt-0 lg:ml-36'>
               <Image
