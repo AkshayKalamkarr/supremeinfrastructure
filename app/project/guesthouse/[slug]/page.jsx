@@ -31,7 +31,7 @@ export default function ProjectPage({ params }) {
         <section className='py-8 px-4 sm:px-6 lg:px-8'>
           <div className='flex flex-col lg:flex-row items-start mx-auto w-full'>
             <div className='lg:w-1/2 lg:pr-6 text-center'>
-              <h1 className='text-2xl md:text-5xl font-bold mb-4 text-amber-700 text-center lg:text-center md:my-8 md:ml-24'>
+              <h1 className='text-2xl md:text-5xl font-bold mb-4 text-amber-800 text-center lg:text-center md:my-8 md:ml-24'>
                 {project.title}
               </h1>
               <p className='mb-4 text-sm md:text-base text-black lg:text-center lg:ml-24'>
