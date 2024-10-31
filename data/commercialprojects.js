@@ -433,18 +433,18 @@ export const projects = [
     image: "/images/projects/PENINSULA/peninsula-3.jpeg",
     description: "TATA POWER SOLAR MULSHI",
     fullDescription:
-      "Mulshi IB, situated about 40 km from Pune, is a storage dam for Bhira hydro power station of Tata Power Company Limited. The Bungalow is located near dam and dam constructed across the rivers Mula & Nila near village Mulshi during the years 1921-26 is a gravity dam constructed in rubble masonry.We have renovated the Mulshi IB with new design and concepts IN Year 2018-19. By keeping Bungalow's vintage look in mind we have design this beautiful stone structure from scarp.This is Tata power's oldest property among all. Bungalow home plans share a common style with Craftsman, Rustic and Cottage home designs. A great porch for your rocker, typically one level and over-hanging eaves are some of the classic features.",
+      "The TATA Power Peninsula project involves the transformation of an 8000 sqft space over a duration of 45 days. This initiative aims to enhance the aesthetic and functional aspects of the area, creating a vibrant and modern environment that aligns with TATA Power’s vision.The TATA Power Peninsula project promises to deliver a modern and engaging space that reflects the brand’s identity while meeting the functional needs of its users. With an emphasis on innovative design and efficient use of space, this project is set to become a benchmark for future developments.",
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
-      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
-      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
-      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
-      { icon: "CheckSquare", description: "OC RECEIVED code" },
+      { icon: "Building2", description: "Decorative MS partition." },
+      { icon: "Home", description: "Colorfull backpanted magnetic glass" },
+      { icon: "Banknote", description: "Hanging lights" },
+      { icon: "FileCheck", description: "Zigzag hanging lights" },
+      { icon: "CheckSquare", description: "Utilization of space" },
     ],
     configuration: [
-      { flat: "1500 sqft", carpet: "135 Days" },
+      { flat: "8000 sqft", carpet: "45 days" },
     ],
     // Added video section
     videos: [
