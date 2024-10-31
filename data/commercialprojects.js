@@ -407,7 +407,7 @@ export const projects = [
       { icon: "CheckSquare", description: "Commercial Training Hall With Conference Room" },
     ],
     configuration: [
-      { flat: "18500 sqft", carpet: "99 days" },
+      { flat: "1100 sqft", carpet: "44 days" },
     ],
 
     galleryImages: [
@@ -433,7 +433,7 @@ export const projects = [
     image: "/images/projects/PENINSULA/peninsula-3.jpeg",
     description: "TATA POWER SOLAR MULSHI",
     fullDescription:
-      "The TATA Power Peninsula project involves the transformation of an 8000 sqft space over a duration of 45 days. This initiative aims to enhance the aesthetic and functional aspects of the area, creating a vibrant and modern environment that aligns with TATA Power’s vision.The TATA Power Peninsula project promises to deliver a modern and engaging space that reflects the brand’s identity while meeting the functional needs of its users. With an emphasis on innovative design and efficient use of space, this project is set to become a benchmark for future developments.",
+      "The TATA Power Peninsula project aims to revitalize an 8000 sqft area over a 45-day period, creating an elegant and functional workspace that embodies the essence of TATA Power. This design initiative focuses on sophistication and comfort, ensuring a pleasant environment for employees and visitors alike.The TATA Power Peninsula project is set to create a refined and inviting environment that reflects the company’s values and culture. With a focus on high-quality finishes and thoughtful design, this project will serve as a benchmark for contemporary office spaces, enhancing both employee satisfaction and brand representation.",
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
