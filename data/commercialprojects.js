@@ -400,11 +400,11 @@ export const projects = [
     tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "Area-50000 Sq.Ft" },
-      { icon: "Home", description: "24 Rooms With Commercial Gym" },
-      { icon: "Banknote", description: "Dinning With Break Out Area" },
-      { icon: "FileCheck", description: "Commercial Kitchen With Dormitory" },
-      { icon: "CheckSquare", description: "Commercial Training Hall With Conference Room" },
+      { icon: "BetweenVerticalStart", description: "Decorative MS partition" },
+      { icon: "FlipHorizontal", description: "colorfull backpanted magnetic glass" },
+      { icon: "Lightbulb", description: "hanging lights" },
+      { icon: "Activity", description: "zigzag hanging lights" },
+      { icon: "CheckSquare", description: "utilization of space" },
     ],
     configuration: [
       { flat: "1100 sqft", carpet: "44 days" },
@@ -437,11 +437,11 @@ export const projects = [
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "BetweenVerticalStart", description: "Decorative MS partition." },
-      { icon: "FlipHorizontal", description: "Colorfull backpanted magnetic glass" },
-      { icon: "Lightbulb", description: "Hanging lights" },
-      { icon: "Activity", description: "Zigzag hanging lights" },
-      { icon: "CheckSquare", description: "Utilization of space" },
+      { icon: "Wallpaper", description: "Highlisting the walls with wallpaper" },
+      { icon: "FlipHorizontal", description: "windows with roller blinds" },
+      { icon: "Lightbulb", description: "designed luxurious cfo cabin" },
+      { icon: "Activity", description: "Decorative fluted panels customized with brought" },
+      { icon: "Armchair", description: "furniture" },
     ],
     configuration: [
       { flat: "8000 sqft", carpet: "45 days" },

@@ -1,5 +1,5 @@
 import IFrameComponent from "@/components/IFrameComponent";
-import { FlipHorizontal, BetweenVerticalStart,Lightbulb,Activity, Banknote, FileCheck, CheckSquare } from 'lucide-react';
+import { FlipHorizontal, BetweenVerticalStart,Lightbulb,Armchair,Wallpaper,Activity, Banknote, FileCheck, CheckSquare } from 'lucide-react';
 import { projects, getProjectBySlug } from "../../../../data/commercialprojects";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,6 +25,8 @@ export default function ProjectPage({ params }) {
     BetweenVerticalStart:BetweenVerticalStart,
     Lightbulb:Lightbulb,
     Activity:Activity,
+    Armchair:Armchair,
+    Wallpaper:Wallpaper,
 
   };
 
