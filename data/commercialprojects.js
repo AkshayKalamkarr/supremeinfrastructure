@@ -292,11 +292,11 @@ export const projects = [
     tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "Powder coated open cell ceiling for passage area" },
-      { icon: "Home", description: "Fabric lights" },
-      { icon: "Banknote", description: "Open close book shelf" },
+      { icon: "Home", description: "Powder coated open cell ceiling for passage area" },
+      { icon: "LampCeiling", description: "Fabric lights" },
+      { icon: "Library", description: "Open close book shelf" },
       { icon: "FileCheck", description: "3D letter" },
-      { icon: "CheckSquare", description: "Acostick floats" },
+      { icon: "Layers2", description: "Acostick floats" },
     ],
     configuration: [
       { flat: "15000  sqft", carpet: "105 days" },

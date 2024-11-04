@@ -1,5 +1,6 @@
 import IFrameComponent from "@/components/IFrameComponent";
-import { Fence,FlipHorizontal, BetweenVerticalStart,Lightbulb,Armchair,Component,Wallpaper,Activity, Banknote, FileCheck, CheckSquare,Dumbbell,Utensils,House,GraduationCap } from 'lucide-react';
+import { Fence,FlipHorizontal, BetweenVerticalStart,Lightbulb,Armchair,Component,Wallpaper,Home,Activity, Banknote, FileCheck, CheckSquare,Dumbbell,Utensils,House,GraduationCap,
+  LampCeiling,Library,Scale3D,Layers2 } from 'lucide-react';
 import { projects, getProjectBySlug } from "../../../../data/commercialprojects";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,6 +34,11 @@ export default function ProjectPage({ params }) {
     Utensils:Utensils,
     House:House,
     GraduationCap:GraduationCap,
+    LampCeiling:LampCeiling,
+    Home:Home,
+    Library:Library,
+    Scale3D:Scale3D,
+    Layers2:Layers2,
 
   };
 
