@@ -257,18 +257,18 @@ export const projects = [
     image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-7.jpg",
     description: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL & PAVILION WITH WASHROOM FACILITIES",
     fullDescription:
-      "The project Atlantas Involved merging 8 offices into 1 single large space. The challenging, part was to keep the singularity of all office like ‘FIRE, ELECTRICAL & Washroom pipeline, so that in near future the offices can be leased out without making much modifications to the present setup. The Design was based on the young and vibrant People who were going to woirk. It Had a Pantry with all modern facility. The reception lobby depicted the line of work Atlanta’s was doing. The design was done with the latest tools like providing 3D walkways, which provided the client what the office will look like before it could be done.The space looks more beautiful with the Mood lights, Colour combinations of tiles & Furniture, Max Height Glass partition and used elements on wall decor from their Core filed.",
+      "This ambitious project features an Olympic-size swimming pool spanning 15,000 square feet, designed to provide a premium aquatic experience. Completed over 270 days, the swimming pool facility integrates functional, high-quality materials with luxurious design elements, offering a top-notch recreational space within the Tata Sports Complex.The Tata Sports Complex Swimming Pool embodies a blend of athletic excellence and luxury, designed to meet high standards for recreational and competitive swimming alike. With its world-class facilities and stylish design, this project creates a sophisticated, inviting environment that promotes health, relaxation, and an elevated aquatic experience.",
     tagLine: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL & PAVILION WITH WASHROOM FACILITIES",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
-      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
-      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
-      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
-      { icon: "CheckSquare", description: "OC RECEIVED code" },
+      { icon: "Building2", description: "Olympic size swimming pool" },
+      { icon: "Home", description: "Open shower area" },
+      { icon: "Banknote", description: "Bollard lights around swimming pool" },
+      { icon: "FileCheck", description: "Musaic tiles" },
+      { icon: "CheckSquare", description: "Landscipping" },
     ],
     configuration: [
-      { flat: "18500 sqft", carpet: "99 days" },
+      { flat: "15000  sqft", carpet: "270 days" },
     ],
 
     galleryImages: [
