@@ -79,7 +79,7 @@ export const projects = [
   },
   {
     slug: "project-3",
-    title: "TATA POWER SOLAR PROCUREMENT OFFICE BANGOLARE",
+    title: ". TATA POWER SOLAR PROCURMENT OFFICE CSPT",
     image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-7.jpg",
     description: "TATA POWER SOLAR PROCUREMENT OFFICE BANGOLARE",
     fullDescription:
