@@ -261,14 +261,14 @@ export const projects = [
     tagLine: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL & PAVILION WITH WASHROOM FACILITIES",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Waves", description: "Olympic size swimming pool" },
-      { icon: "ShowerHead", description: "Open shower area" },
-      { icon: "Lamp", description: "Bollard lights around swimming pool" },
-      { icon: "InspectionPanel", description: "Musaic tiles" },
-      { icon: "Pickaxe", description: "Landscipping" },
+      { icon: "Home", description: "Multipurpose hall" },
+      { icon: "LampCeilingIcon", description: "metal fall ceiling" },
+      { icon: "Columns2", description: "wpc deck and column cladding" },
+      { icon: "InspectionPanel", description: "EPDM rubber flooring" },
+      { icon: "LampCeiling", description: "customize rounded hanging lights" },
     ],
     configuration: [
-      { flat: "15000  sqft", carpet: "270 days" },
+      { flat: "12000 sqft", carpet: "90 days" },
     ],
 
     galleryImages: [
