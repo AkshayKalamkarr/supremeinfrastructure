@@ -180,14 +180,14 @@ export const projects = [
     tagLine: "TATA POWER SOLAR CIVIL OFFICE AND BRICK OUT AREA , BANGOLARE",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
-      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
-      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
-      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
-      { icon: "CheckSquare", description: "OC RECEIVED code" },
+      { icon: "Wallpaper", description: "Customize wallpaper" },
+      { icon: "LampCeilingIcon", description: "Colorfull hanging lights" },
+      { icon: "Palette", description: "Highlighted wall with paintshed" },
+      { icon: "Armchair", description: "Outdoor furniture" },
+      { icon: "Lightbulb", description: "Globe lights" },
     ],
     configuration: [
-      { flat: "18500 sqft", carpet: "99 days" },
+      { flat: "12500 sqft", carpet: "60 days" },
     ],
 
     galleryImages: [
