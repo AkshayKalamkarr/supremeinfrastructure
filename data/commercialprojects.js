@@ -292,14 +292,14 @@ export const projects = [
     tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
-      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
-      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
-      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
-      { icon: "CheckSquare", description: "OC RECEIVED code" },
+      { icon: "Building2", description: "Powder coated open cell ceiling for passage area" },
+      { icon: "Home", description: "Fabric lights" },
+      { icon: "Banknote", description: "Open close book shelf" },
+      { icon: "FileCheck", description: "3D letter" },
+      { icon: "CheckSquare", description: "Acostick floats" },
     ],
     configuration: [
-      { flat: "18500 sqft", carpet: "99 days" },
+      { flat: "15000  sqft", carpet: "105 days" },
     ],
 
     galleryImages: [
