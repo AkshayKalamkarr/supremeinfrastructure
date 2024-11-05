@@ -45,18 +45,16 @@ export const projects = [
         image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-2.jpg",
         description: "Ulwe",
         fullDescription:
-            "Mulshi IB, situated about 40 km from Pune, is a storage dam for Bhira hydro power station of Tata Power Company Limited. The Bungalow is located near dam and dam constructed across the rivers Mula & Nila near village Mulshi during the years 1921-26 is a gravity dam constructed in rubble masonry.We have renovated the Mulshi IB with new design and concepts IN Year 2018-19. By keeping Bungalow’s vintage look in mind we have design this beautiful stone structure from scarp.This is Tata power’s oldest property among all. Bungalow home plans share a common style with Craftsman, Rustic and Cottage home designs. A great porch for your rocker, typically one level and over-hanging eaves are some of the classic features.",
+            "This 700-square-foot apartment renovation for Riddhi Siddhi 302 was completed in a concise 45-day timeline ,focusing on creating a maximizes every square foot ,intergrating practical storage solutions ,elegant design touches,and a modern kitchen with added utility.The Riddhi Siddhi 302 renovation harmonizes style and practically ,creating a cozy and efficient space tailored to modern living.Each element from the MDF molding in the living room to the modular kitchens functionality ,enhances the apartments appeal and usability ,offering residents a balanced ,Comfortable home.",
         tagLine: "Project information",
         reraNumber: "P52000011751",
         highlights: [
-            { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
-            { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
-            { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
-            { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
-            { icon: "CheckSquare", description: "OC RECEIVED code" },
+            { icon: "Building2", description: "Living  room with mdf moulding with paintshed" },
+            { icon: "Home", description: "Open close storage" },
+            { icon: "Banknote", description: "Modular kitchen with utility" },
         ],
         configuration: [
-            { flat: "1500 sqft", carpet: "135 Days" },
+            { flat: "700 sqft", carpet: "45 Days" },
         ],
 
         galleryImages: [
