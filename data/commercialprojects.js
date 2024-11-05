@@ -42,11 +42,11 @@ export const projects = [
     tagLine: "Atlanats Crew Management",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
-      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
-      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
-      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
-      { icon: "CheckSquare", description: "OC RECEIVED code" },
+      { icon: "Armchair", description: "100+ Seating at single floor" },
+      { icon: "Coffee", description: "65+ seating for cafeteria" },
+      { icon: "Banknote", description: "14 seater huge Conference room" },
+      { icon: "HandCoins", description: "Separate account department" },
+      { icon: "CheckSquare", description: "Colourful Interview room & meeting room" },
     ],
     configuration: [
       { flat: "7500 sqft", carpet: "120 Days" },
