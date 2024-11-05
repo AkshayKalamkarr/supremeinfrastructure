@@ -35,7 +35,7 @@ export default function Contact() {
           backgroundColor: 'rgba(255, 255, 255, 0.5)'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent opacity-70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent opacity-20"></div>
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
