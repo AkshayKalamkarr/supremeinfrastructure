@@ -71,10 +71,6 @@ export const projects = [
       { image: "/images/projects/ATLANTAS/atlantas-16.jpg", alt: "atlantas-16" },
       { image: "/images/projects/ATLANTAS/atlantas-17.jpg", alt: "atlantas-17" },
       { image: "/images/projects/ATLANTAS/atlantas-18.jpg", alt: "atlantas-18" },
-      { image: "/images/projects/ATLANTAS/atlantas-19.jpg", alt: "atlantas-19" },
-      { image: "/images/projects/ATLANTAS/atlantas-20.jpg", alt: "atlantas-20" },
-      { image: "/images/projects/ATLANTAS/atlantas-21.jpg", alt: "atlantas-21" },
-
     ],
   },
   {
