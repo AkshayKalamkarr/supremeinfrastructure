@@ -251,7 +251,7 @@ export const projects = [
     slug: "project-7",
     title: "TATA SPORT COMPLEX GYMASIUM",
     image: "/images/projects/TATASPORTCOMPLEXGYMASIUM/tataGym-7.jpg",
-    description: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL & PAVILION WITH WASHROOM FACILITIES",
+    description: "TATA SPORT COMPLEX GYMASIUM",
     fullDescription:
       "This ambitious project features an Olympic-size swimming pool spanning 15,000 square feet, designed to provide a premium aquatic experience. Completed over 270 days, the swimming pool facility integrates functional, high-quality materials with luxurious design elements, offering a top-notch recreational space within the Tata Sports Complex.The Tata Sports Complex Swimming Pool embodies a blend of athletic excellence and luxury, designed to meet high standards for recreational and competitive swimming alike. With its world-class facilities and stylish design, this project creates a sophisticated, inviting environment that promotes health, relaxation, and an elevated aquatic experience.",
     tagLine: "TATA SPORT COMPLEX OLYMPIC SIZE SWIMMING POOL & PAVILION WITH WASHROOM FACILITIES",
