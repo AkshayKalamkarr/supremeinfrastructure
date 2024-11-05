@@ -56,7 +56,7 @@ export default function ProjectPage({ params }) {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-700 md:my-6">
               Gallery
             </h2>
-            <div className="w-36 h-1 bg-gradient-to-r bg-cyan-500 hover:bg-cyan-600 mx-auto mb-8"></div>
+            <div className="w-36 h-1 bg-gradient-to-r bg-amber-700 hover:bg-amber-700 mx-auto mb-8"></div>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 md:mt-16 w-full'>
               {project.galleryImages.map((galleryImage, index) => (
                 <div
@@ -81,7 +81,7 @@ export default function ProjectPage({ params }) {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-700 md:my-6">
               Project Highlights
             </h2>
-            <div className="w-36 h-1 bg-gradient-to-r bg-orange-500 hover:bg-orange-600 mx-auto mb-8"></div>
+            <div className="w-36 h-1 bg-gradient-to-r bg-amber-700 hover:bg-amber-700 mx-auto mb-8"></div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 w-full">
               {project.highlights.map((item, index) => {
                 const IconComponent = highlightsIcon[item.icon];
