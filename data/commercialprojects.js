@@ -87,11 +87,11 @@ export const projects = [
     tagLine: "Atlanats Crew Management",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "ENTERENCE WITH WOODEN PATTERNS" },
-      { icon: "Home", description: "POWDER COATED CEILING" },
-      { icon: "Banknote", description: "BOOK SHELF" },
-      { icon: "FileCheck", description: "FASCADE GLASS" },
-      { icon: "CheckSquare", description: "ACOSTIC WALL PANNELING" },
+      { icon: "LogIn", description: "ENTERENCE WITH WOODEN PATTERNS" },
+      { icon: "LampCeilingIcon", description: "POWDER COATED CEILING" },
+      { icon: "Book", description: "BOOK SHELF" },
+      { icon: "FlipHorizontal2", description: "FASCADE GLASS" },
+      { icon: "PanelBottom", description: "ACOSTIC WALL PANNELING" },
     ],
     configuration: [
       { flat: "18500 sqft", carpet: "99 days" },
