@@ -1,5 +1,5 @@
 import IFrameComponent from "@/components/IFrameComponent";
-import { Building2, Home, Banknote, FileCheck, CheckSquare } from 'lucide-react';
+import { House, Wallpaper, GraduationCap, Utensils, Dumbbell } from 'lucide-react';
 import { guestprojects, getProjectBySlug } from "../../../../data/guesthousedata";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export default function ProjectPage({ params }) {
     return <div>Project not found</div>;
   }
   const highlightsIcon = {
-    Building2: Building2,
-    Home: Home,
-    Banknote: Banknote,
-    FileCheck: FileCheck,
-    CheckSquare: CheckSquare
+    House: House,
+    Wallpaper: Wallpaper,
+    GraduationCap: GraduationCap,
+    Utensils: Utensils,
+    Dumbbell: Dumbbell
   };
 
   return (
