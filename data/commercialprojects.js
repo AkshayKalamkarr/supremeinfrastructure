@@ -390,7 +390,7 @@ export const projects = [
     slug: "project-10",
     title: "MAYURESH PLANET",
     image: "/images/projects/MAYURESHPLANET/mayuresh-8.jpg",
-    description: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
+    description: "DEVELOPMENT OF SUPREME INFRASTRUCTURE COMPANY OFFICE",
     fullDescription:
       "Covering an area of 1,100 square feet, the Mayuresh Planet office renovation project focused on maximizing space efficiency and creating a visually dynamic environment, completed in just 44 days. With unique design features and modern lighting elements, the project aimed to bring a fresh and functional look to the office.The Mayuresh Planet office renovation embodies smart design with its innovative use of materials, lighting, and space. From the striking MS partition to the colorful magnetic glass, each element contributes to an environment that is both inspiring and functional, making the most of the compact area with style and purpose.",
     tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
@@ -427,7 +427,7 @@ export const projects = [
     slug: "project-11",
     title: "TATA POWER PENINSULA",
     image: "/images/projects/PENINSULA/peninsula-3.jpeg",
-    description: "TATA POWER SOLAR MULSHI",
+    description: "TATA POWER PENINSULA",
     fullDescription:
       "The TATA Power Peninsula project aims to revitalize an 8000 sqft area over a 45-day period, creating an elegant and functional workspace that embodies the essence of TATA Power. This design initiative focuses on sophistication and comfort, ensuring a pleasant environment for employees and visitors alike.The TATA Power Peninsula project is set to create a refined and inviting environment that reflects the company’s values and culture. With a focus on high-quality finishes and thoughtful design, this project will serve as a benchmark for contemporary office spaces, enhancing both employee satisfaction and brand representation.",
     tagLine: "Project information",
