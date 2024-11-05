@@ -44,7 +44,7 @@ export const projects = [
     highlights: [
       { icon: "Armchair", description: "100+ Seating at single floor" },
       { icon: "Coffee", description: "65+ seating for cafeteria" },
-      { icon: "Banknote", description: "14 seater huge Conference room" },
+      { icon: "Presentation", description: "14 seater huge Conference room" },
       { icon: "HandCoins", description: "Separate account department" },
       { icon: "Users", description: "Colourful Interview room & meeting room" },
     ],
