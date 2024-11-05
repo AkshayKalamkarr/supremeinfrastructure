@@ -46,7 +46,7 @@ export const projects = [
       { icon: "Coffee", description: "65+ seating for cafeteria" },
       { icon: "Banknote", description: "14 seater huge Conference room" },
       { icon: "HandCoins", description: "Separate account department" },
-      { icon: "CheckSquare", description: "Colourful Interview room & meeting room" },
+      { icon: "Users", description: "Colourful Interview room & meeting room" },
     ],
     configuration: [
       { flat: "7500 sqft", carpet: "120 Days" },
