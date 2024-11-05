@@ -67,8 +67,8 @@ export const projects = [
     {
         slug: "project-3",
         title: "Riddhi Siddhi 702",
-        image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-1.jpg",
-        description: "Devnar",
+        image: "/images/projects/RIDDHISIDDHI702/riddhisiddhi-1.jpg",
+        description: "Ulwe",
         fullDescription:
             "Mulshi IB, situated about 40 km from Pune, is a storage dam for Bhira hydro power station of Tata Power Company Limited. The Bungalow is located near dam and dam constructed across the rivers Mula & Nila near village Mulshi during the years 1921-26 is a gravity dam constructed in rubble masonry.We have renovated the Mulshi IB with new design and concepts IN Year 2018-19. By keeping Bungalow’s vintage look in mind we have design this beautiful stone structure from scarp.This is Tata power’s oldest property among all. Bungalow home plans share a common style with Craftsman, Rustic and Cottage home designs. A great porch for your rocker, typically one level and over-hanging eaves are some of the classic features.",
         tagLine: "Project information",
@@ -80,15 +80,16 @@ export const projects = [
             { icon: "FileCheck", description: "Wardrobe with wallpaper" },
         ],
         configuration: [
-            { flat: "1500 sqft", carpet: "135 Days" },
+            { flat: "700 sqft", carpet: "45 Days" },
         ],
 
         galleryImages: [
-            { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-1.jpg", alt: "riddhisiddhi-1" },
-            { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-2.jpg", alt: "riddhisiddhi-1" },
-            { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-3.jpg", alt: "riddhisiddhi-1" },
-            { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-4.jpg", alt: "riddhisiddhi-1" },
-            { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-5.jpg", alt: "riddhisiddhi-1" },
+            { image: "/images/projects/RIDDHISIDDHI702/riddhisiddhi-1.jpg", alt: "riddhisiddhi-1" },
+            { image: "/images/projects/RIDDHISIDDHI702/riddhisiddhi-2.jpg", alt: "riddhisiddhi-2" },
+            { image: "/images/projects/RIDDHISIDDHI702/riddhisiddhi-3.jpg", alt: "riddhisiddhi-3" },
+            { image: "/images/projects/RIDDHISIDDHI702/riddhisiddhi-4.jpg", alt: "riddhisiddhi-4" },
+            { image: "/images/projects/RIDDHISIDDHI702/riddhisiddhi-5.jpg", alt: "riddhisiddhi-5" },
+            { image: "/images/projects/RIDDHISIDDHI702/riddhisiddhi-6.jpg", alt: "riddhisiddhi-6" },
         ],
     },
 ];
