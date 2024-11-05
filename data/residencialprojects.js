@@ -62,7 +62,6 @@ export const projects = [
         galleryImages: [
             { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-1.jpg", alt: "riddhisiddhi-1" },
             { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-2.jpg", alt: "riddhisiddhi-1" },
-            { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-3.jpg", alt: "riddhisiddhi-1" },
             { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-4.jpg", alt: "riddhisiddhi-1" },
             { image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-5.jpg", alt: "riddhisiddhi-1" },
         ],
