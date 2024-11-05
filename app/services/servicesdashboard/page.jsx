@@ -144,7 +144,7 @@ export default function Home() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/5 bg-blue-950 p-4 shadow-lg ">
+      <aside className="w-full lg:w-1/5 bg-amber-800 p-4 shadow-lg ">
         {/* <h1 className="text-3xl font-bold mb-2 text-center text-gray-800  md:my-24">Supreme Infrastructure Company</h1> */}
         <h2 className="text-2xl font-bold mb-6 text-center text-white lg:my-12">PORTFOLIO / SERVICES</h2>
         <ul className="space-y-2">
