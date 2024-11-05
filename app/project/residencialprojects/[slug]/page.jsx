@@ -146,7 +146,7 @@ export default function ProjectPage({ params }) {
                     <td className="py-3 px-4 md:text-center">{config.flat}</td>
                     <td className="py-3 px-4 md:text-center">{config.carpet}</td>
                     <td className="py-3 px-4 md:text-center">
-                      <Link href="/contact" className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+                      <Link href="/contact" className="bg-gradient-to-r from-amber-700 to-yellow-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
                         Get Quote
                       </Link>
                     </td>
