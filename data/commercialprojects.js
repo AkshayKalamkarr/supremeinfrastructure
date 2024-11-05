@@ -9,11 +9,11 @@ export const projects = [
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
-      { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
-      { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
-      { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
-      { icon: "CheckSquare", description: "OC RECEIVED code" },
+      { icon: "History", description: "Historic dam bungalow beautifully restored" },
+      { icon: "House", description: "Vintage stone architecture meets modernity" },
+      { icon: "Banknote", description: "Rustic craftsman style carefully preserved" },
+      { icon: "Sprout", description: "Traditional porch enhances scenic views" },
+      { icon: "Timer", description: "Century-old heritage thoughtfully reimagined" },
     ],
     configuration: [
       { flat: "14000 sqft", carpet: "99 Days" },
