@@ -154,7 +154,7 @@ function Navbar({ className }) {
                             <ProductItem
                                 title="Guest House"
                                 href="/project/guesthouse"
-                                src="/images/home/architecture.png"
+                                src="/images/home/guestHouse.jpg"
                                 description="View our guest house projects."
                             />
                         </div>
