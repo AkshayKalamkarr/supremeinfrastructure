@@ -40,7 +40,7 @@ const CareerPage = () => {
                 backgroundBlendMode: 'overlay',
                 backgroundColor: 'rgba(255, 255, 255, 0.3)'
             }}>
-                <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent opacity-20"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent opacity-100"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                     <motion.h1
                         initial={{ opacity: 0, y: -50 }}
