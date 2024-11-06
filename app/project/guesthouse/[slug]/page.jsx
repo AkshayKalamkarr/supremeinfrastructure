@@ -53,7 +53,7 @@ export default function ProjectPage({ params }) {
 
         {project.galleryImages && (
           <section className='bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 w-full'>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-700 md:my-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-800 md:my-6">
               Gallery
             </h2>
             <div className="w-36 h-1 bg-gradient-to-r bg-amber-700 hover:bg-amber-700 mx-auto mb-8"></div>
@@ -78,7 +78,7 @@ export default function ProjectPage({ params }) {
 
         {project.highlights && (
           <div className="bg-gray-200 py-12 px-4 sm:px-6 lg:px-8 w-full">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-700 md:my-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-800 md:my-6">
               Project Highlights
             </h2>
             <div className="w-36 h-1 bg-gradient-to-r bg-amber-700 hover:bg-amber-700 mx-auto mb-8"></div>
@@ -101,7 +101,7 @@ export default function ProjectPage({ params }) {
 
         {/* Configuration Section */}
         <section className='bg-white py-12 px-4 sm:px-6 lg:px-8 w-full'>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-700 md:my-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-800 md:my-6">
             Configuration
           </h2>
           <div className="w-36 h-1 bg-gradient-to-r bg-amber-700 hover:bg-cyan-600 mx-auto mb-8"></div>
