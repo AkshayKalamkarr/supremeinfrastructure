@@ -49,9 +49,9 @@ export const projects = [
         tagLine: "Project information",
         reraNumber: "P52000011751",
         highlights: [
-            { icon: "Building2", description: "Living  room with mdf moulding with paintshed" },
-            { icon: "Home", description: "Open close storage" },
-            { icon: "Banknote", description: "Modular kitchen with utility" },
+            { icon: "PaintBucket", description: "Living  room with mdf moulding with paintshed" },
+            { icon: "Archive", description: "Open close storage" },
+            { icon: "CookingPotIcon", description: "Modular kitchen with utility" },
         ],
         configuration: [
             { flat: "700 sqft", carpet: "45 Days" },
@@ -74,10 +74,10 @@ export const projects = [
         tagLine: "Project information",
         reraNumber: "P52000011751",
         highlights: [
-            { icon: "Building2", description: "Living room with wall moulding" },
-            { icon: "Home", description: "Open closed storage" },
-            { icon: "Banknote", description: "Modular kitchen with Utility" },
-            { icon: "FileCheck", description: "Wardrobe with wallpaper" },
+            { icon: "House", description: "Living room with wall moulding" },
+            { icon: "Archive", description: "Open closed storage" },
+            { icon: "CookingPotIcon", description: "Modular kitchen with Utility" },
+            { icon: "Wallpaper", description: "Wardrobe with wallpaper" },
         ],
         configuration: [
             { flat: "700 sqft", carpet: "45 Days" },
