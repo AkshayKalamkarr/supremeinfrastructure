@@ -1,5 +1,5 @@
 import IFrameComponent from "@../../../components/IFrameComponent";
-import { Building2, Home, Banknote, FileCheck, CheckSquare } from 'lucide-react';
+import {Archive,Columns4,Component,DoorOpen,CircleSlash2} from 'lucide-react';
 import { projects, getProjectBySlug } from "../../../../data/residencialprojects";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,11 +18,11 @@ export default function ProjectPage({ params }) {
   }
 
   const highlightsIcon = {
-    Building2: Building2,
-    Home: Home,
-    Banknote: Banknote,
-    FileCheck: FileCheck,
-    CheckSquare: CheckSquare
+    Archive:Archive,
+    Columns4:Columns4,
+    Component:Component,
+    DoorOpen:DoorOpen,
+    CircleSlash2:CircleSlash2
   };
 
   return (

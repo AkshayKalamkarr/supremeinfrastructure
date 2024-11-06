@@ -9,11 +9,11 @@ export const projects = [
         tagLine: "Project information",
         reraNumber: "P52000011751",
         highlights: [
-            { icon: "Building2", description: "TOWNSHIP IN 3 ACRES" },
-            { icon: "Home", description: "13 RESIDENTIAL BUILDINGS OF STILT + 4 STOREY WITH LIFT" },
-            { icon: "Banknote", description: "LUXURIOUS AND AFFORDABLE 1BHK AND 2BHK RESIDENCES" },
-            { icon: "FileCheck", description: "PROJECT APPROVED BY NAINA CIDCO" },
-            { icon: "CheckSquare", description: "OC RECEIVED code" },
+            { icon: "Archive", description: "Bay seating with storage" },
+            { icon: "Columns4", description: "invisible grills." },
+            { icon: "Component", description: "Highlighted dinning wall with mirror finished" },
+            { icon: "DoorOpen", description: "Hidden doors" },
+            { icon: "CircleSlash2", description: "Decorative partitions" },
         ],
         configuration: [
             { flat: "1500 sqft", carpet: "135 Days" },
