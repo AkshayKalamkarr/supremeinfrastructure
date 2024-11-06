@@ -36,11 +36,6 @@ const portfolioItems = [
       '/images/projects/ATLANTAS/atlantas-16.jpg',
       '/images/projects/ATLANTAS/atlantas-17.jpg',
       '/images/projects/ATLANTAS/atlantas-18.jpg',
-      '/images/projects/ATLANTAS/atlantas-19.jpg',
-      '/images/projects/ATLANTAS/atlantas-20.jpg',
-      '/images/projects/ATLANTAS/atlantas-21.jpg',
-
-
     ]
   },
   {
