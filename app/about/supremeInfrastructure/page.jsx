@@ -40,7 +40,7 @@ const AboutUsPage = () => {
             {/* Hero Section */}
             <div className="bg-cover bg-center h-[calc(100vh-80px)] md:h-screen relative" style={{ backgroundImage: "url('/images/about/about.jpg')" }}>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white text-center px-4">Building Tomorrow's <span className='text-amber-600'>World Today</span> </h1>
+                    <h1 className="text-4xl md:text-6xl font-bold text-white text-center px-4">Building Tomorrow's <span className='text-amber-700'>World Today</span> </h1>
                 </div>
             </div>
 
@@ -78,11 +78,11 @@ const AboutUsPage = () => {
                                         />
                                     </div>
                                     <div className="p-8">
-                                        <div className="uppercase tracking-wide text-sm text-amber-600 font-semibold">{director.position}</div>
+                                        <div className="uppercase tracking-wide text-sm text-amber-700 font-semibold">{director.position}</div>
                                         <div className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{director.name}</div>
                                         <p className="mt-2 text-gray-500">{director.bio}</p>
                                         <div className="mt-4">
-                                            <a href="#" className="text-amber-600 hover:text-blue-800">
+                                            <a href="#" className="text-amber-700 hover:text-blue-800">
                                                 <FaLinkedin className="inline mr-2" />
                                                 LinkedIn Profile
                                             </a>
@@ -106,7 +106,7 @@ const AboutUsPage = () => {
                                     whileHover={{ scale: 1.05 }}
                                     transition={{ type: "spring", stiffness: 300 }}
                                 >
-                                    <div className="text-4xl mb-4 text-amber-600 mx-32 md:mx-44">{service.icon}</div>
+                                    <div className="text-4xl mb-4 text-amber-700 mx-32 md:mx-44">{service.icon}</div>
                                     <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                                     <p className="text-gray-600">{service.description}</p>
                                 </motion.div>
@@ -116,7 +116,7 @@ const AboutUsPage = () => {
                 </div>
 
                 {/* Stats Section */}
-                <section className="mb-20 bg-gradient-to-r from-amber-700 to-yellow-600 text-white py-16 rounded-lg">
+                <section className="mb-20 bg-gradient-to-r from-amber-700 to-amber-600 text-white py-16 rounded-lg">
                     <div className="container mx-auto">
                         <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Our Achievements</h2>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -169,7 +169,7 @@ const AboutUsPage = () => {
                     <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-800">Ready to Build Your Dream Project?</h2>
                     <Link href='/contact'>
                         <motion.button
-                            className="bg-gradient-to-r from-amber-700 to-yellow-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
+                            className="bg-gradient-to-r from-amber-700 to-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
