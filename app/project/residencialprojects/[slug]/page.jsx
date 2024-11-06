@@ -1,5 +1,5 @@
 import IFrameComponent from "@../../../components/IFrameComponent";
-import {Archive,Columns4,Component,DoorOpen,CircleSlash2,PaintBucket,CookingPotIcon,House,Wallpaper} from 'lucide-react';
+import {Archive,Columns4,Component,DoorOpen,CircleSlash2,PaintBucket,CookingPotIcon,House,Wallpaper,Bath,Frame,InspectionPanel,BedSingle} from 'lucide-react';
 import { projects, getProjectBySlug } from "../../../../data/residencialprojects";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +26,11 @@ export default function ProjectPage({ params }) {
     PaintBucket:PaintBucket,
     CookingPotIcon:CookingPotIcon,
     House:House,
-    Wallpaper:Wallpaper
+    Wallpaper:Wallpaper,
+    Bath:Bath,
+    Frame:Frame,
+    InspectionPanel:InspectionPanel,
+    BedSingle:BedSingle
   };
 
   return (

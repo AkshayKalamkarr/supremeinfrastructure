@@ -102,11 +102,11 @@ export const projects = [
         tagLine: "Project information",
         reraNumber: "P52000011751",
         highlights: [
-            { icon: "Building2", description: "Italian finish bathrooms" },
-            { icon: "Home", description: "Wooden flooring for bedrooms" },
-            { icon: "Banknote", description: "Tile size 6x4 with Italian marble finish" },
-            { icon: "FileCheck", description: "Fully modular kitchen with latest technology" },
-            { icon: "FileCheck", description: "3 bedroom having same finish with different ideas" },
+            { icon: "Bath", description: "Italian finish bathrooms" },
+            { icon: "Frame", description: "Wooden flooring for bedrooms" },
+            { icon: "InspectionPanel", description: "Tile size 6x4 with Italian marble finish" },
+            { icon: "CookingPotIcon", description: "Fully modular kitchen with latest technology" },
+            { icon: "BedSingle", description: "3 bedroom having same finish with different ideas" },
         ],
         configuration: [
             { flat: "1400 sqft", carpet: "120 Days" },
