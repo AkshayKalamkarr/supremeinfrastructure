@@ -148,7 +148,7 @@ function Navbar({ className }) {
                             <ProductItem
                                 title="Residential Projects"
                                 href="/project/residencialprojects"
-                                src="/images/home/residencial.png"
+                                src="/images/home/residencial2.jpg"
                                 description="Discover our residential project designs."
                             />
                             <ProductItem
