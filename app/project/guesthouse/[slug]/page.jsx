@@ -133,6 +133,5 @@ export default function ProjectPage({ params }) {
         </section>
       </div>
     </div>
-
   );
 }
