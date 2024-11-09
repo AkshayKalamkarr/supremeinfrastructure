@@ -67,10 +67,10 @@ export default function Contact() {
                 <div>
                   <p className="font-semibold">Address:</p>
                   <p className="text-sm md:text-base"> SUPREME INFRASTRUCTURE<br />
-                                Office No 603, Sector 15,
-                                near Belapur Court Station,<br />
-                                Sector-15, Belapur,<br />
-                                Navi Mumbai, Maharashtra 410209</p>
+                    Office No 603, Sector 15,
+                    near Belapur Court Station,<br />
+                    Sector-15, Belapur,<br />
+                    Navi Mumbai, Maharashtra 410209</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
