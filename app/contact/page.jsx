@@ -66,14 +66,18 @@ export default function Contact() {
                 <FaMapMarkerAlt className="text-2xl text-amber-700" />
                 <div>
                   <p className="font-semibold">Address:</p>
-                  <p className="text-sm md:text-base">Villa No. 5, Mayuresh Chambers, Plot No. 60, Sector 11, CBD Belapur, Navi Mumbai 400614</p>
+                  <p className="text-sm md:text-base"> SUPREME INFRASTRUCTURE<br />
+                                Office No 603, Sector 15,
+                                near Belapur Court Station,<br />
+                                Sector-15, Belapur,<br />
+                                Navi Mumbai, Maharashtra 410209</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
                 <FaPhone className="text-2xl text-amber-700" />
                 <div>
                   <p className="font-semibold">Phone:</p>
-                  <p className="text-sm md:text-base">+91 98198 00022 / +91 98198 00044</p>
+                  <p className="text-sm md:text-base">+91 86570 04324 / (+1) 212-946-2707</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
