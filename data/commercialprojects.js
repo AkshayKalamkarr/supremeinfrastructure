@@ -60,7 +60,7 @@ export const projects = [
       // { image: "/images/projects/ATLANTAS/atlantas-9.jpg", alt: "atlantas-9" },
       // { image: "/images/projects/ATLANTAS/atlantas-10.jpg", alt: "atlantas-10" },
       // { image: "/images/projects/ATLANTAS/atlantas-11.jpg", alt: "atlantas-11" },
-      { image: "/images/projects/ATLANTAS/atlantas-12.jpg", alt: "atlantas-12" },
+      // { image: "/images/projects/ATLANTAS/atlantas-12.jpg", alt: "atlantas-12" },
       { image: "/images/projects/ATLANTAS/atlantas-13.jpg", alt: "atlantas-13" },
       { image: "/images/projects/ATLANTAS/atlantas-14.jpg", alt: "atlantas-14" },
       // { image: "/images/projects/ATLANTAS/atlantas-15.jpg", alt: "atlantas-15" },
