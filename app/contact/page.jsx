@@ -217,7 +217,7 @@ export default function Contact() {
                 <input
                   type="tel"
                   name="contactNumber"
-                  placeholder="Contact Number * (e.g., +1 234-567-8900)"
+                  placeholder="Contact Number *"
                   value={formData.contactNumber}
                   onChange={handleChange}
                   required
