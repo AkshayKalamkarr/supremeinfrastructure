@@ -164,7 +164,6 @@ export default function ProjectPage() {
         {/* Highlights Section */}
         {project.highlights && (
           <div className='bg-gray-200 py-12 px-4 sm:px-6 lg:px-8 w-full'>
-            {/* ... (rest of your highlights section) ... */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-amber-800 md:my-6">
               Project Highlights
             </h2>
@@ -188,7 +187,6 @@ export default function ProjectPage() {
 
         {/* Configuration Section */}
         <section className='bg-white py-12 px-4 sm:px-6 lg:px-8 w-full'>
-          {/* ... (rest of your configuration section) ... */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-xl mb-8 text-center text-orange-800 md:my-6">
             Configuration
           </h2>
