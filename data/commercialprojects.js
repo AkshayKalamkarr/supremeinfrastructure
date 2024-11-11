@@ -164,7 +164,7 @@ export const projects = [
   },
   {
     slug: "project-5",
-    title: "TATA POWER SOLAR CIVIL OFFICE AND BRICK OUT AREA , BANGOLARE",
+    title: "TATA POWER SOLAR CIVIL OFFICE AND BREAK OUT AREA , BANGOLARE",
     image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-1.jpg",
     description: "TATA POWER SOLAR CIVIL OFFICE AND BRICK OUT AREA , BANGOLARE",
     fullDescription:
