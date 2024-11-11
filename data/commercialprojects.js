@@ -1,7 +1,7 @@
 export const projects = [
   {
     slug: "project-1",
-    title: "TATA POWER SOLAR MULSHI",
+    title: "TATA POWER MULSHI IB",
     image: "/images/projects/TATA/tata-1.jpg",
     description: "TATA POWER SOLAR MULSHI",
     fullDescription:
