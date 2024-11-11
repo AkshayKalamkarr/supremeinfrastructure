@@ -1,6 +1,10 @@
 "use client";
 import { useState } from "react";;
-import { Banknote, FileCheck } from "lucide-react";
+import {
+  Fence, FlipHorizontal, BetweenVerticalStart, Lightbulb, Armchair, Component, Wallpaper, Home, Activity, Banknote, FileCheck, CheckSquare, Dumbbell, Utensils, House, GraduationCap,
+  LampCeiling, Library, Scale3D, Layers2, Waves, ShowerHead, Lamp, InspectionPanel, Pickaxe, LampCeilingIcon, Columns2, Palette, Timer, Sticker, AudioLines, LogIn, Book, FlipHorizontal2,
+  PanelBottom, History, Sprout, Coffee, HandCoins, Users, Presentation
+} from "lucide-react";
 import { projects } from "../../../../data/commercialprojects";
 import Image from "next/image";
 import { useParams } from "next/navigation";
@@ -31,7 +35,45 @@ export default function ProjectPage() {
   const highlightsIcon = {
     Banknote: Banknote,
     FileCheck: FileCheck,
-    // ... (rest of your icons)
+    CheckSquare: CheckSquare,
+    FlipHorizontal: FlipHorizontal,
+    BetweenVerticalStart: BetweenVerticalStart,
+    Lightbulb: Lightbulb,
+    Activity: Activity,
+    Armchair: Armchair,
+    Wallpaper: Wallpaper,
+    Component: Component,
+    Fence: Fence,
+    Dumbbell: Dumbbell,
+    Utensils: Utensils,
+    House: House,
+    GraduationCap: GraduationCap,
+    LampCeiling: LampCeiling,
+    Home: Home,
+    Library: Library,
+    Scale3D: Scale3D,
+    Layers2: Layers2,
+    Waves: Waves,
+    ShowerHead: ShowerHead,
+    Lamp: Lamp,
+    Pickaxe: Pickaxe,
+    InspectionPanel: InspectionPanel,
+    LampCeilingIcon: LampCeilingIcon,
+    Columns2: Columns2,
+    Palette: Palette,
+    Timer: Timer,
+    Sticker: Sticker,
+    AudioLines: AudioLines,
+    LogIn: LogIn,
+    Book: Book,
+    FlipHorizontal2: FlipHorizontal2,
+    PanelBottom: PanelBottom,
+    History: History,
+    Sprout: Sprout,
+    Coffee: Coffee,
+    HandCoins: HandCoins,
+    Users: Users,
+    Presentation: Presentation,
   };
 
   return (
