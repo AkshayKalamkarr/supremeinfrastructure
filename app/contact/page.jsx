@@ -156,7 +156,7 @@ export default function Contact() {
               />
               <motion.button
                 type="submit"
-                className="w-full bg-amber-800 text-white py-3 rounded hover:bg-amber-700 transition duration-300 text-lg font-semibold"
+                className="w-full bg-amber-700 text-white py-3 rounded hover:bg-amber-700 transition duration-300 text-lg font-semibold"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
