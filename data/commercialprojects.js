@@ -91,7 +91,7 @@ export const projects = [
 
     galleryImages: [
       // { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-1.jpeg", alt: "tataBanglore-1" },
-      { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-2.jpg", alt: "tataBanglore-2" },
+      // { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-2.jpg", alt: "tataBanglore-2" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-3.jpg", alt: "tataBanglore-3" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-4.jpg", alt: "tataBanglore-4" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-5.jpg", alt: "tataBanglore-5" },
@@ -103,7 +103,7 @@ export const projects = [
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-11.jpg", alt: "tataBanglore-11" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-12.jpg", alt: "tataBanglore-12" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-13.jpg", alt: "tataBanglore-13" },
-      { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-14.jpg", alt: "tataBanglore-14" },
+      // { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-14.jpg", alt: "tataBanglore-14" },
       // { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-15.jpg", alt: "tataBanglore-15" },
       // { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-16.jpg", alt: "tataBanglore-16" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-17.jpg", alt: "tataBanglore-17" },
