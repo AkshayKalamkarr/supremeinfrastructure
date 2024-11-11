@@ -1,36 +1,60 @@
-import IFrameComponent from "@../../../components/IFrameComponent";
-import {Archive,Columns4,Component,DoorOpen,CircleSlash2,PaintBucket,CookingPotIcon,House,Wallpaper,Bath,Frame,InspectionPanel,BedSingle} from 'lucide-react';
-import { projects, getProjectBySlug } from "../../../../data/residencialprojects";
+"use client";
+import { useState } from "react";
+import {
+  Archive,
+  Columns4,
+  Component,
+  DoorOpen,
+  CircleSlash2,
+  PaintBucket,
+  CookingPotIcon,
+  House,
+  Wallpaper,
+  Bath,
+  Frame,
+  InspectionPanel,
+  BedSingle
+} from 'lucide-react';
+import { projects } from "../../../../data/residencialprojects";
 import Image from "next/image";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
-export async function generateStaticParams() {
-  return projects.map((project) => ({
-    slug: project.slug,
-  }));
-}
+const getProjectBySlug = (slug) => {
+  return projects.find((project) => project.slug === slug);
+};
 
-export default function ProjectPage({ params }) {
-  const project = getProjectBySlug(params.slug);
+export default function ProjectPage() {
+  const { slug } = useParams();
+  const project = getProjectBySlug(slug);
+  const [fullViewImage, setFullViewImage] = useState(null);
 
   if (!project) {
     return <div>Project not found</div>;
   }
 
+  const openFullView = (image) => {
+    setFullViewImage(image);
+  };
+
+  const closeFullView = () => {
+    setFullViewImage(null);
+  };
+
   const highlightsIcon = {
-    Archive:Archive,
-    Columns4:Columns4,
-    Component:Component,
-    DoorOpen:DoorOpen,
-    CircleSlash2:CircleSlash2,
-    PaintBucket:PaintBucket,
-    CookingPotIcon:CookingPotIcon,
-    House:House,
-    Wallpaper:Wallpaper,
-    Bath:Bath,
-    Frame:Frame,
-    InspectionPanel:InspectionPanel,
-    BedSingle:BedSingle
+    Archive: Archive,
+    Columns4: Columns4,
+    Component: Component,
+    DoorOpen: DoorOpen,
+    CircleSlash2: CircleSlash2,
+    PaintBucket: PaintBucket,
+    CookingPotIcon: CookingPotIcon,
+    House: House,
+    Wallpaper: Wallpaper,
+    Bath: Bath,
+    Frame: Frame,
+    InspectionPanel: InspectionPanel,
+    BedSingle: BedSingle
   };
 
   return (
@@ -47,13 +71,18 @@ export default function ProjectPage({ params }) {
               </p>
             </div>
             <div className='lg:w-2/2 mt-4 lg:mt-0 lg:ml-36'>
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={600}
-                height={400}
-                className='w-full h-auto object-cover rounded-lg'
-              />
+              <div
+                className='cursor-pointer transition-transform duration-300 hover:scale-105'
+                onClick={() => openFullView(project.image)}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={600}
+                  height={400}
+                  className='w-full h-auto object-cover rounded-lg'
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -68,7 +97,6 @@ export default function ProjectPage({ params }) {
             {/* Videos Section */}
             {project.videos && project.videos.length > 0 && (
               <div className="mb-12">
-                {/* <h3 className="text-2xl font-semibold mb-6 text-center text-orange-800">Videos</h3> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {project.videos.map((video, index) => (
                     <div key={index} className="relative aspect-video w-full">
@@ -93,7 +121,8 @@ export default function ProjectPage({ params }) {
                 {project.galleryImages.map((galleryImage, index) => (
                   <div
                     key={index}
-                    className='relative overflow-hidden aspect-square w-full'
+                    className='relative overflow-hidden aspect-square w-full cursor-pointer'
+                    onClick={() => openFullView(galleryImage.image)}
                   >
                     <Image
                       src={galleryImage.image}
@@ -164,6 +193,29 @@ export default function ProjectPage({ params }) {
             </table>
           </div>
         </section>
+
+        {/* Full View Modal */}
+        {fullViewImage && (
+          <div
+            className='fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50'
+            onClick={closeFullView}
+          >
+            <div className='relative w-full h-full max-w-5xl max-h-5xl p-4'>
+              <Image
+                src={fullViewImage}
+                alt='Full view'
+                fill={true}
+                style={{ objectFit: "contain" }}
+              />
+              <button
+                className='absolute top-4 right-4 text-white text-4xl hover:text-red-600 transition-colors md:text-6xl'
+                onClick={closeFullView}
+              >
+                &times;
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
