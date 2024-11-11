@@ -2,7 +2,7 @@ export const projects = [
   {
     slug: "project-1",
     title: "TATA POWER MULSHI IB",
-    image: "/images/projects/TATA/tata-1.jpg",
+    image: "/images/projects/TATAPOWERMULSHIIB/mulshi-2.jpg",
     description: "TATA POWER SOLAR MULSHI",
     fullDescription:
       "Mulshi IB, situated about 40 km from Pune, is a storage dam for Bhira hydro power station of Tata Power Company Limited. The Bungalow is located near dam and dam constructed across the rivers Mula & Nila near village Mulshi during the years 1921-26 is a gravity dam constructed in rubble masonry.We have renovated the Mulshi IB with new design and concepts IN Year 2018-19. By keeping Bungalow’s vintage look in mind we have design this beautiful stone structure from scarp.This is Tata power’s oldest property among all. Bungalow home plans share a common style with Craftsman, Rustic and Cottage home designs. A great porch for your rocker, typically one level and over-hanging eaves are some of the classic features.The designing & decorating of structure is an important process as it is what makes a structure feel like a home. Basically Mulshi IB design is on that main aspect where guest will feel like their own house and will enjoy a bit time of their busy life",
@@ -21,7 +21,6 @@ export const projects = [
 
     galleryImages: [
       { image: "/images/projects/TATAPOWERMULSHIIB/mulshi-1.jpg", alt: "tata-1" },
-      { image: "/images/projects/TATAPOWERMULSHIIB/mulshi-2.jpg", alt: "tata-2" },
       { image: "/images/projects/TATAPOWERMULSHIIB/mulshi-3.jpg", alt: "tata-3" },
       { image: "/images/projects/TATAPOWERMULSHIIB/mulshi-4.jpg", alt: "tata-4" },
       { image: "/images/projects/TATAPOWERMULSHIIB/mulshi-5.jpg", alt: "tata-5" },
