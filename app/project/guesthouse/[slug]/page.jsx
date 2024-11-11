@@ -1,4 +1,3 @@
-import IFrameComponent from "@/components/IFrameComponent";
 import { House, Wallpaper, GraduationCap, Utensils, Dumbbell } from 'lucide-react';
 import { guestprojects, getProjectBySlug } from "../../../../data/guesthousedata";
 import Image from "next/image";
