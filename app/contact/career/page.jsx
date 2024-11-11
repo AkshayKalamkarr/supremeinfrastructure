@@ -128,6 +128,20 @@ const CareerPage = () => {
                                     onChange={handleChange}
                                 />
                             </div>
+
+                            {/* Contact Number Section */}
+                            <div className="mb-6">
+                                <label htmlFor="contactNumber" className="block mb-2 text-lg font-semibold text-gray-700">Contact Number</label>
+                                <input
+                                    type="tel"
+                                    id="contactNumber"
+                                    name="contactNumber"
+                                    pattern="^\+?[1-9]\d{1,14}$" // Optional regex for phone number format validation
+                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    required
+                                    onChange={handleChange}
+                                />
+                            </div>
                             <div className="mb-6">
                                 <label htmlFor="position" className="block mb-2 text-lg font-semibold text-gray-700">Position</label>
                                 <select
@@ -143,6 +157,7 @@ const CareerPage = () => {
                                     ))}
                                 </select>
                             </div>
+
                             <div className="mb-8">
                                 <label htmlFor="resume" className="block mb-2 text-lg font-semibold text-gray-700">Upload Resume</label>
                                 <input
@@ -155,6 +170,7 @@ const CareerPage = () => {
                                     onChange={handleChange}
                                 />
                             </div>
+
                             <motion.button
                                 type="submit"
                                 className="w-full bg-gradient-to-r from-amber-700 to-amber-600 hover:bg-blue-700 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300"
@@ -165,6 +181,7 @@ const CareerPage = () => {
                             </motion.button>
                         </form>
                     </div>
+
                 </section>
             </main>
         </div>
