@@ -1,21 +1,32 @@
+"use client";
+import { useState } from "react";
 import { House, Wallpaper, GraduationCap, Utensils, Dumbbell } from 'lucide-react';
-import { guestprojects, getProjectBySlug } from "../../../../data/guesthousedata";
+import { guestprojects } from "../../../../data/guesthousedata";
 import Image from "next/image";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
+const getProjectBySlug = (slug) => {
+  return guestprojects.find((project) => project.slug === slug);
+};
 
-export async function generateStaticParams() {
-  return guestprojects.map((project) => ({
-    slug: project.slug,
-  }));
-}
-
-export default function ProjectPage({ params }) {
-  const project = getProjectBySlug(params.slug);
+export default function ProjectPage() {
+  const { slug } = useParams();
+  const project = getProjectBySlug(slug);
+  const [fullViewImage, setFullViewImage] = useState(null);
 
   if (!project) {
     return <div>Project not found</div>;
   }
+
+  const openFullView = (image) => {
+    setFullViewImage(image);
+  };
+
+  const closeFullView = () => {
+    setFullViewImage(null);
+  };
+
   const highlightsIcon = {
     House: House,
     Wallpaper: Wallpaper,
@@ -36,16 +47,20 @@ export default function ProjectPage({ params }) {
               <p className='mb-4 text-sm md:text-base text-black lg:text-center lg:ml-24'>
                 {project.fullDescription}
               </p>
-
             </div>
             <div className='lg:w-2/2 mt-4 lg:mt-0 lg:ml-36'>
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={600}
-                height={400}
-                className='w-full h-auto object-cover rounded-lg'
-              />
+              <div
+                className='cursor-pointer transition-transform duration-300 hover:scale-105'
+                onClick={() => openFullView(project.image)}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={600}
+                  height={400}
+                  className='w-full h-auto object-cover rounded-lg'
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -59,8 +74,9 @@ export default function ProjectPage({ params }) {
             <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 md:mt-16 w-full'>
               {project.galleryImages.map((galleryImage, index) => (
                 <div
-                  key={index}  // Adding key here
-                  className='relative overflow-hidden aspect-square w-full'
+                  key={index}
+                  className='relative overflow-hidden aspect-square w-full cursor-pointer'
+                  onClick={() => openFullView(galleryImage.image)}
                 >
                   <Image
                     src={galleryImage.image}
@@ -130,6 +146,29 @@ export default function ProjectPage({ params }) {
             </table>
           </div>
         </section>
+
+        {/* Full View Modal */}
+        {fullViewImage && (
+          <div
+            className='fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50'
+            onClick={closeFullView}
+          >
+            <div className='relative w-full h-full max-w-5xl max-h-5xl p-4'>
+              <Image
+                src={fullViewImage}
+                alt='Full view'
+                fill={true}
+                style={{ objectFit: "contain" }}
+              />
+              <button
+                className='absolute top-4 right-4 text-white text-4xl hover:text-red-600 transition-colors md:text-6xl'
+                onClick={closeFullView}
+              >
+                &times;
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
