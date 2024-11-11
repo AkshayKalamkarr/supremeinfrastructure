@@ -83,7 +83,7 @@ export const projects = [
       { icon: "LampCeilingIcon", description: "POWDER COATED CEILING" },
       { icon: "Book", description: "BOOK SHELF" },
       { icon: "FlipHorizontal2", description: "FASCADE GLASS" },
-      { icon: "PanelBottom", description: "ACOSTIC WALL PANNELING" },
+      { icon: "PanelBottom", description: "ACAUSTIC WALL PANNELING" },
     ],
     configuration: [
       { flat: "18500 sqft", carpet: "99 days" },
