@@ -195,7 +195,7 @@ export default function ProjectPage() {
                     <td className="py-3 px-4 md:text-center">{config.flat}</td>
                     <td className="py-3 px-4 md:text-center">{config.carpet}</td>
                     <td className="py-3 px-4 md:text-center">
-                      <Link href="/contact" 
+                      <Link href="/contact"
                         className="bg-gradient-to-r from-amber-700 to-yellow-600 hover:bg-cyan-700 
                           text-white font-bold py-2 px-4 rounded 
                           transition-all duration-300 hover:scale-110 hover:shadow-lg 
