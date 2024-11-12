@@ -59,7 +59,7 @@ const ProjectCard = ({ project }) => {
           </div>
 
           {/* Button Container */}
-          <div 
+          <div
             onClick={(e) => e.preventDefault()}
             className="mt-auto"
           >
@@ -69,6 +69,7 @@ const ProjectCard = ({ project }) => {
               className="w-full py-2.5 px-4 bg-gradient-to-r from-amber-700 to-yellow-600 text-white rounded-lg hover:from-amber-800 hover:to-yellow-700 transition-all duration-300 text-sm sm:text-base font-medium shadow-sm hover:shadow-md"
             >
               Read More
+              <span className="ml-2">→</span>
             </motion.button>
           </div>
         </div>

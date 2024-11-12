@@ -55,6 +55,7 @@ const ProjectCard = ({ project }) => (
         >
           <span className="w-full py-2.5 px-4 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all duration-300 text-xs sm:text-sm md:text-base inline-block text-center font-medium shadow-sm hover:shadow-md active:scale-98">
             Read More
+            <span className="ml-2">→</span>
           </span>
         </div>
       </div>
