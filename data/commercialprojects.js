@@ -131,7 +131,7 @@ export const projects = [
   },
   {
     slug: "project-4",
-    title: "TATA POWER CIVIL OFFICE STATION TROMBAY",
+    title: "CIVIL AND ESTATE TATA POWER TROMBAY",
     image: "/images/projects/TATAPOWERCIVILOFFICESTATIONTROMBAY/tataTrombay-1.jpg",
     description: "TATA POWER CIVIL OFFICE STATION TROMBAY",
     fullDescription:
