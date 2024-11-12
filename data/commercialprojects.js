@@ -454,7 +454,7 @@ export const projects = [
   },
   {
     slug: "project-10",
-    title: "TATA POWER PENINSULA",
+    title: "FINANCE HEADQUARTER OF TATA POWER PENINSULA",
     image: "/images/projects/PENINSULA/peninsula-3.jpeg",
     description: "TATA POWER PENINSULA",
     fullDescription:
