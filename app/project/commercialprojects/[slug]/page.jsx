@@ -3,7 +3,7 @@ import { useState } from "react";;
 import {
   Fence, FlipHorizontal, BetweenVerticalStart, Lightbulb, Armchair, Component, Wallpaper, Home, Activity, Banknote, FileCheck, CheckSquare, Dumbbell, Utensils, House, GraduationCap,
   LampCeiling, Library, Scale3D, Layers2, Waves, ShowerHead, Lamp, InspectionPanel, Pickaxe, LampCeilingIcon, Columns2, Palette, Timer, Sticker, AudioLines, LogIn, Book, FlipHorizontal2,
-  PanelBottom, History, Sprout, Coffee, HandCoins, Users, Presentation
+  PanelBottom, History, Sprout, Coffee, HandCoins, Users, Presentation,Armchair
 } from "lucide-react";
 import { projects } from "../../../../data/commercialprojects";
 import Image from "next/image";

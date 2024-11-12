@@ -144,6 +144,7 @@ export const projects = [
       { icon: "Lightbulb", description: "Profile Lights" },
       { icon: "Sticker", description: "Decorative Decal Sticker" },
       { icon: "AudioLines", description: "Sound Proof Partitions" },
+      { icon: "Armchair", description: "Modular Furniture" },
     ],
     configuration: [
       { flat: "6000  sqft", carpet: "60 days" },
