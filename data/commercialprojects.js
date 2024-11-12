@@ -486,15 +486,15 @@ export const projects = [
     ],
     galleryImages: [
       { image: "/images/projects/PENINSULA/peninsula-1.jpeg", alt: "tata-1" },
-      { image: "/images/projects/PENINSULA/peninsula-2.jpeg", alt: "tata-2" },
+      // { image: "/images/projects/PENINSULA/peninsula-2.jpeg", alt: "tata-2" },
       { image: "/images/projects/PENINSULA/peninsula-3.jpeg", alt: "tata-3" },
       { image: "/images/projects/PENINSULA/peninsula-4.jpeg", alt: "tata-4" },
-      { image: "/images/projects/PENINSULA/peninsula-5.jpeg", alt: "tata-5" },
+      // { image: "/images/projects/PENINSULA/peninsula-5.jpeg", alt: "tata-5" },
       { image: "/images/projects/PENINSULA/peninsula-6.jpeg", alt: "tata-6" },
       { image: "/images/projects/PENINSULA/peninsula-7.jpeg", alt: "tata-7" },
-      { image: "/images/projects/PENINSULA/peninsula-8.jpeg", alt: "tata-8" },
-      { image: "/images/projects/PENINSULA/peninsula-9.jpeg", alt: "tata-9" },
-      { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-10" },
+      // { image: "/images/projects/PENINSULA/peninsula-8.jpeg", alt: "tata-8" },
+      // { image: "/images/projects/PENINSULA/peninsula-9.jpeg", alt: "tata-9" },
+      // { image: "/images/projects/PENINSULA/peninsula-10.jpeg", alt: "tata-10" },
     ],
   }
 ];
