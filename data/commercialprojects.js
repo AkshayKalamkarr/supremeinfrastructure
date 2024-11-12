@@ -224,7 +224,7 @@ export const projects = [
   },
   {
     slug: "project-7",
-    title: "SUPREME INFRASTRUCTURE HEAD OFFICE MAYURESH PLANET BELAPUR",
+    title: "SUPREME INFRASTRUCTURE HEAD OFFICE AT MAYURESH PLANET BELAPUR",
     image: "/images/projects/MAYURESHPLANET/mayuresh-8.jpg",
     description: "DEVELOPMENT OF SUPREME INFRASTRUCTURE COMPANY OFFICE",
     fullDescription:
