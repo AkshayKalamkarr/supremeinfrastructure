@@ -68,39 +68,6 @@ export const projects = [
             { image: "/images/projects/RIDDHISIDDHI702/riddhisiddhi-6.jpg", alt: "riddhisiddhi-6" },
         ],
     },
-    {
-        slug: "project-3",
-        title: "Mangla Tower",
-        image: "/images/projects/MANGLATOWER/manglatower-4.jpg",
-        description: "Mangla Tower, Belapur",
-        fullDescription:
-            "When we speak of the 21st century modern day architecture, designs can be a fusion of the combined space, energy and privacy in one home. In fact, this 3 BHK contemporary house plan with interior design represents the modern residence of those features. It also showcases the characteristics of a home; where natural light and outdoor connections are visible and valuable.",
-        tagLine: "Project information",
-        reraNumber: "P52000011751",
-        highlights: [
-            { icon: "Bath", description: "Italian finish bathrooms" },
-            { icon: "Frame", description: "Wooden flooring for bedrooms" },
-            { icon: "InspectionPanel", description: "Tile size 6x4 with Italian marble finish" },
-            { icon: "CookingPotIcon", description: "Fully modular kitchen with latest technology" },
-            { icon: "BedSingle", description: "3 bedroom having same finish with different ideas" },
-        ],
-        configuration: [
-            { flat: "1400 sqft", carpet: "120 Days" },
-        ],
-
-        galleryImages: [
-            { image: "/images/projects/MANGLATOWER/manglatower-1.jpg", alt: "manglatower-1" },
-            { image: "/images/projects/MANGLATOWER/manglatower-2.jpg", alt: "manglatower-2" },
-            { image: "/images/projects/MANGLATOWER/manglatower-3.jpg", alt: "manglatower-3" },
-            { image: "/images/projects/MANGLATOWER/manglatower-4.jpg", alt: "manglatower-4" },
-            { image: "/images/projects/MANGLATOWER/manglatower-5.jpg", alt: "manglatower-5" },
-            { image: "/images/projects/MANGLATOWER/manglatower-6.jpg", alt: "manglatower-6" },
-            { image: "/images/projects/MANGLATOWER/manglatower-7.jpg", alt: "manglatower-7" },
-            { image: "/images/projects/MANGLATOWER/manglatower-8.jpg", alt: "manglatower-8" },
-            { image: "/images/projects/MANGLATOWER/manglatower-9.jpg", alt: "manglatower-9" },
-            { image: "/images/projects/MANGLATOWER/manglatower-10.jpg", alt: "manglatower-10" },
-        ],
-    },
 ];
 
 export const getProjectBySlug = (slug) => {
