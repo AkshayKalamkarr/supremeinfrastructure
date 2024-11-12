@@ -437,14 +437,14 @@ export const projects = [
 
     galleryImages: [
       { image: "/images/projects/MAYURESHPLANET/mayuresh-1.jpg", alt: "mayuresh-1" },
-      { image: "/images/projects/MAYURESHPLANET/mayuresh-2.jpg", alt: "mayuresh-2" },
+      // { image: "/images/projects/MAYURESHPLANET/mayuresh-2.jpg", alt: "mayuresh-2" },
       { image: "/images/projects/MAYURESHPLANET/mayuresh-3.jpg", alt: "mayuresh-3" },
-      { image: "/images/projects/MAYURESHPLANET/mayuresh-4.jpg", alt: "mayuresh-4" },
+      // { image: "/images/projects/MAYURESHPLANET/mayuresh-4.jpg", alt: "mayuresh-4" },
       { image: "/images/projects/MAYURESHPLANET/mayuresh-5.jpg", alt: "mayuresh-5" },
       { image: "/images/projects/MAYURESHPLANET/mayuresh-6.jpg", alt: "mayuresh-6" },
       { image: "/images/projects/MAYURESHPLANET/mayuresh-7.jpg", alt: "mayuresh-7" },
       { image: "/images/projects/MAYURESHPLANET/mayuresh-8.jpg", alt: "mayuresh-8" },
-      { image: "/images/projects/MAYURESHPLANET/mayuresh-9.jpg", alt: "mayuresh-9" },
+      // { image: "/images/projects/MAYURESHPLANET/mayuresh-9.jpg", alt: "mayuresh-9" },
       { image: "/images/projects/MAYURESHPLANET/mayuresh-10.jpg", alt: "mayuresh-10" },
       { image: "/images/projects/MAYURESHPLANET/mayuresh-11.jpg", alt: "mayuresh-11" },
 
