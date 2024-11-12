@@ -8,10 +8,10 @@ import Image from 'next/image';
 
 const fadeInUpVariant = {
   hidden: { opacity: 0, y: 50 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
-    transition: { 
+    transition: {
       duration: 0.5,
       ease: "easeOut"
     }
@@ -49,7 +49,7 @@ const ProjectCard = ({ project }) => (
             {project.description}
           </p>
         </div>
-        <div 
+        <div
           onClick={(e) => e.preventDefault()}
           className="mt-auto block"
         >
