@@ -396,7 +396,7 @@ export const projects = [
       // { image: "/images/projects/TATATAMILNADU/tataTamilnadu-25.jpg", alt: "tataTamilnadu-25" },
       // { image: "/images/projects/TATATAMILNADU/tataTamilnadu-26.jpg", alt: "tataTamilnadu-26" },
       { image: "/images/projects/TATATAMILNADU/tataTamilnadu-27.jpg", alt: "tataTamilnadu-27" },
-      { image: "/images/projects/TATATAMILNADU/tataTamilnadu-28.jpg", alt: "tataTamilnadu-28" },
+      // { image: "/images/projects/TATATAMILNADU/tataTamilnadu-28.jpg", alt: "tataTamilnadu-28" },
       // { image: "/images/projects/TATATAMILNADU/tataTamilnadu-29.jpg", alt: "tataTamilnadu-29" },
       // { image: "/images/projects/TATATAMILNADU/tataTamilnadu-30.jpg", alt: "tataTamilnadu-30" },
       // { image: "/images/projects/TATATAMILNADU/tataTamilnadu-31.jpg", alt: "tataTamilnadu-31" },
