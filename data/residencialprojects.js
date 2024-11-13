@@ -45,7 +45,7 @@ export const projects = [
         image: "/images/projects/RIDDHISIDDHI302/riddhisiddhi-2.jpg",
         description: "Ulwe",
         fullDescription:
-            "This 700-square-foot apartment renovation for Riddhi Siddhi 302 was completed in a concise 45-day timeline ,focusing on creating a maximizes every square foot ,intergrating practical storage solutions ,elegant design touches,and a modern kitchen with added utility.The Riddhi Siddhi 302 renovation harmonizes style and practically ,creating a cozy and efficient space tailored to modern living.Each element from the MDF molding in the living room to the modular kitchens functionality ,enhances the apartments appeal and usability ,offering residents a balanced ,Comfortable home.",
+            "The Riddhi Siddhi project transforms a 700-square-foot area in just 45 days, creating a cozy yet sophisticated living space with contemporary design features. The living room showcases MDF wall moldings finished with a sleek paint sheen, adding character and depth. Open-close storage solutions maximize functionality while maintaining a clean, organized look. The modular kitchen, complete with a dedicated utility area, enhances both convenience and style. A wardrobe adorned with elegant wallpaper provides a unique design touch, harmonizing with the living room's refined moldings. This project strikes a balance between practicality and aesthetic appeal, perfect for modern living.",
         tagLine: "Project information",
         reraNumber: "P52000011751",
         highlights: [
