@@ -68,6 +68,50 @@ export const projects = [
             { image: "/images/projects/RIDDHISIDDHI702/riddhisiddhi-6.jpg", alt: "riddhisiddhi-6" },
         ],
     },
+    {
+        slug: "project-3",
+        title: "Greenworld - 4BHK",
+        image: "/images/projects/GREENWORLD/greenworld-1.jpg",
+        description: "Akshar Greenworld",
+        fullDescription:
+            "This 4 BHK flat design strikes the balance between comfort and elegance.Fom vibrant colours to bold prints, the Emaar Palm Hills home has it all! Filled with desi elements, it is a reflection of the owners’ personality, and we can’t help loving it.",
+        tagLine: "Project information",
+        reraNumber: "P52000011751",
+        highlights: [
+            { icon: "PaintBucket", description: "Wooden flooring for bedrooms" },
+            { icon: "Archive", description: "Wooden hanging ceiling" },
+            { icon: "CookingPotIcon", description: "Wall décor in living area with lights" },
+            { icon: "Wallpaper", description: "Small gym set up with study zone" },
+            { icon: "House", description: "4 bathroom with different tile finish" },
+            { icon: "House", description: "4 bedroom having different unique designs with different material finish" },
+        ],
+        configuration: [
+            { flat: "1850 sqft", carpet: "135 Days" },
+        ],
+
+        galleryImages: [
+            { image: "/images/projects/GREENWORLD/greenworld-1.jpg", alt: "greenworld-1" },
+            { image: "/images/projects/GREENWORLD/greenworld-2.jpg", alt: "greenworld-2" },
+            { image: "/images/projects/GREENWORLD/greenworld-3.jpg", alt: "greenworld-3" },
+            { image: "/images/projects/GREENWORLD/greenworld-4.jpg", alt: "greenworld-4" },
+            { image: "/images/projects/GREENWORLD/greenworld-5.jpg", alt: "greenworld-5" },
+            { image: "/images/projects/GREENWORLD/greenworld-6.jpg", alt: "greenworld-6" },
+            { image: "/images/projects/GREENWORLD/greenworld-7.jpg", alt: "greenworld-7" },
+            { image: "/images/projects/GREENWORLD/greenworld-8.jpg", alt: "greenworld-8" },
+            { image: "/images/projects/GREENWORLD/greenworld-9.jpg", alt: "greenworld-9" },
+            { image: "/images/projects/GREENWORLD/greenworld-10.jpg", alt: "greenworld-10" },
+            { image: "/images/projects/GREENWORLD/greenworld-11.jpg", alt: "greenworld-11" },
+            { image: "/images/projects/GREENWORLD/greenworld-12.jpg", alt: "greenworld-12" },
+            { image: "/images/projects/GREENWORLD/greenworld-13.jpg", alt: "greenworld-13" },
+            { image: "/images/projects/GREENWORLD/greenworld-14.jpg", alt: "greenworld-14" },
+            { image: "/images/projects/GREENWORLD/greenworld-15.jpg", alt: "greenworld-15" },
+            { image: "/images/projects/GREENWORLD/greenworld-16.jpg", alt: "greenworld-16" },
+            { image: "/images/projects/GREENWORLD/greenworld-17.jpg", alt: "greenworld-17" },
+            { image: "/images/projects/GREENWORLD/greenworld-18.jpg", alt: "greenworld-18" },
+            { image: "/images/projects/GREENWORLD/greenworld-19.jpg", alt: "greenworld-19" },
+            { image: "/images/projects/GREENWORLD/greenworld-20.jpg", alt: "greenworld-20" },
+        ],
+    },
 ];
 
 export const getProjectBySlug = (slug) => {
