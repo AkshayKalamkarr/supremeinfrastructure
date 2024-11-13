@@ -74,7 +74,7 @@ export const projects = [
         image: "/images/projects/GREENWORLD/greenworld-1.jpg",
         description: "Akshar Greenworld",
         fullDescription:
-            "This 4 BHK flat design strikes the balance between comfort and elegance.Fom vibrant colours to bold prints, the Emaar Palm Hills home has it all! Filled with desi elements, it is a reflection of the owners’ personality, and we can’t help loving it.",
+            "The Greenworld 4BHK project offers a perfect blend of comfort, elegance, and personal style, spread across 1,850 square feet and completed in 135 days. This home showcases vibrant colors, bold prints, and unique design elements that reflect the owners' personality. The bedrooms feature warm wooden flooring and distinct designs, each using a unique material finish to add character. A striking wooden hanging ceiling complements the cozy ambiance, while the living area is enhanced with tasteful wall décor and accent lighting. The flat also includes a compact gym and study zone, creating a multifunctional space for work and wellness. With four bathrooms, each styled with distinctive tile finishes, this 4BHK is a refined blend of luxury and functionality, tailored for a modern lifestyle.",
         tagLine: "Project information",
         reraNumber: "P52000011751",
         highlights: [
