@@ -262,7 +262,7 @@ export const projects = [
     image: "/images/projects/PENINSULA/peninsula-3.jpeg",
     description: "TATA POWER PENINSULA",
     fullDescription:
-      "The TATA Power Peninsula project aims to revitalize an 8000 sqft area over a 45-day period, creating an elegant and functional workspace that embodies the essence of TATA Power. This design initiative focuses on sophistication and comfort, ensuring a pleasant environment for employees and visitors alike.The TATA Power Peninsula project is set to create a refined and inviting environment that reflects the company’s values and culture. With a focus on high-quality finishes and thoughtful design, this project will serve as a benchmark for contemporary office spaces, enhancing both employee satisfaction and brand representation.",
+      "The Finance Headquarters of Tata Power Peninsula spans 8,000 square feet and is set for transformation over 45 days into a sophisticated, functional workspace that reflects Tata Power’s values. Key design elements include tastefully highlighted walls with elegant wallpaper, roller blinds on the windows for adjustable natural light, and a luxurious CFO cabin designed with attention to detail. Decorative fluted panels add a touch of modern elegance, while customized furniture enhances the comfort and professionalism of the space. This project combines high-quality finishes with thoughtful layouts, creating an inviting environment that fosters productivity and aligns with Tata Power’s prestigious brand.",
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
