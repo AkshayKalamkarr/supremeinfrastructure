@@ -331,9 +331,9 @@ export const projects = [
     ],
   },
   {
-    slug: "project-9",
-    title: "Karajade boundary Wall, Foundations 220KV,GIS Station, TOSHIBA",
-    image: "/images/projects/TOSHIBAKARANJADE/toshiba-3.jpg",
+    slug: "project-10",
+    title: "KARANJADE BOUNDARY WALL, FOUNDATIONS 220KV,GIS STATION, TOSHIBA",
+    image: "/images/projects/TOSHIBAKARANJADE/toshiba-2.jpg",
     description: "TATA POWER FIRE TANK",
     fullDescription:
       "The TATA Power Peninsula project aims to revitalize an 8000 sqft area over a 45-day period, creating an elegant and functional workspace that embodies the essence of TATA Power. This design initiative focuses on sophistication and comfort, ensuring a pleasant environment for employees and visitors alike.The TATA Power Peninsula project is set to create a refined and inviting environment that reflects the company’s values and culture. With a focus on high-quality finishes and thoughtful design, this project will serve as a benchmark for contemporary office spaces, enhancing both employee satisfaction and brand representation.",
