@@ -228,7 +228,7 @@ export const projects = [
     image: "/images/projects/MAYURESHPLANET/mayuresh-8.jpg",
     description: "DEVELOPMENT OF SUPREME INFRASTRUCTURE COMPANY OFFICE",
     fullDescription:
-      "Covering an area of 1,100 square feet, the Mayuresh Planet office renovation project focused on maximizing space efficiency and creating a visually dynamic environment, completed in just 44 days. With unique design features and modern lighting elements, the project aimed to bring a fresh and functional look to the office.The Mayuresh Planet office renovation embodies smart design with its innovative use of materials, lighting, and space. From the striking MS partition to the colorful magnetic glass, each element contributes to an environment that is both inspiring and functional, making the most of the compact area with style and purpose.",
+      "Spanning 1,100 square feet, the Supreme Infrastructure Head Office renovation at Mayuresh Planet, Belapur, is a model of space efficiency and contemporary design, completed in just 44 days. The office’s vibrant, functional atmosphere is achieved through a combination of striking decorative MS partitions and colorful back-painted magnetic glass, adding both utility and visual interest. Unique lighting elements, including zigzag hanging lights, lend character and warmth to the space, enhancing the modern aesthetic. Thoughtful space utilization ensures that every area is both purposeful and appealing, providing a stylish and efficient workspace that reflects the dynamic ethos of Supreme Infrastructure.",
     tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
     reraNumber: "P52000011751",
     highlights: [
