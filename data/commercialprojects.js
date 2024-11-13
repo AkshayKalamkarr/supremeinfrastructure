@@ -201,7 +201,7 @@ export const projects = [
       { icon: "LampCeiling", description: "Fabric lights" },
       { icon: "Library", description: "Open close book shelf" },
       { icon: "FileCheck", description: "3D letter" },
-      { icon: "Layers2", description: "Acostick floats" },
+      { icon: "Layers2", description: "Acaustic floats" },
     ],
     configuration: [
       { flat: "15000  sqft", carpet: "105 days" },
