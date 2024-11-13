@@ -16,8 +16,8 @@ const Footer = () => {
                             <p className="text-white-300 text-sm sm:text-base">
                                 SUPREME INFRASTRUCTURE<br />
                                 Office No 603, Sector 15,<br />
-                                near Belapur Court Station,<br />
-                                Sector-15, Belapur,<br />
+                                near Belapur Court,<br />
+                                Belapur,<br />
                                 Navi Mumbai, Maharashtra 410209
                             </p>
                         </div>
