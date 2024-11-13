@@ -1,19 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import {
-  Archive,
-  Columns4,
-  Component,
-  DoorOpen,
-  CircleSlash2,
-  PaintBucket,
-  CookingPotIcon,
-  House,
-  Wallpaper,
-  Bath,
-  Frame,
-  InspectionPanel,
-  BedSingle
+Archive,Columns4,Component,DoorOpen,CircleSlash2,PaintBucket,CookingPotIcon,House,Wallpaper,Bath,Frame,InspectionPanel,BedSingle
 } from 'lucide-react';
 import { projects } from "../../../../data/residencialprojects";
 import Image from "next/image";
