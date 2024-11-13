@@ -189,7 +189,7 @@ export const projects = [
   },
   {
     slug: "project-6",
-    title: "ADMIN AND HR OFFICE TATA POWER SOLAR AT BANGALORE",
+    title: "ADMIN AND HR OFFICE OF TATA POWER SOLAR AT BANGALORE",
     image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-15.jpg",
     description: "admin and hr office tata power solar bangalore",
     fullDescription:
