@@ -101,7 +101,7 @@ export const guestprojects = [
     image: "/images/projects/TATAPOWERSENIORCLUBTROMBAY/trombay-1.jpeg",
     description: "TATA POWER SOLAR MULSHI",
     fullDescription:
-      "during summers.Colonial bungalow designs have arched floor-to-ceiling windows or doors that bring in ample natural light and ensure cross-ventilation.The other design characteristics of these bungalows are the pathway leading to the front porch, intricate grillwork, stunning pillars, decorative parapets, and detailed floral-patterned flooring. The central bungalow plan consists of a porch, veranda, and drawing and dining rooms with service areas in the rear portion. The colonial bungalow design with garden has a high compound wall and a landscaped garden on both sides of the bungalow",
+      "Colonial bungalow design have their charm. Most colonial bungalow design have high ceilings to keep the interiors cool during summers.Colonial bungalow designs have arched floor-to-ceiling windows or doors that bring in ample natural light and ensure cross-ventilation.The other design characteristics of these bungalows are the pathway leading to the front porch, intricate grillwork, stunning pillars, decorative parapets, and detailed floral-patterned flooring. The central bungalow plan consists of a porch, veranda, and drawing and dining rooms with service areas in the rear portion. The colonial bungalow design with garden has a high compound wall and a landscaped garden on both sides of the bungalow.",
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
