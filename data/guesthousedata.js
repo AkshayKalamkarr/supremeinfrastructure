@@ -30,7 +30,7 @@ export const guestprojects = [
   },
   {
     slug: "project-2",
-    title: "4 GW GUEST HOUSE TATA POWER SOLAR TAMILNADU",
+    title: "4 GW GUEST HOUSE TATA POWER SOLAR AT TAMILNADU",
     image: "/images/projects/TATATAMILNADU/tataTamilnadu-24.jpg",
     description: "TATA TAMILNADU GUEST HOUSE",
     fullDescription:
