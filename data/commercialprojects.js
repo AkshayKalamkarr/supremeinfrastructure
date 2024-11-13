@@ -189,11 +189,11 @@ export const projects = [
   },
   {
     slug: "project-6",
-    title: "ADMIN AND HR OFFICE TATA POWER SOLAR BANGALORE",
+    title: "ADMIN AND HR OFFICE TATA POWER SOLAR AT BANGALORE",
     image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-15.jpg",
     description: "admin and hr office tata power solar bangalore",
     fullDescription:
-      "The project Atlantas Involved merging 8 offices into 1 single large space. The challenging, part was to keep the singularity of all office like ‘FIRE, ELECTRICAL & Washroom pipeline, so that in near future the offices can be leased out without making much modifications to the present setup. The Design was based on the young and vibrant People who were going to woirk. It Had a Pantry with all modern facility. The reception lobby depicted the line of work Atlanta’s was doing. The design was done with the latest tools like providing 3D walkways, which provided the client what the office will look like before it could be done.The space looks more beautiful with the Mood lights, Colour combinations of tiles & Furniture, Max Height Glass partition and used elements on wall decor from their Core filed.",
+      "The new Admin and HR office for Tata Power Solar in Bangalore combines functionality with modern design elements to create an inspiring workspace. The 15,000-square-foot office features a sleek powder-coated open cell ceiling in the passage areas, giving the space a contemporary, open feel. Soft fabric lighting adds warmth, complementing the functional yet stylish open-close bookshelf design. Custom 3D lettering enhances branding throughout the space, while acoustic floats are strategically placed to ensure sound control and create a quiet, productive environment. This thoughtful layout, expected to be completed in 105 days, aims to foster a collaborative atmosphere in a visually appealing setting tailored to the needs of administrative and HR professionals.",
     tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGALARE",
     reraNumber: "P52000011751",
     highlights: [
