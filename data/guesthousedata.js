@@ -34,7 +34,7 @@ export const guestprojects = [
     image: "/images/projects/TATATAMILNADU/tataTamilnadu-24.jpg",
     description: "TATA TAMILNADU GUEST HOUSE",
     fullDescription:
-      "The Tata Tamil Nadu Guest House, covering 14,750 square feet, has been designed as a luxurious and functional space for guests, completed over a 210-day project timeline. The guest house combines comfort with elegant design, featuring premium amenities to cater to both relaxation and productivity, making it a versatile facility for guests, trainees, and staff.The Tata Tamil Nadu Guest House stands as a luxurious and versatile space, designed with attention to detail in every room and facility. From the refined guest rooms to the practical training center and modern gym, the guest house is a perfect blend of comfort and functionality, offering guests a premium experience tailored to both relaxation and productivity.",
+      "The Tata Tamil Nadu Guest House, covering 15,000 square feet, has been designed as a luxurious and functional space for guests, completed over a 210-day project timeline. The guest house combines comfort with elegant design, featuring premium amenities to cater to both relaxation and productivity, making it a versatile facility for guests, trainees, and staff.The Tata Tamil Nadu Guest House stands as a luxurious and versatile space, designed with attention to detail in every room and facility. From the refined guest rooms to the practical training center and modern gym, the guest house is a perfect blend of comfort and functionality, offering guests a premium experience tailored to both relaxation and productivity.",
     tagLine: "DEVELOPMENT OF FINANCES OFFICE SPACE AT TPSSL, BANGOLARE",
     reraNumber: "P52000011751",
     highlights: [
