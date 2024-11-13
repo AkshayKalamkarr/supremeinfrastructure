@@ -45,7 +45,7 @@ export const guestprojects = [
       { icon: "Dumbbell", description: "gym" },
     ],
     configuration: [
-      { flat: "14750 sqft", carpet: "210 days" },
+      { flat: "15000 sqft", carpet: "210 days" },
     ],
 
     galleryImages: [
