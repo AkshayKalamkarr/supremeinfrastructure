@@ -392,20 +392,20 @@ export const projects = [
     slug: "project-12",
     title: "COACT IMPRINTS",
     image: "/images/projects/COACT/coact-3.jpg",
-    description: "TATA POWER FIRE TANK",
+    description: "coact imprints",
     fullDescription:
       "The TATA Power Peninsula project aims to revitalize an 8000 sqft area over a 45-day period, creating an elegant and functional workspace that embodies the essence of TATA Power. This design initiative focuses on sophistication and comfort, ensuring a pleasant environment for employees and visitors alike.The TATA Power Peninsula project is set to create a refined and inviting environment that reflects the company’s values and culture. With a focus on high-quality finishes and thoughtful design, this project will serve as a benchmark for contemporary office spaces, enhancing both employee satisfaction and brand representation.",
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Wallpaper", description: "Highlisting the walls with wallpaper" },
-      { icon: "FlipHorizontal", description: "windows with roller blinds" },
-      { icon: "Component", description: "designed luxurious cfo cabin" },
-      { icon: "Fence", description: "Decorative fluted panels customized with brought" },
-      { icon: "Armchair", description: "furniture" },
+      { icon: "Wallpaper", description: "20+ Seating at single floor." },
+      { icon: "FlipHorizontal", description: "8 seater open Conference room" },
+      { icon: "Component", description: "Main entry with huge branding" },
+      { icon: "Fence", description: "Colourful Interview room & meeting room" },
+      { icon: "Armchair", description: "Mezz flor dinning" },
     ],
     configuration: [
-      { flat: "8000 sqft", carpet: "45 days" },
+      { flat: "1500 sqft", carpet: "135 Days" },
     ],
     // Added video section
     galleryImages: [
