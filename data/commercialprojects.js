@@ -329,6 +329,35 @@ export const projects = [
       { image: "/images/projects/FIRESTATION/fire-9.jpg", alt: "fire-1" },
 
     ],
+  },
+  {
+    slug: "project-9",
+    title: "Karajade boundary Wall, Foundations 220KV,GIS Station, TOSHIBA",
+    image: "/images/projects/TOSHIBAKARANJADE/toshiba-3.jpg",
+    description: "TATA POWER FIRE TANK",
+    fullDescription:
+      "The TATA Power Peninsula project aims to revitalize an 8000 sqft area over a 45-day period, creating an elegant and functional workspace that embodies the essence of TATA Power. This design initiative focuses on sophistication and comfort, ensuring a pleasant environment for employees and visitors alike.The TATA Power Peninsula project is set to create a refined and inviting environment that reflects the company’s values and culture. With a focus on high-quality finishes and thoughtful design, this project will serve as a benchmark for contemporary office spaces, enhancing both employee satisfaction and brand representation.",
+    tagLine: "Project information",
+    reraNumber: "P52000011751",
+    highlights: [
+      { icon: "Wallpaper", description: "Highlisting the walls with wallpaper" },
+      { icon: "FlipHorizontal", description: "windows with roller blinds" },
+      { icon: "Component", description: "designed luxurious cfo cabin" },
+      { icon: "Fence", description: "Decorative fluted panels customized with brought" },
+      { icon: "Armchair", description: "furniture" },
+    ],
+    configuration: [
+      { flat: "8000 sqft", carpet: "45 days" },
+    ],
+    // Added video section
+    galleryImages: [
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-1.jpg", alt: "toshiba-1" },
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-2.jpg", alt: "toshiba-2" },
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-3.jpg", alt: "toshiba-3" },
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-4.jpg", alt: "toshiba-4" },
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-5.jpg", alt: "toshiba-5" },
+
+    ],
   }
 ];
 
