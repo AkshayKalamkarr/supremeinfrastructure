@@ -81,7 +81,7 @@ export const guestprojects = [
       { icon: "Timer", description: "Century-old heritage thoughtfully reimagined" },
     ],
     configuration: [
-      { flat: "14000 sqft", carpet: "99 Days" },
+      { flat: "27000 sqft", carpet: "50 Days" },
     ],
 
     galleryImages: [
