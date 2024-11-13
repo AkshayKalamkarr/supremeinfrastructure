@@ -78,11 +78,11 @@ export const projects = [
         tagLine: "Project information",
         reraNumber: "P52000011751",
         highlights: [
-            { icon: "PaintBucket", description: "Wooden flooring for bedrooms" },
-            { icon: "Archive", description: "Wooden hanging ceiling" },
-            { icon: "CookingPotIcon", description: "Wall décor in living area with lights" },
-            { icon: "Wallpaper", description: "Small gym set up with study zone" },
-            { icon: "House", description: "4 bathroom with different tile finish" },
+            { icon: "Fence", description: "Wooden flooring for bedrooms" },
+            { icon: "LampCeiling", description: "Wooden hanging ceiling" },
+            { icon: "Lightbulb", description: "Wall décor in living area with lights" },
+            { icon: "Dumbbell", description: "Small gym set up with study zone" },
+            { icon: "Bath", description: "4 bathroom with different tile finish" },
             { icon: "House", description: "4 bedroom having different unique designs with different material finish" },
         ],
         configuration: [
