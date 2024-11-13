@@ -97,7 +97,7 @@ export const guestprojects = [
   },
   {
     slug: "project-4",
-    title: "=TATA POWER SENIOR CLUB TROMBAY",
+    title: "TATA POWER SENIOR CLUB TROMBAY",
     image: "/images/projects/TATAPOWERSENIORCLUBTROMBAY/trombay-1.jpeg",
     description: "TATA POWER SOLAR MULSHI",
     fullDescription:
