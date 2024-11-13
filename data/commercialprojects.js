@@ -358,6 +358,35 @@ export const projects = [
       { image: "/images/projects/TOSHIBAKARANJADE/toshiba-5.jpg", alt: "toshiba-5" },
 
     ],
+  },
+  {
+    slug: "project-11",
+    title: "Construction of New Factory & Garden Landscaping at Allana,Khopoli",
+    image: "/images/projects/ALLANA/allana-3.jpg ",
+    description: "TATA POWER FIRE TANK",
+    fullDescription:
+      "The TATA Power Peninsula project aims to revitalize an 8000 sqft area over a 45-day period, creating an elegant and functional workspace that embodies the essence of TATA Power. This design initiative focuses on sophistication and comfort, ensuring a pleasant environment for employees and visitors alike.The TATA Power Peninsula project is set to create a refined and inviting environment that reflects the company’s values and culture. With a focus on high-quality finishes and thoughtful design, this project will serve as a benchmark for contemporary office spaces, enhancing both employee satisfaction and brand representation.",
+    tagLine: "Project information",
+    reraNumber: "P52000011751",
+    highlights: [
+      { icon: "Wallpaper", description: "Highlisting the walls with wallpaper" },
+      { icon: "FlipHorizontal", description: "windows with roller blinds" },
+      { icon: "Component", description: "designed luxurious cfo cabin" },
+      { icon: "Fence", description: "Decorative fluted panels customized with brought" },
+      { icon: "Armchair", description: "furniture" },
+    ],
+    configuration: [
+      { flat: "8000 sqft", carpet: "45 days" },
+    ],
+    // Added video section
+    galleryImages: [
+      { image: "/images/projects/ALLANA/allana-1.jpg", alt: "allana-1" },
+      { image: "/images/projects/ALLANA/allana-2.jpg", alt: "allana-2" },
+      { image: "/images/projects/ALLANA/allana-3.jpg", alt: "allana-3" },
+      { image: "/images/projects/ALLANA/allana-4.jpg", alt: "allana-4" },
+      { image: "/images/projects/ALLANA/allana-5.jpg", alt: "allana-5" },
+
+    ],
   }
 ];
 
