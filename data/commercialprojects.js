@@ -76,7 +76,7 @@ export const projects = [
   {
     slug: "project-3",
     title: "CIVIL AND ESTATE OFFICE OF TATA POWER TROMBAY",
-    image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-3.jpg",
+    image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-6.jpeg",
     description: "civil and estate office of tata power trombay",
     fullDescription:
       "The Civil and Estate Office renovation for Tata Power Trombay transformed a 6,000 sq. ft. workspace into a modern, efficient environment in just 60 days. Key design elements included a welcoming waiting area, customized wallpaper reflecting the company’s brand identity, and energy-efficient profile lighting to create a bright, inviting atmosphere. Decorative decal stickers added a personalized touch, while soundproof partitions were strategically placed to ensure privacy and minimize noise distractions. Modular furniture was chosen for its flexibility and ergonomic benefits, allowing for adaptable workspaces. The project combined aesthetics with functionality to provide Tata Power employees and visitors with a comfortable, collaborative, and highly productive environment, aligning with the company's vision for a contemporary office space.",
@@ -95,16 +95,16 @@ export const projects = [
     ],
 
     galleryImages: [
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-1.jpg", alt: "tataTrombay-1" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-2.jpg", alt: "tataTrombay-2" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-3.jpg", alt: "tataTrombay-3" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-4.jpg", alt: "tataTrombay-4" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-5.jpg", alt: "tataTrombay-5" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-6.jpg", alt: "tataTrombay-6" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-7.jpg", alt: "tataTrombay-7" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-8.jpg", alt: "tataTrombay-8" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-9.jpg", alt: "tataTrombay-9" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-10.jpg", alt: "tataTrombay-10" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-1.jpeg", alt: "tataTrombay-1" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-2.jpeg", alt: "tataTrombay-2" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-3.jpeg", alt: "tataTrombay-3" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-4.jpeg", alt: "tataTrombay-4" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-5.jpeg", alt: "tataTrombay-5" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-6.jpeg", alt: "tataTrombay-6" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-7.jpeg", alt: "tataTrombay-7" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-8.jpeg", alt: "tataTrombay-8" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-9.jpeg", alt: "tataTrombay-9" },
+      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-10.jpeg", alt: "tataTrombay-10" },
     ],
   },
   {
