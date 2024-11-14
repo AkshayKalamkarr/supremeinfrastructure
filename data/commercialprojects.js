@@ -365,7 +365,7 @@ export const projects = [
     image: "/images/projects/ALLANA/allana-3.jpg ",
     description: "TATA POWER FIRE TANK",
     fullDescription:
-      "The TATA Power Peninsula project aims to revitalize an 8000 sqft area over a 45-day period, creating an elegant and functional workspace that embodies the essence of TATA Power. This design initiative focuses on sophistication and comfort, ensuring a pleasant environment for employees and visitors alike.The TATA Power Peninsula project is set to create a refined and inviting environment that reflects the company’s values and culture. With a focus on high-quality finishes and thoughtful design, this project will serve as a benchmark for contemporary office spaces, enhancing both employee satisfaction and brand representation.",
+      "The Allana Factory and Garden Landscaping project in Khopoli is a comprehensive construction and landscaping initiative, covering 10,000 square feet and set for completion in 60 days. The G+4 story building boasts a striking glazed and ACP façade, providing a sleek, modern exterior that stands out. Surrounding the building, acres of carefully planned garden landscaping incorporate colorful plants and a variety of green shades, creating a vibrant, layered effect that complements the building’s architecture. Designed with aesthetics in mind, the landscaping brings visual harmony and a natural charm to the industrial setting, offering a balanced and inviting environment for employees and visitors alike.",
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
@@ -376,7 +376,7 @@ export const projects = [
       { icon: "Armchair", description: "Aeshtatic way" },
     ],
     configuration: [
-      { flat: "8000 sqft", carpet: "45 days" },
+      { flat: "10000 sqft", carpet: "60 days" },
     ],
     // Added video section
     galleryImages: [
