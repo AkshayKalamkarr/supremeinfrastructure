@@ -67,7 +67,7 @@ const HeroSection = () => (
   <div className="relative w-full">
     <div className="absolute inset-0">
       <Image
-        src="/images/projects/commercialBackgroundWallpaper.jpeg"
+        src="/images/projects/residencialBackgroundWallpaper.jpg"
         alt="Residential Projects Background"
         fill
         priority

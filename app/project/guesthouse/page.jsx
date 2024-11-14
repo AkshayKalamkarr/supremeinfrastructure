@@ -56,7 +56,7 @@ const GuestProject = () => {
       {/* Hero Section */}
       <div className="relative h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] flex items-center justify-center">
         <Image
-          src="/images/projects/commercialBackgroundWallpaper.jpeg"
+          src="/images/home/guestHouse.jpg"
           alt="Guest House Projects Background"
           fill
           priority
