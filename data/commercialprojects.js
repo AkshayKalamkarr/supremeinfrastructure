@@ -385,6 +385,11 @@ export const projects = [
       { image: "/images/projects/ALLANA/allana-3.jpg", alt: "allana-3" },
       { image: "/images/projects/ALLANA/allana-4.jpg", alt: "allana-4" },
       { image: "/images/projects/ALLANA/allana-5.jpg", alt: "allana-5" },
+      { image: "/images/projects/ALLANA/allana-6.jpg", alt: "allana-6" },
+      { image: "/images/projects/ALLANA/allana-7.jpg", alt: "allana-7" },
+      { image: "/images/projects/ALLANA/allana-8.jpg", alt: "allana-8" },
+      { image: "/images/projects/ALLANA/allana-9.jpg", alt: "allana-9" },
+      { image: "/images/projects/ALLANA/allana-10.jpg", alt: "allana-10" },
 
     ],
   },
