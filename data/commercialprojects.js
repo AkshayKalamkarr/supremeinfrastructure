@@ -340,11 +340,11 @@ export const projects = [
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Wallpaper", description: "Highlisting the walls with wallpaper" },
-      { icon: "FlipHorizontal", description: "windows with roller blinds" },
-      { icon: "Component", description: "designed luxurious cfo cabin" },
-      { icon: "Fence", description: "Decorative fluted panels customized with brought" },
-      { icon: "Armchair", description: "furniture" },
+      { icon: "Wallpaper", description: "1.4 km Boundry Wall" },
+      { icon: "FlipHorizontal", description: "Garden fencing" },
+      { icon: "Component", description: "Surrounding Landscipping Area" },
+      { icon: "Fence", description: "Different Plants" },
+      { icon: "Armchair", description: "ColorFull Plants" },
     ],
     configuration: [
       { flat: "8000 sqft", carpet: "45 days" },
