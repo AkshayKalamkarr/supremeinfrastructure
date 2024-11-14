@@ -373,7 +373,7 @@ export const projects = [
       { icon: "Fence", description: "Acres of garden landscaping at building surrounding area " },
       { icon: "Sprout", description: "Colorfull plants" },
       { icon: "Leaf", description: "Different shade of greenrise" },
-      { icon: "Armchair", description: "Aeshtatic way" },
+      { icon: "LeafyGreen", description: "Aeshtatic way" },
     ],
     configuration: [
       { flat: "10000 sqft", carpet: "60 days" },
