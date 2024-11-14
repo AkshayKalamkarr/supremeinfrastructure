@@ -369,10 +369,10 @@ export const projects = [
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Wallpaper", description: "G + 4 story building with glaze and acp facade" },
-      { icon: "FlipHorizontal", description: "Acres of garden landscaping at building surrounding area " },
-      { icon: "Component", description: "Colorfull plants" },
-      { icon: "Fence", description: "Different shade of greenrise" },
+      { icon: "BrickWall", description: "G + 4 story building with glaze and acp facade" },
+      { icon: "Fence", description: "Acres of garden landscaping at building surrounding area " },
+      { icon: "Sprout", description: "Colorfull plants" },
+      { icon: "Leaf", description: "Different shade of greenrise" },
       { icon: "Armchair", description: "Aeshtatic way" },
     ],
     configuration: [
