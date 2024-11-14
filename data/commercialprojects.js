@@ -356,7 +356,11 @@ export const projects = [
       { image: "/images/projects/TOSHIBAKARANJADE/toshiba-3.jpg", alt: "toshiba-3" },
       { image: "/images/projects/TOSHIBAKARANJADE/toshiba-4.jpg", alt: "toshiba-4" },
       { image: "/images/projects/TOSHIBAKARANJADE/toshiba-5.jpg", alt: "toshiba-5" },
-
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-6.jpg", alt: "toshiba-6" },
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-7.jpg", alt: "toshiba-7" },
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-8.jpg", alt: "toshiba-8" },
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-10.jpg", alt: "toshiba-10" },
+      { image: "/images/projects/TOSHIBAKARANJADE/toshiba-11.jpg", alt: "toshiba-11" },
     ],
   },
   {
