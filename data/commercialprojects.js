@@ -369,11 +369,11 @@ export const projects = [
     tagLine: "Project information",
     reraNumber: "P52000011751",
     highlights: [
-      { icon: "Wallpaper", description: "Highlisting the walls with wallpaper" },
-      { icon: "FlipHorizontal", description: "windows with roller blinds" },
-      { icon: "Component", description: "designed luxurious cfo cabin" },
-      { icon: "Fence", description: "Decorative fluted panels customized with brought" },
-      { icon: "Armchair", description: "furniture" },
+      { icon: "Wallpaper", description: "G + 4 story building with glaze and acp facade" },
+      { icon: "FlipHorizontal", description: "Acres of garden landscaping at building surrounding area " },
+      { icon: "Component", description: "Colorfull plants" },
+      { icon: "Fence", description: "Different shade of greenrise" },
+      { icon: "Armchair", description: "Aeshtatic way" },
     ],
     configuration: [
       { flat: "8000 sqft", carpet: "45 days" },
