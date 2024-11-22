@@ -100,7 +100,6 @@ export const projects = [
       { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-3.jpeg", alt: "tataTrombay-3" },
       { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-4.jpeg", alt: "tataTrombay-4" },
       { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-5.jpeg", alt: "tataTrombay-5" },
-      { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-6.jpeg", alt: "tataTrombay-6" },
       { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-7.jpeg", alt: "tataTrombay-7" },
       { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-8.jpeg", alt: "tataTrombay-8" },
       { image: "/images/projects/TATAPOWERCIVILTROMBAY/trombay-9.jpeg", alt: "tataTrombay-9" },

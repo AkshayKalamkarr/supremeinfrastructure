@@ -1,44 +1,34 @@
 'use client'
+
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
 const portfolioItems = [
-  // ... (your existing portfolio items)
   {
     name: "Interior Design",
     images: [
-      '/images/projects/TATA/tata-1.jpg',
-      '/images/projects/TATA/tata-2.jpg',
-      '/images/projects/TATA/tata-3.jpg',
-      '/images/projects/TATA/tata-5.jpg',
-      '/images/projects/TATA/tata-7.jpg',
-      '/images/projects/TATA/tata-8.jpg',
-      '/images/projects/TATA/tata-9.jpg',
-      /*  coact interior*/
-      '/images/projects/COACT/coact-1.jpg',
-      '/images/projects/COACT/coact-2.jpg',
-      '/images/projects/COACT/coact-3.jpg',
-      /*  coact interior*/
-      '/images/projects/ATLANTAS/atlantas-1.jpeg',
-      '/images/projects/ATLANTAS/atlantas-2.jpg',
-      '/images/projects/ATLANTAS/atlantas-3.jpeg',
-      '/images/projects/ATLANTAS/atlantas-4.jpg',
-      '/images/projects/ATLANTAS/atlantas-5.jpg',
-      '/images/projects/ATLANTAS/atlantas-6.jpg',
+      /// ATLANTAS
       '/images/projects/ATLANTAS/atlantas-7.jpg',
-      '/images/projects/ATLANTAS/atlantas-8.jpg',
-      '/images/projects/ATLANTAS/atlantas-9.jpg',
-      '/images/projects/ATLANTAS/atlantas-10.jpg',
-      '/images/projects/ATLANTAS/atlantas-11.jpg',
-      '/images/projects/ATLANTAS/atlantas-12.jpg',
-      '/images/projects/ATLANTAS/atlantas-13.jpg',
-      '/images/projects/ATLANTAS/atlantas-14.jpg',
-      '/images/projects/ATLANTAS/atlantas-15.jpg',
-      '/images/projects/ATLANTAS/atlantas-16.jpg',
-      '/images/projects/ATLANTAS/atlantas-17.jpg',
       '/images/projects/ATLANTAS/atlantas-18.jpg',
+      '/images/projects/ATLANTAS/atlantas-5.jpg',
+
+      /// PROCURMENT OFFICE OF TATA POWER SOLAR
+      '/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-5.jpg',
+      '/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-6.jpg',
+      '/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-21.jpg',
+      '/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-22.jpg',
+      '/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-34.jpg',
+
+      /// CIVIL AND ESTATE OFFICE OF TATA POWER TROMBAY
+      '/images/projects/TATAPOWERCIVILTROMBAY/trombay-1.jpeg'
     ]
   },
+
+
+
+
+
+
   {
     name: "Civil Construction",
     images: ['/services/civil-construction/civil-1.JPG',
