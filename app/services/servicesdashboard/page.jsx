@@ -6,7 +6,8 @@ const portfolioItems = [
   // ... (your existing portfolio items)
   {
     name: "Interior Design",
-    images: ['/images/projects/TATA/tata-1.jpg',
+    images: [
+      '/images/projects/TATA/tata-1.jpg',
       '/images/projects/TATA/tata-2.jpg',
       '/images/projects/TATA/tata-3.jpg',
       '/images/projects/TATA/tata-5.jpg',
