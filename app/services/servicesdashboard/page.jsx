@@ -20,7 +20,35 @@ const portfolioItems = [
       '/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-34.jpg',
 
       /// CIVIL AND ESTATE OFFICE OF TATA POWER TROMBAY
-      '/images/projects/TATAPOWERCIVILTROMBAY/trombay-1.jpeg'
+      '/images/projects/TATAPOWERCIVILTROMBAY/trombay-7.jpeg',
+
+      /// TATA POWER SOLAR CIVIL OFFICE AND BREAK OUT AREA , BANGOLARE
+      '/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-3.jpg',
+      '/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-9.jpg',
+      '/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-19.jpg',
+      '/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-22.jpg',
+
+      ///  ADMIN AND HR OFFICE OF TATA POWER SOLAR AT BANGALORE
+      '/images/projects/TPSSLBANGOLARE/tpsslBanglore-4.jpg',
+      '/images/projects/TPSSLBANGOLARE/tpsslBanglore-7.jpg',
+      '/images/projects/TPSSLBANGOLARE/tpsslBanglore-11.jpg',
+      '/images/projects/TPSSLBANGOLARE/tpsslBanglore-17.jpg',
+
+      /// SUPREME INFRASTRUCTURE HEAD OFFICE AT MAYURESH PLANET BELAPUR
+      '/images/projects/MAYURESHPLANET/mayuresh-1.jpg',
+      '/images/projects/MAYURESHPLANET/mayuresh-3.jpg',
+      '/images/projects/MAYURESHPLANET/mayuresh-6.jpg',
+      '/images/projects/MAYURESHPLANET/mayuresh-7.jpg',
+
+
+      /// COACT
+      '/images/projects/COACT/coact-1.jpg',
+      '/images/projects/COACT/coact-11.jpg',
+      '/images/projects/COACT/coact-14.jpg',
+
+
+
+
     ]
   },
 
