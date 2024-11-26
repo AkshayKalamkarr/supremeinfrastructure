@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { House, Wallpaper, GraduationCap, Utensils, Dumbbell } from 'lucide-react';
+import { History, House, Banknote, Sprout, Timer, Wallpaper, GraduationCap, Utensils, Dumbbell, } from 'lucide-react';
 import { guestprojects } from "../../../../data/guesthousedata";
 import Image from "next/image";
 import { useParams } from "next/navigation";
@@ -28,11 +28,17 @@ export default function ProjectPage() {
   };
 
   const highlightsIcon = {
+    History: History,
     House: House,
+    Banknote: Banknote,
+    Sprout: Sprout,
+    Timer: Timer,
     Wallpaper: Wallpaper,
     GraduationCap: GraduationCap,
     Utensils: Utensils,
-    Dumbbell: Dumbbell
+    Dumbbell: Dumbbell,
+
+
   };
 
   return (
