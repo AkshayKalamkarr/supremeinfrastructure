@@ -87,10 +87,20 @@ const portfolioItems = [
   },
   {
     name: "Horticulture Design",
-    images: ['/services/horticulture-design/horticulture-1.JPG',
+    images: [
+      '/services/horticulture-design/horticulture-1.JPG',
       '/services/horticulture-design/horticulture-2.JPG',
       '/services/horticulture-design/horticulture-3.JPG',
       '/services/horticulture-design/horticulture-4.JPG',
+      '/services/horticulture-design/horticulture-5.JPG',
+      '/services/horticulture-design/horticulture-6.JPG',
+      '/services/horticulture-design/horticulture-7.JPG',
+      '/services/horticulture-design/horticulture-8.JPG',
+      '/services/horticulture-design/horticulture-9.JPG',
+      '/services/horticulture-design/horticulture-10.JPG',
+      '/services/horticulture-design/horticulture-11.JPG',
+      '/services/horticulture-design/horticulture-12.JPG',
+      '/services/horticulture-design/horticulture-13.JPG',
     ]
   },
   {
