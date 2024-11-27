@@ -5,6 +5,7 @@ import { guestprojects } from "../../../../data/guesthousedata";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import ProjectNotFound from "@/components/ProjectNotFoundGuestHouse";
 
 const getProjectBySlug = (slug) => {
   return guestprojects.find((project) => project.slug === slug);
@@ -16,7 +17,7 @@ export default function ProjectPage() {
   const [fullViewImage, setFullViewImage] = useState(null);
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <ProjectNotFound />;
   }
 
   const openFullView = (image) => {
