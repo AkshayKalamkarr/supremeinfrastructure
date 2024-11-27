@@ -10,6 +10,10 @@ import { projects } from "../../../../data/commercialprojects";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import ProjectNotFound from "@/components/ProjectNotFoundCommercial";
+
+
+
 
 const getProjectBySlug = (slug) => {
   return projects.find((project) => project.slug === slug);
@@ -22,7 +26,7 @@ export default function ProjectPage() {
   const [fullViewImage, setFullViewImage] = useState(null);
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <ProjectNotFound />;
   }
 
   const openFullView = (image) => {
@@ -77,7 +81,7 @@ export default function ProjectPage() {
     Presentation: Presentation,
     Leaf: Leaf,
     BrickWall: BrickWall,
-    LeafyGreen:LeafyGreen
+    LeafyGreen: LeafyGreen
   };
 
   return (
