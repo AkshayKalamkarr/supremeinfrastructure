@@ -8,45 +8,52 @@ import Image from 'next/image';
 
 const ProjectCard = ({ project }) => {
   return (
+    <Link href={`/project/guesthouse/${project.slug}`}>
     <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
-      variants={{
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-        hidden: { opacity: 0, y: 50 }
-      }}
-      whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
-      className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-amber-600/20 hover:border-amber-600"
+      className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-amber-600/20 hover:border-amber-600 cursor-pointer"
     >
-      <div className="relative w-full aspect-[4/3]">
+      {/* Image Container */}
+      <div className="relative w-full aspect-video overflow-hidden">
         <Image
           src={project.image}
+          layout="fill"
+          objectFit="cover"
           alt={project.title}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-300 hover:scale-105"
-          priority={false}
+          className="transform group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
-      <div className="p-4 sm:p-6 flex-grow flex flex-col justify-between space-y-4">
-        <div>
-          <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900  line-clamp-2">
+
+      {/* Content Container */}
+      <div className="p-4 sm:p-5 flex-grow flex flex-col justify-between space-y-4">
+        <div className="space-y-2">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-900 line-clamp-2">
             {project.title}
           </h3>
-          <p className="text-sm text-gray-600 line-clamp-3">
+          <p className="text-sm sm:text-base text-gray-600 line-clamp-3">
             {project.description}
           </p>
         </div>
-        <Link
-          href={`/project/guesthouse/${project.slug}`}
-          className="inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-medium rounded-lg transition-all duration-300 text-sm sm:text-base"
+
+        {/* Button Container */}
+        <div
+          onClick={(e) => e.preventDefault()}
+          className="mt-auto"
         >
-          Read More
-          <span className="ml-2">→</span>
-        </Link>
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="w-full py-2.5 px-4 bg-gradient-to-r from-amber-700 to-yellow-600 text-white rounded-lg hover:from-amber-800 hover:to-yellow-700 transition-all duration-300 text-sm sm:text-base font-medium shadow-sm hover:shadow-md"
+          >
+            Read More
+            <span className="ml-2">→</span>
+          </motion.button>
+        </div>
       </div>
     </motion.div>
+  </Link>
   );
 };
 
