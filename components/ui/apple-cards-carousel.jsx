@@ -233,7 +233,7 @@ export const Card = ({ card, index, layout = false }) => {
             {card.title}
           </motion.p>
         </div>
-        <BlurImage
+        <Image
           src={card.src}
           alt={card.title}
           fill
