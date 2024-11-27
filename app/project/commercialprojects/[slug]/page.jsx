@@ -41,7 +41,7 @@ export default function ProjectPage() {
     BetweenVerticalStart: BetweenVerticalStart,
     Lightbulb: Lightbulb,
     Activity: Activity,
-    // Armchair: Armchair,
+    Armchair: Armchair,
     Wallpaper: Wallpaper,
     Component: Component,
     Fence: Fence,
