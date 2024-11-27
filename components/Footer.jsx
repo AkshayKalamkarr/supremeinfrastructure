@@ -14,7 +14,7 @@ const Footer = () => {
                         <div className="flex items-start space-x-3">
                             <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-white-900" size={20} />
                             <p className="text-white-300 text-sm sm:text-base">
-                                SUPREME INFRASTRUCTURE<br />
+                                SUPREME INFRASTRUCTURE COMPANY<br />
                                 Office No 603, Sector 15,<br />
                                 near Belapur Court,<br />
                                 Belapur,<br />
