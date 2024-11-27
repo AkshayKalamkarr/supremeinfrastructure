@@ -9,51 +9,51 @@ import Image from 'next/image';
 const ProjectCard = ({ project }) => {
   return (
     <Link href={`/project/guesthouse/${project.slug}`}>
-    <motion.div
-      className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-amber-600/20 hover:border-amber-600 cursor-pointer"
-    >
-      {/* Image Container */}
-      <div className="relative w-full aspect-video overflow-hidden">
-        <Image
-          src={project.image}
-          layout="fill"
-          objectFit="cover"
-          alt={project.title}
-          className="transform group-hover:scale-105 transition-transform duration-300"
-          loading="lazy"
-          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-
-      {/* Content Container */}
-      <div className="p-4 sm:p-5 flex-grow flex flex-col justify-between space-y-4">
-        <div className="space-y-2">
-          <h3 className="text-lg sm:text-xl font-semibold text-gray-900 line-clamp-2">
-            {project.title}
-          </h3>
-          <p className="text-sm sm:text-base text-gray-600 line-clamp-3">
-            {project.description}
-          </p>
+      <motion.div
+        className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-amber-600/20 hover:border-amber-600 cursor-pointer"
+      >
+        {/* Image Container */}
+        <div className="relative w-full aspect-video overflow-hidden">
+          <Image
+            src={project.image}
+            layout="fill"
+            objectFit="cover"
+            alt={project.title}
+            className="transform group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
 
-        {/* Button Container */}
-        <div
-          onClick={(e) => e.preventDefault()}
-          className="mt-auto"
-        >
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="w-full py-2.5 px-4 bg-gradient-to-r from-amber-700 to-yellow-600 text-white rounded-lg hover:from-amber-800 hover:to-yellow-700 transition-all duration-300 text-sm sm:text-base font-medium shadow-sm hover:shadow-md"
+        {/* Content Container */}
+        <div className="p-4 sm:p-5 flex-grow flex flex-col justify-between space-y-4">
+          <div className="space-y-2">
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 line-clamp-2">
+              {project.title}
+            </h3>
+            <p className="text-sm sm:text-base text-gray-600 line-clamp-3">
+              {project.description}
+            </p>
+          </div>
+
+          {/* Button Container */}
+          <div
+            onClick={(e) => e.preventDefault()}
+            className="mt-auto"
           >
-            Read More
-            <span className="ml-2">→</span>
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full py-2.5 px-4 bg-gradient-to-r from-amber-700 to-yellow-600 text-white rounded-lg hover:from-amber-800 hover:to-yellow-700 transition-all duration-300 text-sm sm:text-base font-medium shadow-sm hover:shadow-md"
+            >
+              Read More
+              <span className="ml-2">→</span>
+            </motion.button>
+          </div>
         </div>
-      </div>
-    </motion.div>
-  </Link>
+      </motion.div>
+    </Link>
   );
 };
 
