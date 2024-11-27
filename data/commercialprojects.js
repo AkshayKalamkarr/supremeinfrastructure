@@ -330,7 +330,7 @@ export const projects = [
   //   ],
   // },
   {
-    slug: "project-10",
+    slug: "project-9",
     title: "KARANJADE BOUNDARY WALL, FOUNDATIONS 220KV,GIS STATION, TOSHIBA",
     image: "/images/projects/TOSHIBAKARANJADE/toshiba-2.jpg",
     description: "TATA POWER FIRE TANK",
@@ -363,7 +363,7 @@ export const projects = [
     ],
   },
   {
-    slug: "project-11",
+    slug: "project-10",
     title: "Construction of New Factory & Garden Landscaping at Allana,Khopoli",
     image: "/images/projects/ALLANA/allana-3.jpg ",
     description: "TATA POWER FIRE TANK",
@@ -397,7 +397,7 @@ export const projects = [
     ],
   },
   {
-    slug: "project-12",
+    slug: "project-11",
     title: "COACT IMPRINTS",
     image: "/images/projects/COACT/coact-3.jpg",
     description: "coact imprints",
