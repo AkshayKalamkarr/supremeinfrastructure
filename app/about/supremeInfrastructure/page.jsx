@@ -82,10 +82,10 @@ const AboutUsPage = () => {
                                         <div className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{director.name}</div>
                                         <p className="mt-2 text-gray-500">{director.bio}</p>
                                         <div className="mt-4">
-                                            <a href="#" className="text-amber-700 hover:text-blue-800">
+                                            <Link href="#" className="text-amber-700 hover:text-blue-800">
                                                 <FaLinkedin className="inline mr-2" />
                                                 LinkedIn Profile
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
