@@ -1,13 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 import {
-Archive,Columns4,Component,DoorOpen,CircleSlash2,PaintBucket,CookingPotIcon,House,Wallpaper,Bath,Frame,InspectionPanel,BedSingle,Fence,LampCeiling,Dumbbell,
-Lightbulb
+  Archive, Columns4, Component, DoorOpen, CircleSlash2, PaintBucket, CookingPotIcon, House, Wallpaper, Bath, Frame, InspectionPanel, BedSingle, Fence, LampCeiling, Dumbbell,
+  Lightbulb
 } from 'lucide-react';
 import { projects } from "../../../../data/residencialprojects";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import ProjectNotFound from "@/components/ProjectNotFoundResidencial";
 
 const getProjectBySlug = (slug) => {
   return projects.find((project) => project.slug === slug);
@@ -24,7 +25,7 @@ export default function ProjectPage() {
   }, []);
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <ProjectNotFound />;
   }
 
   const openFullView = (image) => {
@@ -38,7 +39,7 @@ export default function ProjectPage() {
   };
 
   const highlightsIcon = {
-    Archive, Columns4, Component, DoorOpen, CircleSlash2, PaintBucket,Fence,LampCeiling,Lightbulb,Dumbbell,
+    Archive, Columns4, Component, DoorOpen, CircleSlash2, PaintBucket, Fence, LampCeiling, Lightbulb, Dumbbell,
     CookingPotIcon, House, Wallpaper, Bath, Frame, InspectionPanel, BedSingle
   };
 
