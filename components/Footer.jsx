@@ -17,7 +17,7 @@ const Footer = () => {
                                 SUPREME INFRASTRUCTURE COMPANY<br />
                                 Office No 603, Sector 15,<br />
                                 opposite Belapur Court, Belapur<br />
-                                Navi Mumbai, Maharashtra 410209
+                                Navi Mumbai, Maharashtra 400614
                             </p>
                         </div>
                     </div>
