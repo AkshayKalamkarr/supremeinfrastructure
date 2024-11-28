@@ -134,7 +134,7 @@ export default function Contact() {
                   <p className="font-semibold">Address:</p>
                   <p className="text-sm md:text-base"> SUPREME INFRASTRUCTURE<br />
                     Office No 603, Sector 15,
-                    near Belapur Court Station,<br />
+                    opposite Belapur Court Station,<br />
                     Sector-15, Belapur,<br />
                     Navi Mumbai, Maharashtra 400614</p>
                 </div>
