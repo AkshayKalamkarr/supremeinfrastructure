@@ -108,8 +108,8 @@ export default function Contact() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="relative container mx-auto h-full flex items-center justify-center px-4"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-amber-700 tracking-wide text-center drop-shadow-lg">
-            Let's <span className='text-amber-700'>Connect</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-amber-600 tracking-wide text-center drop-shadow-lg">
+            Let's <span className='text-amber-600'>Connect</span>
           </h1>
         </motion.div>
       </motion.div>
