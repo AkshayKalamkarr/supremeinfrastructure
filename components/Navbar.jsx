@@ -91,7 +91,7 @@ function Navbar({ className }) {
                     </MobileMenuDropdown>
 
                     <MobileMenuItem href="/services/servicesdashboard" onClick={closeMenu}>
-                        Services
+                        Portfolio
                     </MobileMenuItem>
 
                     <MobileMenuDropdown
@@ -135,7 +135,7 @@ function Navbar({ className }) {
                             <HoveredLink href="/about/architecturalDesigns">Architectural Designs</HoveredLink>
                         </div>
                     </MenuItem>
-                    <Link href="/services/servicesdashboard"><MenuItem setActive={setActive} active={active} item="Services">
+                    <Link href="/services/servicesdashboard"><MenuItem setActive={setActive} active={active} item="Portfolio">
                     </MenuItem></Link>
                     <Link href='/'><MenuItem setActive={setActive} active={active} item="Projects">
                         <div className="text-sm grid grid-cols-2 gap-10 p-4">
