@@ -79,11 +79,11 @@ const portfolioItems = [
   },
   {
     name: "Cable Trench",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
+    images: []
   },
   {
     name: "Industrial Building",
-    images: ['/images/portfolio/img-1.jpg', '/images/portfolio/img-1.jpg']
+    images: []
   },
   {
     name: "Horticulture Design",
@@ -105,13 +105,11 @@ const portfolioItems = [
   },
   {
     name: "Garden Maintenance",
-    images: ['/services/garden-maintenence/garden-1.JPG',
-      '/services/garden-maintenence/garden-2.JPG',
+    images: [
       '/services/garden-maintenence/garden-3.JPG',
       '/services/garden-maintenence/garden-4.JPG',
       '/services/garden-maintenence/garden-5.JPG',
       '/services/garden-maintenence/garden-6.JPG',
-      '/services/garden-maintenence/garden-7.JPG',
       '/services/garden-maintenence/garden-8.JPG',
     ]
   },
@@ -165,11 +163,24 @@ export default function Home() {
     };
   }, []);
 
+  // Coming Soon Component
+  const ComingSoon = () => (
+    <div className="flex items-center justify-center h-full w-full">
+      <div className="text-center">
+        <h3 className="text-4xl font-bold text-gray-700 mb-4 animate-pulse">
+          Coming Soon
+        </h3>
+        <p className="text-xl text-gray-500 animate-bounce">
+          Stay Tuned!
+        </p>
+      </div>
+    </div>
+  );
+
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
       {/* Sidebar */}
       <aside className="w-full lg:w-1/5 bg-amber-600 p-4">
-        {/* <h1 className="text-3xl font-bold mb-2 text-center text-gray-800  md:my-24">Supreme Infrastructure Company</h1> */}
         <h2 className="text-4xl font-bold mb-6 text-center text-white lg:my-12">PORTFOLIO</h2>
         <ul className="space-y-2">
           {portfolioItems.map((item, index) => (
@@ -201,22 +212,26 @@ export default function Home() {
             scrollbarColor: '#CBD5E0 #EDF2F7',
           }}
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {selectedCategory.images.map((image, index) => (
-              <div
-                key={index}
-                className="relative aspect-square overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
-                onClick={() => openFullView(image)}
-              >
-                <Image
-                  src={image}
-                  alt={`Image ${index + 1}`}
-                  fill={true}
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-            ))}
-          </div>
+          {selectedCategory.images.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {selectedCategory.images.map((image, index) => (
+                <div
+                  key={index}
+                  className="relative aspect-square overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
+                  onClick={() => openFullView(image)}
+                >
+                  <Image
+                    src={image}
+                    alt={`Image ${index + 1}`}
+                    fill={true}
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <ComingSoon />
+          )}
         </div>
       </main>
 
