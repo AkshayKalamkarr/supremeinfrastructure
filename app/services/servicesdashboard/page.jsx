@@ -127,10 +127,12 @@ const portfolioItems = [
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState(portfolioItems[0]);
   const [fullViewImage, setFullViewImage] = useState(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const scrollContainerRef = useRef(null);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+    setIsMobileMenuOpen(false);
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollTop = 0;
     }
@@ -142,6 +144,10 @@ export default function Home() {
 
   const closeFullView = () => {
     setFullViewImage(null);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   useEffect(() => {
@@ -179,18 +185,35 @@ export default function Home() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
-      {/* Sidebar */}
-      <aside className="w-full lg:w-1/5 bg-amber-600 p-4">
-        <h2 className="text-4xl font-bold mb-6 text-center text-white lg:my-12">PORTFOLIO</h2>
+      {/* Mobile Menu Toggle */}
+      <div className="md:hidden fixed top-4 left-4 z-50">
+        <button 
+          onClick={toggleMobileMenu}
+          className="bg-red-600 text-white p-2 rounded-md my-2"
+        >
+          {isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
+        </button>
+      </div>
+
+      {/* Sidebar for Mobile and Desktop */}
+      <aside 
+        className={`
+          fixed inset-y-0 left-0 w-64 bg-amber-600 p-4 transform transition-transform duration-300 ease-in-out z-40
+          md:relative md:w-1/5 md:translate-x-0
+          ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
+        `}
+      >
+        <h2 className="text-4xl font-bold mb-6 text-center text-white lg:my-12 mt-14">PORTFOLIO</h2>
         <ul className="space-y-2">
           {portfolioItems.map((item, index) => (
             <li key={index} className="w-full">
               <button
                 onClick={() => handleCategoryClick(item)}
-                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-center md:my-4 ${selectedCategory.name === item.name
-                  ? 'bg-gray-200 text-gray-800 font-bold'
-                  : 'text-white hover:bg-gray-900'
-                  }`}
+                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-center md:my-4 ${
+                  selectedCategory.name === item.name
+                    ? 'bg-gray-200 text-gray-800 font-bold'
+                    : 'text-white hover:bg-gray-900'
+                }`}
               >
                 {item.name}
               </button>
@@ -199,21 +222,31 @@ export default function Home() {
         </ul>
       </aside>
 
+      {/* Overlay for Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
+          onClick={toggleMobileMenu}
+        ></div>
+      )}
+
       {/* Main Content */}
-      <main className="flex-1 p-8 md:p-12 flex flex-col">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800 md:my-20">{selectedCategory.name}</h2>
+      <main className="flex-1 p-4 md:p-8 lg:p-12 flex flex-col">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 md:mb-8 text-gray-800 md:my-28 mt-16">
+          {selectedCategory.name}
+        </h2>
 
         {/* Scrollable Image Grid */}
         <div
           ref={scrollContainerRef}
-          className="flex-1 overflow-y-auto pr-4"
+          className="flex-1 overflow-y-auto pr-2 md:pr-4"
           style={{
             scrollbarWidth: 'thin',
             scrollbarColor: '#CBD5E0 #EDF2F7',
           }}
         >
           {selectedCategory.images.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-6">
               {selectedCategory.images.map((image, index) => (
                 <div
                   key={index}
@@ -225,6 +258,7 @@ export default function Home() {
                     alt={`Image ${index + 1}`}
                     fill={true}
                     style={{ objectFit: "cover" }}
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                   />
                 </div>
               ))}
@@ -237,16 +271,20 @@ export default function Home() {
 
       {/* Full View Modal */}
       {fullViewImage && (
-        <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50" onClick={closeFullView}>
-          <div className="relative w-full h-full max-w-5xl max-h-5xl p-4">
+        <div 
+          className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50" 
+          onClick={closeFullView}
+        >
+          <div className="relative w-full h-full max-w-5xl max-h-5xl p-2 md:p-4">
             <Image
               src={fullViewImage}
               alt="Full view"
               fill={true}
               style={{ objectFit: "contain" }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
             />
             <button
-              className="absolute top-4 right-4 text-white text-4xl hover:text-red-600 transition-colors md:text-6xl"
+              className="absolute top-2 right-2 md:top-4 md:right-4 text-white text-2xl md:text-4xl lg:text-6xl hover:text-red-600 transition-colors"
               onClick={closeFullView}
             >
               &times;
