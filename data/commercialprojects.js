@@ -384,16 +384,12 @@ export const projects = [
     // Added video section
     galleryImages: [
       { image: "/images/projects/ALLANA/allana-1.jpeg", alt: "allana-1" },
-      { image: "/images/projects/ALLANA/allana-2.jpg", alt: "allana-2" },
-      { image: "/images/projects/ALLANA/allana-3.jpg", alt: "allana-3" },
-      { image: "/images/projects/ALLANA/allana-4.jpg", alt: "allana-4" },
-      { image: "/images/projects/ALLANA/allana-5.jpg", alt: "allana-5" },
-      { image: "/images/projects/ALLANA/allana-6.jpg", alt: "allana-6" },
-      { image: "/images/projects/ALLANA/allana-7.jpg", alt: "allana-7" },
-      { image: "/images/projects/ALLANA/allana-8.jpg", alt: "allana-8" },
-      { image: "/images/projects/ALLANA/allana-9.jpg", alt: "allana-9" },
-      { image: "/images/projects/ALLANA/allana-10.jpg", alt: "allana-10" },
-
+      { image: "/images/projects/ALLANA/allana-2.jpeg", alt: "allana-2" },
+      { image: "/images/projects/ALLANA/allana-3.jpeg", alt: "allana-3" },
+      { image: "/images/projects/ALLANA/allana-4.jpeg", alt: "allana-4" },
+      { image: "/images/projects/ALLANA/allana-5.jpeg", alt: "allana-5" },
+      { image: "/images/projects/ALLANA/allana-6.jpeg", alt: "allana-6" },
+      { image: "/images/projects/ALLANA/allana-7.jpeg", alt: "allana-7" },
     ],
   },
   {
