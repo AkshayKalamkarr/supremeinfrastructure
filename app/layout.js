@@ -4,9 +4,11 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import { NavbarDemo } from "@/components/Navbar";
 
-const kanit = Kanit({ weight:'500', subsets: ["thai"],
-  weight:['500'], 
-  display:"swap"
+const kanit = Kanit({
+  weight: '500',
+  subsets: ["thai"],
+  weight: ['500'],
+  display: "swap"
 });
 
 export const metadata = {
@@ -19,9 +21,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={kanit.className}>
         {/* <Header/> */}
-        <NavbarDemo/>
+        <NavbarDemo />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
