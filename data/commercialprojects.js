@@ -365,7 +365,7 @@ export const projects = [
   {
     slug: "project-10",
     title: "Construction of New Factory & Garden Landscaping at Allana,Khopoli",
-    image: "/images/projects/ALLANA/allana-10.jpg",
+    image: "/images/projects/ALLANA/allana-1.jpeg",
     description: "TATA POWER FIRE TANK",
     fullDescription:
       "The Allana Factory and Garden Landscaping project in Khopoli is a comprehensive construction and landscaping initiative, covering 10,000 square feet and set for completion in 60 days. The G+4 story building boasts a striking glazed and ACP façade, providing a sleek, modern exterior that stands out. Surrounding the building, acres of carefully planned garden landscaping incorporate colorful plants and a variety of green shades, creating a vibrant, layered effect that complements the building’s architecture. Designed with aesthetics in mind, the landscaping brings visual harmony and a natural charm to the industrial setting, offering a balanced and inviting environment for employees and visitors alike.",
@@ -383,11 +383,11 @@ export const projects = [
     ],
     // Added video section
     galleryImages: [
-      // { image: "/images/projects/ALLANA/allana-1.jpg", alt: "allana-1" },
-      // { image: "/images/projects/ALLANA/allana-2.jpg", alt: "allana-2" },
-      // { image: "/images/projects/ALLANA/allana-3.jpg", alt: "allana-3" },
-      // { image: "/images/projects/ALLANA/allana-4.jpg", alt: "allana-4" },
-      // { image: "/images/projects/ALLANA/allana-5.jpg", alt: "allana-5" },
+      { image: "/images/projects/ALLANA/allana-1.jpeg", alt: "allana-1" },
+      { image: "/images/projects/ALLANA/allana-2.jpg", alt: "allana-2" },
+      { image: "/images/projects/ALLANA/allana-3.jpg", alt: "allana-3" },
+      { image: "/images/projects/ALLANA/allana-4.jpg", alt: "allana-4" },
+      { image: "/images/projects/ALLANA/allana-5.jpg", alt: "allana-5" },
       { image: "/images/projects/ALLANA/allana-6.jpg", alt: "allana-6" },
       { image: "/images/projects/ALLANA/allana-7.jpg", alt: "allana-7" },
       { image: "/images/projects/ALLANA/allana-8.jpg", alt: "allana-8" },
