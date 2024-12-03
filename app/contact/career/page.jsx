@@ -31,6 +31,7 @@ const CareerPage = () => {
         { title: 'Interior Designer', department: 'Design', icon: FaPencilRuler },
         { title: 'Admin', department: 'Administration', icon: FaUserShield },
         { title: 'Accountant', department: 'Finance', icon: FaCalculator },
+        { title: 'Billing Engineer', department: 'Engineer', icon: FaCalculator },
     ];
 
     return (
