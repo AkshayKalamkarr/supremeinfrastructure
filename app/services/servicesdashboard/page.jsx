@@ -45,18 +45,8 @@ const portfolioItems = [
       '/images/projects/COACT/coact-1.jpg',
       '/images/projects/COACT/coact-11.jpg',
       '/images/projects/COACT/coact-14.jpg',
-
-
-
-
     ]
   },
-
-
-
-
-
-
   {
     name: "Civil Construction",
     images: ['/services/civil-construction/civil-1.JPG',
@@ -174,10 +164,10 @@ export default function Home() {
   const ComingSoon = () => (
     <div className="flex items-center justify-center h-full w-full">
       <div className="text-center">
-        <h3 className="text-4xl font-bold text-gray-700 mb-4 animate-pulse">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-700 mb-4 animate-pulse">
           Coming Soon
         </h3>
-        <p className="text-xl text-gray-500 animate-bounce">
+        <p className="text-base sm:text-lg md:text-xl text-gray-500 animate-bounce">
           Stay Tuned!
         </p>
       </div>
@@ -185,12 +175,12 @@ export default function Home() {
   );
 
   return (
-    <div className="flex flex-col md:flex-row max-h-screen bg-gray-100">
+    <div className="flex flex-col md:flex-row min-h-screen max-h-screen bg-gray-100 overflow-hidden">
       {/* Mobile Menu Toggle */}
       <div className="md:hidden fixed top-4 left-4 z-50">
         <button
           onClick={toggleMobileMenu}
-          className="bg-red-600 text-white p-2 rounded-md my-2"
+          className="bg-red-600 text-white p-2 rounded-md my-2 transform active:scale-95 transition-transform"
         >
           {isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
         </button>
@@ -200,20 +190,26 @@ export default function Home() {
       <aside
         className={`
           fixed inset-y-0 left-0 w-64 bg-gray-200 p-4 transform transition-transform duration-300 ease-in-out z-40
-          md:relative md:w-1/10 md:translate-x-0
+          md:relative md:w-1/3 lg:w-1/6 md:translate-x-0
           ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
       >
-        <h2 className="text-4xl font-bold mb-6 text-start text-black lg:my-12 mt-14 mx-4">Portfolio</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-start text-black lg:my-12 mt-14 md:mx-4">
+          Portfolio
+        </h2>
         <ul className="space-y-2">
           {portfolioItems.map((item, index) => (
             <li key={index} className="w-full">
               <button
                 onClick={() => handleCategoryClick(item)}
-                className={`w-full py-4 px-4 transition-all duration-300 ease-in-out text-center md:text-start md:my-4 ${selectedCategory.name === item.name
+                className={`
+                  w-full py-2 sm:py-3 px-4 text-sm sm:text-base transition-all duration-300 ease-in-out 
+                  text-center md:text-start md:my-4 
+                  ${selectedCategory.name === item.name
                     ? 'bg-amber-700 text-white'
-                    : 'text-black hover:bg-white-900'
-                  }`}
+                    : 'text-black hover:bg-gray-100 active:bg-gray-200'
+                  }
+                `}
               >
                 {item.name}
               </button>
@@ -231,26 +227,26 @@ export default function Home() {
       )}
 
       {/* Main Content */}
-      <main className="flex-1 p-4 md:p-8 lg:p-12 flex flex-col">
-        {/* <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 md:mb-8 text-gray-800 md:my-28 mt-16">
+      <main className="flex-1 p-4 md:p-8 lg:p-12 flex flex-col overflow-hidden md:mt-28">
+        {/* <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 md:mb-8 text-gray-800 md:my-8 lg:my-12 mt-16">
           {selectedCategory.name}
         </h2> */}
 
         {/* Scrollable Image Grid */}
         <div
           ref={scrollContainerRef}
-          className="flex-1 overflow-y-auto pr-2 md:pr-4"
+          className="flex-1 overflow-y-auto pr-2 md:pr-4 touch-pan-y"
           style={{
             scrollbarWidth: 'thin',
             scrollbarColor: '#CBD5E0 #EDF2F7',
           }}
         >
           {selectedCategory.images.length > 0 ? (
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-12  md:my-28">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
               {selectedCategory.images.map((image, index) => (
                 <div
                   key={index}
-                  className="relative aspect-square overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
+                  className="relative aspect-square overflow-hidden shadow-md cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-95"
                   onClick={() => openFullView(image)}
                 >
                   <Image
@@ -258,7 +254,10 @@ export default function Home() {
                     alt={`Image ${index + 1}`}
                     fill={true}
                     style={{ objectFit: "cover" }}
-                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                    sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
+                    quality={75}
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAIQAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMAFA4PEg8NFBIQEhcVFBgeHBgcGh0dHRodHR0lJR0dHR0dJSUdHR0dHR0lJSUlJSUlJSUvLy8vLz9AQD9AP///2wBDAhcVFxcXHBcVFRcXFxcXGBcXFxcXGBkYGBcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxf/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgMBAAAAAAAAAAAAAAAAAQIAEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                   />
                 </div>
               ))}
@@ -275,16 +274,19 @@ export default function Home() {
           className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50"
           onClick={closeFullView}
         >
-          <div className="relative w-full h-full max-w-5xl max-h-5xl p-2 md:p-4">
+          <div className="relative w-full h-full max-w-5xl max-h-5xl p-2 sm:p-4 md:p-8">
             <Image
               src={fullViewImage}
               alt="Full view"
               fill={true}
               style={{ objectFit: "contain" }}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
+              quality={90}
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAIQAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMAFA4PEg8NFBIQEhcVFBgeHBgcGh0dHRodHR0lJR0dHR0dJSUdHR0dHR0lJSUlJSUlJSUvLy8vLz9AQD9AP///2wBDAhcVFxcXHBcVFRcXFxcXGBcXFxcXGBkYGBcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxf/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgMBAAAAAAAAAAAAAAAAAQIAEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
             />
             <button
-              className="absolute top-2 right-2 md:top-4 md:right-4 text-white text-2xl md:text-4xl lg:text-6xl hover:text-red-600 transition-colors"
+              className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl hover:text-red-600 transition-colors active:scale-95"
               onClick={closeFullView}
             >
               &times;
