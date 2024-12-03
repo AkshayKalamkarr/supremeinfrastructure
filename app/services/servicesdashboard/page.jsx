@@ -204,7 +204,7 @@ export default function Home() {
           ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
       >
-        <h2 className="text-4xl font-bold mb-6 text-center text-white lg:my-12 mt-14">PORTFOLIO</h2>
+        <h2 className="text-4xl font-bold mb-6 text-center text-white lg:my-12 mt-14">Portfolio</h2>
         <ul className="space-y-2">
           {portfolioItems.map((item, index) => (
             <li key={index} className="w-full">
