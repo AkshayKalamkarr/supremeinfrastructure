@@ -188,7 +188,7 @@ export default function Home() {
     <div className="flex flex-col md:flex-row max-h-screen bg-gray-100">
       {/* Mobile Menu Toggle */}
       <div className="md:hidden fixed top-4 left-4 z-50">
-        <button 
+        <button
           onClick={toggleMobileMenu}
           className="bg-red-600 text-white p-2 rounded-md my-2"
         >
@@ -197,24 +197,23 @@ export default function Home() {
       </div>
 
       {/* Sidebar for Mobile and Desktop */}
-      <aside 
+      <aside
         className={`
-          fixed inset-y-0 left-0 w-64 bg-amber-600 p-4 transform transition-transform duration-300 ease-in-out z-40
-          md:relative md:w-1/5 md:translate-x-0
+          fixed inset-y-0 left-0 w-64 bg-gray-200 p-4 transform transition-transform duration-300 ease-in-out z-40
+          md:relative md:w-1/10 md:translate-x-0
           ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
       >
-        <h2 className="text-4xl font-bold mb-6 text-center text-white lg:my-12 mt-14">Portfolio</h2>
+        <h2 className="text-4xl font-bold mb-6 text-start text-black lg:my-12 mt-14">Portfolio</h2>
         <ul className="space-y-2">
           {portfolioItems.map((item, index) => (
             <li key={index} className="w-full">
               <button
                 onClick={() => handleCategoryClick(item)}
-                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-center md:my-4 ${
-                  selectedCategory.name === item.name
-                    ? 'bg-gray-200 text-gray-800 font-bold'
-                    : 'text-white hover:bg-gray-900'
-                }`}
+                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-start md:my-4 ${selectedCategory.name === item.name
+                    ? 'bg-gray-400 text-gray-800 font-bold'
+                    : 'text-black hover:bg-white-900'
+                  }`}
               >
                 {item.name}
               </button>
@@ -225,7 +224,7 @@ export default function Home() {
 
       {/* Overlay for Mobile Menu */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
           onClick={toggleMobileMenu}
         ></div>
@@ -272,8 +271,8 @@ export default function Home() {
 
       {/* Full View Modal */}
       {fullViewImage && (
-        <div 
-          className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50" 
+        <div
+          className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50"
           onClick={closeFullView}
         >
           <div className="relative w-full h-full max-w-5xl max-h-5xl p-2 md:p-4">
