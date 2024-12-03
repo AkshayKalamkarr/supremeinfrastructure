@@ -40,7 +40,7 @@ const CareerPage = () => {
                 backgroundBlendMode: 'overlay',
                 backgroundColor: 'rgba(255, 255, 255, 0.3)'
             }}>
-                <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent opacity-100"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-white-50 via-transparent to-transparent opacity-100"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                     <motion.h1
                         initial={{ opacity: 0, y: -50 }}
@@ -74,7 +74,7 @@ const CareerPage = () => {
                                 whileTap={{ scale: 0.95 }}
                             >
                                 <motion.div className="text-4xl mb-4 flex justify-center">
-                                    <job.icon className="text-amber-700" />
+                                    <job.icon className="text-orange-600" />
                                 </motion.div>
                                 <h3 className="text-xl md:text-2xl font-bold mb-3 text-gray-800">{job.title}</h3>
                                 <p className="text-lg text-gray-500 font-semibold">{job.department}</p>
