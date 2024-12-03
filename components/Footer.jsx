@@ -15,7 +15,8 @@ const Footer = () => {
                             <FaMapMarkerAlt className="flex-shrink-0 mt-1 text-white-900" size={20} />
                             <p className="text-white-300 text-sm sm:text-base">
                                 SUPREME INFRASTRUCTURE COMPANY<br />
-                                Office No 603, Sector 15,<br />
+                                Office No 603,Mayuresh Planet<br />
+                                Plot no- 42/43 ,Sector 15,<br />
                                 opposite Belapur Court, Belapur<br />
                                 Navi Mumbai, Maharashtra 400614
                             </p>
