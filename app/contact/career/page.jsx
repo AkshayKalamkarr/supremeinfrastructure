@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHardHat, FaShoppingCart, FaPencilRuler, FaUserShield, FaCalculator } from 'react-icons/fa';
+import { FaHardHat, FaShoppingCart, FaPencilRuler, FaUserShield, FaCalculator,FaPercent } from 'react-icons/fa';
 
 const CareerPage = () => {
     const [formData, setFormData] = useState({
@@ -31,7 +31,8 @@ const CareerPage = () => {
         { title: 'Interior Designer', department: 'Design', icon: FaPencilRuler },
         { title: 'Admin', department: 'Administration', icon: FaUserShield },
         { title: 'Accountant', department: 'Finance', icon: FaCalculator },
-        { title: 'Billing Engineer', department: 'Engineer', icon: FaCalculator },
+        { title: 'Billing Engineer', department: 'Engineer', icon: FaPercent },
+        { title: 'QA/QC Engineer', department: 'Engineer', icon: FaCalculator },
     ];
 
     return (
@@ -47,9 +48,9 @@ const CareerPage = () => {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-amber-600 text-center leading-tight px-4"
+                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center leading-tight px-4"
                     >
-                        Join Our <span className="text-amber-600">Innovative</span> Team
+                       Come to <span className="text-white">Belong.</span> 
                     </motion.h1>
                 </div>
             </div>
@@ -61,7 +62,7 @@ const CareerPage = () => {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="text-xl md:text-2xl text-center mb-12 md:mb-16 mt-8 text-gray-700 max-w-3xl mx-auto"
                 >
-                    Discover exciting career opportunities and grow with us in a dynamic, innovative environment
+                    With agility, capacity, range, and ambition, Supreme's lineup plays on some big stages—on and off the clock.
                 </motion.p>
 
                 <section className="mb-16 md:mb-24">
