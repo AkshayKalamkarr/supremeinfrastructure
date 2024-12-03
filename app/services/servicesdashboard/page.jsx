@@ -106,11 +106,12 @@ const portfolioItems = [
   {
     name: "Garden Maintenance",
     images: [
-      '/services/garden-maintenence/garden-3.JPG',
-      '/services/garden-maintenence/garden-4.JPG',
-      '/services/garden-maintenence/garden-5.JPG',
-      '/services/garden-maintenence/garden-6.JPG',
       '/services/garden-maintenence/garden-8.JPG',
+      '/services/horticulture-design/horticulture-3.JPG',
+      '/services/horticulture-design/horticulture-4.JPG',
+      '/services/horticulture-design/horticulture-5.JPG',
+      '/services/horticulture-design/horticulture-6.JPG',
+      '/services/horticulture-design/horticulture-7.JPG',
     ]
   },
   {
