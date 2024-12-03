@@ -204,14 +204,14 @@ export default function Home() {
           ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
       >
-        <h2 className="text-4xl font-bold mb-6 text-start text-black lg:my-12 mt-14">Portfolio</h2>
+        <h2 className="text-4xl font-bold mb-6 text-start text-black lg:my-12 mt-14 mx-4">Portfolio</h2>
         <ul className="space-y-2">
           {portfolioItems.map((item, index) => (
             <li key={index} className="w-full">
               <button
                 onClick={() => handleCategoryClick(item)}
-                className={`w-full py-3 px-4 transition-all duration-300 ease-in-out text-center md:text-start md:my-4 ${selectedCategory.name === item.name
-                    ? 'bg-gray-400 text-gray-800 font-bold'
+                className={`w-full py-4 px-4 transition-all duration-300 ease-in-out text-center md:text-start md:my-4 ${selectedCategory.name === item.name
+                    ? 'bg-amber-700 text-white'
                     : 'text-black hover:bg-white-900'
                   }`}
               >
@@ -232,9 +232,9 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1 p-4 md:p-8 lg:p-12 flex flex-col">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 md:mb-8 text-gray-800 md:my-28 mt-16">
+        {/* <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 md:mb-8 text-gray-800 md:my-28 mt-16">
           {selectedCategory.name}
-        </h2>
+        </h2> */}
 
         {/* Scrollable Image Grid */}
         <div
@@ -246,7 +246,7 @@ export default function Home() {
           }}
         >
           {selectedCategory.images.length > 0 ? (
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-12  md:my-28">
               {selectedCategory.images.map((image, index) => (
                 <div
                   key={index}
