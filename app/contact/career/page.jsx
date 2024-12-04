@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHardHat, FaShoppingCart, FaPencilRuler, FaUserShield, FaCalculator,FaPercent } from 'react-icons/fa';
+import { FaHardHat, FaShoppingCart, FaPencilRuler, FaUserShield, FaCalculator, FaPercent } from 'react-icons/fa';
 
 const CareerPage = () => {
     const [formData, setFormData] = useState({
@@ -50,7 +50,7 @@ const CareerPage = () => {
                         transition={{ duration: 1 }}
                         className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center leading-tight px-4"
                     >
-                       Come to <span className="text-white">Belong.</span> 
+                        Come to <span className="text-white">Belong.</span>
                     </motion.h1>
                 </div>
             </div>
