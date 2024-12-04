@@ -68,7 +68,7 @@ const HeroSection = () => (
     <div className="absolute inset-0">
       <Image
         src="/images/projects/commercialBackgroundWallpaper.jpeg"
-        alt="Residential Projects Background"
+        alt="ResidentialProjectsBackground"
         fill
         priority
         className="object-cover"
