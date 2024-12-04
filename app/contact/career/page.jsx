@@ -9,6 +9,7 @@ const CareerPage = () => {
         email: '',
         resume: null,
         position: '',
+        contactNumber: '',
     });
 
     const handleChange = (e) => {
@@ -37,12 +38,22 @@ const CareerPage = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-            <div className="h-[60vh] bg-cover bg-center relative" style={{
-                backgroundImage: "url('/images/contact/career-banner.jpg')",
-                backgroundBlendMode: 'overlay',
-                backgroundColor: 'rgba(255, 255, 255, 0.3)'
-            }}>
-                <div className="absolute inset-0 bg-gradient-to-b from-white-50 via-transparent to-transparent opacity-100"></div>
+            <div className="h-[60vh] relative overflow-hidden">
+                <video 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline 
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                    style={{
+                        filter: 'brightness(0.6)',
+                        objectPosition: 'center'
+                    }}
+                >
+                    <source src="/videos/career-2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                {/* <div className="absolute inset-0 bg-gradient-to-b from-white-50 via-transparent to-transparent opacity-100"></div> */}
                 <div className="absolute inset-0 flex items-center justify-center">
                     <motion.h1
                         initial={{ opacity: 0, y: -50 }}
@@ -50,7 +61,7 @@ const CareerPage = () => {
                         transition={{ duration: 1 }}
                         className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center leading-tight px-4"
                     >
-                        Come to <span className="text-white">Belong.</span>
+                        {/* Come to <span className="text-white">Belong.</span> */}
                     </motion.h1>
                 </div>
             </div>
@@ -131,14 +142,13 @@ const CareerPage = () => {
                                 />
                             </div>
 
-                            {/* Contact Number Section */}
                             <div className="mb-6">
                                 <label htmlFor="contactNumber" className="block mb-2 text-lg font-semibold text-gray-700">Contact Number</label>
                                 <input
                                     type="tel"
                                     id="contactNumber"
                                     name="contactNumber"
-                                    pattern="^\+?[1-9]\d{1,14}$" // Optional regex for phone number format validation
+                                    pattern="^\+?[1-9]\d{1,14}$"
                                     className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
@@ -183,7 +193,6 @@ const CareerPage = () => {
                             </motion.button>
                         </form>
                     </div>
-
                 </section>
             </main>
         </div>
