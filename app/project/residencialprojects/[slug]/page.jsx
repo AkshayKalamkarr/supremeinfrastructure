@@ -44,9 +44,8 @@ export default function ProjectPage() {
   };
 
   return (
-    <div className={`bg-gradient-to-b from-white-100 to-white min-h-screen flex justify-center md:my-32 
-      transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+    <div className={`bg-gradient-to-b from-white-100 to-white min-h-screen md:mt-36 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      <div className="w-full">
         <section className='py-8 px-4 sm:px-6 lg:px-8 transform transition-all duration-700 hover:scale-[1.02]'>
           <div className='flex flex-col lg:flex-row items-start mx-auto w-full'>
             <div className='lg:w-1/2 lg:pr-6 text-center transform transition-all duration-500 hover:translate-y-[-5px]'>

@@ -85,8 +85,8 @@ export default function ProjectPage() {
   };
 
   return (
-    <div className='bg-gradient-to-b from-white-100 to-white min-h-screen flex justify-center md:my-32'>
-      <div className='w-full px-4 sm:px-6 lg:px-8'>
+    <div className='bg-gradient-to-b from-white-100 to-white min-h-screen md:mt-36'>
+      <div className='w-full'>
         {/* Hero Section */}
         <section className='py-8 px-4 sm:px-6 lg:px-8'>
           <div className='flex flex-col lg:flex-row items-start mx-auto w-full'>
