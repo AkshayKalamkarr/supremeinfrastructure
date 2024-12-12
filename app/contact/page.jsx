@@ -101,7 +101,7 @@ export default function Contact() {
           backgroundColor: 'rgba(255, 255, 255, 0.5)'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent opacity-100"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent opacity-100"></div> */}
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -243,7 +243,7 @@ export default function Contact() {
               </div>
               <motion.button
                 type="submit"
-                className="w-full bg-amber-700 text-white py-3 px-6 rounded hover:bg-amber-800 transition duration-300 text-lg font-semibold disabled:opacity-50"
+                className="w-full bg-amber-700 text-white py-3 px-6 rounded hover:bg-amber-800 transition duration-300 text-lg disabled:opacity-50"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -258,12 +258,12 @@ export default function Contact() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="mt-8 sm:mt-12 md:mt-16"
+          className="mt-8 sm:mt-12 md:mt-36"
         >
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-amber-700 text-center border-b-4 border-amber-600 pb-2">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-16 text-amber-700 text-center border-b-4  border-amber-600 pb-2">
             Location
           </h2>
-          <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] overflow-hidden rounded-lg shadow-lg">
+          <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] overflow-hidden shadow-lg">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1474.4150266517524!2d73.0331751013393!3d19.007068568256777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c146766a3db7%3A0x762c073d563eb77a!2sSupreme%20Infrastructure%20Company!5e1!3m2!1sen!2sin!4v1733987069764!5m2!1sen!2sin"
               width="100%"
