@@ -39,11 +39,11 @@ const CareerPage = () => {
     return (
         <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
             <div className="h-[60vh] relative overflow-hidden">
-                <video 
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline 
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="absolute top-0 left-0 w-full h-full object-cover"
                     style={{
                         filter: 'brightness(0.6)',
