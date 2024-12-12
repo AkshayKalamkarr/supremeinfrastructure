@@ -118,14 +118,14 @@ const CareerPage = () => {
                     </div>
                     <div className="w-full lg:w-1/2">
                         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">Apply Now</h2>
-                        <form onSubmit={handleSubmit} className="bg-white rounded-lg p-6 md:p-8 border-2 border-blue-200">
+                        <form onSubmit={handleSubmit} className="bg-white rounded-lg p-6 md:p-8 border-2 border-amber-500">
                             <div className="mb-6">
                                 <label htmlFor="name" className="block mb-2 text-lg font-semibold text-gray-700">Full Name</label>
                                 <input
                                     type="text"
                                     id="name"
                                     name="name"
-                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-orange-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 />
@@ -136,7 +136,7 @@ const CareerPage = () => {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-orange-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 />
@@ -149,7 +149,7 @@ const CareerPage = () => {
                                     id="contactNumber"
                                     name="contactNumber"
                                     pattern="^\+?[1-9]\d{1,14}$"
-                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-orange-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 />
@@ -159,7 +159,7 @@ const CareerPage = () => {
                                 <select
                                     id="position"
                                     name="position"
-                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-orange-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 >
@@ -177,7 +177,7 @@ const CareerPage = () => {
                                     id="resume"
                                     name="resume"
                                     accept=".pdf,.doc,.docx"
-                                    className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-orange-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 />
@@ -185,7 +185,7 @@ const CareerPage = () => {
 
                             <motion.button
                                 type="submit"
-                                className="w-full bg-gradient-to-r from-amber-700 to-amber-600 hover:bg-blue-700 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300"
+                                className="w-full bg-gradient-to-r from-amber-600 to-amber-600 hover:bg-blue-700 text-white text-lg py-3 px-6 rounded-lg transition duration-300"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
