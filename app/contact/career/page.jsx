@@ -125,7 +125,7 @@ const CareerPage = () => {
                                     type="text"
                                     id="name"
                                     name="name"
-                                    className="w-full px-4 py-3 border-2 border-orange-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-black-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 />
@@ -136,7 +136,7 @@ const CareerPage = () => {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    className="w-full px-4 py-3 border-2 border-orange-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-black-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 />
@@ -149,7 +149,7 @@ const CareerPage = () => {
                                     id="contactNumber"
                                     name="contactNumber"
                                     pattern="^\+?[1-9]\d{1,14}$"
-                                    className="w-full px-4 py-3 border-2 border-orange-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-black-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 />
@@ -159,7 +159,7 @@ const CareerPage = () => {
                                 <select
                                     id="position"
                                     name="position"
-                                    className="w-full px-4 py-3 border-2 border-orange-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-black-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 >
@@ -177,7 +177,7 @@ const CareerPage = () => {
                                     id="resume"
                                     name="resume"
                                     accept=".pdf,.doc,.docx"
-                                    className="w-full px-4 py-3 border-2 border-orange-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
+                                    className="w-full px-4 py-3 border-2 border-black-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
                                     required
                                     onChange={handleChange}
                                 />
