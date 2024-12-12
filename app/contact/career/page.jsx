@@ -82,7 +82,7 @@ const CareerPage = () => {
                         {jobs.map((job, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-white rounded-lg p-6 md:p-8 hover:bg-blue-50 transition duration-300 text-center border-2 border-blue-200"
+                                className="bg-white rounded-lg p-6 md:p-8 hover:bg-blue-50 transition duration-300 text-center border-2 border-amber-500"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
