@@ -132,7 +132,7 @@ export default function Contact() {
                 <FaMapMarkerAlt className="text-2xl text-amber-700 flex-shrink-0" />
                 <div>
                   <p className="font-semibold">Address:</p>
-                  <p className="text-sm md:text-base"> SUPREME INFRASTRUCTURE<br />
+                  <p className="text-sm md:text-base">SUPREME INFRASTRUCTURE COMPANY<br />
                     Office No 603, Sector 15,
                     opposite Belapur Court Station,<br />
                     Sector-15, Belapur,<br />
