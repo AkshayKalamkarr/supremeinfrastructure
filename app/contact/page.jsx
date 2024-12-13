@@ -122,7 +122,7 @@ export default function Contact() {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-white p-6 md:p-8 shadow-lg rounded-lg"
+            className=" p-6 md:p-8 rounded-lg"
           >
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-amber-700 border-b-4 border-amber-700 pb-2 text-center">
               Contact Info
@@ -156,7 +156,7 @@ export default function Contact() {
             </div>
             <div className="mt-8 text-center">
               <h3 className="text-lg sm:text-xl font-semibold mb-4 text-amber-700">Follow Us</h3>
-              <div className="flex justify-center space-x-4">
+              <div className="flex justify-center space-x-14">
                 {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((Icon, index) => (
                   <motion.a
                     key={index}
@@ -177,7 +177,7 @@ export default function Contact() {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-white p-6 md:p-8 shadow-lg rounded-lg"
+            className=" p-6 md:p-8  rounded-lg"
           >
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-amber-700 border-b-4 border-amber-700 pb-2 text-center">
               Send Us a Message
