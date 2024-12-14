@@ -107,7 +107,7 @@ const ResidencialProject = () => {
             {/* Additional title or content can go here */}
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 py-4 sm:py-6 md:py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 md:gap-10 py-4 sm:py-6 md:py-8">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
