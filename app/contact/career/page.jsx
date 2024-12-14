@@ -27,13 +27,13 @@ const CareerPage = () => {
     };
 
     const jobs = [
-        { title: 'Site Engineer', department: 'Engineering', icon: FaHardHat },
-        { title: 'Purchase Engineer', department: 'Product', icon: FaShoppingCart },
-        { title: 'Interior Designer', department: 'Design', icon: FaPencilRuler },
-        { title: 'Admin', department: 'Administration', icon: FaUserShield },
-        { title: 'Accountant', department: 'Finance', icon: FaCalculator },
-        { title: 'Billing Engineer', department: 'Engineer', icon: FaPercent },
-        { title: 'QA/QC Engineer', department: 'Engineer', icon: FaCalculator },
+        { title: 'Site Engineer',      department: 'Engineering',     icon: FaHardHat },
+        { title: 'Purchase Engineer',  department: 'Product',         icon: FaShoppingCart },
+        { title: 'Interior Designer',  department: 'Design',          icon: FaPencilRuler },
+        { title: 'Admin',              department: 'Administration',  icon: FaUserShield },
+        { title: 'Accountant',         department: 'Finance',         icon: FaCalculator },
+        { title: 'Billing Engineer',   department: 'Engineer',        icon: FaPercent },
+        { title: 'QA/QC Engineer',     department: 'Engineer',        icon: FaCalculator },
     ];
 
     return (
