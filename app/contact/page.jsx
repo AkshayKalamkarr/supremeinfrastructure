@@ -265,7 +265,7 @@ export default function Contact() {
           </h2>
           <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1474.4150266517524!2d73.0331751013393!3d19.007068568256777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c146766a3db7%3A0x762c073d563eb77a!2sSupreme%20Infrastructure%20Company!5e1!3m2!1sen!2sin!4v1733987069764!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sin!4v1734176551719!5m2!1sen!2sin!6m8!1m7!1sht9Vud9FVGgOCQT6rNLN4Q!2m2!1d19.00716237447008!2d73.0323151852377!3f69.16145244536517!4f0!5f1.1924812503605782"
               width="100%"
               height="100%"
               style={{ border: 0 }}
