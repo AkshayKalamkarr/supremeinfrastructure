@@ -118,7 +118,7 @@ const AboutUsPage = () => {
                 {/* Stats Section */}
                 <section className="mb-20 bg-gradient-to-r from-amber-700 to-amber-600 text-white py-16 rounded-lg">
                     <div className="container mx-auto">
-                        <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Our Achievements</h2>
+                        <h2 className="text-2xl md:text-3xl mb-12 text-center">Our Achievements</h2>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                             {stats.map((stat, index) => (
                                 <motion.div
@@ -140,7 +140,7 @@ const AboutUsPage = () => {
                 <section className="mb-20">
                     <div className="grid md:grid-cols-2 gap-12">
                         <motion.div
-                            className="bg-white rounded-lg shadow-lg p-8"
+                            className=" rounded-lg  p-8"
                             whileHover={{ scale: 1.03 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
@@ -151,7 +151,7 @@ const AboutUsPage = () => {
                             </p>
                         </motion.div>
                         <motion.div
-                            className="bg-white rounded-lg shadow-lg p-8"
+                            className=" rounded-lg  p-8"
                             whileHover={{ scale: 1.03 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
@@ -169,7 +169,7 @@ const AboutUsPage = () => {
                     <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-800">Ready to Build Your Dream Project?</h2>
                     <Link href='/contact'>
                         <motion.button
-                            className="bg-gradient-to-r from-amber-700 to-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
+                            className="bg-gradient-to-r from-amber-700 to-amber-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition duration-300"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
