@@ -144,8 +144,8 @@ const AboutUsPage = () => {
                             whileHover={{ scale: 1.03 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-800 text-center md:text-center">Our Mission</h3>
-                            <p className="text-gray-600 text-center md:text-center">
+                            <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-800 text-center md:text-start">Our Mission</h3>
+                            <p className="text-gray-600 text-center md:text-start">
                                 To deliver innovative and sustainable infrastructure solutions that enhance the quality of life
                                 for communities while maintaining the highest standards of safety, quality, and environmental responsibility.
                             </p>
@@ -155,8 +155,8 @@ const AboutUsPage = () => {
                             whileHover={{ scale: 1.03 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-800 text-center md:text-center">Our Vision</h3>
-                            <p className="text-gray-600 text-center md:text-center">
+                            <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-800 text-center md:text-start">Our Vision</h3>
+                            <p className="text-gray-600 text-center md:text-start">
                                 To be the global leader in infrastructure development, recognized for our innovative designs,
                                 sustainable practices, and commitment to shaping a better future for generations to come.
                             </p>
