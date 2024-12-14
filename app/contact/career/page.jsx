@@ -116,82 +116,141 @@ const CareerPage = () => {
                             </div>
                         </motion.div>
                     </div>
-                    <div className="w-full lg:w-1/2">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">Apply Now</h2>
-                        <form onSubmit={handleSubmit} className="bg-white rounded-lg p-6 md:p-8 border-2 border-amber-500">
-                            <div className="mb-6">
-                                <label htmlFor="name" className="block mb-2 text-lg font-semibold text-gray-700">Full Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    className="w-full px-4 py-3 border-2 border-black-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
-                                    required
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div className="mb-6">
-                                <label htmlFor="email" className="block mb-2 text-lg font-semibold text-gray-700">Email Address</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    className="w-full px-4 py-3 border-2 border-black-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
-                                    required
-                                    onChange={handleChange}
-                                />
+                    <div className="min-h-screenflex items-center justify-center p-6">
+                        <div className="w-full max-w-2xl overflow-hidden">
+                            <div className="bg-gradient-to-r from-amber-600 to-amber-500 p-6">
+                                <h2 className="text-4xl  text-center text-white tracking-wide">Career Application</h2>
                             </div>
 
-                            <div className="mb-6">
-                                <label htmlFor="contactNumber" className="block mb-2 text-lg font-semibold text-gray-700">Contact Number</label>
-                                <input
-                                    type="tel"
-                                    id="contactNumber"
-                                    name="contactNumber"
-                                    pattern="^\+?[1-9]\d{1,14}$"
-                                    className="w-full px-4 py-3 border-2 border-black-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
-                                    required
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div className="mb-6">
-                                <label htmlFor="position" className="block mb-2 text-lg font-semibold text-gray-700">Position</label>
-                                <select
-                                    id="position"
-                                    name="position"
-                                    className="w-full px-4 py-3 border-2 border-black-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
-                                    required
-                                    onChange={handleChange}
+                            <form className="p-8 space-y-6">
+                                {/* Personal Information Section */}
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label htmlFor="firstName" className="block mb-2 text-lg font-semibold text-gray-700">First Name</label>
+                                        <input
+                                            type="text"
+                                            id="firstName"
+                                            name="firstName"
+                                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-amber-500 transition duration-300"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="lastName" className="block mb-2 text-lg font-semibold text-gray-700">Last Name</label>
+                                        <input
+                                            type="text"
+                                            id="lastName"
+                                            name="lastName"
+                                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-amber-500 transition duration-300"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+
+                                {/* Contact Information */}
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label htmlFor="email" className="block mb-2 text-lg font-semibold text-gray-700">Email Address</label>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-amber-500 transition duration-300"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="phone" className="block mb-2 text-lg font-semibold text-gray-700">Phone Number</label>
+                                        <input
+                                            type="tel"
+                                            id="phone"
+                                            name="phone"
+                                            pattern="^\+?[1-9]\d{1,14}$"
+                                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-amber-500 transition duration-300"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+
+                                {/* Career Information */}
+                                <div className="space-y-6">
+                                    <div>
+                                        <label htmlFor="position" className="block mb-2 text-lg font-semibold text-gray-700">Position Applied For</label>
+                                        <select
+                                            id="position"
+                                            name="position"
+                                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-amber-500 transition duration-300"
+                                            required
+                                        >
+                                            <option value="">Select a position</option>
+                                            <option value="site-engineer">Site Engineer</option>
+                                            <option value="purchase-engineer">Purchase Engineer</option>
+                                            <option value="interior-designer">Interior Designer</option>
+                                            <option value="accountant">Accountant</option>
+                                            <option value="billing-engineer">Billing Engineer</option>
+                                            <option value="qa-qc-engineer">QA/QC Engineer</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label htmlFor="experience" className="block mb-2 text-lg font-semibold text-gray-700">Years of Experience</label>
+                                        <select
+                                            id="experience"
+                                            name="experience"
+                                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-amber-500 transition duration-300"
+                                            required
+                                        >
+                                            <option value="">Select years of experience</option>
+                                            <option value="0-2">0-2 years</option>
+                                            <option value="2-5">2-5 years</option>
+                                            <option value="5-10">5-10 years</option>
+                                            <option value="10+">10+ years</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                {/* Resume Upload */}
+                                <div>
+                                    <label htmlFor="resume" className="block mb-2 text-lg font-semibold text-gray-700">Upload Resume/CV</label>
+                                    <div className="relative border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                                        <input
+                                            type="file"
+                                            id="resume"
+                                            name="resume"
+                                            accept=".pdf,.doc,.docx"
+                                            className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                        />
+                                        <div className="text-gray-600">
+                                            <p className="mb-2">Drag and drop your resume here</p>
+                                            <p className="text-sm">or</p>
+                                            <p className="text-amber-600 font-semibold">Browse Files</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Additional Information */}
+                                <div>
+                                    <label htmlFor="additionalInfo" className="block mb-2 text-lg font-semibold text-gray-700">Additional Information</label>
+                                    <textarea
+                                        id="additionalInfo"
+                                        name="additionalInfo"
+                                        rows="4"
+                                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-amber-500 transition duration-300"
+                                        placeholder="Tell us why you're a great fit for this role..."
+                                    ></textarea>
+                                </div>
+
+                                {/* Submit Button */}
+                                <motion.button
+                                    type="submit"
+                                    className="w-full bg-gradient-to-r from-amber-700 to-amber-700 text-white text-lg py-4 rounded-lg hover:shadow-lg transition duration-300"
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
                                 >
-                                    <option value="">Select a position</option>
-                                    {jobs.map((job, index) => (
-                                        <option key={index} value={job.title}>{job.title}</option>
-                                    ))}
-                                </select>
-                            </div>
-
-                            <div className="mb-8">
-                                <label htmlFor="resume" className="block mb-2 text-lg font-semibold text-gray-700">Upload Resume</label>
-                                <input
-                                    type="file"
-                                    id="resume"
-                                    name="resume"
-                                    accept=".pdf,.doc,.docx"
-                                    className="w-full px-4 py-3 border-2 border-black-200 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300"
-                                    required
-                                    onChange={handleChange}
-                                />
-                            </div>
-
-                            <motion.button
-                                type="submit"
-                                className="w-full bg-gradient-to-r from-amber-600 to-amber-600 hover:bg-blue-700 text-white text-lg py-3 px-6 rounded-lg transition duration-300"
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                            >
-                                Submit Application
-                            </motion.button>
-                        </form>
+                                    Submit Application
+                                </motion.button>
+                            </form>
+                        </div>
                     </div>
                 </section>
             </main>
