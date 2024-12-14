@@ -14,7 +14,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div className="container mx-auto h-full flex flex-col justify-center text-gray-900">
           <motion.h2
             className="text-4xl md:text-6xl font-bold text-center"
@@ -22,15 +22,15 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >Architectural Designs
-            <span className='text-amber-600'> Specialists</span>
+            <span className='text-amber-500'> Specialists</span>
           </motion.h2>
           <motion.p
-            className="mt-4 text-lg text-center font-bold"
+            className="mt-4 text-lg text-center"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            We guide  <span className='text-amber-600'> the team</span>
+            We guide  <span className='text-amber-500'> the team</span>
           </motion.p>
         </div>
       </motion.section>
