@@ -118,7 +118,7 @@ const CareerPage = () => {
                     </div>
                     <div className="min-h-screenflex items-center justify-center p-6">
                         <div className="w-full max-w-2xl overflow-hidden">
-                            <div className="bg-gradient-to-r from-amber-600 to-amber-500 p-6">
+                            <div className="bg-gradient-to-r from-amber-600 to-amber-600 p-6">
                                 <h2 className="text-4xl  text-center text-white tracking-wide">Career Application</h2>
                             </div>
 
