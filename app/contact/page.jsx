@@ -98,7 +98,7 @@ export default function Contact() {
         style={{
           backgroundImage: "url('/images/contact/contact-us-banner.jpeg')",
           backgroundBlendMode: 'overlay',
-          backgroundColor: 'rgba(255, 255, 255, 0.5)'
+          // backgroundColor: 'rgba(255, 255, 255, 0.5)'
         }}
       >
         {/* <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent opacity-100"></div> */}
