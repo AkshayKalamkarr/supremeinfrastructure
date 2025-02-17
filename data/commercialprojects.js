@@ -137,7 +137,6 @@ export const projects = [
       { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-19.jpg", alt: "tataBanglore-19" },
       { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-20.jpg", alt: "tataBanglore-20" },
       { image: "/images/projects/TATAPOWERSOLARCIVILOFFICEANDBRICKOUTAREABANGOLARE/tataBanglore-22.jpg", alt: "tataBanglore-22" },
-
     ],
   },
   {
