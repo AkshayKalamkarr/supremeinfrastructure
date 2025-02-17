@@ -51,7 +51,6 @@ export const projects = [
     configuration: [
       { flat: "18500 sqft", carpet: "99 days" },
     ],
-
     galleryImages: [
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-4.jpg", alt: "tataBanglore-4" },
       { image: "/images/projects/TATAPOWERSOLARPROCUREMENTOFFICEBANGOLARE/tataBanglore-5.jpg", alt: "tataBanglore-5" },
