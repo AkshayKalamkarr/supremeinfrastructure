@@ -202,7 +202,6 @@ export const projects = [
     configuration: [
       { flat: "15000  sqft", carpet: "105 days" },
     ],
-
     galleryImages: [
       { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-2.jpg", alt: "tpsslBanglore-2" },
       { image: "/images/projects/TPSSLBANGOLARE/tpsslBanglore-4.jpg", alt: "tpsslBanglore-4" },
